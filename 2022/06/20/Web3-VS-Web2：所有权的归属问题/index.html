@@ -16,30 +16,31 @@
   <meta name="author" content="Max Weber">
   <meta name="keywords" content="">
   
-    <meta name="description" content="404的信息 目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。据说：过去20年，98.4%的网络链接就遭受到丢失。 由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所">
+    <meta name="description" content="Web3的世界区别于Web2的世界，有很多很多不一样的地方。其中一个不同点在于平台或者产品的所有权的归属问题。 Web2的世界 在Web2的世界里，一个平台或者一个产品的用户，则是使用权和所有权的分裂。你是这个产品的用户，但是你并不能真正拥有它。 在Web2的世界里，一个项目或者产品一般来讲其背后的公司是最重要的参与者。公司的天职创造尽可能多的利润回报股东。即使这家公司上市之后，在股票可以在二级市">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）">
-<meta property="og:url" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/index.html">
+<meta property="og:title" content="Web3 VS. Web2：所有权的归属问题">
+<meta property="og:url" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Weber&#39;s World">
-<meta property="og:description" content="404的信息 目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。据说：过去20年，98.4%的网络链接就遭受到丢失。 由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所">
+<meta property="og:description" content="Web3的世界区别于Web2的世界，有很多很多不一样的地方。其中一个不同点在于平台或者产品的所有权的归属问题。 Web2的世界 在Web2的世界里，一个平台或者一个产品的用户，则是使用权和所有权的分裂。你是这个产品的用户，但是你并不能真正拥有它。 在Web2的世界里，一个项目或者产品一般来讲其背后的公司是最重要的参与者。公司的天职创造尽可能多的利润回报股东。即使这家公司上市之后，在股票可以在二级市">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png">
-<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543039.png">
-<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543066.png">
-<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543134.png">
-<meta property="article:published_time" content="2023-02-10T17:44:53.000Z">
-<meta property="article:modified_time" content="2023-02-10T17:48:04.716Z">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211014130347.png">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013920929.png">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013952652.png">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211014100459.png">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630080-6050590.png">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630069.jpeg">
+<meta property="og:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630074.jpeg">
+<meta property="article:published_time" content="2022-06-20T14:49:11.000Z">
+<meta property="article:modified_time" content="2023-02-10T17:53:38.016Z">
 <meta property="article:author" content="Max Weber">
 <meta property="article:tag" content="Web3">
-<meta property="article:tag" content="区块链">
-<meta property="article:tag" content="公链">
-<meta property="article:tag" content="永久存储">
+<meta property="article:tag" content="所有权">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png">
+<meta name="twitter:image" content="http://example.com/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211014130347.png">
   
   
   
-  <title>Arweave--打造永存的亚历山大图书馆（永久数据库的尝试） - Weber&#39;s World</title>
+  <title>Web3 VS. Web2：所有权的归属问题 - Weber&#39;s World</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）"></span>
+            <span id="subtitle" data-typed-text="Web3 VS. Web2：所有权的归属问题"></span>
           
         </div>
 
@@ -233,8 +234,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-11 01:44" pubdate>
-          2023年2月11日 凌晨
+        <time datetime="2022-06-20 22:49" pubdate>
+          2022年6月20日 晚上
         </time>
       </span>
     
@@ -245,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          1.6k 字
         
       </span>
     
@@ -256,7 +257,7 @@
         
         
         
-          26 分钟
+          14 分钟
         
       </span>
     
@@ -302,93 +303,77 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）</h1>
+            <h1 style="display: none">Web3 VS. Web2：所有权的归属问题</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="404的信息">404的信息</h2>
-<p>目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。<em>据说：过去20年，98.4%的网络链接就遭受到丢失。</em></p>
-<p>由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所有数据，都需要在所有全节点全部存储一遍！（截至6月9日，全节点大小有：979,040,220KB（约等于933.69GB）ETH区块浏览器图表展示 - 每日全节点空间大小 (KB)）虽然有不少人曾经在ETH上通过支付高昂的交易费，把自己认为重要的信息存储在区块链上，以实现数据的永久性存储。但是ETH本身的定位，并不是用来作为数据的大规模存储。</p>
-<h2 id="如何做到永久存储？">如何做到永久存储？</h2>
-<p>Arweave利用的BlockWeave的数据结构和SpoRA（全称叫做Succinct Proofs of Random Access）的共识机制，为永久存储的问题提供了新的解决方案。</p>
-<p><strong>BlockWeave</strong></p>
-<p>由于Arweave并不是类似与ETH和BTC的线性的数据结构。ETH是线性的数据链表：每一个区块都只指向他的前一个区块。</p>
-<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png" srcset="/img/loading.gif" lazyload class="" title="ETH的线性结构">
-<p>BlockWeave则是一个类似于网状结构的数据链表，除了需要依赖前一个区块外，还需要依赖历史的某一个区块（被依赖的历史区块被称为“racall”区块。对于recall区块的选择，是通过一套算法来进行随机挑选。）</p>
-<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543039.png" srcset="/img/loading.gif" lazyload class="" title="Arweave的网状结构">
-<p><strong>SPoRA共识机制</strong></p>
-<p>SPoRA的共识机制：实际上是PoA和PoW的结合。</p>
-<p><em><em>P(获得记账权概率)= P（拥有recall block）</em> P(第一找到目标随机数)</em>*</p>
-<ol>
-<li>
-<p>PoA(Proof  of Access)。</p>
-</li>
-<li>
+                <p>Web3的世界区别于Web2的世界，有很多很多不一样的地方。<strong>其中一个不同点在于平台或者产品的所有权的归属问题。</strong></p>
+<p><strong>Web2的世界</strong></p>
+<p>在Web2的世界里，一个平台或者一个产品的用户，则是使用权和所有权的分裂。你是这个产品的用户，但是你并不能真正拥有它。</p>
+<p>在Web2的世界里，一个项目或者产品一般来讲其背后的公司是最重要的参与者。公司的天职创造尽可能多的利润回报股东。即使这家公司上市之后，在股票可以在二级市场自由流通之后，公司的股票也可能也大部分掌握在少部分手里，而非真正的用户。很多人购买股票的逻辑可能甚至都从来没有使用过这家公司的产品，而使用过这家公司的产品可能都不一定会持有公司的股票。另外在Web2的公司里，很多公司存在的本身就是为了上市。因此公司的很多价值，其实是在公司上市之前就已经创造完成了，然后就可能被大量稀释了。上市之后，很多公司可能就已经完全没有动力继续发展和创造价值。这也就解释了为什么很多公司，在公司上市之后，公司就基本上开始就意味着走下坡路，直至公司倒闭。</p>
+<p><strong>Web3的世界</strong></p>
+<p>在Web3的世界，一个平台或者说一个产品的用户，一般来说也是这个平台和产品的所有者。因此使用权和所有权进行了统一。</p>
+<p>在Web3的世界里，一个项目或者产品，一般来说，则会分为开发者、基金会、矿工和社区。不同的Web3产品，可能会有一些差异。<em>以Polkadot的社区的参与者组成为例。</em></p>
 <ul>
-<li>Arweave的出块需要过去历史的一个随机区块的参与。因此如果你存储的历史区块越多，那么你获得的记账权的概率就越大，而且获得出块奖励也越多。。因此这种机制就会鼓励矿工去尽可能多的存储历史区块。</li>
-<li>另外有一点，不同的历史区块，去分配的权重也是不一样。对于历史区块中越稀有的区块，其分配的权重越高。（历史稀有区块：是指过去历史区块中，越少被节点存储的，就越稀有。）因此这样就会鼓励矿工去争相去存储稀有区块。</li>
+<li>开发者：也称为技术委员会。一般来说就是负责项目链上代码的编写和维护。</li>
+<li>基金会：一般来说为项目或者产品的长久发展提供经济可行的财务管理和支持。</li>
+<li>矿工：负责维护区块链的安全和处理链上数据的交易，并从中进行获利。</li>
+<li>社区：一般来说是由该项目的Token持有者组成。有点类似于人民代表大会。一般来讲，作为Token的持有者，可以对产品或者项目的发展方向和决策提出自己的议案或者进行投票。</li>
 </ul>
+<p>在Web3的世界，如果你是一个产品或者平台的用户，你难免不会去关注这个产品或者平台的通证。因为很多时候，这个平台和产品的通证其实就是你使用这个平台或者产品的门票。但是这个又不仅仅是门票，有时候它又点像Web2世界的股票（因为在很多真正的web3产品和项目中，一般的Token也具有治理的特性，对于项目和产品的演进方向可以直接向社区提议案或者进行投票）。因此你可以在很早期的时候，就会发现真正有价值的产品和项目。在Web3的世界里，你越是这个产品的深度用户，你其实就会越持有他们的“股票”。因此Token的出现，其实就是实现了使用权和所有权的统一性。</p>
+<p><em>今天在Twitter上看到一个很有意思的，关于Web3和Web2的对比。<strong>@shivsakhuja web2 vs web3</strong>[1]</em></p>
+<ul>
+<li>
+<p>web2 = ███[REDACTED]███</p>
 </li>
 <li>
-<p>PoW（Proof of Work）</p>
+<p>web3 = censorship-resistant</p>
+<img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211014130347.png" srcset="/img/loading.gif" lazyload class="">
 </li>
 <li>
-<ul>
-<li>PoW的共识机制，主要是为了防止所有矿工存储全部数据，而无法决定记账权的情况下，则就遵循PoW机制，保证最快计算出随机数的矿工就拥有记账权。</li>
-</ul>
+<p>web2 = Login with Google / Facebook / Apple</p>
 </li>
-</ol>
-<p>因为Arweave并不要求所有节点的账本必须完全一致。因此不同的节点，存储的数据可能会不太一样。有些节点可能只存储了前20个区块的数据，有些节点可能只存储了后20个区块的数据。那么是否有可能存在某个区块恰巧没有被所有节点存储导致永久性的丢失呢？Arweave之前曾做了这样的一个测算，如下图：</p>
-<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543066.png" srcset="/img/loading.gif" lazyload class="">
-<ul>
-<li>纵坐标：表示网络的节点数。</li>
-<li>横坐标：表示平均每个节点的存储历史区块比率。比如整个网络一共出了100个区块，平均每个矿工存储了60个块，那么存储率就是60%。</li>
-<li>交叉的数值：代表平均丢失一个区块丢失的概率。</li>
+<li>
+<p>web3 = Connect Wallet</p>
+</li>
 </ul>
-<p>举例说明：如果平均每个节点的存储比率只有50%，整个Arweave网络节点有100个，那么区块丢失的概率为：<code>7.9*(10^-31)</code>。这个概率是非常非常小的。而实际上Arweave的活跃节点数为1231个,存储比率在90%以上，因此对于数据丢失概率几乎可以忽略不计。</p>
-<p>Arweave的数据读写采用的是：存储收费、读取免费。</p>
-<blockquote>
-<p>用户支付存储费用并不是一次性支付给矿工的，而是先由网络托管，然后按照某种规则，一点一点的释放给矿工的。为了鼓励节点积极响应其他节点应对网络数据的读取请求，Arweave对网络上的节点进行信用排名（Wildfire），如果排名太低，则会被剔除。因此矿工为了获得较为靠前的信用排名，也会积极响应其他节点对网络数据的读取请求。</p>
-</blockquote>
-<h3 id="更快、更快、更快···">更快、更快、更快···</h3>
-<p>更快的共识速度，就意味着更快的出块速度，也就意味着更快的交易处理速度。</p>
-<p>这个Arweave为了达成这个目的，引入了一项新技术<strong>Blockshadowing</strong>。Arweave同步区块的“影子”数据从而替换同步整个区块的数据（ETH全节点是同步所有的数据，因此ETH的处理速度一直都是比较慢的）。</p>
-<p>“影子”数据是允许节点可以重建完整的整个区块。这些数据包含钱包的列表和哈希列表的哈希。因为传递的数据大大缩小，因此节点之间的共识速度就大大提高。</p>
-<p>理论上，在带宽为100mbps的网络环境下，系统的处理速度可以达到每秒5000笔交易。</p>
-<h2 id="如何有效地降低经济成本？">如何有效地降低经济成本？</h2>
-<p>按照Arweave的经济模型设计，依据每年存储技术的发展趋势，在Arweave上存储的数据至少可以为用户提供200年的存储服务。</p>
-<p>对于计算机存储技术的发展和存储成本的摩尔定律的相信，也是维持Arweave永久性存储的重要因素。在互联网的世界中，计算成本和存储成本，在过去的计算机行业发展来看，基本都是符合摩尔定律的大致趋势。</p>
-<blockquote>
-<p>在过去的50年里，数据存储的成本平均每年下降30.5%以上。</p>
-</blockquote>
-<p>而Arweave在永久存储经济的可行性假设是非常保守的：Arweave假设数据存储成本每年仅下降0.5%。则用户将数据上传到Arweave网络时，则需要支付初始成本就已经足够在以此基础上（数据存储成本每年仅下降0.5%）涵盖200年的存储。如果数据存储成本每年下降超过0.5%，则就会增加数据的存储年限。</p>
-<p><em>备注：Arweave在区块高度812970处，做了一次重要的协议升级（V2.5硬分叉）。将存储在Arweave数据由SSD固态硬盘挖矿存储逐渐替换成HDD机械硬盘挖矿存储，从而进一步降低数据存储的费用。</em></p>
-<h2 id="Arweave如何构建它的经济体系？">Arweave如何构建它的经济体系？</h2>
-<p><strong>Arweave网络参与者</strong></p>
-<ol>
-<li>存储供应商。其实就是矿工。为用户提供计算、带宽和存储服务，并维护节点，保障节点安全可用。通过处理链上交易和提供存储服务，获得Token奖励。</li>
-<li>用户。通过Arweave存储数据，并需要支付一定的Token。</li>
-</ol>
-<p><strong>Token的发行机制</strong></p>
-<p>AR的总量有6600万枚，创世区块产生5500万枚（占整总量的83.33%）。另外1100万枚是通过后续挖矿挖出来的，自从2018年6月主网上线，第一年是550万，以后每年减半。</p>
-<blockquote>
-<p>创世区块的5500万枚Token分配：</p>
-<p>预售，ICO，VC投资：38.5％，其中ICO约占20.６％</p>
-<p>顾问：2.9％</p>
-<p>生态激励：19.1%</p>
-<p>团队：13%，5 年解锁期限，每年解锁 20%</p>
-<p>项目预留：26.5%，5 年解锁期限，每年解锁 20%</p>
-</blockquote>
-<p>*另外：Arweave设立了自己的捐赠基金会：每当用户支付存储费用的时候，费用中的86%会进入捐赠基金会。随着时间的推移，这笔捐赠会获得价值收益，有点类似于基金定投。主要目的是：<strong>在未来，如果当存储成本高于存储数据奖励的时候，用来补贴矿工。以维持网络的持续安全和稳定。</strong><img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543134.png" srcset="/img/loading.gif" lazyload class=""></p>
-<p>我在快要写完这篇文章的时候，突然看到了一篇刘毅老师写的《Arweave 的潜力是复兴亚历山大图书馆，而非 Filecoin 替代品》。才意识到Arweave要实现的目标，不仅仅是永久存储，而是要真正做到去中心化。从数据存储、业务逻辑和应用表现，都要完全实现去中心化。</p>
-<h4 id="参考资料：">参考资料：</h4>
-<p>深度解析：Arweave 是长期区块链存储的关键参与者</p>
-<p>Filecoin：星辰大海在左，金融启示在右</p>
-<p>分布式存储赛道崛起背后：Filecoin算力遥遥领先，Arweave存储量一年增长20倍</p>
-<p>Arweave项目调研报告12.03</p>
-<p>Arweave经济模型解析</p>
-<p>Arweave,文明火种的未来守护者</p>
+<p>​         <img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013920929.png" srcset="/img/loading.gif" lazyload class=""></p>
+<ul>
+<li>web2 = centralized</li>
+<li>web3 = decentralized</li>
+</ul>
+<p>​         <img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013952652.png" srcset="/img/loading.gif" lazyload class=""></p>
+<ul>
+<li>web2 = default closed source</li>
+<li>web3 = default open source</li>
+</ul>
+<p>​         <img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211014100459.png" srcset="/img/loading.gif" lazyload class=""></p>
+<ul>
+<li>
+<p>web2 = high % take-rates for platform</p>
+</li>
+<li>
+<p>web3 = low % take-rates for platform</p>
+<img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630080-6050590.png" srcset="/img/loading.gif" lazyload class="">
+</li>
+<li>
+<p>web2 = closed interfaces</p>
+</li>
+<li>
+<p>web3 = open, composable code</p>
+<img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630069.jpeg" srcset="/img/loading.gif" lazyload class="">
+</li>
+<li>
+<p>web2 = platform owns the data</p>
+</li>
+<li>
+<p>web3 = you own the data, platform just provides a view into the data</p>
+<img src="/2022/06/20/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/640-20230211013630074.jpeg" srcset="/img/loading.gif" lazyload class="">
+</li>
+</ul>
+<h3 id="参考资料">参考资料</h3>
+<p>[1]I make Crypto &amp; DeFi simple through visuals : <em><a target="_blank" rel="noopener" href="https://twitter.com/shivsakhuja/status/1537271343292354560">https://twitter.com/shivsakhuja/status/1537271343292354560</a></em></p>
 
                 
               </div>
@@ -403,11 +388,7 @@
       
         <a href="/tags/Web3/">#Web3</a>
       
-        <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">#区块链</a>
-      
-        <a href="/tags/%E5%85%AC%E9%93%BE/">#公链</a>
-      
-        <a href="/tags/%E6%B0%B8%E4%B9%85%E5%AD%98%E5%82%A8/">#永久存储</a>
+        <a href="/tags/%E6%89%80%E6%9C%89%E6%9D%83/">#所有权</a>
       
     </div>
   
@@ -419,8 +400,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）</div>
-      <div>http://example.com/2023/02/11/Arweave-打造永存的亚历山大图书馆（永久数据库的尝试）/</div>
+      <div>Web3 VS. Web2：所有权的归属问题</div>
+      <div>http://example.com/2022/06/20/Web3-VS-Web2：所有权的归属问题/</div>
     </div>
     <div class="license-meta">
       
@@ -432,7 +413,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年2月11日</div>
+          <div>2022年6月20日</div>
         </div>
       
       
@@ -464,12 +445,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2022/06/23/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/" title="Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/02/11/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/" title="Web3 VS. Web2：所有权的归属问题">
-                        <span class="hidden-mobile">Web3 VS. Web2：所有权的归属问题</span>
+                      <a href="/2022/06/19/Polkadot-Less-Trust-More-True/" title="Polkadot-Less Trust More True">
+                        <span class="hidden-mobile">Polkadot-Less Trust More True</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
