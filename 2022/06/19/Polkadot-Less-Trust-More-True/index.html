@@ -1,0 +1,775 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Max Weber">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="前两天晚上看了一部电影中文名字叫做《瞬息全宇宙》，英文名字叫做《Everything Everywhere All at Once》。我觉得这个名字，和我最近正在研究的Polkadot项目异常的贴合。在这个电影里面，讲述的是一个美国华裔家庭，他们家具有一种超能力，就是可以通过宇宙跳跃点，在不同的平行宇宙间进行跳跃。而这个宇宙跳跃点，就好似Polkadot在整个区块链世界要做的事情。 Polkado">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Polkadot-Less Trust More True">
+<meta property="og:url" content="http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/index.html">
+<meta property="og:site_name" content="Weber&#39;s World">
+<meta property="og:description" content="前两天晚上看了一部电影中文名字叫做《瞬息全宇宙》，英文名字叫做《Everything Everywhere All at Once》。我觉得这个名字，和我最近正在研究的Polkadot项目异常的贴合。在这个电影里面，讲述的是一个美国华裔家庭，他们家具有一种超能力，就是可以通过宇宙跳跃点，在不同的平行宇宙间进行跳跃。而这个宇宙跳跃点，就好似Polkadot在整个区块链世界要做的事情。 Polkado">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/640-20230211013141924.png">
+<meta property="og:image" content="http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/640.png">
+<meta property="og:image" content="http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/640-20230211013141874.jpeg">
+<meta property="article:published_time" content="2022-06-19T02:50:00.000Z">
+<meta property="article:modified_time" content="2023-02-10T17:35:05.309Z">
+<meta property="article:author" content="Max Weber">
+<meta property="article:tag" content="Web3">
+<meta property="article:tag" content="区块链">
+<meta property="article:tag" content="公链">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/640-20230211013141924.png">
+  
+  
+  
+  <title>Polkadot-Less Trust More True - Weber&#39;s World</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"91TkvoirNVLDfOsKzke05fdh-gzGzoHsz","app_key":"DWHBMqsXX4uhQdVkH69mkdqU","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Weber的百草园</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Polkadot-Less Trust More True"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-06-19 10:50" pubdate>
+          2022年6月19日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          28 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Polkadot-Less Trust More True</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>前两天晚上看了一部电影中文名字叫做《瞬息全宇宙》，英文名字叫做《Everything Everywhere All at Once》。我觉得这个名字，和我最近正在研究的Polkadot项目异常的贴合。在这个电影里面，讲述的是一个美国华裔家庭，他们家具有一种超能力，就是可以通过宇宙跳跃点，在不同的平行宇宙间进行跳跃。而这个宇宙跳跃点，就好似Polkadot在整个区块链世界要做的事情。</p>
+<p>Polkadot的愿景十分宏大：We envision a Web where our identity and our data is our own - safely secured from any central authority.</p>
+<p>当然要实现这个愿景，需要分步走。那么第一步，也是最重要的就是关于「cross-chain interoperability」。用中文的话：把所有的区块链连接到一个世界中来 。（<em>这是我基于对Polkadot的项目研究，按照自己的理解演绎了一下 。</em>） 在看完Polkadot这个项目之后，好像给我打开了一个世界的窗户。从区块链的网络架构、代币经济模型到用户驱动社区治理，都学到了很多。所以我打算把这些记录下来。也算是给自己的学习做一个总结。</p>
+<h1>Gavin Wood</h1>
+<p>Polkadot的创始人叫做Gavin Wood，是个英国人。这是ETH的前CTO，ETH的低扩展性以及高昂的交易费，一直都被人诟病。为了从根本上去解决区块链的这两个问题：可扩展性和可伸缩性，他从ETH离开后，就自己开始创立了Polkadot这个项目。在微博上听到有人对Polkaldot的评价是：「polkadot是工程学奇迹」。这简直勾起我对Polkadot的兴趣。<em>另外为了表示我对波卡的支持的，我是肯定是HODL “DOT”啦（DOT是Polkadot发行的一种Token） 哈哈哈</em></p>
+<h1>割裂的Web3</h1>
+<p>Web3的世界，并不是只有一个区块链网络，这个世界实际上是由很多区块链网络构成的。而不同的区块链之间，可能互不相通的。各个不相通的区块链的世界，就像是各自独立的局域网。那么以太坊网络就是其中最大的一个。</p>
+<p><em>打个比方：我们虽然用着不同的运营商的电话卡，但是相互打电话不受影响。但是目前区块链就是一个个“孤岛”，用联通的电话卡，只能用联通用户打电话。</em></p>
+<ul>
+<li>去年由于以太坊上Defi的火爆，导致Tether公司（一家推出稳定币的公司）不得不将波场（另外一个区块链）上的TRC20版本（一种区块链协议）的 USDT销毁，然后在以太坊上增发相同数量的ERC20版本的USDT，从而完成货币的转移。</li>
+</ul>
+<p>因此，未来区块链的世界，会是一个群雄割据的世界，不会有哪条区块链独占鳌头。同时还会诞生越来越多的区块链，这些链会变得越来越专业，专注于解决某一类问题。那么，实现不同链之间的交互、互通就变得非常重要了。</p>
+<h1>链接世界</h1>
+<p>目前Web3世界的信息网络分层的演化样式越来越像现在互联网的TCP/IP协议分层。不同层次的协议分别处理不同的信息，不同层次的协议在整个网络通讯方面担任不同的角色。</p>
+<img src="/2022/06/19/Polkadot-Less-Trust-More-True/640-20230211013141924.png" srcset="/img/loading.gif" lazyload class="" title="区块链演化的网络分层图">
+<img src="/2022/06/19/Polkadot-Less-Trust-More-True/640.png" srcset="/img/loading.gif" lazyload class="" title="TCP&#x2F;IP协议的网络分层">
+<p>谈到Web3世界的发展，我们也可以回顾一下互联网世界的发展。我们之所以分布在全球不同地区的终端或者服务器，能够相互通讯，是因为大家都是基于TCP/IP协议进行沟通，也就是现在互联网的基础。而我猜测这TCP/IP也是全世界最大的分布式网络协议了吧。</p>
+<p>而在TCP/IP之前，电信架构是基于“电路交换”，其中必须预先建立在两个不同局部网络或者机器之间的链接。这种方式昂贵而不可持续。因为如果要实现两个点的沟通，就必须在这两个点之间搭建沟通的桥梁（而这就相当于现在区块链世界的跨链桥的方式。）</p>
+<p>而TCP/IP的出现就颠覆了这种模式。TCP/IP是建立了一个网络的沟通协议。它通过把信息数字化并将其分解为非常小的数据包来进行传输，每个数据包都包含了地址信息。一旦这个信息被释放到网络中的任意一个节点，那么这个数据包都可以通过整个网络到达接受者。因此只要我接入到基于TCP/IP协议构建的互联网，我就能够跟这个网络上任意一个终端进行通讯。这就大大减少了通讯的接入成本。而这就构成了我们现在互联网世界的基石。因为有了互联网的存在，我们这个世界的经济基础也发生了变化。物理世界的距离和独特的知识产权不再具有无与伦比的优势。只要我们想要，我们就可以随意地查询任意一个网站上的信息，我们可以和世界上任意一个在互联网上的人进行沟通。</p>
+<p><strong>而Polkadot的目标就是要成为区块链世界TCP/IP协议。</strong> 当然Web3的远景就更大了。(对了，Web3这个词也是Gavin Wood提出来的，另外他还成立一个叫做Web3 Foundation的基金会)。但是实际上我觉得Polkadot要做的事情，要远比TCP/IP协议复杂的多。</p>
+<p>现在不同区块链就像不同的国家，每一个区块链都有属于自己的生态。包括自己的用户、自己的资产、自己的金融、自己的应用还有自己的原生货币等等，不同的区块链还有自己独特的治理协同和共识机制（就好比一个国家的法律规则、道德风俗）。因此要把所有的区块链都连接起来是非常困难的。</p>
+<p>让区块链的世界真正连接起来，不仅仅是实现信息之间传递，还有资产的互通、以及能力的迁移（实际上就是不同区块链的互操作）等等。</p>
+<ul>
+<li><em>数据互通：在以太坊DeFi项目的数据可以传递到BSC的DeFi项目上。</em></li>
+<li><em>资产互通：以太坊网络上的UNI代币可以转移到比特币网络。</em></li>
+<li><em>互操作性：以太坊的智能合约可以控制BSC上项目的转账。</em></li>
+</ul>
+<h1>Polkadot世界的组成</h1>
+<img src="/2022/06/19/Polkadot-Less-Trust-More-True/640-20230211013141874.jpeg" srcset="/img/loading.gif" lazyload class="" title="Polkadot架构图">
+<h3 id="Polkadot的区块链的4个组成">Polkadot的区块链的4个组成</h3>
+<ol>
+<li>中继链：这是整个Polkadot网络世界的核心，它确保平行链的安全、实现平行链之间的通信和互操作。通信的内容可以是交易或者任何形式的数据。</li>
+<li>平行链：又称为主权链。可以拥有自己的代币，可以高度定制化满足特定的应用场景，其通过链接中继链保证安全。</li>
+<li>平行进程：和平行链类似，但是比平行链更经济，它不需要持续的、全部链接到整个网络</li>
+<li>转接桥：一种特殊的区块链，允许波卡平行链和平行进程通过它连接以太坊和比特币等外部网络，且不需要通过中继链进行安全验证。</li>
+</ol>
+<h3 id="参与Polkadot共识的4种角色">参与Polkadot共识的4种角色</h3>
+<ol>
+<li>验证者：通过抵押DOT，验证收集人的证据，负责打包新区块到区块链上，并与其他验证人达成共识来保护Polkadot的安全。通过打包新区块获得奖励，奖励来自于交易费用和全网通胀的DOT。</li>
+<li>提名者：通过质押DOT提名验证人（16名）。在扣除验证人奖励后，提名人按质押比例分配奖励。</li>
+<li>钓鱼人：负责监控网络，并将网络上的不良行为报告给验证人，从而获得奖励。收集人或者任何平行链上的全节点都可以作为钓鱼人。</li>
+<li>收集人：是平行链的全节点，负责收集某一平行链上的交易。收集人将打包好的新区块和证明传给中继链上的验证人。</li>
+</ol>
+<h3 id="关于Polkadot社区治理的3种角色">关于Polkadot社区治理的3种角色</h3>
+<p>Polkadot的治理是通过“链上runtime和链上治理”的方式进行的。</p>
+<ol>
+<li>DOT持有人。可以行使投票权，对公投提案进行投票。也可以提出议案，并经理事会审核，审核通过可进入公投阶段。</li>
+<li>理事会成员。被选为代表被动利益的相关者，有两个初级的治理角色：提议全民投票和否决危险或恶意的全民投票。</li>
+<li>技术委员会：由积极构建 Polkadot 的官方技术团队组成。可与立法会一起提出紧急全民投票，以便快速投票和实施。一旦技术委员会颁布执行，那么所有节点就会自我升级。其实就是对整个波卡区块链网络的代码编写和维护。</li>
+</ol>
+<h3 id="参考资料">参考资料</h3>
+<p>[1]</p>
+<p>波卡简短白皮书: <em><a target="_blank" rel="noopener" href="https://assets.polkadot.network/Polkadot-lightpaper_zh-cn.pdf">https://assets.polkadot.network/Polkadot-lightpaper_zh-cn.pdf</a></em></p>
+<p>[2]</p>
+<p><a target="_blank" rel="noopener" href="https://polkadot.network/technology/:">https://polkadot.network/technology/:</a> <em><a target="_blank" rel="noopener" href="https://polkadot.network/technology/">https://polkadot.network/technology/</a></em></p>
+<p>[3]</p>
+<p>波卡是什么？一篇人人都看得懂的Polkadot科普文: <em><a target="_blank" rel="noopener" href="https://www.okx.com/academy/zh/what-is-polkadot-a-polkadot-popular-science-article-that-everyone-can-understand">https://www.okx.com/academy/zh/what-is-polkadot-a-polkadot-popular-science-article-that-everyone-can-understand</a></em></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Web3/">#Web3</a>
+      
+        <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">#区块链</a>
+      
+        <a href="/tags/%E5%85%AC%E9%93%BE/">#公链</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Polkadot-Less Trust More True</div>
+      <div>http://example.com/2022/06/19/Polkadot-Less-Trust-More-True/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Max Weber</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年6月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/02/11/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/" title="Web3 VS. Web2：所有权的归属问题">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Web3 VS. Web2：所有权的归属问题</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/18/%E8%BD%AF%E4%BB%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A4%8D%E6%9D%82/" title="软件为什么会变得复杂">
+                        <span class="hidden-mobile">软件为什么会变得复杂</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"91TkvoirNVLDfOsKzke05fdh-gzGzoHsz","appKey":"DWHBMqsXX4uhQdVkH69mkdqU","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

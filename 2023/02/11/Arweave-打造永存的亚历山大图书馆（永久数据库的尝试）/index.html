@@ -1,0 +1,798 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Max Weber">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="404的信息 目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。据说：过去20年，98.4%的网络链接就遭受到丢失。 由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）">
+<meta property="og:url" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/index.html">
+<meta property="og:site_name" content="Weber&#39;s World">
+<meta property="og:description" content="404的信息 目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。据说：过去20年，98.4%的网络链接就遭受到丢失。 由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png">
+<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543039.png">
+<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543066.png">
+<meta property="og:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543134.png">
+<meta property="article:published_time" content="2023-02-10T17:44:53.000Z">
+<meta property="article:modified_time" content="2023-02-10T17:48:04.716Z">
+<meta property="article:author" content="Max Weber">
+<meta property="article:tag" content="Web3">
+<meta property="article:tag" content="区块链">
+<meta property="article:tag" content="公链">
+<meta property="article:tag" content="永久存储">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png">
+  
+  
+  
+  <title>Arweave--打造永存的亚历山大图书馆（永久数据库的尝试） - Weber&#39;s World</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"91TkvoirNVLDfOsKzke05fdh-gzGzoHsz","app_key":"DWHBMqsXX4uhQdVkH69mkdqU","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Weber的百草园</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-02-11 01:44" pubdate>
+          2023年2月11日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          26 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="404的信息">404的信息</h2>
+<p>目前互联网的数据在爆炸💥性的产生，经常上网的同学可能有一种感觉，就是在互联网上有一些链接，稍微久远一点的，打开之后，就会出现「404 Not Found」。互联网的信息，一边是每天不断有新数据呈指数级增长，而另一边则是旧数据不断丢失。<em>据说：过去20年，98.4%的网络链接就遭受到丢失。</em></p>
+<p>由于以太坊的POW的共识机制，导致在以太坊存储数据，是一个非常高昂的开支。因为在以太坊上发生的所有数据，都需要在所有全节点全部存储一遍！（截至6月9日，全节点大小有：979,040,220KB（约等于933.69GB）ETH区块浏览器图表展示 - 每日全节点空间大小 (KB)）虽然有不少人曾经在ETH上通过支付高昂的交易费，把自己认为重要的信息存储在区块链上，以实现数据的永久性存储。但是ETH本身的定位，并不是用来作为数据的大规模存储。</p>
+<h2 id="如何做到永久存储？">如何做到永久存储？</h2>
+<p>Arweave利用的BlockWeave的数据结构和SpoRA（全称叫做Succinct Proofs of Random Access）的共识机制，为永久存储的问题提供了新的解决方案。</p>
+<p><strong>BlockWeave</strong></p>
+<p>由于Arweave并不是类似与ETH和BTC的线性的数据结构。ETH是线性的数据链表：每一个区块都只指向他的前一个区块。</p>
+<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543010.png" srcset="/img/loading.gif" lazyload class="" title="ETH的线性结构">
+<p>BlockWeave则是一个类似于网状结构的数据链表，除了需要依赖前一个区块外，还需要依赖历史的某一个区块（被依赖的历史区块被称为“racall”区块。对于recall区块的选择，是通过一套算法来进行随机挑选。）</p>
+<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543039.png" srcset="/img/loading.gif" lazyload class="" title="Arweave的网状结构">
+<p><strong>SPoRA共识机制</strong></p>
+<p>SPoRA的共识机制：实际上是PoA和PoW的结合。</p>
+<p><em><em>P(获得记账权概率)= P（拥有recall block）</em> P(第一找到目标随机数)</em>*</p>
+<ol>
+<li>
+<p>PoA(Proof  of Access)。</p>
+</li>
+<li>
+<ul>
+<li>Arweave的出块需要过去历史的一个随机区块的参与。因此如果你存储的历史区块越多，那么你获得的记账权的概率就越大，而且获得出块奖励也越多。。因此这种机制就会鼓励矿工去尽可能多的存储历史区块。</li>
+<li>另外有一点，不同的历史区块，去分配的权重也是不一样。对于历史区块中越稀有的区块，其分配的权重越高。（历史稀有区块：是指过去历史区块中，越少被节点存储的，就越稀有。）因此这样就会鼓励矿工去争相去存储稀有区块。</li>
+</ul>
+</li>
+<li>
+<p>PoW（Proof of Work）</p>
+</li>
+<li>
+<ul>
+<li>PoW的共识机制，主要是为了防止所有矿工存储全部数据，而无法决定记账权的情况下，则就遵循PoW机制，保证最快计算出随机数的矿工就拥有记账权。</li>
+</ul>
+</li>
+</ol>
+<p>因为Arweave并不要求所有节点的账本必须完全一致。因此不同的节点，存储的数据可能会不太一样。有些节点可能只存储了前20个区块的数据，有些节点可能只存储了后20个区块的数据。那么是否有可能存在某个区块恰巧没有被所有节点存储导致永久性的丢失呢？Arweave之前曾做了这样的一个测算，如下图：</p>
+<img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543066.png" srcset="/img/loading.gif" lazyload class="">
+<ul>
+<li>纵坐标：表示网络的节点数。</li>
+<li>横坐标：表示平均每个节点的存储历史区块比率。比如整个网络一共出了100个区块，平均每个矿工存储了60个块，那么存储率就是60%。</li>
+<li>交叉的数值：代表平均丢失一个区块丢失的概率。</li>
+</ul>
+<p>举例说明：如果平均每个节点的存储比率只有50%，整个Arweave网络节点有100个，那么区块丢失的概率为：<code>7.9*(10^-31)</code>。这个概率是非常非常小的。而实际上Arweave的活跃节点数为1231个,存储比率在90%以上，因此对于数据丢失概率几乎可以忽略不计。</p>
+<p>Arweave的数据读写采用的是：存储收费、读取免费。</p>
+<blockquote>
+<p>用户支付存储费用并不是一次性支付给矿工的，而是先由网络托管，然后按照某种规则，一点一点的释放给矿工的。为了鼓励节点积极响应其他节点应对网络数据的读取请求，Arweave对网络上的节点进行信用排名（Wildfire），如果排名太低，则会被剔除。因此矿工为了获得较为靠前的信用排名，也会积极响应其他节点对网络数据的读取请求。</p>
+</blockquote>
+<h3 id="更快、更快、更快···">更快、更快、更快···</h3>
+<p>更快的共识速度，就意味着更快的出块速度，也就意味着更快的交易处理速度。</p>
+<p>这个Arweave为了达成这个目的，引入了一项新技术<strong>Blockshadowing</strong>。Arweave同步区块的“影子”数据从而替换同步整个区块的数据（ETH全节点是同步所有的数据，因此ETH的处理速度一直都是比较慢的）。</p>
+<p>“影子”数据是允许节点可以重建完整的整个区块。这些数据包含钱包的列表和哈希列表的哈希。因为传递的数据大大缩小，因此节点之间的共识速度就大大提高。</p>
+<p>理论上，在带宽为100mbps的网络环境下，系统的处理速度可以达到每秒5000笔交易。</p>
+<h2 id="如何有效地降低经济成本？">如何有效地降低经济成本？</h2>
+<p>按照Arweave的经济模型设计，依据每年存储技术的发展趋势，在Arweave上存储的数据至少可以为用户提供200年的存储服务。</p>
+<p>对于计算机存储技术的发展和存储成本的摩尔定律的相信，也是维持Arweave永久性存储的重要因素。在互联网的世界中，计算成本和存储成本，在过去的计算机行业发展来看，基本都是符合摩尔定律的大致趋势。</p>
+<blockquote>
+<p>在过去的50年里，数据存储的成本平均每年下降30.5%以上。</p>
+</blockquote>
+<p>而Arweave在永久存储经济的可行性假设是非常保守的：Arweave假设数据存储成本每年仅下降0.5%。则用户将数据上传到Arweave网络时，则需要支付初始成本就已经足够在以此基础上（数据存储成本每年仅下降0.5%）涵盖200年的存储。如果数据存储成本每年下降超过0.5%，则就会增加数据的存储年限。</p>
+<p><em>备注：Arweave在区块高度812970处，做了一次重要的协议升级（V2.5硬分叉）。将存储在Arweave数据由SSD固态硬盘挖矿存储逐渐替换成HDD机械硬盘挖矿存储，从而进一步降低数据存储的费用。</em></p>
+<h2 id="Arweave如何构建它的经济体系？">Arweave如何构建它的经济体系？</h2>
+<p><strong>Arweave网络参与者</strong></p>
+<ol>
+<li>存储供应商。其实就是矿工。为用户提供计算、带宽和存储服务，并维护节点，保障节点安全可用。通过处理链上交易和提供存储服务，获得Token奖励。</li>
+<li>用户。通过Arweave存储数据，并需要支付一定的Token。</li>
+</ol>
+<p><strong>Token的发行机制</strong></p>
+<p>AR的总量有6600万枚，创世区块产生5500万枚（占整总量的83.33%）。另外1100万枚是通过后续挖矿挖出来的，自从2018年6月主网上线，第一年是550万，以后每年减半。</p>
+<blockquote>
+<p>创世区块的5500万枚Token分配：</p>
+<p>预售，ICO，VC投资：38.5％，其中ICO约占20.６％</p>
+<p>顾问：2.9％</p>
+<p>生态激励：19.1%</p>
+<p>团队：13%，5 年解锁期限，每年解锁 20%</p>
+<p>项目预留：26.5%，5 年解锁期限，每年解锁 20%</p>
+</blockquote>
+<p>*另外：Arweave设立了自己的捐赠基金会：每当用户支付存储费用的时候，费用中的86%会进入捐赠基金会。随着时间的推移，这笔捐赠会获得价值收益，有点类似于基金定投。主要目的是：<strong>在未来，如果当存储成本高于存储数据奖励的时候，用来补贴矿工。以维持网络的持续安全和稳定。</strong><img src="/2023/02/11/Arweave-%E6%89%93%E9%80%A0%E6%B0%B8%E5%AD%98%E7%9A%84%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%9B%BE%E4%B9%A6%E9%A6%86%EF%BC%88%E6%B0%B8%E4%B9%85%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%89/640-20230211014543134.png" srcset="/img/loading.gif" lazyload class=""></p>
+<p>我在快要写完这篇文章的时候，突然看到了一篇刘毅老师写的《Arweave 的潜力是复兴亚历山大图书馆，而非 Filecoin 替代品》。才意识到Arweave要实现的目标，不仅仅是永久存储，而是要真正做到去中心化。从数据存储、业务逻辑和应用表现，都要完全实现去中心化。</p>
+<h4 id="参考资料：">参考资料：</h4>
+<p>深度解析：Arweave 是长期区块链存储的关键参与者</p>
+<p>Filecoin：星辰大海在左，金融启示在右</p>
+<p>分布式存储赛道崛起背后：Filecoin算力遥遥领先，Arweave存储量一年增长20倍</p>
+<p>Arweave项目调研报告12.03</p>
+<p>Arweave经济模型解析</p>
+<p>Arweave,文明火种的未来守护者</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Web3/">#Web3</a>
+      
+        <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/">#区块链</a>
+      
+        <a href="/tags/%E5%85%AC%E9%93%BE/">#公链</a>
+      
+        <a href="/tags/%E6%B0%B8%E4%B9%85%E5%AD%98%E5%82%A8/">#永久存储</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Arweave--打造永存的亚历山大图书馆（永久数据库的尝试）</div>
+      <div>http://example.com/2023/02/11/Arweave-打造永存的亚历山大图书馆（永久数据库的尝试）/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Max Weber</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年2月11日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/02/11/Web3-VS-Web2%EF%BC%9A%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E5%BD%92%E5%B1%9E%E9%97%AE%E9%A2%98/" title="Web3 VS. Web2：所有权的归属问题">
+                        <span class="hidden-mobile">Web3 VS. Web2：所有权的归属问题</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"91TkvoirNVLDfOsKzke05fdh-gzGzoHsz","appKey":"DWHBMqsXX4uhQdVkH69mkdqU","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
