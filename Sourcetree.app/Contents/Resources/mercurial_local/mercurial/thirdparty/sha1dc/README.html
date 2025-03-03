@@ -1,0 +1,85 @@
+<h1 id="sha1collisiondetection"><a href="#sha1collisiondetection" class="headerlink" title="sha1collisiondetection"></a>sha1collisiondetection</h1><p>Library and command line tool to detect SHA-1 collisions in files</p>
+<p>Copyright 2017 Marc Stevens <a href="mailto:&#x6d;&#x61;&#x72;&#x63;&#x40;&#109;&#x61;&#114;&#99;&#45;&#115;&#x74;&#101;&#x76;&#101;&#110;&#115;&#46;&#x6e;&#x6c;">marc@marc-stevens.nl</a></p>
+<p>Distributed under the MIT Software License.</p>
+<p>See accompanying file LICENSE.txt or copy at <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>.</p>
+<h2 id="Developers"><a href="#Developers" class="headerlink" title="Developers"></a>Developers</h2><ul>
+<li>Marc Stevens, CWI Amsterdam (<a href="https://marc-stevens.nl/">https://marc-stevens.nl</a>)</li>
+<li>Dan Shumow, Microsoft Research (<a href="https://www.microsoft.com/en-us/research/people/danshu/">https://www.microsoft.com/en-us/research/people/danshu/</a>)</li>
+</ul>
+<h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p>This library and command line tool were designed as near drop-in replacements for common SHA-1 libraries and sha1sum.<br>They will compute the SHA-1 hash of any given file and additionally will detect cryptanalytic collision attacks against SHA-1 present in each file. It is very fast and takes less than twice the amount of time as regular SHA-1.</p>
+<p>More specifically they will detect any cryptanalytic collision attack against SHA-1 using any of the top 32 SHA-1 disturbance vectors with probability 1:</p>
+<pre><code>    I(43,0), I(44,0), I(45,0), I(46,0), I(47,0), I(48,0), I(49,0), I(50,0), I(51,0), I(52,0),
+    I(46,2), I(47,2), I(48,2), I(49,2), I(50,2), I(51,2),
+    II(45,0), II(46,0), II(47,0), II(48,0), II(49,0), II(50,0), II(51,0), II(52,0), II(53,0), II(54,0), II(55,0), II(56,0),
+    II(46,2), II(49,2), II(50,2), II(51,2)
+</code></pre>
+<p>The possibility of false positives can be neglected as the probability is smaller than 2^-90.</p>
+<p>The library supports both an indicator flag that applications can check and act on, as well as a special <em>safe-hash</em> mode that returns the real SHA-1 hash when no collision was detected and a different <em>safe</em> hash when a collision was detected.<br>Colliding files will have the same SHA-1 hash, but will have different unpredictable safe-hashes.<br>This essentially enables protection of applications against SHA-1 collisions with no further changes in the application, e.g., digital signature forgeries based on SHA-1 collisions automatically become invalid.</p>
+<p>For the theoretical explanation of collision detection see the award-winning paper on <em>Counter-Cryptanalysis</em>:</p>
+<p>Counter-cryptanalysis, Marc Stevens, CRYPTO 2013, Lecture Notes in Computer Science, vol. 8042, Springer, 2013, pp. 129-146,<br><a href="https://marc-stevens.nl/research/papers/C13-S.pdf">https://marc-stevens.nl/research/papers/C13-S.pdf</a></p>
+<h2 id="Compiling"><a href="#Compiling" class="headerlink" title="Compiling"></a>Compiling</h2><p>Run:</p>
+<pre><code>make
+</code></pre>
+<h2 id="Command-line-usage"><a href="#Command-line-usage" class="headerlink" title="Command-line usage"></a>Command-line usage</h2><p>There are two programs <code>bin/sha1dcsum</code> and <code>bin/sha1dcsum_partialcoll</code>.<br>The first program <code>bin/sha1dcsum</code> will detect and warn for files that were generated with a cryptanalytic SHA-1 collision attack like the one documented at <a href="https://shattered.io/">https://shattered.io/</a>.<br>The second program <code>bin/sha1dcsum_partialcoll</code> will detect and warn for files that were generated with a cryptanalytic collision attack against reduced-round SHA-1 (of which there are a few examples so far).</p>
+<p>Examples:</p>
+<pre><code>bin/sha1dcsum test/sha1_reducedsha_coll.bin test/shattered-1.pdf
+bin/sha1dcsum_partialcoll test/sha1reducedsha_coll.bin test/shattered-1.pdf
+pipe_data | bin/sha1dcsum -
+</code></pre>
+<h2 id="Library-usage"><a href="#Library-usage" class="headerlink" title="Library usage"></a>Library usage</h2><p>See the documentation in <code>lib/sha1.h</code>. Here is a simple example code snippet:</p>
+<pre><code>#include &lt;sha1dc/sha1.h&gt;
+
+SHA1_CTX ctx;
+unsigned char hash[20];
+SHA1DCInit(&amp;ctx);
+
+/** disable safe-hash mode (safe-hash mode is enabled by default) **/
+// SHA1DCSetSafeHash(&amp;ctx, 0);
+/** disable use of unavoidable attack conditions to speed up detection (enabled by default) **/
+// SHA1DCSetUseUBC(&amp;ctx, 0); 
+
+SHA1DCUpdate(&amp;ctx, buffer, (unsigned)(size));
+
+int iscoll = SHA1DCFinal(hash,&amp;ctx);
+if (iscoll)
+    printf(&quot;collision detected&quot;);
+else
+    printf(&quot;no collision detected&quot;);
+</code></pre>
+<h2 id="Inclusion-in-other-programs"><a href="#Inclusion-in-other-programs" class="headerlink" title="Inclusion in other programs"></a>Inclusion in other programs</h2><p>In order to make it easier to include these sources in other project<br>there are several preprocessor macros that the code uses. Rather than<br>copy&#x2F;pasting and customizing or specializing the code, first see if<br>setting any of these defines appropriately will allow you to avoid<br>modifying the code yourself.</p>
+<ul>
+<li>SHA1DC_NO_STANDARD_INCLUDES</li>
+</ul>
+<p> Skips including standard headers. Use this if your project for<br> whatever reason wishes to do its own header includes.</p>
+<ul>
+<li><p>SHA1DC_CUSTOM_INCLUDE_SHA1_C</p>
+<p>Includes a custom header at the top of sha1.c. Usually this would be<br>set in conjunction with SHA1DC_NO_STANDARD_INCLUDES to point to a<br>header file which includes various standard headers.</p>
+</li>
+<li><p>SHA1DC_INIT_SAFE_HASH_DEFAULT</p>
+<p>Sets the default for safe_hash in SHA1DCInit(). Valid values are 0<br>and 1. If unset 1 is the default.</p>
+</li>
+<li><p>SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_C</p>
+<p>Includes a custom trailer in sha1.c. Useful for any extra utility<br>functions that make use of the functions already defined in sha1.c.</p>
+</li>
+<li><p>SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_H</p>
+<p>Includes a custom trailer in sha1.h. Useful for defining the<br>prototypes of the functions or code included by<br>SHA1DC_CUSTOM_TRAILING_INCLUDE_SHA1_C.</p>
+</li>
+<li><p>SHA1DC_CUSTOM_INCLUDE_UBC_CHECK_C</p>
+<p>Includes a custom header at the top of ubc_check.c.</p>
+</li>
+<li><p>SHA1DC_CUSTOM_TRAILING_INCLUDE_UBC_CHECK_C</p>
+<p>Includes a custom trailer in ubc_check.c.</p>
+</li>
+<li><p>SHA1DC_CUSTOM_TRAILING_INCLUDE_UBC_CHECK_H</p>
+<p>Includes a custom trailer in ubc_check.H.</p>
+</li>
+</ul>
+<p>This code will try to auto-detect certain things based on<br>CPU&#x2F;platform. Unless you’re running on some really obscure CPU or<br>porting to a new platform you should not need to tweak this. If you do<br>please open an issue at<br><a href="https://github.com/cr-marcstevens/sha1collisiondetection">https://github.com/cr-marcstevens/sha1collisiondetection</a></p>
+<ul>
+<li><p>SHA1DC_FORCE_LITTLEENDIAN &#x2F; SHA1DC_FORCE_BIGENDIAN</p>
+<p>Override the check for processor endianenss and force either<br>Little-Endian or Big-Endian.</p>
+</li>
+<li><p>SHA1DC_FORCE_UNALIGNED_ACCESS</p>
+<p>Permit unaligned access. This will fail on e.g. SPARC processors, so<br>it’s only permitted on a whitelist of processors. If your CPU isn’t<br>detected as allowing this, and allows unaligned access, setting this<br>may improve performance (or make it worse, if the kernel has to<br>catch and emulate such access on its own).</p>
+</li>
+</ul>
