@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-03-04T01:39:36.587Z</updated>
+  <updated>2025-03-04T01:40:27.671Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -21,11 +21,20 @@
     <link href="https://maxweber36.github.io/2025/03/04/this-message-is-used-to-verify/"/>
     <id>https://maxweber36.github.io/2025/03/04/this-message-is-used-to-verify/</id>
     <published>2025-03-04T01:39:36.000Z</published>
-    <updated>2025-03-04T01:39:36.587Z</updated>
+    <updated>2025-03-04T01:40:27.671Z</updated>
+    
+    <content type="html"><![CDATA[<p>This message is used to verify that this feed (feedId:114191761845540864) belongs to me (userId:112847438974407680). Join me in enjoying the next generation information browser <a href="https://follow.is/">https://follow.is</a>.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;This message is used to verify that this feed (feedId:114191761845540864) belongs to me (userId:112847438974407680). Join me in enjoying </summary>
+      
     
     
     
     
+    <category term="test" scheme="https://maxweber36.github.io/tags/test/"/>
     
   </entry>
   
