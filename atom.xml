@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-04-30T04:50:32.940Z</updated>
+  <updated>2025-05-30T09:39:27.875Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阅读卡夫卡</title>
+    <link href="https://maxweber36.github.io/2025/05/30/%E9%98%85%E8%AF%BB%E5%8D%A1%E5%A4%AB%E5%8D%A1/"/>
+    <id>https://maxweber36.github.io/2025/05/30/%E9%98%85%E8%AF%BB%E5%8D%A1%E5%A4%AB%E5%8D%A1/</id>
+    <published>2025-05-30T09:25:03.000Z</published>
+    <updated>2025-05-30T09:39:27.875Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-swjKqoff" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-swjKqoff"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Travelling",              author: "Tiehan",              url: "/music/travelling.m4a",              pic: "/music-cover/travelling.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>第一次接触卡夫卡，是在高中的语文课本上。那是一篇小说的节选，名字叫做《变形记》。虽然在课本上的那篇文章，只是这本小说的节选，但是我在阅读的时候，充满了各种困惑，疑虑和怪诞，这种怪诞是当时的我，根本无法理解的，因此那个时候的我根本都读不懂这本小说。那是我第一次接触这本小说，留下的第一感觉。</p><p>直到现在，我留下的印象是变成甲虫的主人公，冷漠的家人。然后除此之外，我就没有任何印象了。</p><p>也正因为这样，卡夫卡，这个名字，给我留下了深刻的印象。我还记得，在《变形记》之后的另外一篇文章叫做《等待戈多》，更是让我一头雾水，只给我留下了 3 个字“意识流”。</p><p>但是从此之外，只要我后面遇到了卡夫卡和意识流，我都会绕道而行，因为当时书本中到底在说啥，给我留下了深刻印象。</p><p>而我最近特别想要读卡夫卡。在这里我要感谢张秋子老师，我最近在听张秋子播客的时候，她在播客中分享了她读卡夫卡的感受，给我带来很大的震动，也给我带来了很多的启发。</p><hr><p>我自己在微信读书上，给自己列了两个书单。一个是关于“<a href="https://weread.qq.com/misc/booklist/10719450_80sfOC3j7">勇气</a>”，一个是关于“<a href="https://weread.qq.com/misc/booklist/10719450_80sfTOF83">聪明</a>”。“勇气”是让我能够获得勇气，坚持内在的自己。“聪明”是让我了解现代世界是如何运转的。而我把卡夫卡的书都放到这两个书单里面。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="个人计划" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>天边的乌云</title>
