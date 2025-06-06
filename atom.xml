@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-06-06T05:01:17.416Z</updated>
+  <updated>2025-06-06T13:15:57.479Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250606</title>
+    <link href="https://maxweber36.github.io/2025/06/06/20250606/"/>
+    <id>https://maxweber36.github.io/2025/06/06/20250606/</id>
+    <published>2025-06-06T13:15:32.000Z</published>
+    <updated>2025-06-06T13:15:57.479Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>昨天吃了刺身，我和苟馨都遭了。但是苟馨的症状要厉害，又是气胀，凌晨的时候，还呕吐了，肚子痛。今天一大早就去了医院做了各种检查，所幸的是，没有太大的问题，医生诊断是：肠胃炎。估计是吃刺身的缘故。</p><p>昨天买了一个新域名（weber36.me），明天花个时间把我的博客域名打算更新一下。另外之前买的 NFC 贴纸，打算用来做 NFC 冰箱贴。这个周末把它们搞定吧。</p><p>另外，这段时间一直在 udemy 上学习全栈编程。目前课程大部分都已经学了，但是发现自己虽然学了，但是自己做的时候，还是发现之前有很多细节没有搞清楚。很多事情，只有自己真正开始动手做的时候，才发现有很多问题需要补。加油吧，拱一卒。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="人生记录计划" scheme="https://maxweber36.github.io/tags/%E4%BA%BA%E7%94%9F%E8%AE%B0%E5%BD%95%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>20250605</title>
