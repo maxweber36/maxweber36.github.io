@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-06-17T08:05:21.996Z</updated>
+  <updated>2025-06-19T03:28:10.321Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250618</title>
+    <link href="https://maxweber36.github.io/2025/06/19/20250618/"/>
+    <id>https://maxweber36.github.io/2025/06/19/20250618/</id>
+    <published>2025-06-19T01:24:30.000Z</published>
+    <updated>2025-06-19T03:28:10.321Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>没有写代码，在小宇宙听了几期播客。一期是关于讲“自由言论”的，还有一期是讲最近关于“以色列和伊朗冲突”的。一个是因为自己比较感兴趣，另外一个是因为这是我觉得，最大的一次新闻了。</p><p>没有写代码，自己的内心感觉还是有罪过的。</p><p>之前写了一个关于 BTC 的 dashboard 的页面，比较简单，主要还是因为想自己用。自己前几天趁着 618 的时候，购买了一个服务器，打算用这个服务器来部署一下这个页面。之前尝试过部署小程序。因为自己打算会开发很多个类似的这样的页面，所以打算尝试在一个服务器中，部署多个应用。也算是给自己练练手。毕竟自己是做独立开发者，那么什么东西都得自己动手试试，才知道嘛。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>什么是 CORS 问题（跨资源共享）</title>
@@ -133,6 +155,50 @@
     <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
     <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250526</title>
+    <link href="https://maxweber36.github.io/2025/05/26/20250526/"/>
+    <id>https://maxweber36.github.io/2025/05/26/20250526/</id>
+    <published>2025-05-26T03:14:53.000Z</published>
+    <updated>2025-06-19T03:26:52.591Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>好久没有写代码，今天又开始写代码了。</p><p>在现在这个经济泥沙俱下的年代，每个人都很不容易。昨天接到一个好朋友的电话，他说到他们公司最近近况不好，最近一个月的工资都发不下来。问我最近近况怎么样？我其实也不好意思说，因为我从今年 1 月份出来到现在，下定决定做独立开发者，但是现在一个产品还没有做出来。除了之前给一个好朋友做的小程序之外，其他的产品都没有做出来。</p><p>但是我自己是下定决定要做独立开发者。不管怎么样，这条路再不好走，我也要努力走下去。</p><p><strong>人生也就这么短，不做自己想做的事情，活着真的也没有什么意思。还不如去死！</strong></p><p>做产品就是这样，先从小的 demo 开始做起，然后大家觉得有用，然后在考虑低成本的，可以快速扩张的方式去构建产品。</p><p>如果说，我自己做了一个产品，发现根本都没有人用，那么这个产品确实也就不用做了，因为也没有太大的意义。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>独立书店</title>
+    <link href="https://maxweber36.github.io/2025/05/23/%E7%8B%AC%E7%AB%8B%E4%B9%A6%E5%BA%97/"/>
+    <id>https://maxweber36.github.io/2025/05/23/%E7%8B%AC%E7%AB%8B%E4%B9%A6%E5%BA%97/</id>
+    <published>2025-05-23T03:19:11.000Z</published>
+    <updated>2025-06-19T03:20:32.110Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近有一段时间特别关注独立书店，可能是因为自己目前也算是一个独立开发者的身份，所以目前对于这种带有“独立”身份的主体，都有一种莫名的关注。“独立”的身份标签，那么这就意味着大家都是一种非主流的群体，这是一种边缘性的社会群体。因此在某种程度能够感受到大家算是同类群体。</p><p>因为一些机缘巧合，我也认识一些开独立书店的主理人，虽然大家很少在线上交流，但是我总是透过他们的朋友圈在默默的关注着他们。基本上，很多人应该都知道开书店，大部分是不赚钱的，由于之前疫情的缘故，更不要说开独立书店，这是一件非常具有挑战的事情，但是很多人还是会去自掏腰包把书店开起，有不少人是一边在打工，一边开着独立书店。</p><p>人总是要除了生存，也是需要生活的，需要寻找同类。人是群居的动物，再怎么 i 的人，也是需要和其他人建立联系的。在如此仄逼的时代里，当在这个世界无法找到适合自己的舒适场合，很多人会开始自己动手打造自己空间，这部分的空间，一部分是属于自己的，一部分也是属于公共生活的。</p><p>另外逛独立书店，基本上，有一个不言自明的潜规则就是如果购买书的话，绝对不会主动找书店要优惠。因为大家都是在为自己的理想生活而努力，所以特别珍惜。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
