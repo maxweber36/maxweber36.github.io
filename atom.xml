@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-06-26T05:31:13.741Z</updated>
+  <updated>2025-06-27T11:57:55.041Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250627</title>
+    <link href="https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/"/>
+    <id>https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/</id>
+    <published>2025-06-27T11:57:12.000Z</published>
+    <updated>2025-06-27T11:57:55.041Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>读代码其实并不是一件容易的事。很多事情，只有真正自己动手去做了，才会发现其中的难度。过去没做过这些事时，总觉得很简单，把资料随手丢给别人，也觉得别人应该不用花太多力气就能看懂、学会。但现在，当我自己去看别人的代码，尤其是一些看似简单的功能时，过程其实挺吃力的。这可能和我目前的阶段有关。</p><p>不过，学习和研究别人的代码，哪怕是AI写的代码，对我来说依然很有帮助。现在已经过去半年了，我发现自己最大的问题还是在代码上。虽然比之前有了一些进步，但进步的速度还是太慢了。这一点让我不得不承认，自己还需要更加努力，投入更多时间。希望能早点达到一个成熟、独立开发者的状态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="反思" scheme="https://maxweber36.github.io/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+  </entry>
   
   <entry>
     <title>虚无和无意义</title>
@@ -449,28 +473,6 @@
     
     
     <category term="鼓励自己的" scheme="https://maxweber36.github.io/tags/%E9%BC%93%E5%8A%B1%E8%87%AA%E5%B7%B1%E7%9A%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一点体会(2025/1/16)</title>
-    <link href="https://maxweber36.github.io/2025/01/16/%E4%B8%80%E7%82%B9%E4%BD%93%E4%BC%9A--2025:1:16/"/>
-    <id>https://maxweber36.github.io/2025/01/16/%E4%B8%80%E7%82%B9%E4%BD%93%E4%BC%9A--2025:1:16/</id>
-    <published>2025-01-16T05:46:10.000Z</published>
-    <updated>2025-06-19T09:16:53.045Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-lDgwHway" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2098125455" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="人最重要的，就是开心啦"><a href="#人最重要的，就是开心啦" class="headerlink" title="人最重要的，就是开心啦"></a>人最重要的，就是开心啦</h2><p>今天看了刘飞的一篇文章<a href="https://mp.weixin.qq.com/s/rgTuyzf8I_Tac82a07Jawg">《创业失败，但开心》</a>，自己觉得真好。人生其实有多有意义的事情可以做，不仅仅是赚钱，当然赚钱是一件很好的事情。我现在也非常想赚钱，但是更重要的是，把自己想要做的事情做成，这一点对我来说很重要。如果做这件事情，能够赚到钱，当然是一件很好的事情。因为这样就可以持续做自己喜欢的事情了。</p><h2 id="真正重要的是去做"><a href="#真正重要的是去做" class="headerlink" title="真正重要的是去做"></a>真正重要的是去做</h2><p>另外，今天还有一点小的感悟，今天在 1024 全栈开发社群里，通过大家的聊天，我发现很多道理，很多方法，其实是很容易获得的，或者说知道的，但是真正重要的是去做。做才是真正的稀缺，也才是最有价值的事情。</p><h2 id="自己才最重要的人"><a href="#自己才最重要的人" class="headerlink" title="自己才最重要的人"></a>自己才最重要的人</h2><p>另外今天很开心了，加了玉伯的微信。但是加了之后，又感觉自己很难跟他有更多的有价值的交流。我觉得这个世界有很多牛人，但是认识这些牛人与否，其实并不重要，因为认识了更多的牛人，并不代表自己就真的变牛了。所以不要花时间去认识人，更多的是，花时间来建设自己。围绕着自己的人生，自己的生活，自己的工作去展开。因为我自己才是最重要的人。</p><h2 id="降低预期"><a href="#降低预期" class="headerlink" title="降低预期"></a>降低预期</h2><p><strong>我觉得对我来说，有一件让我能够持续不断去做的事情就是：降低预期</strong>。降低预期，对我来说很重要。只要我能够降低对一件事情的预期，我自己就能够持续的去做这件事情。这是我对自己的一个观察和发现。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
