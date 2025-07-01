@@ -2,55 +2,54 @@
 <html lang="lang">
   <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta name="author" content="阿犇">
+
+
+
+
+
+
+
+<title>AI 辅助我代码学习的 SOP 心得 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/./images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
     
-        
-                
-                        
+    <link rel="stylesheet" href="/css/style.css">
+    
 
-                                
 
-                                    <title>
-                                        
-                                            AI 辅助我代码学习的 SOP 心得 | 
-                                                    阿犇的自留地
-                                    </title>
 
-                                    
-                                        
-                                            <link rel="icon" href="/favicon.ico">
-                                            
 
-                                                
-                                                    <style>
-                                                        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
-                                                    </style>
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
 
-                                                    
-                                                        
-                                                            <!-- stylesheets list from _config.yml -->
-                                                            
-                                                                <link rel="stylesheet" href="/css/style.css">
-                                                                
-                                                                    
 
-                                                                        
-                                                                            
-                                                                                <!-- scripts list from _config.yml -->
-                                                                                
-                                                                                    <script
-                                                                                        src="/js/menu.js"></script>
-                                                                                    
-                                                                                        
 
-                                                                                            
-                                                                                                
 
-                                                                                                        
-                                                                                                            
+
+
+
+
+
+
   <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
 </head>
   <body>
@@ -65,8 +64,8 @@
       <div class="site-brand-container">
         <a href="/">
           
-            <img class="logo-img" src="/avatar.jpg" alt="logo_image">
-            
+            <img class="logo-img" src="/./images/avatar.png" alt="logo_image">
+          
         </a>
       </div>
       <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
@@ -76,36 +75,31 @@
         <ul class="menu-list">
           
             
-                <li class="menu-item">
-                  <a href="/archives/">
-                    我的博客
-                  </a>
-                </li>
-                
-                  
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
             
-                <li class="menu-item">
-                  <a href="/about/">
-                    关于我
-                  </a>
-                </li>
-                
-                  
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
             
-                <li class="menu-item">
-                  <a href="/my-projects/">
-                    我都做了啥
-                  </a>
-                </li>
-                
-                  
-                    
+              <li class="menu-item">
+                <a href="/my-projects/">我都做了啥</a>
+              </li> 
+                   
+          
+          
         </ul>
       </nav>
     </div>
   </div>
 </div>
 <script src="/js/menu.js"></script>
+
 
       <div class="main">
         <div class="flex-container">
@@ -166,15 +160,10 @@
 <p>针于比较明确的知识点，建议直接使用比较成熟的生成模型，而不是 DeepSeek R1 这种推理模型。</p>
 <p>主要原因有 2 点：</p>
 <ol>
-<li>DeepSeek R1 模型虽然考虑问题较为周全，但是它其实比之前高阶的生成模型（Grok2 或者 Claude 3.5 sonnet 或者 Gemini 2.0 Pro）更容易出现幻觉，即事实性错误。这是最重要的原因。</li>
-</ol>
-<figure>  
-   <img src="/images/hallucination-test.PNG" alt="Vectara HHEM人工智能幻觉测试结果">  
-   <figcaption>在Vectara HHEM人工智能幻觉测试（行业权威测试，通过检测语言模型生成内容是否与原始证据一致，从而评估模型的幻觉率，帮助优化和选择模型）中，DeepSeek-R1显示出14.3%的幻觉率。DeepSeek-R1的幻觉率远超行业平均水平。<a href="https://mp.weixin.qq.com/s/mVaOCzBZbBOVU4sanymgLg" target="_blank" style="color: #0366d6; text-decoration: underline;">图片来源：《DeepSeek-R1超高幻觉率解析：为何大模型总"胡说八道"？》</a> </figcaption>  
-</figure>
-
-<ol start="2">
-<li>DeepSeek R1 输出内容啰嗦且速度慢。回答一个简单的事实问题，它总会衍生很多内容，表述繁琐，效率较低，效果反而不佳。</li>
+<li><p>DeepSeek R1 模型虽然考虑问题较为周全，但是它其实比之前高阶的生成模型（Grok2 或者 Claude 3.5 sonnet 或者 Gemini 2.0 Pro）更容易出现幻觉，即事实性错误。这是最重要的原因。</p>
+</li>
+<li><p>DeepSeek R1 输出内容啰嗦且速度慢。回答一个简单的事实问题，它总会衍生很多内容，表述繁琐，效率较低，效果反而不佳。</p>
+</li>
 </ol>
 </blockquote>
 </li>
