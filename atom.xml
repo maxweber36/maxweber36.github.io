@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-07-06T00:41:26.416Z</updated>
+  <updated>2025-07-06T00:55:43.014Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>真正有价值的东西</title>
+    <link href="https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    <id>https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
+    <published>2025-07-06T00:51:32.000Z</published>
+    <updated>2025-07-06T00:55:43.014Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，听朋友分享了一期<a href="https://www.xiaoyuzhoufm.com/episode/684b8f83574f065721e6a775?s=eyJ1IjogIjYyMWQ2MWY1ZWRjZTY3MTA0YTE0ZDcxMSJ9">王汉洋在知行小酒馆一期播客</a>。</p><p>我在听汉阳的分享，他在播客上谈到的一些内容让我很有共鸣。现在AI的能力确实非常强大，我也越来越觉得，人在做事情、接触物理世界，以及内在感受这些方面，变得越来越重要。</p><p>所谓的客观真理，其实我并不认为真的存在绝对的客观真理，而且这也不是最重要的东西。因为AI太强了，比如你要查文献、提问，或者关注世界上已经存在的信息，让AI来解答，它往往比你做得更好。</p><p>但你的个人感受、想法、体验，以及你对所接触到的物理事件的理解，这些是AI无法替代的。而这些东西对你来说其实非常重要。我现在越来越同意他的观点：我们应该更加关注物理世界，更加关注自己独特的体验，自己对于这个世界独特的创造，一定是要带有自己的生你体验和喜恶，因为这些才是真正独一无二、有价值的东西。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
   
   <entry>
     <title>20250706</title>
@@ -461,28 +485,6 @@
     <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
     <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20250526</title>
-    <link href="https://maxweber36.github.io/2025/05/26/20250526/"/>
-    <id>https://maxweber36.github.io/2025/05/26/20250526/</id>
-    <published>2025-05-26T03:14:53.000Z</published>
-    <updated>2025-06-19T09:16:53.041Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>好久没有写代码，今天又开始写代码了。</p><p>在现在这个经济泥沙俱下的年代，每个人都很不容易。昨天接到一个好朋友的电话，他说到他们公司最近近况不好，最近一个月的工资都发不下来。问我最近近况怎么样？我其实也不好意思说，因为我从今年 1 月份出来到现在，下定决定做独立开发者，但是现在一个产品还没有做出来。除了之前给一个好朋友做的小程序之外，其他的产品都没有做出来。</p><p>但是我自己是下定决定要做独立开发者。不管怎么样，这条路再不好走，我也要努力走下去。</p><p><strong>人生也就这么短，不做自己想做的事情，活着真的也没有什么意思。还不如去死！</strong></p><p>做产品就是这样，先从小的 demo 开始做起，然后大家觉得有用，然后在考虑低成本的，可以快速扩张的方式去构建产品。</p><p>如果说，我自己做了一个产品，发现根本都没有人用，那么这个产品确实也就不用做了，因为也没有太大的意义。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
