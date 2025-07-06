@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-07-03T06:04:49.818Z</updated>
+  <updated>2025-07-06T00:41:26.416Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20250706</title>
+    <link href="https://maxweber36.github.io/2025/07/06/20250706/"/>
+    <id>https://maxweber36.github.io/2025/07/06/20250706/</id>
+    <published>2025-07-06T00:36:48.000Z</published>
+    <updated>2025-07-06T00:41:26.416Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天听了项飙的讲座，突然觉得我还是应该找时间把《把自我作为方法》这本书重新读一遍。</p><p>最近在观察自己的时候，我发现自己与他人建立关系的机会确实有点少。怎么说呢，现在我更多地在构建自我，但其实这还远远不够。我时不时会有一种孤独感，或者说有一种无法深入下去的感觉。虽然我也说不太清楚，但我觉得还是有一些方法可以帮助我“沉下去”，比如去做一些更沉浸式的事情。比如说，去远山徒步，这可能会让我更加安静和沉静。还有做家务，其实也能让我很投入。</p><p>我觉得有一个原因让我有时感到悬浮，就是互联网世界确实让我觉得不太真实。比如我加了很多群，但这些群里太多转瞬即逝的消息，而且内容非常零碎。有时候我会觉得这些群没有什么意义。</p><p>社交网络有时候会让人觉得自己像一粒灰尘，可以随处飘荡。你永远只是浮在某个表面上，没办法真正和某个东西紧密地连接在一起。不管是在社区还是社群里，大家虽然彼此认识，但感觉就像灰尘一样，只是飘在表面上。随时一阵风吹过，就会被带走。</p><p>好像你们就断联了。是的。后来过了一段时间，我把一些社群退了，真的觉得没什么意义。在网络上的这种交流，还是太浅了。人与人之间，还是要在线下见面，才能开始一些更深刻的连接。</p><p>还有，项飙在讲座里提到的“附近”这个概念，我觉得很重要。人与人之间的关系，其实需要一些摩擦和“交易成本”。比如说，你和邻居生活在同一个空间里，即使你不喜欢他，也没办法马上搬走。你被迫和对方共同生活在一个物理世界里，这种联系有时候反而比网络上的关系更深。因为在网络上，如果你讨厌一个人，可以很快就不联系了；如果喜欢，也可以随时聊天，但很难真正深入。</p><p>物理空间的限制，让人与人之间的关系不得不更深一些。对于自我来说更是如此。你无法逃避自己，所以和自己的关系其实是最重要的。</p><p>我觉得我应该更多去建立那些能够深入挖掘、真正触及内心的关系，而不是停留在表面。</p><p>我不再把自己当作一个四处漂泊的浮萍。虽然这种状态有时能带来新鲜体验，但这些体验往往不会在脑海中留下深刻印记。它们就像一些转瞬即逝的想法，如果不及时记录和深入思考，很快就会消失。这些想法不会对我的未来产生任何影响，或者关联非常有限。</p><p>这对我来说是一个很大的启发。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="自我关系" scheme="https://maxweber36.github.io/tags/%E8%87%AA%E6%88%91%E5%85%B3%E7%B3%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>20250703</title>
@@ -448,28 +472,6 @@
     <updated>2025-06-19T09:16:53.041Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>好久没有写代码，今天又开始写代码了。</p><p>在现在这个经济泥沙俱下的年代，每个人都很不容易。昨天接到一个好朋友的电话，他说到他们公司最近近况不好，最近一个月的工资都发不下来。问我最近近况怎么样？我其实也不好意思说，因为我从今年 1 月份出来到现在，下定决定做独立开发者，但是现在一个产品还没有做出来。除了之前给一个好朋友做的小程序之外，其他的产品都没有做出来。</p><p>但是我自己是下定决定要做独立开发者。不管怎么样，这条路再不好走，我也要努力走下去。</p><p><strong>人生也就这么短，不做自己想做的事情，活着真的也没有什么意思。还不如去死！</strong></p><p>做产品就是这样，先从小的 demo 开始做起，然后大家觉得有用，然后在考虑低成本的，可以快速扩张的方式去构建产品。</p><p>如果说，我自己做了一个产品，发现根本都没有人用，那么这个产品确实也就不用做了，因为也没有太大的意义。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>独立书店</title>
-    <link href="https://maxweber36.github.io/2025/05/23/%E7%8B%AC%E7%AB%8B%E4%B9%A6%E5%BA%97/"/>
-    <id>https://maxweber36.github.io/2025/05/23/%E7%8B%AC%E7%AB%8B%E4%B9%A6%E5%BA%97/</id>
-    <published>2025-05-23T03:19:11.000Z</published>
-    <updated>2025-06-19T09:16:53.049Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近有一段时间特别关注独立书店，可能是因为自己目前也算是一个独立开发者的身份，所以目前对于这种带有“独立”身份的主体，都有一种莫名的关注。“独立”的身份标签，那么这就意味着大家都是一种非主流的群体，这是一种边缘性的社会群体。因此在某种程度能够感受到大家算是同类群体。</p><p>因为一些机缘巧合，我也认识一些开独立书店的主理人，虽然大家很少在线上交流，但是我总是透过他们的朋友圈在默默的关注着他们。基本上，很多人应该都知道开书店，大部分是不赚钱的，由于之前疫情的缘故，更不要说开独立书店，这是一件非常具有挑战的事情，但是很多人还是会去自掏腰包把书店开起，有不少人是一边在打工，一边开着独立书店。</p><p>人总是要除了生存，也是需要生活的，需要寻找同类。人是群居的动物，再怎么 i 的人，也是需要和其他人建立联系的。在如此仄逼的时代里，当在这个世界无法找到适合自己的舒适场合，很多人会开始自己动手打造自己空间，这部分的空间，一部分是属于自己的，一部分也是属于公共生活的。</p><p>另外逛独立书店，基本上，有一个不言自明的潜规则就是如果购买书的话，绝对不会主动找书店要优惠。因为大家都是在为自己的理想生活而努力，所以特别珍惜。</p>]]></content>
     
     
       
