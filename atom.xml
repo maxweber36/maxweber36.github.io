@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阿犇的自留地</title>
+  
+  <subtitle>YOLO：You Only Live Once</subtitle>
+  <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
+  <link href="https://push.superfeedr.com/" rel="hub"/>
+  <link href="https://maxweber36.github.io/"/>
+  <updated>2025-07-19T16:52:54.078Z</updated>
+  <id>https://maxweber36.github.io/</id>
+  
+  <author>
+    <name>阿犇</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一场以弱胜强的游戏🎮</title>
+    <link href="https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/"/>
+    <id>https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/</id>
+    <published>2025-07-19T09:38:23.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我觉得创业其实就是一个以弱胜强、以小博大的游戏。对于独立产品来说，往往起步时处于非常弱势的位置，如何在这样的环境下生存下来，非常重要。</p><p>这不仅仅像我以前在公司那样，只是单纯做一个产品，也不仅仅是做技术方面的事情，而不考虑其他的事情。创业更像是一个综合性、生产性的问题。你要思考，如何在资源有限、处境艰难的情况下，与更强的对手竞争，并且持续生存下去。</p><p>我也意识到，自己有时候太过专注于产品本身，比如产品的交付和设计等细节。但现在，我更应该围绕“生存”这个核心，尽可能延长产品的生命周期。我认为，无论在任何阶段，这都是最重要的事情。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="鼓励自己的" scheme="https://maxweber36.github.io/tags/%E9%BC%93%E5%8A%B1%E8%87%AA%E5%B7%B1%E7%9A%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人最佳笔记应用推荐及理想笔记工具构想</title>
+    <link href="https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/"/>
+    <id>https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/</id>
+    <published>2025-07-17T14:40:56.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>如果让我选出今年个人认为最有价值的 App，虽然还有大半年的时间。我可能会选择 Get 笔记。这个应用确实给了我记录想法的动力。每当我心里有一些想法，哪怕只是稍微有点价值的念头，我都会愿意用这个笔记来记录下来。</p><p>之所以喜欢 Get 笔记，主要有几个原因。首先，它支持语音输入。很多时候我的灵感都是一闪而过，如果让我坐在那里敲字，其实我不太愿意，因为打字太慢了，很多想法转瞬即逝。而且有些想法是在我说出来的过程中逐渐形成的。语音输入这个功能，成为我持续记录的一个重要动力。</p><p>第二个吸引我的点是，它引入了 AI 能力。它会把我的语音内容转录成文字，而且不仅仅是基础的转录，还会进行润色。这样我后期再看这些文字内容时，阅读体验会更加顺畅。不像我现在这样口头表达时会有些零碎、不够有结构，有时还显得啰嗦。AI 会帮我去除一些不必要的词句，让最终的文字内容更加结构化、紧凑。</p><p>第三点就是 DeepSeek 的那个机器人。这个机器人主要是让我可以基于我录下来的文本，和它进行交流和沟通。有时候，它会帮我分析我最近的一些思考，并整理我的想法。我觉得这些功能都挺好的。</p><p>当然，目前它的整理还比较浅显，主要还是我主动让它整理什么内容，它才会去做。除了日报之外，其他很多内容它还不会主动帮我整理。我觉得这方面其实还有很大的提升空间。</p><p>另外，还有一个产品叫“心光”。听我刚才的描述，其实它很符合我前面提到的这三点功能。不过，它的功能有点复杂，对我来说有些过于繁琐。比如，它还会整合你的豆瓣数据、看电影的数据、看书的数据等等。除了你的平时个人日记的数据之外，其他内容也都能同步进来，但整体显得有些复杂。</p><p>有时候，我只是想让它帮我理清自己的思路，梳理一下我最近在思考些什么。因为我脑子里总是有很多想法，这些想法又比较零碎、跳跃，没办法形成一个结构化的内容。而在这方面，心光的表现就稍微弱了一些。</p><p>其实，我理想中的工具是能够帮助我将零散的想法整理成结构化的输出。打个比方，就像进行田野调查一样：我平时会观察自己的感受、想法和思绪，但不会立即做出判断，而是先收集这些原始素材，并将它们记录下来。之后，我会定期整理最近的想法，将它们转化为更加结构化的内容。通过这种方式，我可以从这些零碎的观察和只言片语中，发现一些更深层次的问题，或者找到我更关注的焦点。这就是我希望实现的目标。</p><p>至于“心光”的功能，它在这方面有所欠缺。它更像是一个陪伴型的助手，当你有一些想法时，它会跳出来询问你最近的情况，但不会将这些流动的想法整理成结构化的、有价值的输出。我感觉这个产品的定位并不在此，因此后期可能也不会在这方面进行改进。</p><p>是的，我后续可以考虑自己开发这样一个工具。不过就目前而言，这个项目对我来说还是有一定难度的。</p><p>首先，它需要做成手机端应用，因为我经常需要随时记录想法，所以移动端是最理想的选择。但在此之前，我还没有开发过手机应用，这确实是一个挑战。</p><p>前期我需要学习很多新知识，或者说熟悉相关技术。虽然这个过程需要投入不少精力，但我认为可以将这个项目作为一个长期目标，在时间允许的情况下逐步推进。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="工具" scheme="https://maxweber36.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250711</title>
+    <link href="https://maxweber36.github.io/2025/07/10/20250711/"/>
+    <id>https://maxweber36.github.io/2025/07/10/20250711/</id>
+    <published>2025-07-10T22:46:17.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>还有一个小时就要到火车东站了，现在是 06:42。我查了地铁，地图上显示大约需要 40 多分钟能到，但总觉得时间非常紧张。刚刚还错过了一趟地铁，现在还要再等 4 分钟，不知道来不来得及，心里特别着急。</p><p>其实，这种赶时间的状态让我很不安，也让我反思自己。为什么总是把事情安排得这么紧？有时候明明知道这样不好，但还是会这样做。性格上确实还有很多需要改正的地方，比如要学会更从容一些。</p><p>现在还有 3 分钟地铁就来了，时间还是很赶。整个过程中，内心一直很慌张，完全不从容。其实，这种状态就像我做其他事情一样，如果把时间安排得太紧，整个人就会一直处于紧绷的状态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>真正有价值的东西</title>
+    <link href="https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    <id>https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
+    <published>2025-07-06T00:51:32.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，听朋友分享了一期<a href="https://www.xiaoyuzhoufm.com/episode/684b8f83574f065721e6a775?s=eyJ1IjogIjYyMWQ2MWY1ZWRjZTY3MTA0YTE0ZDcxMSJ9">王汉洋在知行小酒馆一期播客</a>。</p><p>我在听汉阳的分享，他在播客上谈到的一些内容让我很有共鸣。现在AI的能力确实非常强大，我也越来越觉得，人在做事情、接触物理世界，以及内在感受这些方面，变得越来越重要。</p><p>所谓的客观真理，其实我并不认为真的存在绝对的客观真理，而且这也不是最重要的东西。因为AI太强了，比如你要查文献、提问，或者关注世界上已经存在的信息，让AI来解答，它往往比你做得更好。</p><p>但你的个人感受、想法、体验，以及你对所接触到的物理事件的理解，这些是AI无法替代的。而这些东西对你来说其实非常重要。我现在越来越同意他的观点：我们应该更加关注物理世界，更加关注自己独特的体验，自己对于这个世界独特的创造，一定是要带有自己的生命体验和喜恶，因为这些才是真正独一无二、有价值的东西。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250706</title>
+    <link href="https://maxweber36.github.io/2025/07/06/20250706/"/>
+    <id>https://maxweber36.github.io/2025/07/06/20250706/</id>
+    <published>2025-07-06T00:36:48.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天听了项飙的讲座，突然觉得我还是应该找时间把《把自我作为方法》这本书重新读一遍。</p><p>最近在观察自己的时候，我发现自己与他人建立关系的机会确实有点少。怎么说呢，现在我更多地在构建自我，但其实这还远远不够。我时不时会有一种孤独感，或者说有一种无法深入下去的感觉。虽然我也说不太清楚，但我觉得还是有一些方法可以帮助我“沉下去”，比如去做一些更沉浸式的事情。比如说，去远山徒步，这可能会让我更加安静和沉静。还有做家务，其实也能让我很投入。</p><p>我觉得有一个原因让我有时感到悬浮，就是互联网世界确实让我觉得不太真实。比如我加了很多群，但这些群里太多转瞬即逝的消息，而且内容非常零碎。有时候我会觉得这些群没有什么意义。</p><p>社交网络有时候会让人觉得自己像一粒灰尘，可以随处飘荡。你永远只是浮在某个表面上，没办法真正和某个东西紧密地连接在一起。不管是在社区还是社群里，大家虽然彼此认识，但感觉就像灰尘一样，只是飘在表面上。随时一阵风吹过，就会被带走。</p><p>好像你们就断联了。是的。后来过了一段时间，我把一些社群退了，真的觉得没什么意义。在网络上的这种交流，还是太浅了。人与人之间，还是要在线下见面，才能开始一些更深刻的连接。</p><p>还有，项飙在讲座里提到的“附近”这个概念，我觉得很重要。人与人之间的关系，其实需要一些摩擦和“交易成本”。比如说，你和邻居生活在同一个空间里，即使你不喜欢他，也没办法马上搬走。你被迫和对方共同生活在一个物理世界里，这种联系有时候反而比网络上的关系更深。因为在网络上，如果你讨厌一个人，可以很快就不联系了；如果喜欢，也可以随时聊天，但很难真正深入。</p><p>物理空间的限制，让人与人之间的关系不得不更深一些。对于自我来说更是如此。你无法逃避自己，所以和自己的关系其实是最重要的。</p><p>我觉得我应该更多去建立那些能够深入挖掘、真正触及内心的关系，而不是停留在表面。</p><p>我不再把自己当作一个四处漂泊的浮萍。虽然这种状态有时能带来新鲜体验，但这些体验往往不会在脑海中留下深刻印记。它们就像一些转瞬即逝的想法，如果不及时记录和深入思考，很快就会消失。这些想法不会对我的未来产生任何影响，或者关联非常有限。</p><p>这对我来说是一个很大的启发。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="自我关系" scheme="https://maxweber36.github.io/tags/%E8%87%AA%E6%88%91%E5%85%B3%E7%B3%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250703</title>
+    <link href="https://maxweber36.github.io/2025/07/03/20250703/"/>
+    <id>https://maxweber36.github.io/2025/07/03/20250703/</id>
+    <published>2025-07-03T06:04:30.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>多语言学习中的发音标注体系探索与国际音标的应用思考</p><p>最近我在学习语言。之前一直在学英语，现在又开始学粤语和日语，还想学法语。当我同时学习多种语言时，突然发现这些语言之间有很多不同之处，尤其是在发音方面。于是，我开始了解国际音标，也顺便了解了中文的注音和发音体系。</p><p>其实，之前学英语的时候接触过音标，但那时候并不知道什么是国际音标。只知道音标是用来标注英语单词发音的，而拼音则是用来标注汉字发音的。日语方面，它有平假名和片假名，这两套假名既可以标注日语单词的发音，也能表达意思，有点类似于中文的拼音。</p><p>后来我发现，每种语言都有自己独特的标注发音的体系。进一步了解后才知道，国际音标其实就是为了解决不同语言发音标注的问题，它用一套统一的体系来标注各种语言的发音。比如，中文可以用国际音标来标注发音，日语也同样适用。</p><p>所以，学会了国际音标之后，其实可以用它来标注不同语言的发音，这样无论学习哪种语言，都能更准确地掌握发音。</p><p>对，然后我最开始是在学习国际音标。学习的过程中，我突然又去看了一下拼音，结果发现国内很多给小朋友用的拼音教材都挺复杂的。我觉得这些教材并没有把拼音的本质讲清楚，反而加了很多不必要的内容。其实，拼音主要就是让孩子认识这些符号，以及学会这些符号怎么发音就可以了。</p><p>只要掌握了这两点——一是这些符号怎么读，二是这些符号拼在一起怎么拼读，然后多加练习，让孩子记住这些内容，其实就足够了，没必要搞得特别复杂。我发现有时候国内的拼音教学无谓地增加了很多记忆负担，而且有些记忆其实是没有用的。</p><p>现在回想起来，我觉得挺有意思的。以前学习的时候，很多内容其实并不太明白它们到底是什么，只是跟着学，也不去思考为什么要学这些。如果能明白学习的本质和目的，再去学的话，效率会高很多。</p><p>现在我特别想学好国际音标，但我有个疑问：如果我掌握了国际音标，是不是以后学其他语言时，就不用再去记平假名或片假名的发音了？是不是可以直接用国际音标来标注和学习发音呢？</p><p>我可以利用国际音标这套发音体系来记忆发音。这样学习起来会轻松很多，因为像我在用 guolingo 学习法语时，它法语本身没有音标。仅凭耳朵去听，有时难以分辨准确的发音。我常常会联想到英语的发音，但实际上法语的发音与英语并不相同，导致我在学习法语时经常听错发音。</p><p>因此，我在思考：在学习法语时，是否能够找到每个单词对应的国际音标标注？这个问题可能需要我认真解决。我打算把它记入待办清单，后续再想办法处理。</p><p>哦，对了，我突然想到，有时候我们学中文时，可能只学过拼音这种发音标注体系。如果没学过英语音标，直接用中文拼音的标注体系去标注英文单词，会导致很多发音不准确。因为英文有它自己独特的发音，我们这样发音时对方可能听不懂，用拼音去标注英文，根本无法准确标注，导致发音错误。所以，我们需要学习他们那边的标注体系，也就是学习英语音标，或者学习国际音标，它有足够多的标注方式，可以让我们的发音更加准确。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从宋明蔚谈他的写作视角到我价值观的倾向</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/</id>
+    <published>2025-07-01T14:08:34.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-Bvaaywdq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-Bvaaywdq"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/关于写作视角与个人价值实现的思考.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我最近在听《比山更高》这本书。作者宋明蔚在他的博客里提到，关于写作时使用第三者视角的一些想法。他讲了自己为什么特别想用第三者视角来描述事情，以及为什么在写书的时候，绝对不会用“我”这个词。</p><p>他谈到的理由，我个人非常认可，也给了我很大的启发。其实，这也是我更喜欢的表达方式，只是我在这方面做得还不够好。以前我对自己特别执着，不管是在朋友圈，还是在其他地方，总是想不清楚“我”到底重不重要，或者说，在公开事件中、在公众眼中的“我”到底有没有那么重要。</p><p>有一段时间我在写日记，也常常纠结要不要把这些日记发出去。因为从某种角度来说，我确实希望自己能成为一个有影响力的人。但我发现，自己能谈的内容其实不多，很多时候写的还是关于自己，因为我确实觉得自己很重要。</p><p>可是在写自己的时候，我又会犹豫：这些东西到底有没有必要分享给别人？是不是把自己强行摆在别人面前，像是在说“你看我这样，你看我那样”？这种感觉对我来说，其实也挺矛盾的。</p><p>其实我挺厌恶那种过度强调自我的表达，或者说，我自己也不太喜欢那样。相比之下，我更倾向于去建立一些超越“自我”的东西。虽然有时候我觉得自己很重要，但有时候又觉得其实也没那么重要。可能这些想法都需要经历一些事情之后，才能慢慢明白吧。</p><p>如果说我的终极目标，其实是希望自己写出来的东西，或者自己所构建的事物，能够超越个人本身。我更希望自己对世界的影响，是通过那些已经大于我自身的作品或成果去实现的，而不是不断地强调“我怎么怎么样”，或者反复标榜自己是一个需要影响他人的人。</p><p>说实话，我挺讨厌现在的马斯克。虽然作为一个普通人，讨厌他其实也没什么意义，但从我的角度来看，我确实不喜欢他那种总是想把所有聚光灯和关注都吸引到自己身上的做法。当然，我也非常讨厌特朗普，他在各种场合下总是想成为焦点。</p><p>我不想成为那样的人。当然，这个世界上有各种各样的人。其实，说讨厌也没太大意义，因为如果真的要去讨厌那些和自己价值观不合的人，那这个世界上该讨厌的人实在太多了。</p><p>话说回来，我的人生使命可能是想要创造一个比自己更大的东西，然后通过那个东西去改变世界。回顾过去的职业道路，我进入产品行业其实有些阴差阳错。现在想来，也是因为当时接触到的信息促使我步入这个行业。</p><p>当然，我必须努力发展自己，才能构建一个比自己更大的东西。所以，关注自己是前提，然后通过构建更大的东西去影响世界，这才是目的。我下了决心，会持续关注自己，每天写日记，专注自己的感受。不过，这些只对我个人有意义，对别人来说帮助不大。</p><p>目前，我觉得自己还处在一个建设自我的阶段。今天这个想法让我很有启发，我想先把它记录下来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250630</title>
+    <link href="https://maxweber36.github.io/2025/07/01/20250630/"/>
+    <id>https://maxweber36.github.io/2025/07/01/20250630/</id>
+    <published>2025-07-01T14:04:20.000Z</published>
+    <updated>2025-07-19T16:52:54.077Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-SOCZHzkQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-SOCZHzkQ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/阅读《比山更高》引发的自我认知与成长思考.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在读《比山更高》这本书的时候，严冬冬提到了一段回忆。他说，自己刚毕业时，中登协曾邀请他去机构里做一些研究性的工作，但他最终拒绝了。当时他的想法是，如果自己一毕业就去了马哥那里，形成了一种习惯性的生活套路，那么想要从中挣脱出来所需要的能力，是我当时并不具备的。</p><p>看到这段话，对我来说其实非常有启发。很多时候，如果我们想要变得更加自由，就需要先了解自己的局限，认清自己的弱点。只有当你能够评估自己的能力时，才能判断做某件事情的风险。</p><p>其实，这让我想起巴菲特还是芒格说过的一句话：“如果我知道自己将来会死在什么地方，那我就永远不会去那里。”大概也是这个意思吧。作为我自己来说，过去我总是很容易看到自己的闪光点或者优点，但有时候却不太能看见自己的弱点。而恰恰是这些我看不见的弱点，反而可能会带来更大的影响。</p><p>有时候，正是因为我看不清自己的弱点，才会让自己陷入极度危险的境地，甚至可能遭遇致命一击。所以，如果我真的想要成长，或者说想获得更多的自由，前提就是要先了解自己的局限，认清当下的弱点。只有这样，才能避免把自己推向极端危险的边缘。</p><p>说到这里，我发现，其实我并不是一个特别能扛压力的人。换句话说，我并不擅长在极端压力下做出好的选择。每当压力过大时，我反而容易陷入无尽的焦虑，做出一些极端的决定，而这些决定往往会让我处于更加危险的境地。所以，我应该尽量避免让自己处于极端压力之下。</p><p>其实，我更适合在一种平稳、相对平静的状态下工作。只有在这样的环境里，我才能发挥出更好的水平。以前我总以为，自己能够在巨大压力下实现突破，但现在我不这么认为了。我不是那种能在极端压力下爆发的人。</p><p>对我来说，最适合的方式，可能就是按部就班，一步一个脚印地前进。只要投入足够的时间，有规律地安排工作，持续不断地努力，或许才能真正实现自己的目标和梦想。</p><p>有节奏、有节点地去做事情，反而对我有很好的帮助。这一点和我过去的认知不太一样。以前我确实不了解自己，不知道自己是什么样的人，于是盲目地把自己陷入极端环境中，认为在极度压力下会做得更好。但事实并非如此。</p><p>我性格上其实比较温和，虽然有时会有一些激情，但这种激情不足以支配我的人生。我不是那种极端激情型的人，更喜欢一步一个脚印、有计划地去执行任务。</p><p>虽然我本性上有些懒散，这一点我承认，也确实需要克服。有时候我确实是个”P人”，但我也在”T 人”和”F”之间反复横跳——这是MBTI术语。不过，我不想给自己下太多定义，因为这些定义只能描述我当前的状态，不能约束我的未来。</p><p>人总是很矛盾。从另一个角度来看，当我在做自己想做的事情时，这种矛盾也体现得更加明显。</p><p>大部分情况下，实现目标仍然非常困难，需要克服诸多障碍。这些障碍不仅来自外部环境，也可能源于自身。我确实需要付出更多努力才能达成目标，目前还无法轻松实现梦想。</p><p>现在的我，就像正在阅读的这本书中的主人公严冬冬一样，虽然怀揣远大理想，但能力仍有不足，还有很多需要弥补和提升的地方。不过，那个目标始终在我心中，我会持续努力去完成它。</p><p>我相信，只要不放弃，终有一天能够实现目标。加油！我一定能做到。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="比山更高" scheme="https://maxweber36.github.io/tags/%E6%AF%94%E5%B1%B1%E6%9B%B4%E9%AB%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决了一个博客的问题-噢耶！</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98-%E5%99%A2%E8%80%B6/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98-%E5%99%A2%E8%80%B6/</id>
+    <published>2025-07-01T13:58:58.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-xpzoSIAJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-xpzoSIAJ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/解决一个博客的问题.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在更新博客的时候，我突然发现，之前把图片资源放错了文件的路径，导致我前段时间因为重新安装了主题，结果发现以前的很多图片都不见了。今天我仔细检查了一下，才发现原来很多资源都放错了文件夹。</p><p>我是用 Hexo 框架搭建的博客，当时把很多文件都放到了 public 文件夹里，而不没有放的 source 文件夹。这样一来，重新安装主题后，很多图片就丢失了。今天我把所有资源都查了一遍，才明白，原始的很多资源其实应该放在 source 文件夹里。</p><p>这个发现对我来说帮助很大，也让我学到了新的东西。以后我再也不会犯这样的错误了，心情还挺不错的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的四个人生目标</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E6%88%91%E7%9A%84%E5%9B%9B%E4%B8%AA%E4%BA%BA%E7%94%9F%E7%9B%AE%E6%A0%87/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E6%88%91%E7%9A%84%E5%9B%9B%E4%B8%AA%E4%BA%BA%E7%94%9F%E7%9B%AE%E6%A0%87/</id>
+    <published>2025-07-01T13:46:28.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-VVbfzgOh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-VVbfzgOh"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "录音：我的四个人生目标",              author: "weber",              url: "/music/我的四个人生目标.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我有好多想做的事情，还是先把它们记录下来，免得以后忘了。</p><p>第一个目标，是成为一名独立开发者，并且能够以此养活自己和家人。</p><p>第二个目标，是希望有一天能写一本小说，无论是虚构还是非虚构。我真的很想尝试写作，但现在还不知道该怎么开始。感觉自己目前只会写随笔或者日记，写小说对我来说挺难的。</p><p>第三个目标，是希望能成为一个业余的户外爱好者，比如徒步、登山、滑雪，反正就是要多走进森林。</p><p>第四个目标，是想成为一个严肃的读者。我觉得阅读能让我的生命体验更丰富、更有厚度，这对我很有吸引力。但我其实不太清楚怎样才算是严肃读者，也不了解他们是什么样子。</p><p>本来还想再补一个，比如学会画画、做音乐之类的，但想想还是算了，就先定这四个目标吧。每一个都挺难的，想想都觉得有点挑战。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250701</title>
+    <link href="https://maxweber36.github.io/2025/07/01/20250701/"/>
+    <id>https://maxweber36.github.io/2025/07/01/20250701/</id>
+    <published>2025-07-01T03:05:24.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-sILGHoZZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-sILGHoZZ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/读《比山更高》有感：坚持自我超越的人生态度.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在读《比山更高》这本书，看到严冬冬的经历时，我有一些感触。其实，人真的不用太担心自己出发时有多弱，或者起点有多低。只要你一直在奔跑，你就会不断前进。</p><p>在奔跑的过程中，也没必要和别人比较。如果总是和别人比，那你的天花板就会被别人设定，被别人定义。最重要的是和自己比较。因为只有和自己比，你的潜能在理论上就是无限的，你可以不断超越自己，这一点真的很重要。</p><p>严冬冬爬山的整个过程，其实也给了我一些信心和启发。当然，我并不想说“像严冬冬这样起点那么低的人都能做到，我也一定可以”这种陈词滥调。其实，这样的想法本身也是一种比较。</p><p>即使没有严冬冬这样的例子，我也应该学会相信自己。别人的故事确实可以激励我，但是我的信念不能却建立在别人身上，而要扎根在自己的内心。</p><p>我相信一件事，不需要在乎别人怎么说、怎么看。如果你真的说服了自己，真的相信自己，那就只管去做，把这件事情做好就行了。</p><p>做到我满意为止，做到我觉得足够好了为止，否则就不要停下。我觉得我就应该树立这样的信念。是的，我要把这种态度当作自己的驱动力，也当作一套属于自己的方法论。对我来说，这真的很有帮助。毕竟，这一生只有一次，为什么不尽可能地去释放自己呢？</p><p>当然，也许最后我取得的成绩并不算特别出色，但这没关系，那只能说明我的生命本来就是这样，可能这就是我的极限了吧。但无论如何，我都已经全力以赴地燃烧了自己，尽可能地释放了我的生命。至少在我目前的状态下，我已经达到了属于自己的极限。</p><p>其实，和别人比较，对自己并不公平。因为每个人的情况都不一样，衡量的标准也不是单一的数值。所以，我要建立属于自己的跑道，不需要和别人争高下。当然，也许在我专注于自己跑道的时候，偶尔会无意间超过别人，但那并不是我的目的。最重要的是，在自己的跑道上持续奔跑，让自己尽可能地跑得更远。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="比山更高" scheme="https://maxweber36.github.io/tags/%E6%AF%94%E5%B1%B1%E6%9B%B4%E9%AB%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做一个产品搭子的想法</title>
+    <link href="https://maxweber36.github.io/2025/06/27/%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BE%85%E5%8A%A9%E4%BA%A7%E5%93%81%E5%88%9B%E6%84%8F%E8%90%BD%E5%9C%B0%E7%9A%84%E6%83%B3%E6%B3%95/"/>
+    <id>https://maxweber36.github.io/2025/06/27/%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BE%85%E5%8A%A9%E4%BA%A7%E5%93%81%E5%88%9B%E6%84%8F%E8%90%BD%E5%9C%B0%E7%9A%84%E6%83%B3%E6%B3%95/</id>
+    <published>2025-06-27T11:59:37.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我最近总是有很多想法。每当看到一件事或者遇到一个问题时，脑海里就会冒出各种点子，想着能不能把它们做成产品。可能因为我是产品经理出身，所以经常会有灵感，觉得这些问题或者困难，能不能通过构建一个产品来解决。这里说的产品，主要是指软件产品，或者说互联网产品。</p><p>现在我特别想做一个工具，能帮我分析这些想法，把我的问题或者需求梳理清楚，然后基于这些需求，进一步做产品相关的设计。这个设计包括软件产品的核心功能、交互方式、页面布局、信息结构、产品形态，甚至是技术方案和技术架构——如果能有这些就更好了。</p><p>因为我现在是独立开发者，需要自己写代码来实现产品构想，所以我很需要这些信息，来帮助我评估是否要把某个想法真正落地，实现出来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>很多事情做了，才发现其中的难度</title>
+    <link href="https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/"/>
+    <id>https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/</id>
+    <published>2025-06-27T11:57:12.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>读代码其实并不是一件容易的事。很多事情，只有真正自己动手去做了，才会发现其中的难度。过去没做过这些事时，总觉得很简单，把资料随手丢给别人，也觉得别人应该不用花太多力气就能看懂、学会。但现在，当我自己去看别人的代码，尤其是一些看似简单的功能时，过程其实挺吃力的。这可能和我目前的阶段有关。</p><p>不过，学习和研究别人的代码，哪怕是 AI 写的代码，对我来说依然很有帮助。现在已经过去半年了，我发现自己最大的问题还是在代码上。虽然比之前有了一些进步，但进步的速度还是太慢了。这一点让我不得不承认，自己还需要更加努力，投入更多时间。希望能早点达到一个成熟、独立开发者的状态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人产品开发中的自我认知与用户视角反思</title>
+    <link href="https://maxweber36.github.io/2025/06/27/20250627/"/>
+    <id>https://maxweber36.github.io/2025/06/27/20250627/</id>
+    <published>2025-06-27T06:30:00.000Z</published>
+    <updated>2025-07-19T16:52:54.077Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近这两天，我花了不少时间在写代码上。昨天，我终于把一个相对完整的功能做出来了。这个过程让我收获了很强的正反馈——我亲眼看到，自己通过写代码，把脑海里的想法变成了现实，构建出了一个属于自己的产品。虽然这个产品很简单，但对我来说意义很大。</p><p>有了这个成果后，我就会想，只要有想法，我就想去实现它，用代码把它做出来。写程序的时候，我其实不会太在意这个东西到底能解决什么大问题。但是它确实解决了我自己的需求，而且我并没有考虑怎么把它变现、怎么商业化、怎么做运营增长，甚至在交互设计上也没有太多要求。毕竟，这只是我自己做来用的。</p><p>在使用这个产品的时候，我投入了很多感情。别人用我做的产品，可能觉得它就是个普通的软件，和其他软件没什么区别。但对我来说，即使它的功能很简单，界面也不算好看，我依然觉得它很特别。</p><p>其实，很多东西看起来还挺粗糙的，但在我自己使用的过程中，依然觉得特别有意义，毕竟这是我亲手创造的。不过，我也发现这种思维方式并不是完全没有问题。最大的问题在于，我很容易陷入自嗨的状态。比如说，我自己做了一个软件，放到市面上其实并不算特别出色，甚至只能算中下水平，但我自己用的时候却觉得它非常好。于是我会想把它分享出去，结果发布后，大家的反响却很一般。这种差异其实挺明显的。</p><p>所以，有时候我需要提醒自己，不能总是沉浸在自我陶醉里。这样的思维方式对我来说帮助有限。在构建产品的时候，我还是要学会从他人的视角去思考和完善。</p><p>举个小细节来说，比如我在做产品时，发现底部有一些文案，其实我自己平时都不会太关注这些文字。比如昨天做的那个“想法薄荷”或者叫“灵感薄荷”的笔记应用，底部有一段小文字，写的是“AI笔记——语音AI笔记应用工具”。这些描述其实都很中性，但我自己用的时候，反而不会太在意这些内容。</p><p>其实这个描述很一般。如果是我自己用的话，我肯定不会在意这些细节。但如果是别人使用我的产品，或者我看到其他产品有类似的描述，我对这个产品的印象就会大打折扣。</p><p>做产品时，不要用非常中性的语句来描述。把产品简单地描述成一个工具，其实意义不大。更重要的是，产品应该传递一种温度或价值观，吸引那些具有相同价值观的用户。这是我在做产品时需要花精力思考的。</p><p>功能只是最基础的部分，更重要的是通过这个功能传递什么样的价值，给用户什么样的感觉。这是做产品非常重要的工作之一，也是需要花精力去思考的领域之一。</p><p>总之，产品要能传递独特的价值观和独特的气质。这是我昨天开发软件时，结合过去做产品的经验，突然想到的，所以我想把它记录下来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚无和无意义</title>
+    <link href="https://maxweber36.github.io/2025/06/26/%E8%99%9A%E6%97%A0%E5%92%8C%E6%97%A0%E6%84%8F%E4%B9%89/"/>
+    <id>https://maxweber36.github.io/2025/06/26/%E8%99%9A%E6%97%A0%E5%92%8C%E6%97%A0%E6%84%8F%E4%B9%89/</id>
+    <published>2025-06-26T05:26:14.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天又听了一期<a href="https://www.xiaoyuzhoufm.com/episode/685bd4b250e8c269ca7db980">播客</a>，是讲的一部电影，名字叫做<a href="https://movie.douban.com/subject/36215199/">《东四十条》</a>。这部电影没有看过，我自己也不打算看。内容主要是讲的 “东四（杨凯航 饰）和十条（钱赓 饰）是租住在北京胡同里的两个外来年轻人。春天，他们在胡同里看到了一张重金悬赏的寻鸽启示，从此开始了他们的寻找……”（内容梗概—来自豆瓣）。</p><p>这个电影看起来很无聊。虽然我没有看过，但是我觉得看这部电影，确实就很无聊。因为我相信这部电影的无聊感和空洞感，本身也是导演想要传递给观众的。</p><p>我自己是经历过一段人生虚无主义的阶段的，就是做什么都觉得没有意义，自己曾经构建出来的虚妄宏大叙事或者价值，在很短的时间内，化为了泡影。那个时候，我的状态可能和这部电影中的两个主人公的状态非常的相似。不想做任何事情，和电影主人公的人物可能还不太一样，我可能连寻找鸽子的这个事情，我也不想做。</p><p>虚无，无意义，才是这个世界的真相。</p><p>从那以后，花了好一段时间，我才开始接受了这个现实。那个时候，我读了很多书，哲学的书，存在主义的书，看了一些电影，有一些电影的气质其实和东四十条的气质，应该是非常相似的。然后开始逐步的理解了，并接受。</p><p>虽然有时候这种虚无感，还是会时不时的向我的心头袭来。但是它却很多时候帮助到了我，帮助更加有勇气去面对这个现实，也让我更加专注于自己的人生。对于此，我反而是充满了感激，感激它让我懂得珍惜生命，让我懂得什么对我来说才是最重要的事情，在人生的很多重大决定中，它都帮助到了我。</p><hr><p>为什么，我一开始写东西，我的大脑，我敲出来的文字，就开始自动的变成了想给大家传递信息，就变成了好像在写百科词条一样，自动的变成了那种要给大家传递某种客观资讯的模式。总是想要把事情讲清楚，把信息给到位。</p><p>有时候这样写了，我自己会感觉非常的无聊，觉得自己简直就是在浪费生命。这些客观的信息，需要我从我的嘴巴里面讲出来吗？这个世界也不差这些事实性的信息，还是不要把时间浪费在这些地方，更要关注的是跟自己生命的交互和价值，这个才是最重要的事情。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250625</title>
+    <link href="https://maxweber36.github.io/2025/06/25/20250625/"/>
+    <id>https://maxweber36.github.io/2025/06/25/20250625/</id>
+    <published>2025-06-25T03:18:48.000Z</published>
+    <updated>2025-07-19T16:52:54.077Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近听播客，意外听到许知远在一期播客中介绍了一本书叫做<a href="https://book.douban.com/subject/36815098/">《可能的世界》</a>，这本书是杨潇写的一本旅行游记。是记录他在 2010 年-2019 年，10 年时间游历了 19 个国家写下的一本书。在听许知远介绍这本书的时候，非常有趣。如果有感兴趣的朋友，非常建议大家去听这一期播客。</p><p>这本书让我想起了《马可波罗历险记》，让我想起了《一千零一夜》，让我想起了《小王子》，那些异国情调，是完全不同于我当前生活的这个世界。即使现在这个世界的网络和资讯，是如此的发达。但是这本书中，所描述的景象，依然让我感到好奇和惊喜。这本书中，有这么一段描述，描述的杨潇在印度旅行的时候内容。（以下这段文字，是我通过工具将声音转录成文字的，可能会存在有些和书本内容不一致的地方）</p><blockquote><p>在这座印度第三大城市的火车站，到处都是骚扰你的挑夫，人群像密密麻麻的没头苍蝇，火车在散步，人在火车道上散步。精疲力尽，躺在开往格雅的卧铺列车上用手机读完宗萨仁波切的《八万四千问》，心可以被调抚，因为心能够被影响。这或许是我们能听到的最好的消息了。我们被训练成易怒和猜忌的，就是我们如此擅长此道的原因。说得真好。</p><p>沉下来才能好好回想过去 24 小时的感受，觉得对加尔各答的粗浅评判很不公平。这可是特瑞萨修女和泰戈尔生活过的城市。看着看着，我就睡着了。</p><p>小憩醒来后，这旅程甚至变得有点甜丝丝的。然而，这并不是我带的椰子糖所致。人性是多么容易变化呀。</p><p>晚餐吃咖喱盒饭，吃完问列车员垃圾桶在哪儿，他没说话，打开车门直接把饭盒扔了出去。天光尚在，列车正经过一个巨大的拐弯。一位摄影师探出身子，打算记录下列车优美的弧线。显然，前面车厢标出来一泡尿，随风浇了他满头满脸。</p></blockquote><p>实在是太有画面感了，这段内容是我在听许知远朗读这本书的时候，听到的。非常好笑，但是又充满了乐趣。好似我真的跟着杨潇的文字，来到了这个地方，看到了杨潇看到的画面，听到杨潇听到的声音，闻到了杨潇闻到的味道，如此的真切。</p><p>另外，在这之前，我也听了一期关于刘子超在讲他另外一本新书，在他的另外一本新书<a href="https://book.douban.com/subject/37022123/">《血与蜜之地》</a>，也是讲他在巴尔干的旅程。刘子超是我非常喜欢的一位旅行作家。他的文字细腻，有趣，极度富有画面感。看他的书，真的就好似看了一场旅行的电影，我是很容易被他的文字牵引，并被他带入到他所描述的场景中，和他一同经历，和他一同和他人交谈。而这不就是另外一种旅行吗。</p><p>所以我在微信读书上，创建了一个叫做 <a href="https://weread.qq.com/misc/booklist/10719450_81abQCE2U">《另外一种旅行》</a>的书单，里面收录了我想看这类的旅行写作。希望通过这些书，我的感受和想象跟着这些文字，去到那些从未踏足过的地方。</p><hr><p><strong>｜提及到播客｜</strong></p><p><a href="https://www.xiaoyuzhoufm.com/episode/663307d24b7d3b5d3bad8320">《游荡集——Vol.2 寻找一个可能的世界》—许知远</a></p><p><a href="https://www.xiaoyuzhoufm.com/episode/684809a9b23ed76e6053c305">《忽左忽右——408 从巴尔干到西藏：与刘子超再谈旅行写作》</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="书单" scheme="https://maxweber36.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>成为多维度的人</title>
+    <link href="https://maxweber36.github.io/2025/06/20/%E6%88%90%E4%B8%BA%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%9A%84%E4%BA%BA/"/>
+    <id>https://maxweber36.github.io/2025/06/20/%E6%88%90%E4%B8%BA%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%9A%84%E4%BA%BA/</id>
+    <published>2025-06-20T04:59:13.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，我和豆包进行了一场非常<a href="http://www.doubao.com/thread/wf0a93909960cddd6">有益的对话</a>。我很想把它整理出来，因为这个对我来说，很有价值。它解决了我很多问题。之前我思考了很久，也没有思考清楚的问题。</p><p>我们从“真理的冲突”出发，聊到了物理学领域中“冲突”和兼容，哲学领域中人们认知框架的根本对立，宗教领域中教义体系的排他性冲突，数学和逻辑中的悖论揭示等等。然后开始聊，人们是否可以真正了解真理，比如康德的二律背反中谈到了理性的自我冲突，然后聊到维特根斯坦中关于语言的边界，语言的语法结构中对于逻辑结构的遮蔽，以及关于语言结构性的问题讨论，我们将语言扩大化，聊到了各种语言（除了自然语言，还包括数学语言，音乐&#x2F;绘画语言，逻辑&#x2F;编程语言）的结构性特征以及有限性表现。</p><p>最后我们讨论完了之后，这一段话，对我启发非常大。</p><blockquote><p>任何符号系统都无法完全抵达 “事物本身”，但这并不意味着认知的虚无。维特根斯坦后期提出 “语言游戏” 理论，强调语言的意义在于使用场景中的践行（如数学的意义在计算活动中，音乐的意义在演奏与聆听中）。这种转向表明：</p><ul><li>局限的不可避免性：语言的结构性如同认知的 “脚手架”，我们无法脱离它思考，但可以通过多元语言的互补（如数学 + 自然语言 + 艺术）拓展认知维度；</li><li>超越的路径：不是追求 “无局限的语言”，而是在承认局限的前提下，通过跨语言的 “翻译”（如用数学模型解释诗歌意象）打破单一符号系统的牢笼；</li><li>哲学的新任务：从 “构建完美语言” 转向 “研究语言的生命形式”—— 正如维特根斯坦所说，“哲学问题产生于语言放假的时候”，只有让语言回到生活实践，才能消解其因过度抽象产生的悖论。<br>无论是自然语言的语法陷阱，还是数学语言的不完备性，本质上都是人类认知边界的符号化显现。但这种 “局限” 并非缺陷：正是因为语言有结构性，我们才能通过逻辑分析消解悖论（如分析哲学对形而上学的批判）；正是因为语言有有限性，人类才会不断创造新的符号系统（如从古典逻辑到量子逻辑）。或许正如海德格尔所言，语言是 “存在的家”，而家的边界，恰是思想得以栖居并向外拓展的起点。</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20250618</title>
+    <link href="https://maxweber36.github.io/2025/06/19/20250618/"/>
+    <id>https://maxweber36.github.io/2025/06/19/20250618/</id>
+    <published>2025-06-19T01:24:30.000Z</published>
+    <updated>2025-07-19T16:52:54.077Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>没有写代码，在小宇宙听了几期播客。一期是关于讲“自由言论”的，还有一期是讲最近关于“以色列和伊朗冲突”的。一个是因为自己比较感兴趣，另外一个是因为这是我觉得，最大的一次新闻了。</p><p>没有写代码，自己的内心感觉还是有罪过的。</p><p>之前写了一个关于 BTC 的 dashboard 的页面，比较简单，主要还是因为想自己用。自己前几天趁着 618 的时候，购买了一个服务器，打算用这个服务器来部署一下这个页面。之前尝试过部署小程序。因为自己打算会开发很多个类似的这样的页面，所以打算尝试在一个服务器中，部署多个应用。也算是给自己练练手。毕竟自己是做独立开发者，那么什么东西都得自己动手试试，才知道嘛。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是 CORS 问题（跨资源共享）</title>
+    <link href="https://maxweber36.github.io/2025/06/17/%E4%BB%80%E4%B9%88%E6%98%AF-CORS-%E9%97%AE%E9%A2%98%EF%BC%88%E8%B7%A8%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%EF%BC%89/"/>
+    <id>https://maxweber36.github.io/2025/06/17/%E4%BB%80%E4%B9%88%E6%98%AF-CORS-%E9%97%AE%E9%A2%98%EF%BC%88%E8%B7%A8%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%EF%BC%89/</id>
+    <published>2025-06-17T08:02:12.000Z</published>
+    <updated>2025-07-19T16:52:54.078Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天在重构自己产品的时候，打算试试前后端分离的方案。前端使用 Next.js ，后端核心 API 使用 Python，结果在前端调用后端 Python 提供的 API 服务的时候，总是 API 显示 403，然后一步一步排查，从第三方 API 的接口是否能够正常调通？我的网络是否正常？后来才发现是资源共享发生的跨域的问题。因为这个只有在前后端发生分离的时候，才会发生这样的问题。</p><p>写下这个笔记，避免以后再发生这样的问题，可以快速找到原因。</p><h2 id="什么是-CORS-问题？"><a href="#什么是-CORS-问题？" class="headerlink" title="什么是 CORS 问题？"></a>什么是 CORS 问题？</h2><p>CORS(Cross-Origin Resource Sharing, 跨资源共享)是一种浏览器安全机制，用于控制网页是否可以访问不同域名，端口和协议的资源。</p><h2 id="什么是”同源”和”跨域”？"><a href="#什么是”同源”和”跨域”？" class="headerlink" title="什么是”同源”和”跨域”？"></a>什么是”同源”和”跨域”？</h2><p>浏览器的 同源策略 要求请求必须满足以下三个条件才算”同源”：</p><ul><li>协议相同 （如都是 http 或 https）</li><li>域名相同 （如都是 localhost 或 example.com）</li><li>端口相同 （如都是 3000 或 80）</li></ul><p><strong>举例说明</strong></p><p>假设你的前端运行在 <a href="http://localhost:3000/">http://localhost:3000</a> ：</p><p>✅ 同源请求 （允许）：</p><ul><li><a href="http://localhost:3000/api/users">http://localhost:3000/api/users</a></li><li><a href="http://localhost:3000/data.json">http://localhost:3000/data.json</a></li></ul><p>❌ 跨域请求 （默认被阻止）：</p><ul><li><a href="http://localhost:5000/api/users">http://localhost:5000/api/users</a> （端口不同）</li><li><a href="https://localhost:3000/api/users">https://localhost:3000/api/users</a> （协议不同）</li><li><a href="http://api.example.com/users">http://api.example.com/users</a> （域名不同）</li></ul><h2 id="为什么会出现-CORS-问题？"><a href="#为什么会出现-CORS-问题？" class="headerlink" title="为什么会出现 CORS 问题？"></a>为什么会出现 CORS 问题？</h2><p>浏览器的同源策略是为了防止恶意网站：</p><ul><li>窃取用户在其他网站的敏感数据</li><li>进行 CSRF（跨站请求伪造）攻击</li><li>未经授权访问用户的私人信息</li></ul><h2 id="CORS-的工作原理"><a href="#CORS-的工作原理" class="headerlink" title="CORS 的工作原理"></a>CORS 的工作原理</h2><h3 id="简单请求"><a href="#简单请求" class="headerlink" title="简单请求"></a>简单请求</h3><p>对于简单的 GET、POST 请求，浏览器会：</p><ol><li>发送请求到服务器</li><li>检查响应头中的 Access-Control-Allow-Origin</li><li>如果包含当前域名或 * ，则允许访问</li><li>否则阻止并报错</li></ol><h3 id="预检请求（Preflight）"><a href="#预检请求（Preflight）" class="headerlink" title="预检请求（Preflight）"></a>预检请求（Preflight）</h3><p>对于复杂请求，浏览器会先发送 OPTIONS 请求：</p><ol><li>发送 OPTIONS 预检请求</li><li>服务器返回允许的方法、头部等信息</li><li>如果通过预检，再发送实际请求</li></ol><h2 id="解决-CORS-问题的方法"><a href="#解决-CORS-问题的方法" class="headerlink" title="解决 CORS 问题的方法"></a>解决 CORS 问题的方法</h2><h3 id="后端配置-CORS（推荐）"><a href="#后端配置-CORS（推荐）" class="headerlink" title="后端配置 CORS（推荐）"></a>后端配置 CORS（推荐）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"><span class="keyword">from</span> flask_cors <span class="keyword">import</span> CORS</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法1：允许所有域名（开发环境）</span></span><br><span class="line">CORS(app)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法2：只允许特定域名（生产环境推荐）</span></span><br><span class="line">CORS(app, origins=[<span class="string">&quot;http://localhost:3000&quot;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法3：更详细的配置</span></span><br><span class="line">CORS(app,</span><br><span class="line">     origins=[<span class="string">&quot;http://localhost:3000&quot;</span>],</span><br><span class="line">     methods=[<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;POST&quot;</span>, <span class="string">&quot;PUT&quot;</span>, <span class="string">&quot;DELETE&quot;</span>],</span><br><span class="line">     allow_headers=[<span class="string">&quot;Content-Type&quot;</span>, <span class="string">&quot;Authorization&quot;</span>])</span><br></pre></td></tr></table></figure><h3 id="前端代理"><a href="#前端代理" class="headerlink" title="前端代理"></a>前端代理</h3><p>通过 Next.js 的 rewrite 功能：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> nextConfig = &#123;</span><br><span class="line">  <span class="keyword">async</span> <span class="title function_">rewrites</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">source</span>: <span class="string">&quot;/api/:path*&quot;</span>,</span><br><span class="line">        <span class="attr">destination</span>: <span class="string">&quot;http://localhost:5000/api/:path*&quot;</span>,</span><br><span class="line">      &#125;,</span><br><span class="line">    ];</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p><strong>工作原理</strong></p><ul><li>前端请求 <a href="http://localhost:3000/api/crypto/fear-and-greed">http://localhost:3000/api/crypto/fear-and-greed</a></li><li>Next.js 服务器代理到 <a href="http://localhost:5000/api/crypto/fear-and-greed">http://localhost:5000/api/crypto/fear-and-greed</a></li><li>浏览器认为这是同源请求</li><li>避免了 CORS 问题</li></ul><h3 id="其他解决方案"><a href="#其他解决方案" class="headerlink" title="其他解决方案"></a>其他解决方案</h3><ul><li><strong>浏览器插件（仅开发时）</strong><ul><li>安装 CORS 插件临时禁用同源策略</li><li>不推荐 ：只能解决开发问题，用户无法使用</li></ul></li></ul><p>启动浏览器时禁用安全检查（仅开发时）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Chrome（不推荐）</span></span><br><span class="line">open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir=<span class="string">&quot;/tmp/chrome_dev_test&quot;</span> --disable-web-security</span><br></pre></td></tr></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h3><ul><li>使用代理 ：Next.js rewrites 或 Vite proxy</li><li>后端配置宽松的 CORS ：允许 localhost 的所有端口</li></ul><h3 id="生产环境"><a href="#生产环境" class="headerlink" title="生产环境"></a>生产环境</h3><ul><li>精确配置 CORS ：只允许特定的域名</li><li>使用 HTTPS ：确保安全传输</li><li>验证 Origin 头 ：防止恶意请求</li></ul><p><strong>安全建议</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生产环境的安全配置示例</span></span><br><span class="line">CORS(app,</span><br><span class="line">     origins=[<span class="string">&quot;https://yourdomain.com&quot;</span>],  <span class="comment"># 只允许你的域名</span></span><br><span class="line">     methods=[<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;POST&quot;</span>],              <span class="comment"># 只允许需要的方法</span></span><br><span class="line">     allow_headers=[<span class="string">&quot;Content-Type&quot;</span>],       <span class="comment"># 只允许必要的头部</span></span><br><span class="line">     supports_credentials=<span class="literal">True</span>)            <span class="comment"># 如果需要发送 cookies</span></span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>CORS 问题本质上是浏览器的安全保护机制。在你的项目中，通过 Next.js 代理是一个很好的解决方案，因为：</p><p>✅ 优点 ：</p><ul><li>完全避免 CORS 问题</li><li>对前端代码透明</li><li>可以在代理层添加额外逻辑（如认证、缓存）</li></ul><p>✅ 配合后端 CORS 配置 ：</p><ul><li>为直接 API 调用提供支持</li><li>提供更灵活的部署选项</li><li>符合 Web 标准</li></ul><p>这样既解决了当前问题，又为将来的扩展留下了空间。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Web 项目开发" scheme="https://maxweber36.github.io/tags/Web-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="前后端分离" scheme="https://maxweber36.github.io/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/"/>
+    
+    <category term="产品开发踩的坑" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E8%B8%A9%E7%9A%84%E5%9D%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用Nextjs+Python的架构进行Web 项目开发</title>
+    <link href="https://maxweber36.github.io/2025/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Nextjs-Python%E7%9A%84%E6%9E%B6%E6%9E%84%E8%BF%9B%E8%A1%8CWeb-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    <id>https://maxweber36.github.io/2025/06/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Nextjs-Python%E7%9A%84%E6%9E%B6%E6%9E%84%E8%BF%9B%E8%A1%8CWeb-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/</id>
+    <published>2025-06-17T07:56:29.000Z</published>
+    <updated>2025-07-19T16:52:54.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近在使用 Nextjs 和 Python 进行 Web 项目开发，我想记录一下整个的操作和初始化的过程，便于以后自己方便查阅。</p><h2 id="如何安排文件结构"><a href="#如何安排文件结构" class="headerlink" title="如何安排文件结构"></a>如何安排文件结构</h2><ol><li><strong>前端 (Frontend):</strong> 这是用户在浏览器中看到和互动的部分，由 Next.js 负责。它负责显示信息、处理用户的点击和输入。</li><li><strong>后端 (Backend):</strong> 这是在服务器上运行的部分，由 Python 负责。它负责处理数据、执行业务逻辑、与数据库交互等等。前端需要数据时，会向后端“请求”。</li></ol><p>由于这两个部分相对独立但又需要协作，一种常见且推荐的组织方式是将它们放在同一个大的项目文件夹下，但用不同的子文件夹清楚地分开。这种方式我们有时称为“单体仓库”（monorepo），意思是所有的代码都在一个仓库里。</p><h3 id="推荐的项目文件结构"><a href="#推荐的项目文件结构" class="headerlink" title="推荐的项目文件结构"></a>推荐的项目文件结构</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">my<span class="operator">-</span>web<span class="operator">-</span>app<span class="operator">/</span>         <span class="operator">&lt;</span><span class="comment">-- 你的主项目文件夹</span></span><br><span class="line">├── frontend<span class="operator">/</span>       <span class="operator">&lt;</span><span class="comment">-- 存放所有 Next.js 前端代码</span></span><br><span class="line">│   ├── app<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- Next.js 页面文件（用户访问的不同页面）</span></span><br><span class="line">│   ├── components<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 可重用的 UI 组件（比如按钮、导航栏）</span></span><br><span class="line">│   ├── public<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 静态文件（图片、字体等）</span></span><br><span class="line">│   ├── styles<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 样式文件（CSS等）</span></span><br><span class="line">│   ├── utils<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- 前端使用的工具函数</span></span><br><span class="line">│   ├── .env        <span class="operator">&lt;</span><span class="comment">-- 前端环境变量</span></span><br><span class="line">│   ├── package.json <span class="operator">&lt;</span><span class="comment">-- Next.js 项目配置文件（依赖、脚本等）</span></span><br><span class="line">│   ├── next.config.js <span class="operator">&lt;</span><span class="comment">-- Next.js 配置</span></span><br><span class="line">│   └── ... 其他 Next.js 文件</span><br><span class="line">│</span><br><span class="line">├── backend<span class="operator">/</span>        <span class="operator">&lt;</span><span class="comment">-- 存放所有 Python 后端代码</span></span><br><span class="line">│   ├── src<span class="operator">/</span>        <span class="operator">&lt;</span><span class="comment">-- 存放后端应用的核心代码</span></span><br><span class="line">│   │   ├── api<span class="operator">/</span>    <span class="operator">&lt;</span><span class="comment">-- 处理前端请求的接口代码（例如：Flask/Django 的视图函数）</span></span><br><span class="line">│   │   ├── models<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 数据模型（例如：数据库表的定义）</span></span><br><span class="line">│   │   ├── services<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 业务逻辑代码</span></span><br><span class="line">│   │   └── utils<span class="operator">/</span>  <span class="operator">&lt;</span><span class="comment">-- 后端使用的工具函数</span></span><br><span class="line">│   ├── config<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 后端配置文件</span></span><br><span class="line">│   ├── tests<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- 后端测试代码</span></span><br><span class="line">│   ├── venv<span class="operator">/</span>       <span class="operator">&lt;</span><span class="comment">-- Python 虚拟环境（可选，但推荐）</span></span><br><span class="line">│   ├── requirements.txt <span class="operator">&lt;</span><span class="comment">-- 后端依赖库列表</span></span><br><span class="line">│   ├── .env        <span class="operator">&lt;</span><span class="comment">-- 后端环境变量</span></span><br><span class="line">│   └── app.py      <span class="operator">&lt;</span><span class="comment">-- 后端应用的入口文件（例如：Flask 应用的启动文件）</span></span><br><span class="line">│</span><br><span class="line">├── .gitignore      <span class="operator">&lt;</span><span class="comment">-- 告诉版本控制系统（如 Git）忽略哪些文件（比如 node_modules, venv）</span></span><br><span class="line">├── README.md       <span class="operator">&lt;</span><span class="comment">-- 项目说明文件（非常重要！）</span></span><br><span class="line">└── ... 其他顶级文件</span><br></pre></td></tr></table></figure><blockquote><p>解释这个结构的重要性：</p><p><strong>清晰分离:</strong> frontend 和 backend 两个顶层文件夹明确地分开了项目的主要部分。这意味着如果你只需要修改前端代码，你知道直接进入 frontend 文件夹；如果只需要修改后端逻辑，就进入 backend。这就像把衣服和书分别放在不同的抽屉里。</p><p><strong>遵循框架约定:</strong> 在 frontend 文件夹内部，我们遵循 Next.js 的标准项目结构（如 pages, components 等）。在 backend 文件夹内部，虽然 Python 后端框架不同会有差异，但 api, models, services 这样的结构是很多后端应用中常见的组织方式，它帮助你按功能组织代码。</p><p><strong>易于维护:</strong> 当项目变大时，这种结构可以帮助你快速找到你需要修改的文件。每个文件夹都有明确的职责。</p><p>易于协作: 如果你和其他人一起开发，每个人可以负责不同的部分（比如一个人负责前端，一个人负责后端），这种结构使得他们可以并行工作而不会互相干扰太多。</p><p><strong>依赖管理:</strong> frontend 文件夹里的 package.json 管理前端的依赖库（比如 React），backend 文件夹里的 requirements.txt 管理后端的依赖库（比如 Flask 或 Django）。它们是分开管理的，互不影响。</p><p><strong>入口点:</strong> frontend 有 Next.js 的启动方式（通常是 npm run dev 或 yarn dev），backend 有自己的启动文件（比如 app.py），它们可以独立启动和运行，只是前端需要调用后端的接口。</p></blockquote><h3 id="关于前后端如何对话"><a href="#关于前后端如何对话" class="headerlink" title="关于前后端如何对话"></a>关于前后端如何对话</h3><p>前端（Next.js）需要从后端（Python）获取数据或者发送数据给后端时，通常是通过 <strong>API</strong> (Application Programming Interface，应用程序编程接口) 来实现的。</p><ul><li>前端向后端的一个特定“地址”（URL）发送一个请求（比如一个 GET 请求来获取数据，或者一个 POST 请求来发送数据）。</li><li>后端在 <code>backend/src/api/</code> 文件夹中的某个文件里，会有一个对应的函数或者类来处理这个请求。</li><li>后端处理完请求后，会返回一个响应（通常是 JSON 格式的数据）给前端。</li><li>前端接收到响应后，就可以使用这些数据来更新页面显示。</li></ul><h2 id="如何初始化项目"><a href="#如何初始化项目" class="headerlink" title="如何初始化项目"></a>如何初始化项目</h2><h3 id="步骤分解"><a href="#步骤分解" class="headerlink" title="步骤分解"></a>步骤分解</h3><ol><li><strong>创建一个主项目文件夹：</strong> 这是你所有代码的“家”。</li><li><strong>初始化前端项目 (Next.js)：</strong> 在主文件夹内创建一个子文件夹，并在其中设置好 Next.js。</li><li><strong>初始化后端项目 (Python)：</strong> 在主文件夹内创建另一个子文件夹，并设置好 Python 开发环境。</li><li><strong>设置版本控制 (Git)：</strong> 帮助你追踪代码变化，方便回溯和协作。</li><li><strong>添加重要文件：</strong> 比如说明文件 (README) 和忽略文件 (.gitignore)。</li></ol><h4 id="创建一个主项目文件夹"><a href="#创建一个主项目文件夹" class="headerlink" title="创建一个主项目文件夹"></a>创建一个主项目文件夹</h4><p>首先，在你电脑上选择一个合适的位置，创建一个新的文件夹来存放你的整个项目。你可以打开终端或命令行工具，使用以下命令：</p><p>bash</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-web-app</span><br></pre></td></tr></table></figure><ul><li><code>mkdir</code> 是一个命令，用来“make directory”，也就是创建一个新的文件夹。</li><li><code>my-web-app</code> 是你给这个文件夹起的名字，你可以换成你喜欢的任何名字，比如你的应用的名字。</li></ul><p>然后进入这个文件夹：</p><p>bash</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-web-app</span><br></pre></td></tr></table></figure><ul><li><code>cd</code> 是一个命令，用来“change directory”，也就是改变当前所在的文件夹。</li></ul><p>现在，你的终端&#x2F;命令行窗口应该显示你当前在 <code>my-web-app</code> 文件夹里了。接下来的所有操作都在这个文件夹内进行。</p><h4 id="初始化前端项目（Next-js）"><a href="#初始化前端项目（Next-js）" class="headerlink" title="初始化前端项目（Next.js）"></a>初始化前端项目（Next.js）</h4><p>Next.js 提供了一个非常方便的命令行工具来快速创建一个新的 Next.js 项目。我们将它安装在我们刚刚创建的 <code>my-web-app</code> 文件夹内的 <code>frontend</code> 子文件夹里。</p><p>在 <code>my-web-app</code> 文件夹内运行以下命令：</p><p>bash</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app frontend</span><br></pre></td></tr></table></figure><ul><li><code>npx</code> 是一个工具，它可以让你运行 Node.js 包，而不需要先全局安装它。这很方便，因为它总会使用最新版本的 <code>create-next-app</code>。</li><li><code>create-next-app</code> 是 Next.js 官方提供的初始化工具。</li><li><code>frontend</code> 是我们告诉 <code>create-next-app</code> 在哪里创建项目以及给项目文件夹起什么名字。它会在 <code>my-web-app</code> 里面创建一个叫 <code>frontend</code> 的文件夹。</li></ul><p>运行这个命令后，<code>create-next-app</code> 会问你一些问题来配置你的项目，比如：</p><ul><li>Would you like to use TypeScript? (你想使用 TypeScript 吗？) - 对于初学者，选择 <code>No</code> (否) 可能更简单。</li><li>Would you like to use ESLint? (你想使用 ESLint 吗？) - 推荐选择 <code>Yes</code> (是)，它能帮助你发现代码中的问题和保持代码风格一致。</li><li>Would you like to use Tailwind CSS? (你想使用 Tailwind CSS 吗？) - 这是一种 CSS 框架，如果你不熟悉，可以选择 <code>No</code> (否)。</li><li>Would you like to use <code>src/</code> directory? (你想使用 <code>src/</code> 目录吗？) - <strong>推荐选择</strong> <strong><code>Yes</code></strong> <strong>(是)</strong>，这样会帮你创建 <code>frontend/src</code> 文件夹，符合我们之前讨论的结构。</li><li>Would you like to use App Router? (你想使用 App Router 吗？) - 这是 Next.js 推荐的新路由方式，推荐选择 <code>Yes</code> (是)。</li><li>Would you like to customize the default import alias? (你想自定义默认的导入别名吗？) - 对于初学者，选择 <code>No</code> (否) 即可。</li></ul><p>按照你的偏好回答这些问题。<code>create-next-app</code> 会自动创建 <code>frontend</code> 文件夹，生成 Next.js 项目所需的文件，并安装所有必要的依赖库。安装完成后，你会看到 <code>frontend</code> 文件夹里有了 <code>package.json</code>, <code>next.config.js</code>, <code>src/</code> 等文件和文件夹。</p><h4 id="初始化后端项目（Python）"><a href="#初始化后端项目（Python）" class="headerlink" title="初始化后端项目（Python）"></a>初始化后端项目（Python）</h4><p>Python 后端没有一个像 <code>create-next-app</code> 这样通用的初始化工具（不同的框架可能有自己的工具，比如 Django 的 <code>startproject</code>）。我们可以手动创建文件夹结构，并设置一个<strong>虚拟环境</strong>来管理 Python 依赖。</p><p>在 <code>my-web-app</code> 文件夹内（确保你还在 <code>my-web-app</code> 里，而不是 <code>frontend</code> 里），创建 <code>backend</code> 文件夹：</p><p>bash</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> backend</span><br></pre></td></tr></table></figure><p>进入 <code>backend</code> 文件夹：</p><p>bash</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> backend</span><br></pre></td></tr></table></figure><h5 id="创建并激活-Python-虚拟环境"><a href="#创建并激活-Python-虚拟环境" class="headerlink" title="创建并激活 Python 虚拟环境"></a><strong>创建并激活 Python 虚拟环境</strong></h5><p>使用虚拟环境是一个<strong>非常好的实践</strong>！它可以隔离你的项目依赖，避免不同项目之间的库版本冲突。</p><ul><li><strong>创建虚拟环境：</strong></li><li>bash</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv venv</span><br></pre></td></tr></table></figure><ul><li><p><strong>激活虚拟环境：</strong></p><ul><li><p>在 macOS 或 Linux 上：</p></li><li><p>bash</p></li><li><pre><code class="language-Bash">source venv/bin/activate<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 在 Windows 上：</span><br><span class="line"></span><br><span class="line">- bash</span><br><span class="line"></span><br><span class="line">- ```Bash</span><br><span class="line">  .\venv\Scripts\activate</span><br></pre></td></tr></table></figure></code></pre></li></ul></li><li><p>激活后，你的终端提示符前面通常会显示 <code>(venv)</code>，表示你当前处于这个虚拟环境中。</p></li></ul><h5 id="创建基本的后端文件结构"><a href="#创建基本的后端文件结构" class="headerlink" title="创建基本的后端文件结构"></a><strong>创建基本的后端文件结构</strong></h5><p>现在手动创建我们讨论的后端文件夹结构：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> src</span><br><span class="line"><span class="built_in">cd</span> src</span><br><span class="line"><span class="built_in">mkdir</span> api models services utils <span class="comment"># 创建 src 内部的子文件夹cd .. # 回到 backend 文件夹mkdir config tests # 创建 backend 内部的子文件夹</span></span><br></pre></td></tr></table></figure><p>并在 <code>backend</code> 文件夹里创建一些基本文件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> app.py requirements.txt .<span class="built_in">env</span> <span class="comment"># 在 macOS/Linux 上使用 touch，Windows 可以手动创建或使用 echo &gt; filename</span></span><br></pre></td></tr></table></figure><p>如果是 windows 上：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> nul &gt; app.py</span><br><span class="line"><span class="built_in">type</span> nul &gt; requirements.txt</span><br><span class="line"><span class="built_in">type</span> nul &gt; .<span class="built_in">env</span></span><br></pre></td></tr></table></figure><ul><li><code>app.py</code> 可以作为你后端应用的主入口文件。</li><li><code>requirements.txt</code> 将用来记录你的 Python 项目依赖的库和它们的版本。</li><li><code>.env</code> 将用来存放后端需要的环境变量（比如数据库连接信息，<strong>这些不能暴露给前端</strong>）。</li></ul><p>现在你的 <code>backend</code> 文件夹里应该有 <code>src</code>, <code>config</code>, <code>tests</code>, <code>app.py</code>, <code>requirements.txt</code>, <code>.env</code> 以及 <code>venv</code> 文件夹。</p><p>当你安装 Python 库时（比如 <code>pip install Flask</code>），请确保你的虚拟环境是激活的。安装完成后，可以使用 <code>pip freeze &gt; requirements.txt</code> 命令将当前虚拟环境中安装的所有库及其版本保存到 <code>requirements.txt</code> 文件中。</p><h4 id="设置版本控制（Git）"><a href="#设置版本控制（Git）" class="headerlink" title="设置版本控制（Git）"></a>设置版本控制（Git）</h4><p>Git 是一个强大的版本管理工具。</p><p>回到主项目文件夹 <code>my-web-app</code>。</p><p>初始化 Git 仓库：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>这会在 <code>my-web-app</code> 文件夹里创建一个隐藏的 <code>.git</code> 文件夹。</p><h4 id="添加重要文件（-gitignore-和-README-md）"><a href="#添加重要文件（-gitignore-和-README-md）" class="headerlink" title="添加重要文件（.gitignore 和 README.md）"></a>添加重要文件（<strong>.gitignore 和 README.md</strong>）</h4><ul><li><strong>gitignore:</strong> 这个文件告诉 Git 哪些文件或文件夹不应该被追踪和提交。比如，<code>node_modules</code> (前端依赖) 和 <code>venv</code> (Python 虚拟环境) 文件夹通常会非常大，而且它们可以通过 <code>package.json</code> 和 <code>requirements.txt</code> 重新生成，所以不应该提交到 Git 仓库。<code>.env</code>文件通常包含敏感信息，也不应该提交。</li></ul><p>在 <code>my-web-app</code> 文件夹里创建一个名为 <code>.gitignore</code> 的文件。你可以手动创建，或者使用命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> .gitignore <span class="comment"># macOS/Linux</span></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="built_in">type</span> nul &gt; .gitignore <span class="comment"># Windows</span></span><br></pre></td></tr></table></figure><p>然后用文本编辑器打开<code>.gitignore</code> 文件，添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Git 忽略文件列表</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Node.js 依赖文件夹 (前端)</span></span><br><span class="line">frontend/node_modules/</span><br><span class="line"></span><br><span class="line"><span class="comment"># Python 虚拟环境文件夹 (后端)</span></span><br><span class="line">backend/venv/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 环境变量文件 (通常包含敏感信息，不应提交)</span></span><br><span class="line">frontend/.env.local <span class="comment"># Next.js 会生成 .env.local</span></span><br><span class="line">frontend/.env.*.<span class="built_in">local</span> <span class="comment"># 其他本地环境文件</span></span><br><span class="line">backend/.env</span><br><span class="line"></span><br><span class="line"><span class="comment"># 其他可能需要忽略的文件或文件夹 (可选，根据你的工具和习惯添加)</span></span><br><span class="line"><span class="comment"># .DS_Store # macOS 系统文件</span></span><br><span class="line"><span class="comment"># build/ # 前端构建输出文件夹 (Next.js 默认是 .next)</span></span><br><span class="line"><span class="comment"># .next/ # Next.js 构建输出文件夹</span></span><br><span class="line"><span class="comment"># __pycache__/ # Python 生成的缓存文件</span></span><br><span class="line"><span class="comment"># *.pyc # Python 编译文件</span></span><br></pre></td></tr></table></figure><ul><li>这个 <code>.gitignore</code> 文件放在主项目文件夹 <code>my-web-app</code> 下，可以同时作用于 <code>frontend</code> 和 <code>backend</code> 子文件夹。</li><li><strong>README.md:</strong> 一个好的 README 文件能说明你的项目是什么，如何设置，如何运行等等。这对于你自己以后回顾项目或者其他人想了解你的项目都非常有帮助。</li></ul><p>在 <code>my-web-app</code> 文件夹里创建一个名为 <code>README.md</code> 的文件。你可以手动创建，或者使用命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> README.md <span class="comment"># macOS/Linux</span></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="built_in">type</span> nul &gt; README.md <span class="comment"># Windows</span></span><br></pre></td></tr></table></figure><p>用文本编辑器打开 <code>README.md</code>，写一些初步的内容，比如：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 我的网页应用</span></span><br><span class="line"></span><br><span class="line">这是一个使用 Next.js (前端) 和 Python (后端) 构建的网页应用。</span><br><span class="line"></span><br><span class="line"><span class="section">## 项目结构</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="code">`frontend/`</span>: Next.js 前端代码</span><br><span class="line"><span class="bullet">-</span> <span class="code">`backend/`</span>: Python 后端代码</span><br><span class="line"></span><br><span class="line"><span class="section">## 设置步骤</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 前端设置</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 进入 <span class="code">`frontend`</span> 文件夹: <span class="code">`cd frontend`</span></span><br><span class="line"><span class="bullet">2.</span> 安装依赖: <span class="code">`npm install`</span> 或 <span class="code">`yarn install`</span> (取决于你初始化 Next.js 时选择了哪个包管理器)</span><br><span class="line"><span class="bullet">3.</span> 复制 <span class="code">`.env.local.example`</span> (如果 Next.js 创建了) 或手动创建 <span class="code">`.env.local`</span> 文件，并配置 <span class="code">`NEXT_PUBLIC_BACKEND_URL`</span>。</span><br><span class="line"></span><br><span class="line"><span class="section">### 后端设置</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 进入 <span class="code">`backend`</span> 文件夹: <span class="code">`cd backend`</span></span><br><span class="line"><span class="bullet">2.</span> 创建并激活虚拟环境:</span><br><span class="line"><span class="bullet">   -</span> macOS/Linux: <span class="code">`python -m venv venv`</span> 然后 <span class="code">`source venv/bin/activate`</span></span><br><span class="line"><span class="bullet">   -</span> Windows: <span class="code">`python -m venv venv`</span> 然后 <span class="code">`.\venv\Scripts\activate`</span></span><br><span class="line"><span class="bullet">3.</span> 安装依赖: <span class="code">`pip install -r requirements.txt`</span> (如果 requirements.txt 是空的，你需要在安装库后生成它，比如 <span class="code">`pip install Flask`</span> 后运行 <span class="code">`pip freeze &gt; requirements.txt`</span>)</span><br><span class="line"><span class="bullet">4.</span> 创建并配置 <span class="code">`.env`</span> 文件。</span><br><span class="line"></span><br><span class="line"><span class="section">## 如何运行</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 运行后端</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 激活后端虚拟环境。</span><br><span class="line"><span class="bullet">2.</span> 在 <span class="code">`backend`</span> 文件夹中运行后端入口文件 (例如: <span class="code">`python app.py`</span>)。</span><br><span class="line"></span><br><span class="line"><span class="section">### 运行前端</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 在另一个终端窗口，进入 <span class="code">`frontend`</span> 文件夹。</span><br><span class="line"><span class="bullet">2.</span> 运行开发服务器: <span class="code">`npm run dev`</span> 或 <span class="code">`yarn dev`</span>。</span><br><span class="line"><span class="bullet">3.</span> 打开浏览器访问 <span class="code">`http://localhost:3000`</span> (Next.js 默认端口)。</span><br><span class="line"></span><br><span class="line"><span class="section">## TODO</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> [ ] 实现用户认证</span><br><span class="line"><span class="bullet">-</span> [ ] 连接数据库</span><br><span class="line"><span class="bullet">-</span> [ ] ...</span><br></pre></td></tr></table></figure><ul><li>这个 README 文件可以随着项目进展不断完善。</li></ul><h4 id="完成初始化并进行第一次-Git-提交"><a href="#完成初始化并进行第一次-Git-提交" class="headerlink" title="完成初始化并进行第一次 Git 提交"></a><strong>完成初始化并进行第一次 Git 提交</strong></h4><p>现在，你的项目基本结构就搭建好了。回到 <code>my-web-app</code> 文件夹，将所有文件添加到 Git 并进行第一次提交：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add . <span class="comment"># 添加当前文件夹下所有未被 .gitignore 忽略的文件</span></span><br><span class="line">git commit -m <span class="string">&quot;Initial project setup with Next.js frontend and Python backend structure&quot;</span></span><br></pre></td></tr></table></figure><ul><li><code>git add .</code> 命令会将当前文件夹下（包括子文件夹）所有新的或修改过的文件添加到 Git 的“暂存区”，准备提交。<code>.gitignore</code> 文件中列出的文件会被忽略。</li><li><code>git commit -m &quot;...&quot;</code> 命令会将暂存区的文件正式提交到 Git 仓库的历史记录中，并附上一个简短的说明消息。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Web 项目开发" scheme="https://maxweber36.github.io/tags/Web-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Nextjs" scheme="https://maxweber36.github.io/tags/Nextjs/"/>
+    
+    <category term="Python" scheme="https://maxweber36.github.io/tags/Python/"/>
+    
+  </entry>
+  
+</feed>
