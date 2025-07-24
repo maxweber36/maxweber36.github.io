@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>🔧 如何使用Nextjs+Python的架构进行Web 项目开发 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/my-projects/">我都做了啥</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Web-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/">
+                            Web 项目开发
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Nextjs/">
+                            Nextjs
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Python/">
+                            Python
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                🔧 如何使用Nextjs+Python的架构进行Web 项目开发
+            
+            
+        </div>
+        <span class="post-date">
+            Jun 17, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>最近在使用 Nextjs 和 Python 进行 Web 项目开发，我想记录一下整个的操作和初始化的过程，便于以后自己方便查阅。</p>
+<h2 id="如何安排文件结构"><a href="#如何安排文件结构" class="headerlink" title="如何安排文件结构"></a>如何安排文件结构</h2><ol>
+<li><strong>前端 (Frontend):</strong> 这是用户在浏览器中看到和互动的部分，由 Next.js 负责。它负责显示信息、处理用户的点击和输入。</li>
+<li><strong>后端 (Backend):</strong> 这是在服务器上运行的部分，由 Python 负责。它负责处理数据、执行业务逻辑、与数据库交互等等。前端需要数据时，会向后端“请求”。</li>
+</ol>
+<p>由于这两个部分相对独立但又需要协作，一种常见且推荐的组织方式是将它们放在同一个大的项目文件夹下，但用不同的子文件夹清楚地分开。这种方式我们有时称为“单体仓库”（monorepo），意思是所有的代码都在一个仓库里。</p>
+<h3 id="推荐的项目文件结构"><a href="#推荐的项目文件结构" class="headerlink" title="推荐的项目文件结构"></a>推荐的项目文件结构</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">my<span class="operator">-</span>web<span class="operator">-</span>app<span class="operator">/</span>         <span class="operator">&lt;</span><span class="comment">-- 你的主项目文件夹</span></span><br><span class="line">├── frontend<span class="operator">/</span>       <span class="operator">&lt;</span><span class="comment">-- 存放所有 Next.js 前端代码</span></span><br><span class="line">│   ├── app<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- Next.js 页面文件（用户访问的不同页面）</span></span><br><span class="line">│   ├── components<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 可重用的 UI 组件（比如按钮、导航栏）</span></span><br><span class="line">│   ├── public<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 静态文件（图片、字体等）</span></span><br><span class="line">│   ├── styles<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 样式文件（CSS等）</span></span><br><span class="line">│   ├── utils<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- 前端使用的工具函数</span></span><br><span class="line">│   ├── .env        <span class="operator">&lt;</span><span class="comment">-- 前端环境变量</span></span><br><span class="line">│   ├── package.json <span class="operator">&lt;</span><span class="comment">-- Next.js 项目配置文件（依赖、脚本等）</span></span><br><span class="line">│   ├── next.config.js <span class="operator">&lt;</span><span class="comment">-- Next.js 配置</span></span><br><span class="line">│   └── ... 其他 Next.js 文件</span><br><span class="line">│</span><br><span class="line">├── backend<span class="operator">/</span>        <span class="operator">&lt;</span><span class="comment">-- 存放所有 Python 后端代码</span></span><br><span class="line">│   ├── src<span class="operator">/</span>        <span class="operator">&lt;</span><span class="comment">-- 存放后端应用的核心代码</span></span><br><span class="line">│   │   ├── api<span class="operator">/</span>    <span class="operator">&lt;</span><span class="comment">-- 处理前端请求的接口代码（例如：Flask/Django 的视图函数）</span></span><br><span class="line">│   │   ├── models<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 数据模型（例如：数据库表的定义）</span></span><br><span class="line">│   │   ├── services<span class="operator">/</span> <span class="operator">&lt;</span><span class="comment">-- 业务逻辑代码</span></span><br><span class="line">│   │   └── utils<span class="operator">/</span>  <span class="operator">&lt;</span><span class="comment">-- 后端使用的工具函数</span></span><br><span class="line">│   ├── config<span class="operator">/</span>     <span class="operator">&lt;</span><span class="comment">-- 后端配置文件</span></span><br><span class="line">│   ├── tests<span class="operator">/</span>      <span class="operator">&lt;</span><span class="comment">-- 后端测试代码</span></span><br><span class="line">│   ├── venv<span class="operator">/</span>       <span class="operator">&lt;</span><span class="comment">-- Python 虚拟环境（可选，但推荐）</span></span><br><span class="line">│   ├── requirements.txt <span class="operator">&lt;</span><span class="comment">-- 后端依赖库列表</span></span><br><span class="line">│   ├── .env        <span class="operator">&lt;</span><span class="comment">-- 后端环境变量</span></span><br><span class="line">│   └── app.py      <span class="operator">&lt;</span><span class="comment">-- 后端应用的入口文件（例如：Flask 应用的启动文件）</span></span><br><span class="line">│</span><br><span class="line">├── .gitignore      <span class="operator">&lt;</span><span class="comment">-- 告诉版本控制系统（如 Git）忽略哪些文件（比如 node_modules, venv）</span></span><br><span class="line">├── README.md       <span class="operator">&lt;</span><span class="comment">-- 项目说明文件（非常重要！）</span></span><br><span class="line">└── ... 其他顶级文件</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>解释这个结构的重要性：</p>
+<p><strong>清晰分离:</strong> frontend 和 backend 两个顶层文件夹明确地分开了项目的主要部分。这意味着如果你只需要修改前端代码，你知道直接进入 frontend 文件夹；如果只需要修改后端逻辑，就进入 backend。这就像把衣服和书分别放在不同的抽屉里。</p>
+<p><strong>遵循框架约定:</strong> 在 frontend 文件夹内部，我们遵循 Next.js 的标准项目结构（如 pages, components 等）。在 backend 文件夹内部，虽然 Python 后端框架不同会有差异，但 api, models, services 这样的结构是很多后端应用中常见的组织方式，它帮助你按功能组织代码。</p>
+<p><strong>易于维护:</strong> 当项目变大时，这种结构可以帮助你快速找到你需要修改的文件。每个文件夹都有明确的职责。</p>
+<p>易于协作: 如果你和其他人一起开发，每个人可以负责不同的部分（比如一个人负责前端，一个人负责后端），这种结构使得他们可以并行工作而不会互相干扰太多。</p>
+<p><strong>依赖管理:</strong> frontend 文件夹里的 package.json 管理前端的依赖库（比如 React），backend 文件夹里的 requirements.txt 管理后端的依赖库（比如 Flask 或 Django）。它们是分开管理的，互不影响。</p>
+<p><strong>入口点:</strong> frontend 有 Next.js 的启动方式（通常是 npm run dev 或 yarn dev），backend 有自己的启动文件（比如 app.py），它们可以独立启动和运行，只是前端需要调用后端的接口。</p>
+</blockquote>
+<h3 id="关于前后端如何对话"><a href="#关于前后端如何对话" class="headerlink" title="关于前后端如何对话"></a>关于前后端如何对话</h3><p>前端（Next.js）需要从后端（Python）获取数据或者发送数据给后端时，通常是通过 <strong>API</strong> (Application Programming Interface，应用程序编程接口) 来实现的。</p>
+<ul>
+<li>前端向后端的一个特定“地址”（URL）发送一个请求（比如一个 GET 请求来获取数据，或者一个 POST 请求来发送数据）。</li>
+<li>后端在 <code>backend/src/api/</code> 文件夹中的某个文件里，会有一个对应的函数或者类来处理这个请求。</li>
+<li>后端处理完请求后，会返回一个响应（通常是 JSON 格式的数据）给前端。</li>
+<li>前端接收到响应后，就可以使用这些数据来更新页面显示。</li>
+</ul>
+<h2 id="如何初始化项目"><a href="#如何初始化项目" class="headerlink" title="如何初始化项目"></a>如何初始化项目</h2><h3 id="步骤分解"><a href="#步骤分解" class="headerlink" title="步骤分解"></a>步骤分解</h3><ol>
+<li><strong>创建一个主项目文件夹：</strong> 这是你所有代码的“家”。</li>
+<li><strong>初始化前端项目 (Next.js)：</strong> 在主文件夹内创建一个子文件夹，并在其中设置好 Next.js。</li>
+<li><strong>初始化后端项目 (Python)：</strong> 在主文件夹内创建另一个子文件夹，并设置好 Python 开发环境。</li>
+<li><strong>设置版本控制 (Git)：</strong> 帮助你追踪代码变化，方便回溯和协作。</li>
+<li><strong>添加重要文件：</strong> 比如说明文件 (README) 和忽略文件 (.gitignore)。</li>
+</ol>
+<h4 id="创建一个主项目文件夹"><a href="#创建一个主项目文件夹" class="headerlink" title="创建一个主项目文件夹"></a>创建一个主项目文件夹</h4><p>首先，在你电脑上选择一个合适的位置，创建一个新的文件夹来存放你的整个项目。你可以打开终端或命令行工具，使用以下命令：</p>
+<p>bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> my-web-app</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>mkdir</code> 是一个命令，用来“make directory”，也就是创建一个新的文件夹。</li>
+<li><code>my-web-app</code> 是你给这个文件夹起的名字，你可以换成你喜欢的任何名字，比如你的应用的名字。</li>
+</ul>
+<p>然后进入这个文件夹：</p>
+<p>bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-web-app</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>cd</code> 是一个命令，用来“change directory”，也就是改变当前所在的文件夹。</li>
+</ul>
+<p>现在，你的终端&#x2F;命令行窗口应该显示你当前在 <code>my-web-app</code> 文件夹里了。接下来的所有操作都在这个文件夹内进行。</p>
+<h4 id="初始化前端项目（Next-js）"><a href="#初始化前端项目（Next-js）" class="headerlink" title="初始化前端项目（Next.js）"></a>初始化前端项目（Next.js）</h4><p>Next.js 提供了一个非常方便的命令行工具来快速创建一个新的 Next.js 项目。我们将它安装在我们刚刚创建的 <code>my-web-app</code> 文件夹内的 <code>frontend</code> 子文件夹里。</p>
+<p>在 <code>my-web-app</code> 文件夹内运行以下命令：</p>
+<p>bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app frontend</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>npx</code> 是一个工具，它可以让你运行 Node.js 包，而不需要先全局安装它。这很方便，因为它总会使用最新版本的 <code>create-next-app</code>。</li>
+<li><code>create-next-app</code> 是 Next.js 官方提供的初始化工具。</li>
+<li><code>frontend</code> 是我们告诉 <code>create-next-app</code> 在哪里创建项目以及给项目文件夹起什么名字。它会在 <code>my-web-app</code> 里面创建一个叫 <code>frontend</code> 的文件夹。</li>
+</ul>
+<p>运行这个命令后，<code>create-next-app</code> 会问你一些问题来配置你的项目，比如：</p>
+<ul>
+<li>Would you like to use TypeScript? (你想使用 TypeScript 吗？) - 对于初学者，选择 <code>No</code> (否) 可能更简单。</li>
+<li>Would you like to use ESLint? (你想使用 ESLint 吗？) - 推荐选择 <code>Yes</code> (是)，它能帮助你发现代码中的问题和保持代码风格一致。</li>
+<li>Would you like to use Tailwind CSS? (你想使用 Tailwind CSS 吗？) - 这是一种 CSS 框架，如果你不熟悉，可以选择 <code>No</code> (否)。</li>
+<li>Would you like to use <code>src/</code> directory? (你想使用 <code>src/</code> 目录吗？) - <strong>推荐选择</strong> <strong><code>Yes</code></strong> <strong>(是)</strong>，这样会帮你创建 <code>frontend/src</code> 文件夹，符合我们之前讨论的结构。</li>
+<li>Would you like to use App Router? (你想使用 App Router 吗？) - 这是 Next.js 推荐的新路由方式，推荐选择 <code>Yes</code> (是)。</li>
+<li>Would you like to customize the default import alias? (你想自定义默认的导入别名吗？) - 对于初学者，选择 <code>No</code> (否) 即可。</li>
+</ul>
+<p>按照你的偏好回答这些问题。<code>create-next-app</code> 会自动创建 <code>frontend</code> 文件夹，生成 Next.js 项目所需的文件，并安装所有必要的依赖库。安装完成后，你会看到 <code>frontend</code> 文件夹里有了 <code>package.json</code>, <code>next.config.js</code>, <code>src/</code> 等文件和文件夹。</p>
+<h4 id="初始化后端项目（Python）"><a href="#初始化后端项目（Python）" class="headerlink" title="初始化后端项目（Python）"></a>初始化后端项目（Python）</h4><p>Python 后端没有一个像 <code>create-next-app</code> 这样通用的初始化工具（不同的框架可能有自己的工具，比如 Django 的 <code>startproject</code>）。我们可以手动创建文件夹结构，并设置一个<strong>虚拟环境</strong>来管理 Python 依赖。</p>
+<p>在 <code>my-web-app</code> 文件夹内（确保你还在 <code>my-web-app</code> 里，而不是 <code>frontend</code> 里），创建 <code>backend</code> 文件夹：</p>
+<p>bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> backend</span><br></pre></td></tr></table></figure>
+
+<p>进入 <code>backend</code> 文件夹：</p>
+<p>bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> backend</span><br></pre></td></tr></table></figure>
+
+<h5 id="创建并激活-Python-虚拟环境"><a href="#创建并激活-Python-虚拟环境" class="headerlink" title="创建并激活 Python 虚拟环境"></a><strong>创建并激活 Python 虚拟环境</strong></h5><p>使用虚拟环境是一个<strong>非常好的实践</strong>！它可以隔离你的项目依赖，避免不同项目之间的库版本冲突。</p>
+<ul>
+<li><strong>创建虚拟环境：</strong></li>
+<li>bash</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv venv</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>激活虚拟环境：</strong></p>
+<ul>
+<li><p>在 macOS 或 Linux 上：</p>
+</li>
+<li><p>bash</p>
+</li>
+<li><pre><code class="language-Bash">source venv/bin/activate
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 在 Windows 上：</span><br><span class="line"></span><br><span class="line">- bash</span><br><span class="line"></span><br><span class="line">- ```Bash</span><br><span class="line">  .\venv\Scripts\activate</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>激活后，你的终端提示符前面通常会显示 <code>(venv)</code>，表示你当前处于这个虚拟环境中。</p>
+</li>
+</ul>
+<h5 id="创建基本的后端文件结构"><a href="#创建基本的后端文件结构" class="headerlink" title="创建基本的后端文件结构"></a><strong>创建基本的后端文件结构</strong></h5><p>现在手动创建我们讨论的后端文件夹结构：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> src</span><br><span class="line"><span class="built_in">cd</span> src</span><br><span class="line"><span class="built_in">mkdir</span> api models services utils <span class="comment"># 创建 src 内部的子文件夹cd .. # 回到 backend 文件夹mkdir config tests # 创建 backend 内部的子文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>并在 <code>backend</code> 文件夹里创建一些基本文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> app.py requirements.txt .<span class="built_in">env</span> <span class="comment"># 在 macOS/Linux 上使用 touch，Windows 可以手动创建或使用 echo &gt; filename</span></span><br></pre></td></tr></table></figure>
+
+<p>如果是 windows 上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> nul &gt; app.py</span><br><span class="line"><span class="built_in">type</span> nul &gt; requirements.txt</span><br><span class="line"><span class="built_in">type</span> nul &gt; .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>app.py</code> 可以作为你后端应用的主入口文件。</li>
+<li><code>requirements.txt</code> 将用来记录你的 Python 项目依赖的库和它们的版本。</li>
+<li><code>.env</code> 将用来存放后端需要的环境变量（比如数据库连接信息，<strong>这些不能暴露给前端</strong>）。</li>
+</ul>
+<p>现在你的 <code>backend</code> 文件夹里应该有 <code>src</code>, <code>config</code>, <code>tests</code>, <code>app.py</code>, <code>requirements.txt</code>, <code>.env</code> 以及 <code>venv</code> 文件夹。</p>
+<p>当你安装 Python 库时（比如 <code>pip install Flask</code>），请确保你的虚拟环境是激活的。安装完成后，可以使用 <code>pip freeze &gt; requirements.txt</code> 命令将当前虚拟环境中安装的所有库及其版本保存到 <code>requirements.txt</code> 文件中。</p>
+<h4 id="设置版本控制（Git）"><a href="#设置版本控制（Git）" class="headerlink" title="设置版本控制（Git）"></a>设置版本控制（Git）</h4><p>Git 是一个强大的版本管理工具。</p>
+<p>回到主项目文件夹 <code>my-web-app</code>。</p>
+<p>初始化 Git 仓库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>这会在 <code>my-web-app</code> 文件夹里创建一个隐藏的 <code>.git</code> 文件夹。</p>
+<h4 id="添加重要文件（-gitignore-和-README-md）"><a href="#添加重要文件（-gitignore-和-README-md）" class="headerlink" title="添加重要文件（.gitignore 和 README.md）"></a>添加重要文件（<strong>.gitignore 和 README.md</strong>）</h4><ul>
+<li><strong>gitignore:</strong> 这个文件告诉 Git 哪些文件或文件夹不应该被追踪和提交。比如，<code>node_modules</code> (前端依赖) 和 <code>venv</code> (Python 虚拟环境) 文件夹通常会非常大，而且它们可以通过 <code>package.json</code> 和 <code>requirements.txt</code> 重新生成，所以不应该提交到 Git 仓库。<code>.env</code>文件通常包含敏感信息，也不应该提交。</li>
+</ul>
+<p>在 <code>my-web-app</code> 文件夹里创建一个名为 <code>.gitignore</code> 的文件。你可以手动创建，或者使用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> .gitignore <span class="comment"># macOS/Linux</span></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="built_in">type</span> nul &gt; .gitignore <span class="comment"># Windows</span></span><br></pre></td></tr></table></figure>
+
+<p>然后用文本编辑器打开<code>.gitignore</code> 文件，添加以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Git 忽略文件列表</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Node.js 依赖文件夹 (前端)</span></span><br><span class="line">frontend/node_modules/</span><br><span class="line"></span><br><span class="line"><span class="comment"># Python 虚拟环境文件夹 (后端)</span></span><br><span class="line">backend/venv/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 环境变量文件 (通常包含敏感信息，不应提交)</span></span><br><span class="line">frontend/.env.local <span class="comment"># Next.js 会生成 .env.local</span></span><br><span class="line">frontend/.env.*.<span class="built_in">local</span> <span class="comment"># 其他本地环境文件</span></span><br><span class="line">backend/.env</span><br><span class="line"></span><br><span class="line"><span class="comment"># 其他可能需要忽略的文件或文件夹 (可选，根据你的工具和习惯添加)</span></span><br><span class="line"><span class="comment"># .DS_Store # macOS 系统文件</span></span><br><span class="line"><span class="comment"># build/ # 前端构建输出文件夹 (Next.js 默认是 .next)</span></span><br><span class="line"><span class="comment"># .next/ # Next.js 构建输出文件夹</span></span><br><span class="line"><span class="comment"># __pycache__/ # Python 生成的缓存文件</span></span><br><span class="line"><span class="comment"># *.pyc # Python 编译文件</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这个 <code>.gitignore</code> 文件放在主项目文件夹 <code>my-web-app</code> 下，可以同时作用于 <code>frontend</code> 和 <code>backend</code> 子文件夹。</li>
+<li><strong>README.md:</strong> 一个好的 README 文件能说明你的项目是什么，如何设置，如何运行等等。这对于你自己以后回顾项目或者其他人想了解你的项目都非常有帮助。</li>
+</ul>
+<p>在 <code>my-web-app</code> 文件夹里创建一个名为 <code>README.md</code> 的文件。你可以手动创建，或者使用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> README.md <span class="comment"># macOS/Linux</span></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="built_in">type</span> nul &gt; README.md <span class="comment"># Windows</span></span><br></pre></td></tr></table></figure>
+
+<p>用文本编辑器打开 <code>README.md</code>，写一些初步的内容，比如：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 我的网页应用</span></span><br><span class="line"></span><br><span class="line">这是一个使用 Next.js (前端) 和 Python (后端) 构建的网页应用。</span><br><span class="line"></span><br><span class="line"><span class="section">## 项目结构</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="code">`frontend/`</span>: Next.js 前端代码</span><br><span class="line"><span class="bullet">-</span> <span class="code">`backend/`</span>: Python 后端代码</span><br><span class="line"></span><br><span class="line"><span class="section">## 设置步骤</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 前端设置</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 进入 <span class="code">`frontend`</span> 文件夹: <span class="code">`cd frontend`</span></span><br><span class="line"><span class="bullet">2.</span> 安装依赖: <span class="code">`npm install`</span> 或 <span class="code">`yarn install`</span> (取决于你初始化 Next.js 时选择了哪个包管理器)</span><br><span class="line"><span class="bullet">3.</span> 复制 <span class="code">`.env.local.example`</span> (如果 Next.js 创建了) 或手动创建 <span class="code">`.env.local`</span> 文件，并配置 <span class="code">`NEXT_PUBLIC_BACKEND_URL`</span>。</span><br><span class="line"></span><br><span class="line"><span class="section">### 后端设置</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 进入 <span class="code">`backend`</span> 文件夹: <span class="code">`cd backend`</span></span><br><span class="line"><span class="bullet">2.</span> 创建并激活虚拟环境:</span><br><span class="line"><span class="bullet">   -</span> macOS/Linux: <span class="code">`python -m venv venv`</span> 然后 <span class="code">`source venv/bin/activate`</span></span><br><span class="line"><span class="bullet">   -</span> Windows: <span class="code">`python -m venv venv`</span> 然后 <span class="code">`.\venv\Scripts\activate`</span></span><br><span class="line"><span class="bullet">3.</span> 安装依赖: <span class="code">`pip install -r requirements.txt`</span> (如果 requirements.txt 是空的，你需要在安装库后生成它，比如 <span class="code">`pip install Flask`</span> 后运行 <span class="code">`pip freeze &gt; requirements.txt`</span>)</span><br><span class="line"><span class="bullet">4.</span> 创建并配置 <span class="code">`.env`</span> 文件。</span><br><span class="line"></span><br><span class="line"><span class="section">## 如何运行</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 运行后端</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 激活后端虚拟环境。</span><br><span class="line"><span class="bullet">2.</span> 在 <span class="code">`backend`</span> 文件夹中运行后端入口文件 (例如: <span class="code">`python app.py`</span>)。</span><br><span class="line"></span><br><span class="line"><span class="section">### 运行前端</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 在另一个终端窗口，进入 <span class="code">`frontend`</span> 文件夹。</span><br><span class="line"><span class="bullet">2.</span> 运行开发服务器: <span class="code">`npm run dev`</span> 或 <span class="code">`yarn dev`</span>。</span><br><span class="line"><span class="bullet">3.</span> 打开浏览器访问 <span class="code">`http://localhost:3000`</span> (Next.js 默认端口)。</span><br><span class="line"></span><br><span class="line"><span class="section">## TODO</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> [ ] 实现用户认证</span><br><span class="line"><span class="bullet">-</span> [ ] 连接数据库</span><br><span class="line"><span class="bullet">-</span> [ ] ...</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这个 README 文件可以随着项目进展不断完善。</li>
+</ul>
+<h4 id="完成初始化并进行第一次-Git-提交"><a href="#完成初始化并进行第一次-Git-提交" class="headerlink" title="完成初始化并进行第一次 Git 提交"></a><strong>完成初始化并进行第一次 Git 提交</strong></h4><p>现在，你的项目基本结构就搭建好了。回到 <code>my-web-app</code> 文件夹，将所有文件添加到 Git 并进行第一次提交：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add . <span class="comment"># 添加当前文件夹下所有未被 .gitignore 忽略的文件</span></span><br><span class="line">git commit -m <span class="string">&quot;Initial project setup with Next.js frontend and Python backend structure&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>git add .</code> 命令会将当前文件夹下（包括子文件夹）所有新的或修改过的文件添加到 Git 的“暂存区”，准备提交。<code>.gitignore</code> 文件中列出的文件会被忽略。</li>
+<li><code>git commit -m &quot;...&quot;</code> 命令会将暂存区的文件正式提交到 Git 仓库的历史记录中，并附上一个简短的说明消息。</li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/06/17/%E4%BB%80%E4%B9%88%E6%98%AF-CORS-%E9%97%AE%E9%A2%98%EF%BC%88%E8%B7%A8%E8%B5%84%E6%BA%90%E5%85%B1%E4%BA%AB%EF%BC%89/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/06/06/20250606/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

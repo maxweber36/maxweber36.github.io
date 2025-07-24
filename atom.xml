@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>阿犇的自留地</title>
+  
+  <subtitle>YOLO：You Only Live Once</subtitle>
+  <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
+  <link href="https://push.superfeedr.com/" rel="hub"/>
+  <link href="https://maxweber36.github.io/"/>
+  <updated>2025-07-24T08:52:20.464Z</updated>
+  <id>https://maxweber36.github.io/</id>
+  
+  <author>
+    <name>阿犇</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>🌟成为自己放在首位</title>
+    <link href="https://maxweber36.github.io/2025/07/24/%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%94%BE%E5%9C%A8%E9%A6%96%E4%BD%8D/"/>
+    <id>https://maxweber36.github.io/2025/07/24/%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%94%BE%E5%9C%A8%E9%A6%96%E4%BD%8D/</id>
+    <published>2025-07-24T08:40:37.000Z</published>
+    <updated>2025-07-24T08:52:20.464Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天，我重新翻开了<a href="https://book.douban.com/subject/36838903/">《比山更高》</a>这本书，正读着第二个故事。书中内容让我感触很深：无论处于什么时代，总会有一些极具理想主义色彩的人。</p><p>我想先谈谈，在我心中，理想主义者是怎样的人？就是那种将内心真正想做之事置于首位的人。他们不像大多数人，只追求稳妥的选择，而是始终坚持做自己想做的，想尽办法实现目标。无论目标是否被大部分人认可，只要是他们想实现的，就会全力以赴。</p><p>这样的人在人群中显得格外与众不同。你会发现，理想主义者往往一眼就能从人群中被辨认出来，他们与普通人有着明显区别。</p><p>我觉得自己目前只是个普通人，可内心却十分渴望成为理想主义者。继续阅读这本书时，我留意到，有些比我年轻的人，思想犀利、深刻，对生活的态度也格外坚定，这让我深受触动。</p><p>我深知自己远未达到他们的程度。虽说我年纪比他们大，但却自己像个尚未启蒙的小朋友，显得有些怯懦。让我感触深刻的是，他们很早就开始探寻内心真正想要的，且从不轻易妥协或放弃。</p><p>相比之下，自从大学毕业之后，我放弃了很多。那时，我对自我的探索几乎停滞。每当面对想做的事，总是反复权衡，最终大多选择放弃。</p><p>如今，虽然年纪也不小了，但是我觉得自己还是应该重新拾起二十多岁时未完成的自我探索使命，更努力地去发现、追寻内心真正想要的，探索自身价值。</p><p>勇敢追求自我，在多数人眼中必然显得另类。因为本身就与大部分人不同，所以若要追求内心价值，就不应害怕与众不同，毕竟这是必然结果。</p><p>想要成为真正的自己，必然要付出代价。当然，这里面也有运气因素，有人可能付出巨大代价，有人则不会。但无论如何，如果是一个坚定想成为自己的人，他一定会把成为自己放在首位。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🧠 不要妄图掌握所有</title>
+    <link href="https://maxweber36.github.io/2025/07/24/%E4%B8%8D%E8%A6%81%E5%A6%84%E5%9B%BE%E6%8E%8C%E6%8F%A1%E6%89%80%E6%9C%89/"/>
+    <id>https://maxweber36.github.io/2025/07/24/%E4%B8%8D%E8%A6%81%E5%A6%84%E5%9B%BE%E6%8E%8C%E6%8F%A1%E6%89%80%E6%9C%89/</id>
+    <published>2025-07-24T08:36:03.000Z</published>
+    <updated>2025-07-24T09:01:12.167Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h2><p>最近随着产品的不断开发和迭代，我发现自己对于自己构建的产品，也开始无法记得住这个产品的每一行代码和逻辑，无法对于产品的所有细节都全权掌握。之前曾试图把我写下的每一行代码，但是最近，发现这个根本都做不到。</p><h2 id="软件产品的特性"><a href="#软件产品的特性" class="headerlink" title="软件产品的特性"></a>软件产品的特性</h2><ul><li>复杂度会随迭代累积。而且这种累积是指数型的增长。</li></ul><blockquote><p>哪怕最初只有几百行代码，当你不断添加功能、修复漏洞、适配场景时，代码量、模块关联、逻辑分支会指数级增长。比如一个简单的登录功能，最初可能只是 “验证账号密码”，但后来可能加入验证码、第三方登录、风控校验…… 每个新增环节都可能牵扯底层逻辑，你不可能永远记住 “某一行代码为什么要加一个判断”—— 这不是我的问题，是软件本身的复杂性决定的。</p></blockquote><h2 id="什么是最重要的事情？"><a href="#什么是最重要的事情？" class="headerlink" title="什么是最重要的事情？"></a>什么是最重要的事情？</h2><p>掌握框架和工具。</p><ol><li>比如知道产品的核心模块是什么？（用户系统？支付系统？），模块之间是怎么交互的。</li><li>学会用文档（注释、设计文档）记录关键逻辑。</li><li>遇到忘记的细节时，能通过调试、查日志、看注释快速找回逻辑，而不是依赖记忆。</li></ol><h2 id="重要的事情"><a href="#重要的事情" class="headerlink" title="重要的事情"></a>重要的事情</h2><p>我不需要 “对抗遗忘”，而是应该 “学习如何管理复杂度”。就像建房子，我不需要记住每一块砖的位置，但必须知道承重墙在哪里、水管怎么走。后续开发中，我会慢慢发现：比起 “记住所有细节”，“知道去哪里找答案”“能清晰拆解问题” 才是更重要的能力。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🎮一场以弱胜强的游戏</title>
+    <link href="https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/"/>
+    <id>https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/</id>
+    <published>2025-07-19T09:38:23.000Z</published>
+    <updated>2025-07-24T08:52:04.342Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我觉得创业其实就是一个以弱胜强、以小博大的游戏。对于独立产品来说，往往起步时处于非常弱势的位置，如何在这样的环境下生存下来，非常重要。</p><p>这不仅仅像我以前在公司那样，只是单纯做一个产品，也不仅仅是做技术方面的事情，而不考虑其他的事情。创业更像是一个综合性、生产性的问题。你要思考，如何在资源有限、处境艰难的情况下，与更强的对手竞争，并且持续生存下去。</p><p>我也意识到，自己有时候太过专注于产品本身，比如产品的交付和设计等细节。但现在，我更应该围绕“生存”这个核心，尽可能延长产品的生命周期。我认为，无论在任何阶段，这都是最重要的事情。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="鼓励自己的" scheme="https://maxweber36.github.io/tags/%E9%BC%93%E5%8A%B1%E8%87%AA%E5%B7%B1%E7%9A%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📝 个人最佳笔记应用推荐及理想笔记工具构想</title>
+    <link href="https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/"/>
+    <id>https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/</id>
+    <published>2025-07-17T14:40:56.000Z</published>
+    <updated>2025-07-24T09:01:16.723Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>如果让我选出今年个人认为最有价值的 App，虽然还有大半年的时间。我可能会选择 Get 笔记。这个应用确实给了我记录想法的动力。每当我心里有一些想法，哪怕只是稍微有点价值的念头，我都会愿意用这个笔记来记录下来。</p><p>之所以喜欢 Get 笔记，主要有几个原因。首先，它支持语音输入。很多时候我的灵感都是一闪而过，如果让我坐在那里敲字，其实我不太愿意，因为打字太慢了，很多想法转瞬即逝。而且有些想法是在我说出来的过程中逐渐形成的。语音输入这个功能，成为我持续记录的一个重要动力。</p><p>第二个吸引我的点是，它引入了 AI 能力。它会把我的语音内容转录成文字，而且不仅仅是基础的转录，还会进行润色。这样我后期再看这些文字内容时，阅读体验会更加顺畅。不像我现在这样口头表达时会有些零碎、不够有结构，有时还显得啰嗦。AI 会帮我去除一些不必要的词句，让最终的文字内容更加结构化、紧凑。</p><p>第三点就是 DeepSeek 的那个机器人。这个机器人主要是让我可以基于我录下来的文本，和它进行交流和沟通。有时候，它会帮我分析我最近的一些思考，并整理我的想法。我觉得这些功能都挺好的。</p><p>当然，目前它的整理还比较浅显，主要还是我主动让它整理什么内容，它才会去做。除了日报之外，其他很多内容它还不会主动帮我整理。我觉得这方面其实还有很大的提升空间。</p><p>另外，还有一个产品叫“心光”。听我刚才的描述，其实它很符合我前面提到的这三点功能。不过，它的功能有点复杂，对我来说有些过于繁琐。比如，它还会整合你的豆瓣数据、看电影的数据、看书的数据等等。除了你的平时个人日记的数据之外，其他内容也都能同步进来，但整体显得有些复杂。</p><p>有时候，我只是想让它帮我理清自己的思路，梳理一下我最近在思考些什么。因为我脑子里总是有很多想法，这些想法又比较零碎、跳跃，没办法形成一个结构化的内容。而在这方面，心光的表现就稍微弱了一些。</p><p>其实，我理想中的工具是能够帮助我将零散的想法整理成结构化的输出。打个比方，就像进行田野调查一样：我平时会观察自己的感受、想法和思绪，但不会立即做出判断，而是先收集这些原始素材，并将它们记录下来。之后，我会定期整理最近的想法，将它们转化为更加结构化的内容。通过这种方式，我可以从这些零碎的观察和只言片语中，发现一些更深层次的问题，或者找到我更关注的焦点。这就是我希望实现的目标。</p><p>至于“心光”的功能，它在这方面有所欠缺。它更像是一个陪伴型的助手，当你有一些想法时，它会跳出来询问你最近的情况，但不会将这些流动的想法整理成结构化的、有价值的输出。我感觉这个产品的定位并不在此，因此后期可能也不会在这方面进行改进。</p><p>是的，我后续可以考虑自己开发这样一个工具。不过就目前而言，这个项目对我来说还是有一定难度的。</p><p>首先，它需要做成手机端应用，因为我经常需要随时记录想法，所以移动端是最理想的选择。但在此之前，我还没有开发过手机应用，这确实是一个挑战。</p><p>前期我需要学习很多新知识，或者说熟悉相关技术。虽然这个过程需要投入不少精力，但我认为可以将这个项目作为一个长期目标，在时间允许的情况下逐步推进。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="工具" scheme="https://maxweber36.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250711</title>
+    <link href="https://maxweber36.github.io/2025/07/11/20250711/"/>
+    <id>https://maxweber36.github.io/2025/07/11/20250711/</id>
+    <published>2025-07-10T22:46:17.000Z</published>
+    <updated>2025-07-24T08:55:46.224Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>还有一个小时就要到火车东站了，现在是 06:42。我查了地铁，地图上显示大约需要 40 多分钟能到，但总觉得时间非常紧张。刚刚还错过了一趟地铁，现在还要再等 4 分钟，不知道来不来得及，心里特别着急。</p><p>其实，这种赶时间的状态让我很不安，也让我反思自己。为什么总是把事情安排得这么紧？有时候明明知道这样不好，但还是会这样做。性格上确实还有很多需要改正的地方，比如要学会更从容一些。</p><p>现在还有 3 分钟地铁就来了，时间还是很赶。整个过程中，内心一直很慌张，完全不从容。其实，这种状态就像我做其他事情一样，如果把时间安排得太紧，整个人就会一直处于紧绷的状态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>💎 真正有价值的东西</title>
+    <link href="https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    <id>https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
+    <published>2025-07-06T00:51:32.000Z</published>
+    <updated>2025-07-24T08:53:56.776Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，听朋友分享了一期<a href="https://www.xiaoyuzhoufm.com/episode/684b8f83574f065721e6a775?s=eyJ1IjogIjYyMWQ2MWY1ZWRjZTY3MTA0YTE0ZDcxMSJ9">王汉洋在知行小酒馆一期播客</a>。</p><p>我在听汉阳的分享，他在播客上谈到的一些内容让我很有共鸣。现在AI的能力确实非常强大，我也越来越觉得，人在做事情、接触物理世界，以及内在感受这些方面，变得越来越重要。</p><p>所谓的客观真理，其实我并不认为真的存在绝对的客观真理，而且这也不是最重要的东西。因为AI太强了，比如你要查文献、提问，或者关注世界上已经存在的信息，让AI来解答，它往往比你做得更好。</p><p>但你的个人感受、想法、体验，以及你对所接触到的物理事件的理解，这些是AI无法替代的。而这些东西对你来说其实非常重要。我现在越来越同意他的观点：我们应该更加关注物理世界，更加关注自己独特的体验，自己对于这个世界独特的创造，一定是要带有自己的生命体验和喜恶，因为这些才是真正独一无二、有价值的东西。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250706</title>
+    <link href="https://maxweber36.github.io/2025/07/06/20250706/"/>
+    <id>https://maxweber36.github.io/2025/07/06/20250706/</id>
+    <published>2025-07-06T00:36:48.000Z</published>
+    <updated>2025-07-24T08:55:41.928Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天听了项飙的讲座，突然觉得我还是应该找时间把《把自我作为方法》这本书重新读一遍。</p><p>最近在观察自己的时候，我发现自己与他人建立关系的机会确实有点少。怎么说呢，现在我更多地在构建自我，但其实这还远远不够。我时不时会有一种孤独感，或者说有一种无法深入下去的感觉。虽然我也说不太清楚，但我觉得还是有一些方法可以帮助我“沉下去”，比如去做一些更沉浸式的事情。比如说，去远山徒步，这可能会让我更加安静和沉静。还有做家务，其实也能让我很投入。</p><p>我觉得有一个原因让我有时感到悬浮，就是互联网世界确实让我觉得不太真实。比如我加了很多群，但这些群里太多转瞬即逝的消息，而且内容非常零碎。有时候我会觉得这些群没有什么意义。</p><p>社交网络有时候会让人觉得自己像一粒灰尘，可以随处飘荡。你永远只是浮在某个表面上，没办法真正和某个东西紧密地连接在一起。不管是在社区还是社群里，大家虽然彼此认识，但感觉就像灰尘一样，只是飘在表面上。随时一阵风吹过，就会被带走。</p><p>好像你们就断联了。是的。后来过了一段时间，我把一些社群退了，真的觉得没什么意义。在网络上的这种交流，还是太浅了。人与人之间，还是要在线下见面，才能开始一些更深刻的连接。</p><p>还有，项飙在讲座里提到的“附近”这个概念，我觉得很重要。人与人之间的关系，其实需要一些摩擦和“交易成本”。比如说，你和邻居生活在同一个空间里，即使你不喜欢他，也没办法马上搬走。你被迫和对方共同生活在一个物理世界里，这种联系有时候反而比网络上的关系更深。因为在网络上，如果你讨厌一个人，可以很快就不联系了；如果喜欢，也可以随时聊天，但很难真正深入。</p><p>物理空间的限制，让人与人之间的关系不得不更深一些。对于自我来说更是如此。你无法逃避自己，所以和自己的关系其实是最重要的。</p><p>我觉得我应该更多去建立那些能够深入挖掘、真正触及内心的关系，而不是停留在表面。</p><p>我不再把自己当作一个四处漂泊的浮萍。虽然这种状态有时能带来新鲜体验，但这些体验往往不会在脑海中留下深刻印记。它们就像一些转瞬即逝的想法，如果不及时记录和深入思考，很快就会消失。这些想法不会对我的未来产生任何影响，或者关联非常有限。</p><p>这对我来说是一个很大的启发。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="自我关系" scheme="https://maxweber36.github.io/tags/%E8%87%AA%E6%88%91%E5%85%B3%E7%B3%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250703</title>
+    <link href="https://maxweber36.github.io/2025/07/03/20250703/"/>
+    <id>https://maxweber36.github.io/2025/07/03/20250703/</id>
+    <published>2025-07-03T06:04:30.000Z</published>
+    <updated>2025-07-24T08:55:37.483Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>多语言学习中的发音标注体系探索与国际音标的应用思考</p><p>最近我在学习语言。之前一直在学英语，现在又开始学粤语和日语，还想学法语。当我同时学习多种语言时，突然发现这些语言之间有很多不同之处，尤其是在发音方面。于是，我开始了解国际音标，也顺便了解了中文的注音和发音体系。</p><p>其实，之前学英语的时候接触过音标，但那时候并不知道什么是国际音标。只知道音标是用来标注英语单词发音的，而拼音则是用来标注汉字发音的。日语方面，它有平假名和片假名，这两套假名既可以标注日语单词的发音，也能表达意思，有点类似于中文的拼音。</p><p>后来我发现，每种语言都有自己独特的标注发音的体系。进一步了解后才知道，国际音标其实就是为了解决不同语言发音标注的问题，它用一套统一的体系来标注各种语言的发音。比如，中文可以用国际音标来标注发音，日语也同样适用。</p><p>所以，学会了国际音标之后，其实可以用它来标注不同语言的发音，这样无论学习哪种语言，都能更准确地掌握发音。</p><p>对，然后我最开始是在学习国际音标。学习的过程中，我突然又去看了一下拼音，结果发现国内很多给小朋友用的拼音教材都挺复杂的。我觉得这些教材并没有把拼音的本质讲清楚，反而加了很多不必要的内容。其实，拼音主要就是让孩子认识这些符号，以及学会这些符号怎么发音就可以了。</p><p>只要掌握了这两点——一是这些符号怎么读，二是这些符号拼在一起怎么拼读，然后多加练习，让孩子记住这些内容，其实就足够了，没必要搞得特别复杂。我发现有时候国内的拼音教学无谓地增加了很多记忆负担，而且有些记忆其实是没有用的。</p><p>现在回想起来，我觉得挺有意思的。以前学习的时候，很多内容其实并不太明白它们到底是什么，只是跟着学，也不去思考为什么要学这些。如果能明白学习的本质和目的，再去学的话，效率会高很多。</p><p>现在我特别想学好国际音标，但我有个疑问：如果我掌握了国际音标，是不是以后学其他语言时，就不用再去记平假名或片假名的发音了？是不是可以直接用国际音标来标注和学习发音呢？</p><p>我可以利用国际音标这套发音体系来记忆发音。这样学习起来会轻松很多，因为像我在用 guolingo 学习法语时，它法语本身没有音标。仅凭耳朵去听，有时难以分辨准确的发音。我常常会联想到英语的发音，但实际上法语的发音与英语并不相同，导致我在学习法语时经常听错发音。</p><p>因此，我在思考：在学习法语时，是否能够找到每个单词对应的国际音标标注？这个问题可能需要我认真解决。我打算把它记入待办清单，后续再想办法处理。</p><p>哦，对了，我突然想到，有时候我们学中文时，可能只学过拼音这种发音标注体系。如果没学过英语音标，直接用中文拼音的标注体系去标注英文单词，会导致很多发音不准确。因为英文有它自己独特的发音，我们这样发音时对方可能听不懂，用拼音去标注英文，根本无法准确标注，导致发音错误。所以，我们需要学习他们那边的标注体系，也就是学习英语音标，或者学习国际音标，它有足够多的标注方式，可以让我们的发音更加准确。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>✍️ 从宋明蔚谈他的写作视角到我价值观的倾向</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/</id>
+    <published>2025-07-01T14:08:34.000Z</published>
+    <updated>2025-07-24T09:01:33.536Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-OrnisVym" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-OrnisVym"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/关于写作视角与个人价值实现的思考.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我最近在听《比山更高》这本书。作者宋明蔚在他的博客里提到，关于写作时使用第三者视角的一些想法。他讲了自己为什么特别想用第三者视角来描述事情，以及为什么在写书的时候，绝对不会用“我”这个词。</p><p>他谈到的理由，我个人非常认可，也给了我很大的启发。其实，这也是我更喜欢的表达方式，只是我在这方面做得还不够好。以前我对自己特别执着，不管是在朋友圈，还是在其他地方，总是想不清楚“我”到底重不重要，或者说，在公开事件中、在公众眼中的“我”到底有没有那么重要。</p><p>有一段时间我在写日记，也常常纠结要不要把这些日记发出去。因为从某种角度来说，我确实希望自己能成为一个有影响力的人。但我发现，自己能谈的内容其实不多，很多时候写的还是关于自己，因为我确实觉得自己很重要。</p><p>可是在写自己的时候，我又会犹豫：这些东西到底有没有必要分享给别人？是不是把自己强行摆在别人面前，像是在说“你看我这样，你看我那样”？这种感觉对我来说，其实也挺矛盾的。</p><p>其实我挺厌恶那种过度强调自我的表达，或者说，我自己也不太喜欢那样。相比之下，我更倾向于去建立一些超越“自我”的东西。虽然有时候我觉得自己很重要，但有时候又觉得其实也没那么重要。可能这些想法都需要经历一些事情之后，才能慢慢明白吧。</p><p>如果说我的终极目标，其实是希望自己写出来的东西，或者自己所构建的事物，能够超越个人本身。我更希望自己对世界的影响，是通过那些已经大于我自身的作品或成果去实现的，而不是不断地强调“我怎么怎么样”，或者反复标榜自己是一个需要影响他人的人。</p><p>说实话，我挺讨厌现在的马斯克。虽然作为一个普通人，讨厌他其实也没什么意义，但从我的角度来看，我确实不喜欢他那种总是想把所有聚光灯和关注都吸引到自己身上的做法。当然，我也非常讨厌特朗普，他在各种场合下总是想成为焦点。</p><p>我不想成为那样的人。当然，这个世界上有各种各样的人。其实，说讨厌也没太大意义，因为如果真的要去讨厌那些和自己价值观不合的人，那这个世界上该讨厌的人实在太多了。</p><p>话说回来，我的人生使命可能是想要创造一个比自己更大的东西，然后通过那个东西去改变世界。回顾过去的职业道路，我进入产品行业其实有些阴差阳错。现在想来，也是因为当时接触到的信息促使我步入这个行业。</p><p>当然，我必须努力发展自己，才能构建一个比自己更大的东西。所以，关注自己是前提，然后通过构建更大的东西去影响世界，这才是目的。我下了决心，会持续关注自己，每天写日记，专注自己的感受。不过，这些只对我个人有意义，对别人来说帮助不大。</p><p>目前，我觉得自己还处在一个建设自我的阶段。今天这个想法让我很有启发，我想先把它记录下来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250630</title>
+    <link href="https://maxweber36.github.io/2025/07/01/20250630/"/>
+    <id>https://maxweber36.github.io/2025/07/01/20250630/</id>
+    <published>2025-07-01T14:04:20.000Z</published>
+    <updated>2025-07-24T08:55:24.162Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-vTIfDSWx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-vTIfDSWx"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/阅读《比山更高》引发的自我认知与成长思考.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在读《比山更高》这本书的时候，严冬冬提到了一段回忆。他说，自己刚毕业时，中登协曾邀请他去机构里做一些研究性的工作，但他最终拒绝了。当时他的想法是，如果自己一毕业就去了马哥那里，形成了一种习惯性的生活套路，那么想要从中挣脱出来所需要的能力，是我当时并不具备的。</p><p>看到这段话，对我来说其实非常有启发。很多时候，如果我们想要变得更加自由，就需要先了解自己的局限，认清自己的弱点。只有当你能够评估自己的能力时，才能判断做某件事情的风险。</p><p>其实，这让我想起巴菲特还是芒格说过的一句话：“如果我知道自己将来会死在什么地方，那我就永远不会去那里。”大概也是这个意思吧。作为我自己来说，过去我总是很容易看到自己的闪光点或者优点，但有时候却不太能看见自己的弱点。而恰恰是这些我看不见的弱点，反而可能会带来更大的影响。</p><p>有时候，正是因为我看不清自己的弱点，才会让自己陷入极度危险的境地，甚至可能遭遇致命一击。所以，如果我真的想要成长，或者说想获得更多的自由，前提就是要先了解自己的局限，认清当下的弱点。只有这样，才能避免把自己推向极端危险的边缘。</p><p>说到这里，我发现，其实我并不是一个特别能扛压力的人。换句话说，我并不擅长在极端压力下做出好的选择。每当压力过大时，我反而容易陷入无尽的焦虑，做出一些极端的决定，而这些决定往往会让我处于更加危险的境地。所以，我应该尽量避免让自己处于极端压力之下。</p><p>其实，我更适合在一种平稳、相对平静的状态下工作。只有在这样的环境里，我才能发挥出更好的水平。以前我总以为，自己能够在巨大压力下实现突破，但现在我不这么认为了。我不是那种能在极端压力下爆发的人。</p><p>对我来说，最适合的方式，可能就是按部就班，一步一个脚印地前进。只要投入足够的时间，有规律地安排工作，持续不断地努力，或许才能真正实现自己的目标和梦想。</p><p>有节奏、有节点地去做事情，反而对我有很好的帮助。这一点和我过去的认知不太一样。以前我确实不了解自己，不知道自己是什么样的人，于是盲目地把自己陷入极端环境中，认为在极度压力下会做得更好。但事实并非如此。</p><p>我性格上其实比较温和，虽然有时会有一些激情，但这种激情不足以支配我的人生。我不是那种极端激情型的人，更喜欢一步一个脚印、有计划地去执行任务。</p><p>虽然我本性上有些懒散，这一点我承认，也确实需要克服。有时候我确实是个”P人”，但我也在”T 人”和”F”之间反复横跳——这是MBTI术语。不过，我不想给自己下太多定义，因为这些定义只能描述我当前的状态，不能约束我的未来。</p><p>人总是很矛盾。从另一个角度来看，当我在做自己想做的事情时，这种矛盾也体现得更加明显。</p><p>大部分情况下，实现目标仍然非常困难，需要克服诸多障碍。这些障碍不仅来自外部环境，也可能源于自身。我确实需要付出更多努力才能达成目标，目前还无法轻松实现梦想。</p><p>现在的我，就像正在阅读的这本书中的主人公严冬冬一样，虽然怀揣远大理想，但能力仍有不足，还有很多需要弥补和提升的地方。不过，那个目标始终在我心中，我会持续努力去完成它。</p><p>我相信，只要不放弃，终有一天能够实现目标。加油！我一定能做到。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="比山更高" scheme="https://maxweber36.github.io/tags/%E6%AF%94%E5%B1%B1%E6%9B%B4%E9%AB%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🎉 解决了一个博客的问题-噢耶！</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98-%E5%99%A2%E8%80%B6/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%97%AE%E9%A2%98-%E5%99%A2%E8%80%B6/</id>
+    <published>2025-07-01T13:58:58.000Z</published>
+    <updated>2025-07-24T09:01:59.119Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-kNThextR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-kNThextR"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/解决一个博客的问题.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在更新博客的时候，我突然发现，之前把图片资源放错了文件的路径，导致我前段时间因为重新安装了主题，结果发现以前的很多图片都不见了。今天我仔细检查了一下，才发现原来很多资源都放错了文件夹。</p><p>我是用 Hexo 框架搭建的博客，当时把很多文件都放到了 public 文件夹里，而不没有放的 source 文件夹。这样一来，重新安装主题后，很多图片就丢失了。今天我把所有资源都查了一遍，才明白，原始的很多资源其实应该放在 source 文件夹里。</p><p>这个发现对我来说帮助很大，也让我学到了新的东西。以后我再也不会犯这样的错误了，心情还挺不错的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🎯 我的四个人生目标</title>
+    <link href="https://maxweber36.github.io/2025/07/01/%E6%88%91%E7%9A%84%E5%9B%9B%E4%B8%AA%E4%BA%BA%E7%94%9F%E7%9B%AE%E6%A0%87/"/>
+    <id>https://maxweber36.github.io/2025/07/01/%E6%88%91%E7%9A%84%E5%9B%9B%E4%B8%AA%E4%BA%BA%E7%94%9F%E7%9B%AE%E6%A0%87/</id>
+    <published>2025-07-01T13:46:28.000Z</published>
+    <updated>2025-07-24T08:54:42.010Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-EmpTXEIG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-EmpTXEIG"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "录音：我的四个人生目标",              author: "weber",              url: "/music/我的四个人生目标.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我有好多想做的事情，还是先把它们记录下来，免得以后忘了。</p><p>第一个目标，是成为一名独立开发者，并且能够以此养活自己和家人。</p><p>第二个目标，是希望有一天能写一本小说，无论是虚构还是非虚构。我真的很想尝试写作，但现在还不知道该怎么开始。感觉自己目前只会写随笔或者日记，写小说对我来说挺难的。</p><p>第三个目标，是希望能成为一个业余的户外爱好者，比如徒步、登山、滑雪，反正就是要多走进森林。</p><p>第四个目标，是想成为一个严肃的读者。我觉得阅读能让我的生命体验更丰富、更有厚度，这对我很有吸引力。但我其实不太清楚怎样才算是严肃读者，也不了解他们是什么样子。</p><p>本来还想再补一个，比如学会画画、做音乐之类的，但想想还是算了，就先定这四个目标吧。每一个都挺难的，想想都觉得有点挑战。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="价值观" scheme="https://maxweber36.github.io/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250701</title>
+    <link href="https://maxweber36.github.io/2025/07/01/20250701/"/>
+    <id>https://maxweber36.github.io/2025/07/01/20250701/</id>
+    <published>2025-07-01T03:05:24.000Z</published>
+    <updated>2025-07-24T08:55:27.911Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-VTXkreuP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-VTXkreuP"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/读《比山更高》有感：坚持自我超越的人生态度.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>在读《比山更高》这本书，看到严冬冬的经历时，我有一些感触。其实，人真的不用太担心自己出发时有多弱，或者起点有多低。只要你一直在奔跑，你就会不断前进。</p><p>在奔跑的过程中，也没必要和别人比较。如果总是和别人比，那你的天花板就会被别人设定，被别人定义。最重要的是和自己比较。因为只有和自己比，你的潜能在理论上就是无限的，你可以不断超越自己，这一点真的很重要。</p><p>严冬冬爬山的整个过程，其实也给了我一些信心和启发。当然，我并不想说“像严冬冬这样起点那么低的人都能做到，我也一定可以”这种陈词滥调。其实，这样的想法本身也是一种比较。</p><p>即使没有严冬冬这样的例子，我也应该学会相信自己。别人的故事确实可以激励我，但是我的信念不能却建立在别人身上，而要扎根在自己的内心。</p><p>我相信一件事，不需要在乎别人怎么说、怎么看。如果你真的说服了自己，真的相信自己，那就只管去做，把这件事情做好就行了。</p><p>做到我满意为止，做到我觉得足够好了为止，否则就不要停下。我觉得我就应该树立这样的信念。是的，我要把这种态度当作自己的驱动力，也当作一套属于自己的方法论。对我来说，这真的很有帮助。毕竟，这一生只有一次，为什么不尽可能地去释放自己呢？</p><p>当然，也许最后我取得的成绩并不算特别出色，但这没关系，那只能说明我的生命本来就是这样，可能这就是我的极限了吧。但无论如何，我都已经全力以赴地燃烧了自己，尽可能地释放了我的生命。至少在我目前的状态下，我已经达到了属于自己的极限。</p><p>其实，和别人比较，对自己并不公平。因为每个人的情况都不一样，衡量的标准也不是单一的数值。所以，我要建立属于自己的跑道，不需要和别人争高下。当然，也许在我专注于自己跑道的时候，偶尔会无意间超过别人，但那并不是我的目的。最重要的是，在自己的跑道上持续奔跑，让自己尽可能地跑得更远。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="读书" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="比山更高" scheme="https://maxweber36.github.io/tags/%E6%AF%94%E5%B1%B1%E6%9B%B4%E9%AB%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>💡 做一个产品搭子的想法</title>
+    <link href="https://maxweber36.github.io/2025/06/27/%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BE%85%E5%8A%A9%E4%BA%A7%E5%93%81%E5%88%9B%E6%84%8F%E8%90%BD%E5%9C%B0%E7%9A%84%E6%83%B3%E6%B3%95/"/>
+    <id>https://maxweber36.github.io/2025/06/27/%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BE%85%E5%8A%A9%E4%BA%A7%E5%93%81%E5%88%9B%E6%84%8F%E8%90%BD%E5%9C%B0%E7%9A%84%E6%83%B3%E6%B3%95/</id>
+    <published>2025-06-27T11:59:37.000Z</published>
+    <updated>2025-07-24T09:01:54.672Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我最近总是有很多想法。每当看到一件事或者遇到一个问题时，脑海里就会冒出各种点子，想着能不能把它们做成产品。可能因为我是产品经理出身，所以经常会有灵感，觉得这些问题或者困难，能不能通过构建一个产品来解决。这里说的产品，主要是指软件产品，或者说互联网产品。</p><p>现在我特别想做一个工具，能帮我分析这些想法，把我的问题或者需求梳理清楚，然后基于这些需求，进一步做产品相关的设计。这个设计包括软件产品的核心功能、交互方式、页面布局、信息结构、产品形态，甚至是技术方案和技术架构——如果能有这些就更好了。</p><p>因为我现在是独立开发者，需要自己写代码来实现产品构想，所以我很需要这些信息，来帮助我评估是否要把某个想法真正落地，实现出来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🧗‍♂️ 很多事情做了，才发现其中的难度</title>
+    <link href="https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/"/>
+    <id>https://maxweber36.github.io/2025/06/27/%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF%E5%8F%8D%E6%80%9D/</id>
+    <published>2025-06-27T11:57:12.000Z</published>
+    <updated>2025-07-24T08:54:01.848Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>读代码其实并不是一件容易的事。很多事情，只有真正自己动手去做了，才会发现其中的难度。过去没做过这些事时，总觉得很简单，把资料随手丢给别人，也觉得别人应该不用花太多力气就能看懂、学会。但现在，当我自己去看别人的代码，尤其是一些看似简单的功能时，过程其实挺吃力的。这可能和我目前的阶段有关。</p><p>不过，学习和研究别人的代码，哪怕是 AI 写的代码，对我来说依然很有帮助。现在已经过去半年了，我发现自己最大的问题还是在代码上。虽然比之前有了一些进步，但进步的速度还是太慢了。这一点让我不得不承认，自己还需要更加努力，投入更多时间。希望能早点达到一个成熟、独立开发者的状态。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🔍 个人产品开发中的自我认知与用户视角反思</title>
+    <link href="https://maxweber36.github.io/2025/06/27/20250627/"/>
+    <id>https://maxweber36.github.io/2025/06/27/20250627/</id>
+    <published>2025-06-27T06:30:00.000Z</published>
+    <updated>2025-07-24T08:55:20.229Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近这两天，我花了不少时间在写代码上。昨天，我终于把一个相对完整的功能做出来了。这个过程让我收获了很强的正反馈——我亲眼看到，自己通过写代码，把脑海里的想法变成了现实，构建出了一个属于自己的产品。虽然这个产品很简单，但对我来说意义很大。</p><p>有了这个成果后，我就会想，只要有想法，我就想去实现它，用代码把它做出来。写程序的时候，我其实不会太在意这个东西到底能解决什么大问题。但是它确实解决了我自己的需求，而且我并没有考虑怎么把它变现、怎么商业化、怎么做运营增长，甚至在交互设计上也没有太多要求。毕竟，这只是我自己做来用的。</p><p>在使用这个产品的时候，我投入了很多感情。别人用我做的产品，可能觉得它就是个普通的软件，和其他软件没什么区别。但对我来说，即使它的功能很简单，界面也不算好看，我依然觉得它很特别。</p><p>其实，很多东西看起来还挺粗糙的，但在我自己使用的过程中，依然觉得特别有意义，毕竟这是我亲手创造的。不过，我也发现这种思维方式并不是完全没有问题。最大的问题在于，我很容易陷入自嗨的状态。比如说，我自己做了一个软件，放到市面上其实并不算特别出色，甚至只能算中下水平，但我自己用的时候却觉得它非常好。于是我会想把它分享出去，结果发布后，大家的反响却很一般。这种差异其实挺明显的。</p><p>所以，有时候我需要提醒自己，不能总是沉浸在自我陶醉里。这样的思维方式对我来说帮助有限。在构建产品的时候，我还是要学会从他人的视角去思考和完善。</p><p>举个小细节来说，比如我在做产品时，发现底部有一些文案，其实我自己平时都不会太关注这些文字。比如昨天做的那个“想法薄荷”或者叫“灵感薄荷”的笔记应用，底部有一段小文字，写的是“AI笔记——语音AI笔记应用工具”。这些描述其实都很中性，但我自己用的时候，反而不会太在意这些内容。</p><p>其实这个描述很一般。如果是我自己用的话，我肯定不会在意这些细节。但如果是别人使用我的产品，或者我看到其他产品有类似的描述，我对这个产品的印象就会大打折扣。</p><p>做产品时，不要用非常中性的语句来描述。把产品简单地描述成一个工具，其实意义不大。更重要的是，产品应该传递一种温度或价值观，吸引那些具有相同价值观的用户。这是我在做产品时需要花精力思考的。</p><p>功能只是最基础的部分，更重要的是通过这个功能传递什么样的价值，给用户什么样的感觉。这是做产品非常重要的工作之一，也是需要花精力去思考的领域之一。</p><p>总之，产品要能传递独特的价值观和独特的气质。这是我昨天开发软件时，结合过去做产品的经验，突然想到的，所以我想把它记录下来。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="独立开发" scheme="https://maxweber36.github.io/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🌫️ 虚无和无意义</title>
+    <link href="https://maxweber36.github.io/2025/06/26/%E8%99%9A%E6%97%A0%E5%92%8C%E6%97%A0%E6%84%8F%E4%B9%89/"/>
+    <id>https://maxweber36.github.io/2025/06/26/%E8%99%9A%E6%97%A0%E5%92%8C%E6%97%A0%E6%84%8F%E4%B9%89/</id>
+    <published>2025-06-26T05:26:14.000Z</published>
+    <updated>2025-07-24T08:54:16.513Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天又听了一期<a href="https://www.xiaoyuzhoufm.com/episode/685bd4b250e8c269ca7db980">播客</a>，是讲的一部电影，名字叫做<a href="https://movie.douban.com/subject/36215199/">《东四十条》</a>。这部电影没有看过，我自己也不打算看。内容主要是讲的 “东四（杨凯航 饰）和十条（钱赓 饰）是租住在北京胡同里的两个外来年轻人。春天，他们在胡同里看到了一张重金悬赏的寻鸽启示，从此开始了他们的寻找……”（内容梗概—来自豆瓣）。</p><p>这个电影看起来很无聊。虽然我没有看过，但是我觉得看这部电影，确实就很无聊。因为我相信这部电影的无聊感和空洞感，本身也是导演想要传递给观众的。</p><p>我自己是经历过一段人生虚无主义的阶段的，就是做什么都觉得没有意义，自己曾经构建出来的虚妄宏大叙事或者价值，在很短的时间内，化为了泡影。那个时候，我的状态可能和这部电影中的两个主人公的状态非常的相似。不想做任何事情，和电影主人公的人物可能还不太一样，我可能连寻找鸽子的这个事情，我也不想做。</p><p>虚无，无意义，才是这个世界的真相。</p><p>从那以后，花了好一段时间，我才开始接受了这个现实。那个时候，我读了很多书，哲学的书，存在主义的书，看了一些电影，有一些电影的气质其实和东四十条的气质，应该是非常相似的。然后开始逐步的理解了，并接受。</p><p>虽然有时候这种虚无感，还是会时不时的向我的心头袭来。但是它却很多时候帮助到了我，帮助更加有勇气去面对这个现实，也让我更加专注于自己的人生。对于此，我反而是充满了感激，感激它让我懂得珍惜生命，让我懂得什么对我来说才是最重要的事情，在人生的很多重大决定中，它都帮助到了我。</p><hr><p>为什么，我一开始写东西，我的大脑，我敲出来的文字，就开始自动的变成了想给大家传递信息，就变成了好像在写百科词条一样，自动的变成了那种要给大家传递某种客观资讯的模式。总是想要把事情讲清楚，把信息给到位。</p><p>有时候这样写了，我自己会感觉非常的无聊，觉得自己简直就是在浪费生命。这些客观的信息，需要我从我的嘴巴里面讲出来吗？这个世界也不差这些事实性的信息，还是不要把时间浪费在这些地方，更要关注的是跟自己生命的交互和价值，这个才是最重要的事情。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250625</title>
+    <link href="https://maxweber36.github.io/2025/06/25/20250625/"/>
+    <id>https://maxweber36.github.io/2025/06/25/20250625/</id>
+    <published>2025-06-25T03:18:48.000Z</published>
+    <updated>2025-07-24T08:55:06.026Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近听播客，意外听到许知远在一期播客中介绍了一本书叫做<a href="https://book.douban.com/subject/36815098/">《可能的世界》</a>，这本书是杨潇写的一本旅行游记。是记录他在 2010 年-2019 年，10 年时间游历了 19 个国家写下的一本书。在听许知远介绍这本书的时候，非常有趣。如果有感兴趣的朋友，非常建议大家去听这一期播客。</p><p>这本书让我想起了《马可波罗历险记》，让我想起了《一千零一夜》，让我想起了《小王子》，那些异国情调，是完全不同于我当前生活的这个世界。即使现在这个世界的网络和资讯，是如此的发达。但是这本书中，所描述的景象，依然让我感到好奇和惊喜。这本书中，有这么一段描述，描述的杨潇在印度旅行的时候内容。（以下这段文字，是我通过工具将声音转录成文字的，可能会存在有些和书本内容不一致的地方）</p><blockquote><p>在这座印度第三大城市的火车站，到处都是骚扰你的挑夫，人群像密密麻麻的没头苍蝇，火车在散步，人在火车道上散步。精疲力尽，躺在开往格雅的卧铺列车上用手机读完宗萨仁波切的《八万四千问》，心可以被调抚，因为心能够被影响。这或许是我们能听到的最好的消息了。我们被训练成易怒和猜忌的，就是我们如此擅长此道的原因。说得真好。</p><p>沉下来才能好好回想过去 24 小时的感受，觉得对加尔各答的粗浅评判很不公平。这可是特瑞萨修女和泰戈尔生活过的城市。看着看着，我就睡着了。</p><p>小憩醒来后，这旅程甚至变得有点甜丝丝的。然而，这并不是我带的椰子糖所致。人性是多么容易变化呀。</p><p>晚餐吃咖喱盒饭，吃完问列车员垃圾桶在哪儿，他没说话，打开车门直接把饭盒扔了出去。天光尚在，列车正经过一个巨大的拐弯。一位摄影师探出身子，打算记录下列车优美的弧线。显然，前面车厢标出来一泡尿，随风浇了他满头满脸。</p></blockquote><p>实在是太有画面感了，这段内容是我在听许知远朗读这本书的时候，听到的。非常好笑，但是又充满了乐趣。好似我真的跟着杨潇的文字，来到了这个地方，看到了杨潇看到的画面，听到杨潇听到的声音，闻到了杨潇闻到的味道，如此的真切。</p><p>另外，在这之前，我也听了一期关于刘子超在讲他另外一本新书，在他的另外一本新书<a href="https://book.douban.com/subject/37022123/">《血与蜜之地》</a>，也是讲他在巴尔干的旅程。刘子超是我非常喜欢的一位旅行作家。他的文字细腻，有趣，极度富有画面感。看他的书，真的就好似看了一场旅行的电影，我是很容易被他的文字牵引，并被他带入到他所描述的场景中，和他一同经历，和他一同和他人交谈。而这不就是另外一种旅行吗。</p><p>所以我在微信读书上，创建了一个叫做 <a href="https://weread.qq.com/misc/booklist/10719450_81abQCE2U">《另外一种旅行》</a>的书单，里面收录了我想看这类的旅行写作。希望通过这些书，我的感受和想象跟着这些文字，去到那些从未踏足过的地方。</p><hr><p><strong>｜提及到播客｜</strong></p><p><a href="https://www.xiaoyuzhoufm.com/episode/663307d24b7d3b5d3bad8320">《游荡集——Vol.2 寻找一个可能的世界》—许知远</a></p><p><a href="https://www.xiaoyuzhoufm.com/episode/684809a9b23ed76e6053c305">《忽左忽右——408 从巴尔干到西藏：与刘子超再谈旅行写作》</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="书单" scheme="https://maxweber36.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🌐 成为多维度的人</title>
+    <link href="https://maxweber36.github.io/2025/06/20/%E6%88%90%E4%B8%BA%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%9A%84%E4%BA%BA/"/>
+    <id>https://maxweber36.github.io/2025/06/20/%E6%88%90%E4%B8%BA%E5%A4%9A%E7%BB%B4%E5%BA%A6%E7%9A%84%E4%BA%BA/</id>
+    <published>2025-06-20T04:59:13.000Z</published>
+    <updated>2025-07-24T08:54:38.388Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，我和豆包进行了一场非常<a href="http://www.doubao.com/thread/wf0a93909960cddd6">有益的对话</a>。我很想把它整理出来，因为这个对我来说，很有价值。它解决了我很多问题。之前我思考了很久，也没有思考清楚的问题。</p><p>我们从“真理的冲突”出发，聊到了物理学领域中“冲突”和兼容，哲学领域中人们认知框架的根本对立，宗教领域中教义体系的排他性冲突，数学和逻辑中的悖论揭示等等。然后开始聊，人们是否可以真正了解真理，比如康德的二律背反中谈到了理性的自我冲突，然后聊到维特根斯坦中关于语言的边界，语言的语法结构中对于逻辑结构的遮蔽，以及关于语言结构性的问题讨论，我们将语言扩大化，聊到了各种语言（除了自然语言，还包括数学语言，音乐&#x2F;绘画语言，逻辑&#x2F;编程语言）的结构性特征以及有限性表现。</p><p>最后我们讨论完了之后，这一段话，对我启发非常大。</p><blockquote><p>任何符号系统都无法完全抵达 “事物本身”，但这并不意味着认知的虚无。维特根斯坦后期提出 “语言游戏” 理论，强调语言的意义在于使用场景中的践行（如数学的意义在计算活动中，音乐的意义在演奏与聆听中）。这种转向表明：</p><ul><li>局限的不可避免性：语言的结构性如同认知的 “脚手架”，我们无法脱离它思考，但可以通过多元语言的互补（如数学 + 自然语言 + 艺术）拓展认知维度；</li><li>超越的路径：不是追求 “无局限的语言”，而是在承认局限的前提下，通过跨语言的 “翻译”（如用数学模型解释诗歌意象）打破单一符号系统的牢笼；</li><li>哲学的新任务：从 “构建完美语言” 转向 “研究语言的生命形式”—— 正如维特根斯坦所说，“哲学问题产生于语言放假的时候”，只有让语言回到生活实践，才能消解其因过度抽象产生的悖论。<br>无论是自然语言的语法陷阱，还是数学语言的不完备性，本质上都是人类认知边界的符号化显现。但这种 “局限” 并非缺陷：正是因为语言有结构性，我们才能通过逻辑分析消解悖论（如分析哲学对形而上学的批判）；正是因为语言有有限性，人类才会不断创造新的符号系统（如从古典逻辑到量子逻辑）。或许正如海德格尔所言，语言是 “存在的家”，而家的边界，恰是思想得以栖居并向外拓展的起点。</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📅 20250618</title>
+    <link href="https://maxweber36.github.io/2025/06/19/20250618/"/>
+    <id>https://maxweber36.github.io/2025/06/19/20250618/</id>
+    <published>2025-06-19T01:24:30.000Z</published>
+    <updated>2025-07-24T08:55:01.543Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>没有写代码，在小宇宙听了几期播客。一期是关于讲“自由言论”的，还有一期是讲最近关于“以色列和伊朗冲突”的。一个是因为自己比较感兴趣，另外一个是因为这是我觉得，最大的一次新闻了。</p><p>没有写代码，自己的内心感觉还是有罪过的。</p><p>之前写了一个关于 BTC 的 dashboard 的页面，比较简单，主要还是因为想自己用。自己前几天趁着 618 的时候，购买了一个服务器，打算用这个服务器来部署一下这个页面。之前尝试过部署小程序。因为自己打算会开发很多个类似的这样的页面，所以打算尝试在一个服务器中，部署多个应用。也算是给自己练练手。毕竟自己是做独立开发者，那么什么东西都得自己动手试试，才知道嘛。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="日记" scheme="https://maxweber36.github.io/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
