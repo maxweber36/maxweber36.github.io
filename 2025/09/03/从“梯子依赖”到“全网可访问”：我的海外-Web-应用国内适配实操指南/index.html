@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>🌍 从“梯子依赖”到“全网可访问”：我的海外-Web-应用国内适配实操指南 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/my-projects/">我都做了啥</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/">
+                            技术总结
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                🌍 从“梯子依赖”到“全网可访问”：我的海外-Web-应用国内适配实操指南
+            
+            
+        </div>
+        <span class="post-date">
+            Sep 3, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="如何做一个应用同时服务海内外的用户"><a href="#如何做一个应用同时服务海内外的用户" class="headerlink" title="如何做一个应用同时服务海内外的用户"></a>如何做一个应用同时服务海内外的用户</h2><p>大家都知道国内网络限制的原因，如果要做一个 Web 应用需要同时服务于国内用户或者海外用户，一般来说有两种方法。</p>
+<p>方法一，在国内和海外同时部署两套应用，分别服务于国内和海外的用户。这个是最常见，也是最普遍的方式。</p>
+<p>方法二，在海外部署一套应用，然后使用支持国内 CDN 加速的服务商（只有少部分的海外 CDN 加速服务商支持，所以大家在选择的时候，要注意挑选一下），绕开国内的防火墙，从而使得国内的用户也能够进行使用。</p>
+<blockquote>
+<p>需要注意一点的是：如果使用国内 的 CDN 加速服务商，是需要 ICP 备案。这个整个流程大概需要一周左右吧。我之前走过一次全流程。</p>
+</blockquote>
+<p>我选择的第二个方法。我使用的 赛博佛祖 的 Cloudflare，原因有两个，首先最重要的支持国内的 CDN 加速。其次对于他们提供的免费计划，对于我来说完全够用了。</p>
+<h2 id="我的情况"><a href="#我的情况" class="headerlink" title="我的情况"></a>我的情况</h2><p>我自己做了小产品，现在是部署在 vercel 上。部署在 vercel 上，也就意味着在国内的用户如果不使用魔法 🧙♀️ 或者梯子 🪜，实际上是访问不了这个应用的。</p>
+<h2 id="如何配置-Cloudflare-的-CDN-服务"><a href="#如何配置-Cloudflare-的-CDN-服务" class="headerlink" title="如何配置 Cloudflare 的 CDN 服务"></a>如何配置 Cloudflare 的 CDN 服务</h2><p>如果想要使用 Cloudflare 的 CDN 服务。大概要经历以下四步。</p>
+<h3 id="第一步：购买域名"><a href="#第一步：购买域名" class="headerlink" title="第一步：购买域名"></a>第一步：购买域名</h3><p>注册一个域名。Vercel 提供的域名，是不能通过 Cloudflare 进行 CDN 配置。因为 Cloudflare 要求添加到其平台的域名必须是你自己拥有并能管理 DNS 解析的域名。我是在 <a target="_blank" rel="noopener" href="https://www.namesilo.com/">namesilo</a> 上购买的域名，这个网站是以廉价域名而著称的网站。所以想要购买便宜的域名的话，建议在这个网站上进行购买，对了，这个网站支持支付宝购买。我本来需要的域名大概只需要 2 美元，结果买域名的时候，不小心买错了，结果又花了 2 美元 重新买了一个。所以域名一共花了 4 美元$。</p>
+<h3 id="第二步：Cloudflare-进行-DNS-配置"><a href="#第二步：Cloudflare-进行-DNS-配置" class="headerlink" title="第二步：Cloudflare 进行 DNS 配置"></a>第二步：Cloudflare 进行 DNS 配置</h3><ol>
+<li>在 Cloudflare 进行账号注册，并登录 Cloudflare 后台，然后添加自己刚刚买的域名。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-1.png" alt="img"></p>
+<ol start="2">
+<li>这里可以直接选择它的默认选项，点击继续。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-2.png" alt="img"></p>
+<ol start="3">
+<li>直接选择 Free Plan，对于我们这种刚刚起步的 web 应用，基本上够用了。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-3.png" alt="img"></p>
+<ol start="4">
+<li>开始添加 DNS 记录。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-4.png" alt="img"></p>
+<blockquote>
+<p>关于 DNS 添加的小知识点：选择 DNS 记录的类型，不同的类型承载不同的解析逻辑。</p>
+<p>以下是 DNS 各记录类型的核心信息汇总表：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">类型名称</th>
+<th align="left">核心作用</th>
+<th align="left">典型场景</th>
+<th align="left">是否依赖 DNSSEC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">A</td>
+<td align="left">将域名解析到 IPv4 地址</td>
+<td align="left">网站、服务器等域名 →IPv4 的基础解析</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">AAAA</td>
+<td align="left">将域名解析到 IPv6 地址</td>
+<td align="left">支持 IPv6 网络的域名解析（如 IPv6-only 服务器）</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">CAA</td>
+<td align="left">指定允许为域名颁发 SSL 证书的机构</td>
+<td align="left">增强 SSL 证书安全性，防止非法机构颁发证书</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">CERT</td>
+<td align="left">存储公钥基础设施（PKI）相关的证书 &#x2F; 公钥信息</td>
+<td align="left">证书验证、公钥分发等 PKI 场景</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">CNAME</td>
+<td align="left">为域名设置 <strong>“别名”</strong>（将一个域名指向另一个域名）</td>
+<td align="left">子域名别名（如<a target="_blank" rel="noopener" href="http://www.example.com指向example.com)/">www.example.com指向example.com）</a></td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">DNSKEY</td>
+<td align="left">存储 DNSSEC 的公钥，用于验证 DNS 记录的完整性与真实性</td>
+<td align="left">DNSSEC 体系中 “验证 DNS 记录未被篡改”</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">DS</td>
+<td align="left">在父域名中存储子域名的 DNSSEC 公钥信息，实现子域 DNSSEC 验证委托</td>
+<td align="left">DNSSEC 体系中子域与父域的安全层级验证</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">HTTPS</td>
+<td align="left">专门用于 HTTPS 服务的配置绑定，关联域名与 TLS 参数（加密公钥、协议版本等）</td>
+<td align="left">加速 HTTPS 连接、加密 SNI（服务器名称指示）、支持 HTTP&#x2F;3</td>
+<td align="left">否（部分高级功能依赖公钥）</td>
+</tr>
+<tr>
+<td align="left">LOC</td>
+<td align="left">存储域名对应的物理地理位置信息（纬度、经度、海拔等）</td>
+<td align="left">紧急救援、物流追踪等需地理定位的特殊场景</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">MX</td>
+<td align="left">指定接收域名电子邮件的邮件服务器地址（支持优先级，实现容灾）</td>
+<td align="left">企业 &#x2F; 个人邮箱的邮件路由（如@example.com 的邮件服务器）</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">NAPTR</td>
+<td align="left">用于服务发现与协议转换（如 SIP、XMPP 等协议）</td>
+<td align="left">VOIP 电话、即时通讯的自动服务器发现</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">NS</td>
+<td align="left">标识域名的权威 DNS 服务器（负责解析该域名的服务器）</td>
+<td align="left">DNS 层级解析的核心（定位域名的解析服务器）</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">PTR</td>
+<td align="left">实现反向 DNS 解析（将 IP 地址映射为域名）</td>
+<td align="left">邮件服务器 IP 信誉验证、网络设备身份识别</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">SMIMEA</td>
+<td align="left">关联电子邮件地址与 S&#x2F;MIME 证书（或公钥），验证邮件发件人身份</td>
+<td align="left">企业级安全邮件通信（如政府、金融行业）</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">SRV</td>
+<td align="left">定位提供特定服务的服务器，包含服务类型、端口、权重、优先级</td>
+<td align="left">微软 Active Directory、即时通讯的服务发现</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">SSHFP</td>
+<td align="left">存储 SSH 服务器公钥的指纹（SHA-1&#x2F;SHA-256），验证服务器身份</td>
+<td align="left">企业内部 SSH 服务器集群的身份验证（防中间人攻击）</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">SVCB</td>
+<td align="left">通用的服务绑定记录，关联域名与服务参数（IP、TLS 配置、协议版本等）</td>
+<td align="left">替代 CNAME、优化 HTTPS 连接、多协议服务发现</td>
+<td align="left">否</td>
+</tr>
+<tr>
+<td align="left">TLSA</td>
+<td align="left">属于 DANE 体系，存储 TLS 证书的哈希值，验证服务器 TLS 证书</td>
+<td align="left">自签名证书安全验证、减少对传统 CA 的依赖</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">TXT</td>
+<td align="left">存储任意文本信息，用途广泛</td>
+<td align="left">域名所有权验证、邮件防垃圾（SPF&#x2F;DKIM）、DNSSEC 辅助记录</td>
+<td align="left">部分场景（如 DNSSEC 相关）</td>
+</tr>
+<tr>
+<td align="left">URI</td>
+<td align="left">将域名解析为 URI（如<a target="_blank" rel="noopener" href="https://example.com/path%EF%BC%89%EF%BC%8C%E6%94%AF%E6%8C%81%E4%BC%98%E5%85%88%E7%BA%A7%E4%B8%8E%E6%9D%83%E9%87%8D">https://example.com/path），支持优先级与权重</a></td>
+<td align="left">简化客户端对复杂资源的访问（如 API Endpoint 发现）</td>
+<td align="left">否</td>
+</tr>
+</tbody></table>
+<p>因为我是使用的 vercel 进行部署的，因而我们知道 vercel 的访问域名。因为我希望用户能够通过比如 xxx.com 或者 <a target="_blank" rel="noopener" href="http://www.xxx.com/">www.xxx.com</a> 访问我的网站。因此，在这里我只需要配置两个 DNS 即可。</p>
+<ol>
+<li>类型选择 CNAME， 名称填写 @ ，IPv4 地址就填写 vercel 的访问域名即可：myname.vercel.app。</li>
+<li>类型选择 CNAME，名称填写 www， IP4 填写和上面同样的内容即可。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-5.png" alt="img"></p>
+<ol start="5">
+<li>点击继续前往激活。然后按照它描述的步骤，更新我的名称服务器，并且复制 Cloudflare 名称服务器。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-6.png" alt="img"></p>
+<h3 id="第三步：更新-NameServers"><a href="#第三步：更新-NameServers" class="headerlink" title="第三步：更新 NameServers"></a>第三步：更新 NameServers</h3><ol>
+<li>再次回到 <a target="_blank" rel="noopener" href="https://www.namesilo.com/">namesilo</a> 的后台，点击 Domain Manager</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-7.png" alt="img"></p>
+<ol start="2">
+<li>点击需要更新的域名。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-8.png" alt="img"></p>
+<ol start="3">
+<li>点击 Quick Settings，将 Cloudflare 名称的 NameServers</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-9.png" alt="img"></p>
+<ol start="4">
+<li>切换到 DNS 的 tab 页面，然后往下滑，确保 DNSSEC 关掉。如果没有关掉，则点击关掉。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-10.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/image-11.png" alt="img"></p>
+<p>截止到目前这一步，已经完成对 NameServers 的更新。且已经完成大部分的工作。</p>
+<h3 id="最后一步：在-Vercel-上添加我的域名"><a href="#最后一步：在-Vercel-上添加我的域名" class="headerlink" title="最后一步：在 Vercel 上添加我的域名"></a>最后一步：在 Vercel 上添加我的域名</h3><ol>
+<li>登录 Vercel 后台，点击需要更新的项目，进入到项目的设置页面。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-12.png" alt="img"></p>
+<ol start="2">
+<li>从 overview 标签页，点击 Domains，添加新买的域名。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-13.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/image-14.png" alt="img"></p>
+<ol start="3">
+<li>如果域名下面有 Proxy Detected 的标签显示，基本上到此就算是配置成功了。</li>
+</ol>
+<p><img src="/images/web-app-adaptation/image-15.png" alt="img"></p>
+<p><strong>然后你现在应该可以在国内，不使用魔法 🧙♀️ 或者梯子 🪜 通过这个新域名进行访问了 🎉。</strong></p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/09/03/%E8%B5%B0%E8%AF%A5%E8%B5%B0%E7%9A%84%E8%B7%AF/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/09/01/%E6%9C%80%E8%BF%91%E6%89%93%E7%AE%97%E5%A4%9A%E8%AF%BB%E4%B8%80%E7%82%B9%E5%B0%8F%E8%AF%B4/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
