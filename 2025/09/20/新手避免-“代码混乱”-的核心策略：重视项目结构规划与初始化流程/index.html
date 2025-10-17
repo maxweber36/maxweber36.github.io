@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>🏗️ 新手避免“代码混乱”的核心策略：重视项目结构规划与初始化流程 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Coding/">
+                            Coding
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/">
+                            技术总结
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                🏗️ 新手避免“代码混乱”的核心策略：重视项目结构规划与初始化流程
+            
+            
+        </div>
+        <span class="post-date">
+            Sep 20, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>对于没有系统编程背景的人，刚开始使用 AI Coding 工具构建产品时，最容易犯的错误就是一上来就提需求，让 AI 直接编写代码。这样做在编写简单脚本或小页面时问题不大，但一旦是稍微复杂的产品，随着功能增长、代码量和模块增多，代码就会变得越来越混乱。尤其是交给 AI 来写，更容易堆出“屎山代码”。如果前期不做好项目结构的规划与规范，它就容易“随意发挥”（freestyle）；写得越快，后期的可维护性往往越差。</p>
+<h2 id="友情提醒"><a href="#友情提醒" class="headerlink" title="友情提醒"></a>友情提醒</h2><p>刚进入产品构建或初次接触一个新项目的同学，最重要的学习环节：先了解并熟悉项目结构。</p>
+<h2 id="为什么要在开发一个项目之前，最好初始化？"><a href="#为什么要在开发一个项目之前，最好初始化？" class="headerlink" title="为什么要在开发一个项目之前，最好初始化？"></a>为什么要在开发一个项目之前，最好初始化？</h2><p>一言以蔽之：建立项目结构的规范，保障项目代码的可维护性。</p>
+<h2 id="什么是初始化？"><a href="#什么是初始化？" class="headerlink" title="什么是初始化？"></a>什么是初始化？</h2><p>“初始化”指的是在正式写业务代码前完成的“打地基”步骤。以前端项目（Next.js + Tailwind CSS + shadcn&#x2F;ui + Framer Motion）为例，通常包括：</p>
+<ul>
+<li>生成基础项目结构（通过脚手架工具，如 create-next-app）</li>
+<li>配置 TypeScript、ESLint、Prettier（保证代码规范与可维护性）</li>
+<li>安装并配置 Tailwind CSS（原子化样式）</li>
+<li>安装并初始化 shadcn&#x2F;ui（高质量 UI 组件）</li>
+<li>安装 Framer Motion（动画库），并处理其与 Next.js App Router 及客户端组件的配合</li>
+<li>建立 Git 版本管理并配置忽略文件</li>
+<li>准备环境变量文件</li>
+</ul>
+<h2 id="一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？"><a href="#一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？" class="headerlink" title="一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？"></a>一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？</h2><p>对于刚入坑 AI Coding 的人来说，最容易忽略的一点就是项目结构的规划。如果不知道如何规划项目结构，一般有两种方法：</p>
+<ol>
+<li><p>根据你项目所使用的技术栈，通过标准化的命令行指令，来初始化自己的项目，搭建一个初步的项目结构。</p>
+<ul>
+<li>例如 Next.js 项目，可以通过执行以下命令进行初始化：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app@latest my-app \</span><br><span class="line">  --typescript \</span><br><span class="line">  --eslint \</span><br><span class="line">  --tailwind \</span><br><span class="line">  --src-dir \</span><br><span class="line">  --app \</span><br><span class="line">  --import-alias &quot;@/*&quot;</span><br><span class="line"></span><br><span class="line">  解释一下这段命令行指令</span><br><span class="line"></span><br><span class="line">* npx create-next-app@latest：使用 npx 临时执行最新版本的 create-next-app（不会全局安装）。</span><br><span class="line">* my-app：要创建的项目目录名（会在当前目录创建名为 my-app 的文件夹）。</span><br><span class="line">* --typescript：初始化为 TypeScript 项目（生成 tsconfig、.tsx 文件等）。</span><br><span class="line">* --eslint：自动配置 ESLint（基本 lint 规则）。</span><br><span class="line">* --tailwind：自动添加并配置 Tailwind CSS。</span><br><span class="line">* --src-dir：把源码放在 src/ 目录下（而不是根目录）。</span><br><span class="line">* --app：启用 Next.js 的 app Router（app/ 目录结构）。</span><br><span class="line">* --import-alias &quot;@/*&quot;：在 tsconfig.json/jsconfig.json 中生成路径别名 &quot;@/*&quot; -&gt; &quot;src/*&quot;（方便 import &quot;@/components/...&quot;）。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在开始撰写代码之前，先让 AI 根据项目的技术栈和需求，进行初步的项目规划。</p>
+</li>
+</ol>
+<blockquote>
+<p>友情提示：对于此前没有进行过项目规划的朋友，在完成项目结构的初步搭建后，最好让 AI 生成一份《项目结构说明书》，对结构规范加以说明。该文件可以放到项目根目录的 docs&#x2F; 文件夹下（例如：docs&#x2F;structure-guide.md）。</p>
+</blockquote>
+<h2 id="清晰和明确的项目结构到底有什么好处？"><a href="#清晰和明确的项目结构到底有什么好处？" class="headerlink" title="清晰和明确的项目结构到底有什么好处？"></a>清晰和明确的项目结构到底有什么好处？</h2><p>一个产品的项目结构，并不是简单的“文件夹分类”，它是一套<strong>约定好的“信息组织规则”</strong>，无论是人还是工具（AI、编译器、打包工具），都需要通过这套规则理解代码逻辑、依赖关系和功能边界。</p>
+<p>一个清晰和明确的项目结构会有哪些重要的好处？</p>
+<ol>
+<li><p>降低“认知成本”。能够让人和 AI 快速了解到这个项目框架，并快速定位到代码。它就像是一个好的目录文件一样。</p>
+</li>
+<li><p>帮助理解上下文。AI 生成好的代码的前提是“理解上下文”——如果项目结构清晰明确，比如你只需要提示 AI 在<code>src/components/Button</code> 下写一个按钮组件，它就能够精准生成并自动关联依赖；如果结构随意，AI 无法判断“新代码该放在哪，该引用哪个文件夹的文件”，这样就很容易生成重复代码（比如重复写同一个工具函数）或者路径引入错误，然后就累计出“屎山代码”。</p>
+</li>
+<li><p>让 AI 生成的代码规范，保障可维护。AI 本身不具有“长期项目规划能力”，若没有结构约束，AI 会为了快速实现功能，就信马由缰，“哪里有空就往哪里写”，在后续迭代的时候，新增代码会不断叠加在混乱的基础上，最终导致代码完全无法维护。</p>
+</li>
+<li><p>适配工具链，确保项目能够正常运行、打包和部署。现代项目开发需要依赖大量工具（比如前端的 Webpack&#x2F;Vite、后端的 Node.js&#x2F;Java 框架、版本控制 Git），这些工具的正确运行都需要遵循“约定的项目结构”，才能工作。</p>
+<ol>
+<li>例如前端 Vite 默认会从 <code>src/main.js</code> 入口文件开始打包，若你随意把入口文件改名为 “start.js” 且不配置路径，打包时会直接报错；</li>
+<li>后端 Spring Boot 框架默认扫描 <code>com.example.demo.controller</code> 路径下的接口，若你随意更改 <code>controller</code> 文件夹名，接口会无法被识别，导致服务启动后无法访问。</li>
+</ol>
+<p>若结构不规范，不仅工具会失效，甚至可能出现 “本地能运行、部署到服务器就报错” 的问题（比如路径引用错误），排查起来极其耗时。</p>
+</li>
+</ol>
+<p>总之，项目结构的核心价值是 “<strong>建立规则，降低混乱</strong>”—— 对人而言，它是 “导航地图”；对 AI 而言，它是 “约束框架”；对工具而言，它是 “工作协议”。而 “不随意更改结构或文件名”，本质是维护这套规则的有效性，避免项目从 “可控的工程” 沦为 “不可维护的代码垃圾”。</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

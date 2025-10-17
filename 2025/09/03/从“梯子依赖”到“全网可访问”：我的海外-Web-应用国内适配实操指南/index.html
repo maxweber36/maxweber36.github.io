@@ -101,13 +101,13 @@ var _hmt = _hmt || [];
           
             
               <li class="menu-item">
-                <a href="/about/">关于我</a>
+                <a href="/categories/project/">我都做了啥</a>
               </li> 
                    
           
             
               <li class="menu-item">
-                <a href="/my-projects/">我都做了啥</a>
+                <a href="/about/">关于我</a>
               </li> 
                    
           
@@ -169,19 +169,19 @@ var _hmt = _hmt || [];
 <h3 id="第二步：Cloudflare-进行-DNS-配置"><a href="#第二步：Cloudflare-进行-DNS-配置" class="headerlink" title="第二步：Cloudflare 进行 DNS 配置"></a>第二步：Cloudflare 进行 DNS 配置</h3><ol>
 <li>在 Cloudflare 进行账号注册，并登录 Cloudflare 后台，然后添加自己刚刚买的域名。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-1.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/cc-image-2.1.png" alt="img"></p>
 <ol start="2">
 <li>这里可以直接选择它的默认选项，点击继续。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-2.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/cc-image-2.2.png" alt="img"></p>
 <ol start="3">
 <li>直接选择 Free Plan，对于我们这种刚刚起步的 web 应用，基本上够用了。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-3.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/cc-image-2.3.png" alt="img"></p>
 <ol start="4">
 <li>开始添加 DNS 记录。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-4.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/cc-image-2.4.png" alt="img"></p>
 <blockquote>
 <p>关于 DNS 添加的小知识点：选择 DNS 记录的类型，不同的类型承载不同的解析逻辑。</p>
 <p>以下是 DNS 各记录类型的核心信息汇总表：</p>
@@ -317,46 +317,46 @@ var _hmt = _hmt || [];
 </tr>
 </tbody></table>
 <p>因为我是使用的 vercel 进行部署的，因而我们知道 vercel 的访问域名。因为我希望用户能够通过比如 xxx.com 或者 <a target="_blank" rel="noopener" href="http://www.xxx.com/">www.xxx.com</a> 访问我的网站。因此，在这里我只需要配置两个 DNS 即可。</p>
-<ol>
+<ul>
 <li>类型选择 CNAME， 名称填写 @ ，IPv4 地址就填写 vercel 的访问域名即可：myname.vercel.app。</li>
 <li>类型选择 CNAME，名称填写 www， IP4 填写和上面同样的内容即可。</li>
-</ol>
-<p><img src="/images/web-app-adaptation/image-5.png" alt="img"></p>
+</ul>
+<p><img src="/images/web-app-adaptation/cc-image-2.4-cn.png" alt="img"></p>
 <ol start="5">
 <li>点击继续前往激活。然后按照它描述的步骤，更新我的名称服务器，并且复制 Cloudflare 名称服务器。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-6.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/cc-image-2.5.png" alt="img"></p>
 <h3 id="第三步：更新-NameServers"><a href="#第三步：更新-NameServers" class="headerlink" title="第三步：更新 NameServers"></a>第三步：更新 NameServers</h3><ol>
 <li>再次回到 <a target="_blank" rel="noopener" href="https://www.namesilo.com/">namesilo</a> 的后台，点击 Domain Manager</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-7.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/ns-image-3.1.png" alt="img"></p>
 <ol start="2">
 <li>点击需要更新的域名。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-8.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/ns-image-3.2.png" alt="img"></p>
 <ol start="3">
 <li>点击 Quick Settings，将 Cloudflare 名称的 NameServers</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-9.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/ns-image-3.3.png" alt="img"></p>
 <ol start="4">
 <li>切换到 DNS 的 tab 页面，然后往下滑，确保 DNSSEC 关掉。如果没有关掉，则点击关掉。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-10.png" alt="img"></p>
-<p><img src="/images/web-app-adaptation/image-11.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/ns-image-3.4.1.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/ns-image-3.4.2.png" alt="img"></p>
 <p>截止到目前这一步，已经完成对 NameServers 的更新。且已经完成大部分的工作。</p>
 <h3 id="最后一步：在-Vercel-上添加我的域名"><a href="#最后一步：在-Vercel-上添加我的域名" class="headerlink" title="最后一步：在 Vercel 上添加我的域名"></a>最后一步：在 Vercel 上添加我的域名</h3><ol>
 <li>登录 Vercel 后台，点击需要更新的项目，进入到项目的设置页面。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-12.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/vc-image-4.1.png" alt="img"></p>
 <ol start="2">
 <li>从 overview 标签页，点击 Domains，添加新买的域名。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-13.png" alt="img"></p>
-<p><img src="/images/web-app-adaptation/image-14.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/vc-image-4.2.1.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/vc-image-4.2.2.png" alt="img"></p>
 <ol start="3">
 <li>如果域名下面有 Proxy Detected 的标签显示，基本上到此就算是配置成功了。</li>
 </ol>
-<p><img src="/images/web-app-adaptation/image-15.png" alt="img"></p>
+<p><img src="/images/web-app-adaptation/vc-image-4.3.png" alt="img"></p>
 <p><strong>然后你现在应该可以在国内，不使用魔法 🧙♀️ 或者梯子 🪜 通过这个新域名进行访问了 🎉。</strong></p>
 
 </div> 

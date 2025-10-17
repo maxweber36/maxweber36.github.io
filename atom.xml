@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-09-04T07:13:37.174Z</updated>
+  <updated>2025-10-17T08:13:38.503Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -17,13 +17,257 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Time-Master 的产品构想</title>
+    <link href="https://maxweber36.github.io/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/"/>
+    <id>https://maxweber36.github.io/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/</id>
+    <published>2025-10-17T07:51:28.000Z</published>
+    <updated>2025-10-17T08:13:38.503Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>产品构想的背景原因见：<a href="/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/" title="⏰ 从时间富余到分秒必争：新手父母的时间管理心得">从时间富余到分秒必争：新手父母的时间管理心得</a></p><h2 id="初步想法"><a href="#初步想法" class="headerlink" title="初步想法"></a>初步想法</h2><p>我想做一个应用，它可以随时帮我记录时间的花费。</p><p>最好能比较详细地统计每天的时间使用情况，比如吃饭花了多少时间，我其实也不太清楚。</p><p>这个应用的核心功能，就是让我可以很方便地通过语音开始计时。</p><p>比如我说”我要做什么”，它就帮我创建一个任务并开始计时。等我做完了，说”结束”，它就帮我停止计时，并告诉我这次花了多少时间。</p><p>我真的很想做这样一个东西，主要是希望能完全通过语音来互动，并自动帮我生成一个时间账本，记录每天的时间花费。类似于财务账本记录金钱支出一样。</p><h2 id="产品描述"><a href="#产品描述" class="headerlink" title="产品描述"></a>产品描述</h2><p><strong>产品形态：</strong> 移动端应用</p><p><strong>交互要求：</strong></p><ol><li>可以快速唤起</li><li>几乎可以通过语音的方式进行交互</li></ol><p><strong>核心功能：</strong></p><ul><li>支持时间统计和分析功能，统计每天的时间开支，分析时间花费的分布情况</li><li>提供个性化的时间管理建议</li></ul><p><strong>界面设计：</strong></p><p>▶ <strong>主界面</strong><br>一个大的语音按钮，用户点击按钮后，即开始向 APP 发送语音指令。</p><p>比如用户说”我要做什么，帮我开始设置 30 分钟倒计时”，然后就开始在后台启动一个计时器，并创建一个任务。</p><p>如果倒计时快结束时，APP 会主动提醒：是否需要继续延长时间？</p><p>如果用户提前完成，可以语音说”我已经完成”，或者直接点击结束按钮。然后后台会结束这个计时器，关闭任务，并在后台记录一共用了多少时间，以及开始和结束的时间。</p><p>▶ <strong>任务明细</strong><br>用户可以在任务明细中查看所有的历史任务，包括任务的名称、开始时间、结束时间、耗时等。</p><p>▶ <strong>时间统计</strong><br>用户可以在时间统计界面查看每天的时间开支，还可以查看时间开支的分布情况，比如在哪些时间段花费的时间最多。</p><p>▶ <strong>时间管理建议</strong><br>用户可以获得时间管理和事务管理的建议。</p><h2 id="设计时可以考虑的一些好的交互体验"><a href="#设计时可以考虑的一些好的交互体验" class="headerlink" title="设计时可以考虑的一些好的交互体验"></a>设计时可以考虑的一些好的交互体验</h2><ol><li><p><strong>反馈播报（TTS）</strong>：在计时开始时进行开始提醒，在倒计时快要结束时进行提醒，在结束时汇总耗时并进行提醒。</p></li><li><p><strong>快速唤起</strong>：</p><ul><li>主界面大语音按钮</li><li>系统通知快捷操作&#x2F;桌面小组件&#x2F;长按图标快捷动作（按平台可行性取舍至少实现一种）</li></ul></li></ol><h2 id="版本规划"><a href="#版本规划" class="headerlink" title="版本规划"></a>版本规划</h2><p><strong>V0.1.0 基础功能</strong></p><ul><li>语音交互创建任务：用户通过语音指令创建计时任务</li><li>当前任务显示：显示正在进行的任务状态和倒计时</li><li>任务明细：查看历史任务记录（任务名称、开始时间、结束时间、耗时）</li><li>基础语音反馈：任务开始、结束时的语音提醒</li><li>暂停&#x2F;恢复功能：任务执行过程中的暂停和恢复</li></ul><p><strong>V0.2.0 增强功能（后续版本）</strong></p><ul><li>时间统计：每天的时间开支统计和分析</li><li>时间管理建议：基于使用数据提供管理建议</li><li>快速唤起：桌面小组件、通知快捷操作等</li></ul><h2 id="其他思考的补充"><a href="#其他思考的补充" class="headerlink" title="其他思考的补充"></a>其他思考的补充</h2><p><strong>1. 关于”倒计时”和”计时器（秒表）”的模式，推荐使用哪种模式？</strong></p><p>我个人推荐使用”倒计时”的模式。我觉得做任何事情，最好在事情开始之前，有一个自己心里预估的倒计时。这样会帮助自己在做事情的时候更加专注，从我个人的体验来看，效率也更高。</p><p>我也会考虑添加一个”暂停”按钮，用户可以在需要的时候暂停计时器，而不是直接结束。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
+    
+    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🎯 Dart &amp; Flutter MCP 安装经验分享</title>
+    <link href="https://maxweber36.github.io/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <id>https://maxweber36.github.io/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</id>
+    <published>2025-10-15T03:10:11.000Z</published>
+    <updated>2025-10-15T04:00:19.230Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近在使用 Flutter 开发移动端应用，因此需要安装 Dart &amp; Flutter MCP 来辅助进行代码分析与问题排查。</p><p>按照 <a href="https://dart.dev/tools/mcp-server#use-your-mcp-client">Google 官方文档</a>进行安装时，出现以下错误：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">✖ MCP ERROR (dart): Error: spawn dart ENOENT</span><br><span class="line">✖ Error during discovery for server &#x27;dart&#x27;: spawn dart ENOENT</span><br></pre></td></tr></table></figure><p>该错误通常表示系统无法找到 <code>dart</code> 可执行文件，常见原因是 Dart SDK 未安装或环境变量未正确配置。</p><h2 id="定位-Dart-SDK-的安装路径"><a href="#定位-Dart-SDK-的安装路径" class="headerlink" title="定位 Dart SDK 的安装路径"></a>定位 Dart SDK 的安装路径</h2><p>我在排查后确认 Dart 已安装（我是在 IDE（TRAE）中安装 Flutter 时附带安装了 Dart SDK），但环境变量未配置好。通过查找 Dart SDK 安装目录，定位到 <code>dart-sdk</code> 的路径。</p><blockquote><p>如果 Dart 是随 Flutter 安装的（Flutter 内置 Dart SDK），路径在 Flutter 安装目录的 <code>bin/cache/dart-sdk</code> 下，格式为：<code>/Users/你的用户名/flutter/bin/cache/dart-sdk</code>（其中 <code>/Users/你的用户名/flutter</code> 是你的 Flutter 安装路径）。</p></blockquote><h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>我使用的是 macOS ，因此需要将 Dart SDK 的路径加入 <code>PATH</code> 环境变量。编辑 <code>~/.zshrc</code>（如果没有该文件，可新建），并添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/flutter/bin/cache/dart-sdk/bin&quot;</span></span><br></pre></td></tr></table></figure><p>保存文件并执行 <code>source ~/.zshrc</code> 使配置生效。（如未使用默认路径，请替换为实际安装路径。）</p><h2 id="验证配置"><a href="#验证配置" class="headerlink" title="验证配置"></a>验证配置</h2><p>在新的终端窗口执行 <code>dart --version</code>。如果能正常显示 Dart 版本信息，则说明配置成功。</p><h2 id="重新配置-Flutter-Dart-MCP"><a href="#重新配置-Flutter-Dart-MCP" class="headerlink" title="重新配置 Flutter &amp; Dart MCP"></a>重新配置 Flutter &amp; Dart MCP</h2><p>我使用 MCP Router 统一管理所有 MCP 服务器的配置，因此重新添加了 Dart 服务器的配置：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;mcpServers&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;dart&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;dart&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;mcp-server&quot;</span><span class="punctuation">,</span> <span class="string">&quot;--force-roots-fallback&quot;</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>重新在 MCP Router 开启 Flutter &amp; Dart MCP 后，问题得到解决。</p><p><img src="/images/dart-flutter-mcp/dart-mcp.gif" alt="Dart &amp; Flutter MCP 安装演示"></p><h2 id="其他参考文档"><a href="#其他参考文档" class="headerlink" title="其他参考文档"></a>其他参考文档</h2><ol><li>Dart &amp; Flutter MCP 官方文档. Dart.dev. <a href="https://dart.dev/tools/mcp-server">https://dart.dev/tools/mcp-server</a> （访问日期：2025-10-15）</li><li>Dart &amp; Flutter MCP Git 文档. GitHub - dart-lang&#x2F;ai. <a href="https://github.com/dart-lang/ai/tree/main/pkgs/dart_mcp_server">https://github.com/dart-lang/ai/tree/main/pkgs/dart_mcp_server</a> （访问日期：2025-10-15）</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>⚡ 工具太多反而成负担：我的效率优化反思</title>
+    <link href="https://maxweber36.github.io/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+    <id>https://maxweber36.github.io/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/</id>
+    <published>2025-10-14T05:23:12.000Z</published>
+    <updated>2025-10-15T06:09:02.474Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我觉得自己现在用的工具实在太多了。一会儿是 iFlow，一会儿又是 CodeX，然后还有 Claude Code，还有 GLM4.6，还有 Gemini……天哪，我到底有多少个工具？</p><p>我发现自己有一个很大的怪癖：在使用某个工具时，虽然有些工具只是偶尔用，但只要我觉得这个工具有问题，就会花很多时间去调试，非得把问题解决了才安心。为此，我可能会花一两个小时，甚至更多时间，只为解决一个工具的问题。</p><p>但等我把工具调试得差不多了，结果一个月可能用不到十次。这真的让我觉得很搞笑。我的大部分时间都花在调工具、磨刀上了，真正”砍柴”的时间很少。就像削铅笔花了很多时间，画画却没画多少，写字也没写多少。我的时间就是这样被用掉的。</p><p>说实话，我觉得还是应该选一两个主力工具，不要总是来回切换。这样效率真的很低，时间全都浪费了。</p><p>现在 Claude Code 这个工具，我打算后面就不再用了，也不打算续费了。毕竟续费要两百多块钱，还是有点贵，所以我打算集中精力用其他工具。</p><p><strong>我的工具选择策略：</strong></p><ul><li>主要工具：GLM4.6 + Trae（作为主力工具）</li><li>辅助工具：Gemini（作为补充）</li><li>淘汰工具：Claude Code（不再续费）<br>对我来说，收益和成本相比，确实不划算。</li></ul><p>稍微总结一下，我现在的主力工具是 Trae 和 GLM4.6，Gemini 作为辅助工具，其他的暂时就不考虑了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="效率优化" scheme="https://maxweber36.github.io/tags/%E6%95%88%E7%8E%87%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>⏰ 从时间富余到分秒必争：新手父母的时间管理心得</title>
+    <link href="https://maxweber36.github.io/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
+    <id>https://maxweber36.github.io/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/</id>
+    <published>2025-10-12T05:43:48.000Z</published>
+    <updated>2025-10-15T08:56:21.110Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D/album_temp_1760509609.PNG" alt="来自于《名画都是猫》"></p><center><i>图片来源：《名画都是猫》</i></center><p>现在做事情确实需要更有计划。因为有了小朋友之后，做事不仅仅是处理自己的事情，还要照顾孩子，这中间要花很多时间。而这些时间是比较刚性的，没办法减少。</p><p>在这样的情况下，如何还能做自己想做的事情，就需要有很好的规划。我觉得，现在面临的一个最大挑战就是：<strong>时间管理的困难</strong>。如何在照顾好小朋友的同时，还能做好自己的事情。</p><p>所以在时间利用上，我需要更有意识：</p><ul><li>现在正在做什么</li><li>这段时间花在哪里</li></ul><p>这样才能把握住时间，不让它无意义地流失掉。</p><p>我以前在这方面可能太放纵、太舒服了，因为自己时间太多了。时间多的时候，对时间的开销和利用没有那么强的意识，可能时间就糊里糊涂地用掉了，就像花钱一样，糊里糊涂地就把钱花掉了。</p><p>只有当开始记录时间的时候，我才知道我的时间到底花在了哪里，我才知道我到底在做什么。</p><blockquote><p>有意识地去使用自己的时间，要把时间投入到有意义、有价值的事情上，这一切从记录时间开支开始。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+    <category term="育儿" scheme="https://maxweber36.github.io/tags/%E8%82%B2%E5%84%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用 AI 帮助进行微信群总结--未完成</title>
+    <link href="https://maxweber36.github.io/2025/10/11/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-AI-%E5%B8%AE%E5%8A%A9%E8%BF%9B%E8%A1%8C%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%80%BB%E7%BB%93/"/>
+    <id>https://maxweber36.github.io/2025/10/11/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-AI-%E5%B8%AE%E5%8A%A9%E8%BF%9B%E8%A1%8C%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%80%BB%E7%BB%93/</id>
+    <published>2025-10-11T09:05:13.000Z</published>
+    <updated>2025-10-15T07:12:45.873Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>如何使用 chatlog 帮助自己对微信群聊进行总结</p><p>我使用的系统是 MacOs</p><p>使用到的工具包括：</p><ol><li>chatwise(这里可以使用开源的 cherry studio，或者 trae，或者 cursor 都可以，只要是可以调用 MCP 的工具都可以）</li><li>chatlog</li><li>AI 模型使用的是：Google gemini2.5-flash</li><li>微信客户端，最好回退到 v3.x 版本</li></ol><p>步骤：</p><ol><li></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>📍 LocateIt - AI 图片地理定位工具</title>
+    <link href="https://maxweber36.github.io/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/"/>
+    <id>https://maxweber36.github.io/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/</id>
+    <published>2025-10-04T04:00:00.000Z</published>
+    <updated>2025-10-05T00:44:08.043Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="📋-产品概述"><a href="#📋-产品概述" class="headerlink" title="📋 产品概述"></a>📋 产品概述</h2><p><strong>乐可寻 Locate-It</strong> 是一款基于人工智能的地点识别服务，通过分析图片内容来推测可能的地理位置。我们采用多模态 AI 模型结合网络检索技术，对图片中的视觉信息进行智能分析和推理，为用户提供地点参考信息。</p><h2 id="🎯-核心功能"><a href="#🎯-核心功能" class="headerlink" title="🎯 核心功能"></a>🎯 核心功能</h2><h3 id="🌍-AI-视觉分析与推理"><a href="#🌍-AI-视觉分析与推理" class="headerlink" title="🌍 AI 视觉分析与推理"></a>🌍 AI 视觉分析与推理</h3><ul><li><strong>多模态 AI 识别</strong>：采用 BigModel GLM-4.5V 模型，分析图片中的视觉特征</li><li><strong>智能推理机制</strong>：基于图像内容、建筑风格、自然景观等线索进行地点推测</li><li><strong>GPS 数据优先</strong>：当图片包含 EXIF GPS 数据时，优先使用精确坐标信息</li><li><strong>概率性结果</strong>：提供基于 AI 分析的地点建议，而非绝对准确的位置信息</li></ul><h3 id="🎨-虚拟场景分析与原型探索"><a href="#🎨-虚拟场景分析与原型探索" class="headerlink" title="🎨 虚拟场景分析与原型探索"></a>🎨 虚拟场景分析与原型探索</h3><ul><li><strong>作品场景识别</strong>：识别动漫、游戏、影视剧中的虚拟场景</li><li><strong>现实原型推测</strong>：基于视觉特征推测可能的现实取景地或灵感来源</li><li><strong>创意推理</strong>：通过 AI 推理分析虚拟场景与现实地点的关联性</li><li><strong>外部验证</strong>：利用网络搜索验证和补充识别结果</li></ul><h3 id="🗺️-地点信息展示与地图可视化"><a href="#🗺️-地点信息展示与地图可视化" class="headerlink" title="🗺️ 地点信息展示与地图可视化"></a>🗺️ 地点信息展示与地图可视化</h3><ul><li><strong>交互式地图</strong>：在百度地图上展示推测的地点位置</li><li><strong>坐标参考</strong>：提供地理坐标作为位置参考信息</li><li><strong>地址解析</strong>：将坐标转换为可读的地址描述</li><li><strong>可视化展示</strong>：直观的地图界面帮助用户理解位置信息</li></ul><h3 id="🔍-智能搜索与信息补充"><a href="#🔍-智能搜索与信息补充" class="headerlink" title="🔍 智能搜索与信息补充"></a>🔍 智能搜索与信息补充</h3><ul><li><strong>网络检索</strong>：集成 Tavily API 搜索相关地点信息</li><li><strong>信息提取</strong>：从搜索结果中提取有用的位置描述和背景资料</li><li><strong>交叉验证</strong>：通过多源信息提升识别结果的可信度</li><li><strong>背景补充</strong>：提供地点的相关背景信息和文化介绍</li></ul><h2 id="🎨-产品特色"><a href="#🎨-产品特色" class="headerlink" title="🎨 产品特色"></a>🎨 产品特色</h2><h3 id="🤖-双模式分析能力"><a href="#🤖-双模式分析能力" class="headerlink" title="🤖 双模式分析能力"></a>🤖 双模式分析能力</h3><ul><li><strong>现实场景分析</strong>：分析真实照片中的地点线索，推测可能位置</li><li><strong>虚拟场景探索</strong>：处理二次元和影视内容，探索现实原型可能性</li></ul><h3 id="📱-友好的用户体验"><a href="#📱-友好的用户体验" class="headerlink" title="📱 友好的用户体验"></a>📱 友好的用户体验</h3><ul><li><strong>简洁操作</strong>：拖拽或点击上传图片，即可开始分析</li><li><strong>多格式支持</strong>：支持 JPG、PNG、WebP、HEIC 等常见格式</li><li><strong>实时进度</strong>：展示分析进度，让用户了解处理状态</li><li><strong>结果展示</strong>：清晰的分析结果展示，包括推理过程说明</li></ul><h3 id="🎯-智能化推理流程"><a href="#🎯-智能化推理流程" class="headerlink" title="🎯 智能化推理流程"></a>🎯 智能化推理流程</h3><ul><li><strong>多层次分析</strong>：从整体景观到具体细节的逐步分析</li><li><strong>线索整合</strong>：综合视觉线索、GPS 数据、网络信息进行推理</li><li><strong>概率评估</strong>：为识别结果提供置信度参考</li><li><strong>透明化过程</strong>：展示 AI 的推理逻辑和判断依据</li></ul><h2 id="🎯-主要使用场景"><a href="#🎯-主要使用场景" class="headerlink" title="🎯 主要使用场景"></a>🎯 主要使用场景</h2><h3 id="🎮-动漫游戏文化探索"><a href="#🎮-动漫游戏文化探索" class="headerlink" title="🎮 动漫游戏文化探索"></a>🎮 动漫游戏文化探索</h3><p><strong>场景</strong>：看到动漫游戏中的美丽场景，想了解现实中的可能取景地<br><strong>价值</strong>：发现虚拟作品与现实世界的连接，为「圣地巡礼」提供参考</p><h3 id="🎬-影视拍摄地探寻"><a href="#🎬-影视拍摄地探寻" class="headerlink" title="🎬 影视拍摄地探寻"></a>🎬 影视拍摄地探寻</h3><p><strong>场景</strong>：观看影视剧时对某个场景产生兴趣，想了解拍摄地信息<br><strong>价值</strong>：探索影视作品背后的真实地点，满足观众的好奇心</p><h3 id="🏞️-摄影创作参考"><a href="#🏞️-摄影创作参考" class="headerlink" title="🏞️ 摄影创作参考"></a>🏞️ 摄影创作参考</h3><p><strong>场景</strong>：摄影师寻找拍摄地点参考，分析优秀作品的地理位置<br><strong>价值</strong>：为摄影创作提供地点灵感，帮助发现新的拍摄角度</p><h2 id="🔬-技术原理说明"><a href="#🔬-技术原理说明" class="headerlink" title="🔬 技术原理说明"></a>🔬 技术原理说明</h2><h3 id="🧠-AI-分析机制"><a href="#🧠-AI-分析机制" class="headerlink" title="🧠 AI 分析机制"></a>🧠 AI 分析机制</h3><p>我们的系统采用多模态 AI 模型，通过以下步骤进行分析：</p><ol><li><strong>视觉特征提取</strong>：识别图片中的建筑、自然景观、人文特征</li><li><strong>风格判断</strong>：分析建筑风格、植被特征、地形地貌等线索</li><li><strong>地理位置推理</strong>：基于视觉线索和知识库推测可能的地区</li><li><strong>网络验证</strong>：通过搜索相关信息验证和补充推测结果</li></ol><h3 id="📊-结果可信度"><a href="#📊-结果可信度" class="headerlink" title="📊 结果可信度"></a>📊 结果可信度</h3><ul><li><strong>GPS 数据</strong>：当图片包含精确 GPS 信息时，准确性最高</li><li><strong>AI 推测</strong>：基于视觉分析的地点推测，提供参考性建议</li><li><strong>网络验证</strong>：通过多源信息交叉验证提升结果可信度</li></ul><h2 id="📈-产品特点"><a href="#📈-产品特点" class="headerlink" title="📈 产品特点"></a>📈 产品特点</h2><ol><li><strong>AI 驱动</strong>：基于最新多模态 AI 技术的智能分析</li><li><strong>推理导向</strong>：通过逻辑推理提供地点建议，而非简单匹配</li><li><strong>虚实结合</strong>：同时支持现实场景和虚拟场景分析</li><li><strong>用户体验</strong>：简洁直观的操作流程</li><li><strong>信息丰富</strong>：提供地点背景信息和文化介绍</li><li><strong>持续学习</strong>：AI 模型不断优化，提升分析能力</li></ol><h2 id="🚀-使用建议"><a href="#🚀-使用建议" class="headerlink" title="🚀 使用建议"></a>🚀 使用建议</h2><ul><li><strong>提供线索</strong>：在分析时提供地区范围或作品名称等线索可提升效果</li><li><strong>理解概率性</strong>：AI 分析结果仅供参考，实际地点可能存在差异</li><li><strong>多角度验证</strong>：重要用途建议结合其他方式确认地点信息</li><li><strong>探索发现</strong>：将产品视为探索工具，发现图片背后的有趣故事</li></ul><hr><p><strong>乐可寻 Locate-It</strong> — 让 AI 帮您探索图片背后的地理故事 🌍🔍</p><h2 id="项目链接"><a href="#项目链接" class="headerlink" title="项目链接"></a>项目链接</h2><ul><li><a href="https://www.locateit.pics/">官方网站</a></li><li><a href="https://app.locateit.pics/">在线体验</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="project" scheme="https://maxweber36.github.io/categories/project/"/>
+    
+    
+    <category term="AI应用" scheme="https://maxweber36.github.io/tags/AI%E5%BA%94%E7%94%A8/"/>
+    
+    <category term="地理定位" scheme="https://maxweber36.github.io/tags/%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/"/>
+    
+    <category term="图像识别" scheme="https://maxweber36.github.io/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/"/>
+    
+    <category term="Web应用" scheme="https://maxweber36.github.io/tags/Web%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>👓 定制自己的透镜</title>
+    <link href="https://maxweber36.github.io/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/"/>
+    <id>https://maxweber36.github.io/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/</id>
+    <published>2025-09-24T17:03:15.000Z</published>
+    <updated>2025-09-24T17:35:56.079Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-pBzNZkOM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-pBzNZkOM"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Catching The Dawn",              author: "weber",              url: "/music/Catching-The-Dawn.m4a",              pic: "/music-cover/with-music.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我越听重轻的播客，越听越觉得他的阐述能力非常牛逼的。其实，他的很多观点或者说视角并不是我觉得是最牛的，虽然他的观点确实帮我开拓了很多视角，让我有种豁然开朗的感觉。但在听他论述的时候，他在表达的很多观点，其实我在其他书里也见过类似的表达，可是看那些书的时候，并没有像听他给我讲的时候，那种让我眼前一亮、仿佛被点醒的感觉。</p><p>我觉得重轻最厉害的地方，就是他的阐释能力或者叫做叙事的能力。当他把同样的事情重新讲一遍的时候，你会从中感受到那个故事就明显带上了他自己独特的烙印。虽然内容本质上还是原来的事，但经过他的讲述，就完全变成了另一回事，让人感觉很不一样。这就是一种讲故事的能力。</p><p>我在想，怎么才能培养自己这种讲故事的能力，把一个平平无奇的故事讲得特别生动、特别有趣。我觉得重轻有这种能力，还有之前我看过一个台湾综艺节目，是大 S 和小 S 一起主持的。我觉得大 S 也有这种能力，有时候听她讲一些事情，或者大 S、小 S 一起聊日常，本来是很无聊的事，但被她们一说就变得非常有趣。</p><p>我觉得，尤其是在现在这个社会，叙事能力真的非常重要。它能够改变一个人对一件事情的看法。就好像在你和这个世界之间加了一个透镜，这个透镜会折射、会改变光线进入你眼睛的路径。虽然我们现在看世界时，已经透过了很多了透镜，但大多数人用的都是标准化的透镜，也就是最最主流的叙事。</p><p>而当我在听重轻讲一个故事、或者阐述一件事的时候，我会发现他的透镜是他手工定制的，带有他自己独特的曲面和材质。光线经过他的透镜时，所穿过的路径和我日常用的、工厂里生产的标准透镜完全不一样。这种差异会给我带来另外一种看世界的样子。</p><p><strong>推荐最近重轻的一期播客，很震撼。</strong><br><a href="https://www.gcores.com/radios/183775"><img src="/images/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/fcsm.JPG" alt="蜂巢生命封面"> 原型 vol.3 ｜ 蜂巢生命</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+    <category term="关于写作" scheme="https://maxweber36.github.io/tags/%E5%85%B3%E4%BA%8E%E5%86%99%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🏗️ 新手避免“代码混乱”的核心策略：重视项目结构规划与初始化流程</title>
+    <link href="https://maxweber36.github.io/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/"/>
+    <id>https://maxweber36.github.io/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/</id>
+    <published>2025-09-20T09:31:56.000Z</published>
+    <updated>2025-09-20T09:47:27.698Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>对于没有系统编程背景的人，刚开始使用 AI Coding 工具构建产品时，最容易犯的错误就是一上来就提需求，让 AI 直接编写代码。这样做在编写简单脚本或小页面时问题不大，但一旦是稍微复杂的产品，随着功能增长、代码量和模块增多，代码就会变得越来越混乱。尤其是交给 AI 来写，更容易堆出“屎山代码”。如果前期不做好项目结构的规划与规范，它就容易“随意发挥”（freestyle）；写得越快，后期的可维护性往往越差。</p><h2 id="友情提醒"><a href="#友情提醒" class="headerlink" title="友情提醒"></a>友情提醒</h2><p>刚进入产品构建或初次接触一个新项目的同学，最重要的学习环节：先了解并熟悉项目结构。</p><h2 id="为什么要在开发一个项目之前，最好初始化？"><a href="#为什么要在开发一个项目之前，最好初始化？" class="headerlink" title="为什么要在开发一个项目之前，最好初始化？"></a>为什么要在开发一个项目之前，最好初始化？</h2><p>一言以蔽之：建立项目结构的规范，保障项目代码的可维护性。</p><h2 id="什么是初始化？"><a href="#什么是初始化？" class="headerlink" title="什么是初始化？"></a>什么是初始化？</h2><p>“初始化”指的是在正式写业务代码前完成的“打地基”步骤。以前端项目（Next.js + Tailwind CSS + shadcn&#x2F;ui + Framer Motion）为例，通常包括：</p><ul><li>生成基础项目结构（通过脚手架工具，如 create-next-app）</li><li>配置 TypeScript、ESLint、Prettier（保证代码规范与可维护性）</li><li>安装并配置 Tailwind CSS（原子化样式）</li><li>安装并初始化 shadcn&#x2F;ui（高质量 UI 组件）</li><li>安装 Framer Motion（动画库），并处理其与 Next.js App Router 及客户端组件的配合</li><li>建立 Git 版本管理并配置忽略文件</li><li>准备环境变量文件</li></ul><h2 id="一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？"><a href="#一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？" class="headerlink" title="一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？"></a>一个完全不懂的规划自己项目结构的人，应该如何初始化自己的项目结构？</h2><p>对于刚入坑 AI Coding 的人来说，最容易忽略的一点就是项目结构的规划。如果不知道如何规划项目结构，一般有两种方法：</p><ol><li><p>根据你项目所使用的技术栈，通过标准化的命令行指令，来初始化自己的项目，搭建一个初步的项目结构。</p><ul><li>例如 Next.js 项目，可以通过执行以下命令进行初始化：</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">npx create-next-app@latest my-app \</span><br><span class="line">  --typescript \</span><br><span class="line">  --eslint \</span><br><span class="line">  --tailwind \</span><br><span class="line">  --src-dir \</span><br><span class="line">  --app \</span><br><span class="line">  --import-alias &quot;@/*&quot;</span><br><span class="line"></span><br><span class="line">  解释一下这段命令行指令</span><br><span class="line"></span><br><span class="line">* npx create-next-app@latest：使用 npx 临时执行最新版本的 create-next-app（不会全局安装）。</span><br><span class="line">* my-app：要创建的项目目录名（会在当前目录创建名为 my-app 的文件夹）。</span><br><span class="line">* --typescript：初始化为 TypeScript 项目（生成 tsconfig、.tsx 文件等）。</span><br><span class="line">* --eslint：自动配置 ESLint（基本 lint 规则）。</span><br><span class="line">* --tailwind：自动添加并配置 Tailwind CSS。</span><br><span class="line">* --src-dir：把源码放在 src/ 目录下（而不是根目录）。</span><br><span class="line">* --app：启用 Next.js 的 app Router（app/ 目录结构）。</span><br><span class="line">* --import-alias &quot;@/*&quot;：在 tsconfig.json/jsconfig.json 中生成路径别名 &quot;@/*&quot; -&gt; &quot;src/*&quot;（方便 import &quot;@/components/...&quot;）。</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>在开始撰写代码之前，先让 AI 根据项目的技术栈和需求，进行初步的项目规划。</p></li></ol><blockquote><p>友情提示：对于此前没有进行过项目规划的朋友，在完成项目结构的初步搭建后，最好让 AI 生成一份《项目结构说明书》，对结构规范加以说明。该文件可以放到项目根目录的 docs&#x2F; 文件夹下（例如：docs&#x2F;structure-guide.md）。</p></blockquote><h2 id="清晰和明确的项目结构到底有什么好处？"><a href="#清晰和明确的项目结构到底有什么好处？" class="headerlink" title="清晰和明确的项目结构到底有什么好处？"></a>清晰和明确的项目结构到底有什么好处？</h2><p>一个产品的项目结构，并不是简单的“文件夹分类”，它是一套<strong>约定好的“信息组织规则”</strong>，无论是人还是工具（AI、编译器、打包工具），都需要通过这套规则理解代码逻辑、依赖关系和功能边界。</p><p>一个清晰和明确的项目结构会有哪些重要的好处？</p><ol><li><p>降低“认知成本”。能够让人和 AI 快速了解到这个项目框架，并快速定位到代码。它就像是一个好的目录文件一样。</p></li><li><p>帮助理解上下文。AI 生成好的代码的前提是“理解上下文”——如果项目结构清晰明确，比如你只需要提示 AI 在<code>src/components/Button</code> 下写一个按钮组件，它就能够精准生成并自动关联依赖；如果结构随意，AI 无法判断“新代码该放在哪，该引用哪个文件夹的文件”，这样就很容易生成重复代码（比如重复写同一个工具函数）或者路径引入错误，然后就累计出“屎山代码”。</p></li><li><p>让 AI 生成的代码规范，保障可维护。AI 本身不具有“长期项目规划能力”，若没有结构约束，AI 会为了快速实现功能，就信马由缰，“哪里有空就往哪里写”，在后续迭代的时候，新增代码会不断叠加在混乱的基础上，最终导致代码完全无法维护。</p></li><li><p>适配工具链，确保项目能够正常运行、打包和部署。现代项目开发需要依赖大量工具（比如前端的 Webpack&#x2F;Vite、后端的 Node.js&#x2F;Java 框架、版本控制 Git），这些工具的正确运行都需要遵循“约定的项目结构”，才能工作。</p><ol><li>例如前端 Vite 默认会从 <code>src/main.js</code> 入口文件开始打包，若你随意把入口文件改名为 “start.js” 且不配置路径，打包时会直接报错；</li><li>后端 Spring Boot 框架默认扫描 <code>com.example.demo.controller</code> 路径下的接口，若你随意更改 <code>controller</code> 文件夹名，接口会无法被识别，导致服务启动后无法访问。</li></ol><p>若结构不规范，不仅工具会失效，甚至可能出现 “本地能运行、部署到服务器就报错” 的问题（比如路径引用错误），排查起来极其耗时。</p></li></ol><p>总之，项目结构的核心价值是 “<strong>建立规则，降低混乱</strong>”—— 对人而言，它是 “导航地图”；对 AI 而言，它是 “约束框架”；对工具而言，它是 “工作协议”。而 “不随意更改结构或文件名”，本质是维护这套规则的有效性，避免项目从 “可控的工程” 沦为 “不可维护的代码垃圾”。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>💭 一场辩论想到:不要害怕暴露短板,持续去创造才是真正重要的事情</title>
+    <link href="https://maxweber36.github.io/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/"/>
+    <id>https://maxweber36.github.io/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/</id>
+    <published>2025-09-11T14:48:54.000Z</published>
+    <updated>2025-09-11T15:34:31.634Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>前期提要：咸鱼和陈锴杰，我都不认识。之前听了一小段咸鱼和橘子的直播辩论。其实这种公开辩论的形式，是非常好的。当然，这是一场建设者和批判者的辩论。在这场辩论赛中，批判者永远是对的。所以在这场辩论赛的开始，作为批判者的咸鱼，在身份上占据了先天的优势。</p></blockquote><p>好了，我说一下我的整体感受。</p><p>我听了一下咸鱼和产品叫 macaron 的创始人陈锴杰之间的辩论。我自己没有用过 macaron 这个产品，但大致能想象出来， 这个产品现在用起来应该是非常难用的。不过，他们团队好像还是拿到了一些投资机构的钱。</p><p>怎么说呢？在听他们辩论的时候，我明显觉得 macaron 的创始人确实有很多想法，而且这些想法听起来也非常宏大。以现在的情况来看，要实现这些功能，中间的挑战还是非常多的。而且能感觉到，以他们目前的团队想要实现这些功能，能力上还是很困难的。他的一些设想是比较合理的，但都还比较粗线条。但是要落地，又是另外一回事了。</p><p>不过对于 macaron 的创始人，我还是想多多鼓励他，只要是亲身做过产品的，就知道做产品，真的是一件很难的事情。不管他现在做出来的东西是什么样，但他一直在做。我觉得只要一直在做，就有改进的可能性，这点很重要。</p><p>至于咸鱼，他更多是一种批判的角度，去指出这个产品其实被吹得太厉害了，浮于表面大于本质，甚至说它就是“一坨屎”。他想给大家指出这个产品的很多问题。你说，他在辩论中指出的那些问题是不是对不对？我觉得肯定是对的。但是，你说他这样做有没有意义？可能有，但我觉得意义不是那么大。</p><p>我想，谁会去关注咸鱼关于抨击这些产品的事情呢？像咸鱼这样的人，整天抨击别人，说这个不好、那个也不好，可能主要就是吸引一些纯粹吃瓜的人。但这些吃瓜的人，听了之后，他们到底能获得什么呢？我觉得大部分人其实就是看个热闹。</p><p>当然，也不是说他做的事情完全没有价值。比如说，有些人在选择工具的时候，看到他的测评，了解到这个产品其实没有宣传得那么厉害，可能就不会去用了，对于这点来说，确实有很大的参考价值。</p><p>那你说，这对投资人有价值吗？我觉得可能没有。投资人难道看不到这些问题吗？难道投资人就不懂吗？投资人为什么还会去投这个项目？我觉得，投资人投资的逻辑和咸鱼看产品的逻辑可能根本不是一回事。</p><p>所以说，不管怎么批判这个、批判那个，说得都肯定没错。但我觉得，更重要的是去创造一些东西。即使这个东西前期看起来很烂，但只要它在持续迭代、持续更新，就有可能变好。只要一直往前走，就有可能解决更多问题，给大家带来更多收益。我觉得，这种价值要比在公共场合批判一个产品大得多。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🧠 如何让大模型变得诚实</title>
+    <link href="https://maxweber36.github.io/2025/09/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%BB%E8%A7%89/"/>
+    <id>https://maxweber36.github.io/2025/09/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%BB%E8%A7%89/</id>
+    <published>2025-09-06T05:10:30.000Z</published>
+    <updated>2025-09-06T06:16:07.735Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天在看机器之心的公众号上看到一篇文章<a href="https://mp.weixin.qq.com/s/f6pTUhzn9NjA_xWSvTmG4A">《OpenAI 罕见发论文:我们找到了 AI 幻觉的罪魁祸首》</a>。</p><p>在这篇文章中介绍 OpenAI 最近发的一篇论文，名字叫做<a href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">《Why Language Models Hallucinate》(为什么语言模型有幻觉)</a>。</p><p>我很好奇，就点进去看了一下。很有意思。原因说起来，很简单。就是 <strong>「标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励」</strong>。</p><p>在 OpenAI 的<a href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">这篇论文</a>中，主要想要克服的“幻觉”是「模型不诚实地生成自己都不相信的答案的情况」。</p><p>这句话是我自己看完论文后，自己总结的。</p><p>在 OpenAI 的这篇论文中，主要说了两点。</p><ol><li><p>大模型的预训练逻辑决定——大模型对于问题的回答， 并非 “记忆数据”，而是通过统计规律 “学习语言生成模式”。<br>语言模型的预训练本质是 “自回归预测任务”：给定一段文本的前 N 个词（如 “地球的半径约为”），模型需要从训练数据中学到的 “统计规律” 里，预测第 N+1 个词最可能是什么（如 “6371 千米”）。</p></li><li><p>在大模型微调阶段，当前主流评估的 “二元评分体系”（正确得 1 分、空白 &#x2F;“不知道” 得 0 分）则在微调阶段强化了幻觉，使模型陷入 “为刷分而盲目猜测” 的循环。导致<strong>对 “猜测” 的奖励远胜于 “承认不确定性”</strong>。</p></li></ol><p>简单来说：“标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励。”</p><p>在大模型的微调（如 RLHF、DPO）阶段，本应减少幻觉，但主流评估体系的 “二元评分” 反而强化了猜测行为，形成 “惩罚不确定性的流行病”。</p><blockquote><p>二元评分：对模型输出的结果，进行对或者错的二元评判。采用 “正确得 1 分、空白 &#x2F; 不知道 得 0 分”，模型 “盲目猜测” 的期望得分高于 “承认不知道”。</p></blockquote><p><strong>那么如何改进呢？</strong></p><p>简单来说：<u>让模型 “合理表达不确定” 获得奖励，而非惩罚。</u></p><p>对模型的输出结果评估，简单来说就是引进置信度目标（置信度，也就是结果的可信度）。这里的可信度并非外部的可信度，而是来自于模型自己对于输出的结果的可信程度。可以简单理解，只有当大模型自己对于输出结果的置信度 大于 某个置信度目标值，才对正确结果做回答，否则可以说 I Don’t Know。当然这种有很多的技术性的细节。但是最终目标是让大模型变得更加诚实。</p><p>当然关于幻觉体现是多方面的，而这篇论文关于幻觉的讨论和解决方案也只是其中一个侧面（侧重于 I Don’t Kown）。但是即使是这样，我自己在使用的体验上，依然觉得 GPT5 的可靠性要高于其他模型很多。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="哲学思考" scheme="https://maxweber36.github.io/tags/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/"/>
+    
+    <category term="读论文" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E8%AE%BA%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>🚶‍♀️ 第一次散步时的记录</title>
     <link href="https://maxweber36.github.io/2025/09/04/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%95%A3%E6%AD%A5%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
     <id>https://maxweber36.github.io/2025/09/04/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%95%A3%E6%AD%A5%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/</id>
     <published>2025-09-04T06:49:26.000Z</published>
     <updated>2025-09-04T07:13:37.174Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-FIWRfANw" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-FIWRfANw"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Step",              author: "Vampire Weekend",              url: "/music/Step.mp3",              pic: "/music-cover/step-cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我在听许知远的播客，这一期播客的标题叫《与你同行的人》。他提到“纽带”以及一个共同的目标。我觉得，很多时候人与人之间的联系，最好的方式就是通过一些事情把大家连接起来。比如，为了达成某个具体目标，或者完成某件具体的事情，大家因为这个目标而被连接在一起。这种连接，在我看来，是比较理想的。</p><blockquote><p>与你同行的人，比你到达的方向更重要。——————特拉克尔</p></blockquote><p>最近一段时间我一直在做独立开发者，很多事情真的就是一个人在完成。有时候会想起以前在公司里，和同事一起合作、协同完成某件事，那种感受和体验确实很不一样。难免会有些怀念。一个人做事的时候，多少会有点孤独感。这种孤独感在于，你的情绪或者想法，没办法随时找个人沟通，只能自己去消化。</p><p>所以遇到这种情况时，我一般会自言自语，把自己的想法记录下来，然后写到博客里。从某种层面上来说，这既是记录自己的想法和当下的情绪状态，也是在帮助自己梳理思路。有时候回头去看当时的想法，还是觉得挺有意思的。</p><p>毕竟人总会忘记很多事情，所以通过文字记录下来，有时候在未来的某个时刻，当你翻阅这些文字的时候，会想起曾经经历过的那些时光，这其实也挺重要的。</p><p>现在已经九月份了，但成都的天气还是很热。我刚刚看到楼下的桂花已经开始开了，感觉特别好。桂花开的时候，其实也意味着秋天快要到了。虽然从农历节气来看，秋天早就已经到了，但现在的气温有时候还是挺高，所以偶尔还是会觉得有点热。不过，桂花开了，说明天气确实要开始转凉了。<br><img src="/images/first-notes-on-walking/flower.jpeg" alt="Osmanthus flower"></p><p>我们小区其实很舒服，虽然不大，但植被挺多的。有时候走在里面，就像沐浴在丛林中一样，非常惬意。刚才我还看到了一只小鸟，准备把它拍下来。<br><img src="/images/first-notes-on-walking/birds.jpeg" alt="birds"></p><p>我发现门口的柚子长大了很多，不知道能不能吃。在楼下转了一段时间后，我准备上楼了。</p><p>对了，昨天我还给自己定了三个目标。第一个是早点睡觉，保证充足的睡眠；第二个是规律饮食，不要一会儿饱一顿、饿一顿的；第三个是坚持运动锻炼。就给自己立了这三个目标。</p><p>还有关于记录这件事，之前看过很多人分享说，他们在散步的时候灵感特别多，能产生很多想法。我现在因为给自己定了锻炼的目标，最多的方式就是多走路，提高每天的步数。</p><p>在走路的过程中，我发现自己可以记录一些想法。我们小区里有很多树，我好像都没见过，也不知道是什么品种，长得还挺奇特。今天天气很热。</p><p>我现在用语音笔记来记录，使用的是 Get 笔记，但目前没有付费。它的时长比较短，只有十分钟。有时候在记录时，会感觉有点不够用，担心可能有些话没被记录下来，所以在说的时候，还会有点焦虑。哈哈哈。以前我几乎没有边散步边记录的习惯，因此之前大部分想法在十分钟内就能搞定。如果后面散步时记录想法的次数多了，我可能会考虑付费订阅他们的计划，这对我来说很有意义。</p><p>我发现门口的柚子长大了很多，不知道能不能吃。在楼下转了一段时间了，我准备上楼了。<br><img src="/images/first-notes-on-walking/fruit.jpeg" alt="fruit"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-CYzXUXHL" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-CYzXUXHL"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Step",              author: "Vampire Weekend",              url: "/music/Step.mp3",              pic: "/music-cover/step-cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我在听许知远的播客，这一期播客的标题叫《与你同行的人》。他提到“纽带”以及一个共同的目标。我觉得，很多时候人与人之间的联系，最好的方式就是通过一些事情把大家连接起来。比如，为了达成某个具体目标，或者完成某件具体的事情，大家因为这个目标而被连接在一起。这种连接，在我看来，是比较理想的。</p><blockquote><p>与你同行的人，比你到达的方向更重要。——————特拉克尔</p></blockquote><p>最近一段时间我一直在做独立开发者，很多事情真的就是一个人在完成。有时候会想起以前在公司里，和同事一起合作、协同完成某件事，那种感受和体验确实很不一样。难免会有些怀念。一个人做事的时候，多少会有点孤独感。这种孤独感在于，你的情绪或者想法，没办法随时找个人沟通，只能自己去消化。</p><p>所以遇到这种情况时，我一般会自言自语，把自己的想法记录下来，然后写到博客里。从某种层面上来说，这既是记录自己的想法和当下的情绪状态，也是在帮助自己梳理思路。有时候回头去看当时的想法，还是觉得挺有意思的。</p><p>毕竟人总会忘记很多事情，所以通过文字记录下来，有时候在未来的某个时刻，当你翻阅这些文字的时候，会想起曾经经历过的那些时光，这其实也挺重要的。</p><p>现在已经九月份了，但成都的天气还是很热。我刚刚看到楼下的桂花已经开始开了，感觉特别好。桂花开的时候，其实也意味着秋天快要到了。虽然从农历节气来看，秋天早就已经到了，但现在的气温有时候还是挺高，所以偶尔还是会觉得有点热。不过，桂花开了，说明天气确实要开始转凉了。<br><img src="/images/first-notes-on-walking/flower.jpeg" alt="Osmanthus flower"></p><p>我们小区其实很舒服，虽然不大，但植被挺多的。有时候走在里面，就像沐浴在丛林中一样，非常惬意。刚才我还看到了一只小鸟，准备把它拍下来。<br><img src="/images/first-notes-on-walking/birds.jpeg" alt="birds"></p><p>我发现门口的柚子长大了很多，不知道能不能吃。在楼下转了一段时间后，我准备上楼了。</p><p>对了，昨天我还给自己定了三个目标。第一个是早点睡觉，保证充足的睡眠；第二个是规律饮食，不要一会儿饱一顿、饿一顿的；第三个是坚持运动锻炼。就给自己立了这三个目标。</p><p>还有关于记录这件事，之前看过很多人分享说，他们在散步的时候灵感特别多，能产生很多想法。我现在因为给自己定了锻炼的目标，最多的方式就是多走路，提高每天的步数。</p><p>在走路的过程中，我发现自己可以记录一些想法。我们小区里有很多树，我好像都没见过，也不知道是什么品种，长得还挺奇特。今天天气很热。</p><p>我现在用语音笔记来记录，使用的是 Get 笔记，但目前没有付费。它的时长比较短，只有十分钟。有时候在记录时，会感觉有点不够用，担心可能有些话没被记录下来，所以在说的时候，还会有点焦虑。哈哈哈。以前我几乎没有边散步边记录的习惯，因此之前大部分想法在十分钟内就能搞定。如果后面散步时记录想法的次数多了，我可能会考虑付费订阅他们的计划，这对我来说很有意义。</p><p>我发现门口的柚子长大了很多，不知道能不能吃。在楼下转了一段时间了，我准备上楼了。<br><img src="/images/first-notes-on-walking/fruit.jpeg" alt="fruit"></p>]]></content>
     
     
       
@@ -69,7 +313,7 @@
     <published>2025-09-03T07:00:53.000Z</published>
     <updated>2025-09-04T03:13:25.590Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-CbSxJKxP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-CbSxJKxP"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "My-Way(Live)",              author: "邓丽君",              url: "/music/My-Way(Live).mp3",              pic: "/music-cover/my-way-cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>现在是 2025 年，我是 91 年出生的，也就是说我现在 34 岁。对于一个人来说，这个年龄其实是即将步入中年，但已经不再是青年了。</p><p>在我过去的想象中，34 岁应该算是社会中即将成为中流砥柱的阶段。可是反观我自己，我觉得我还没有成为心目中理想的那个人。说实话，这主要怪我过去一些错误的认知。</p><p>曾经有一段时间，我总觉得一个人到了四十多岁之后，就会自然而然成为社会的中流砥柱。我以为只要年龄到了，位置就会提升，资源也会更多，人生经验也会更丰富。我的想法是，时间是唯一的变量，只要时间过去了，人就会变得更有厚重感、更有力量，在社会上掌握更多资源。</p><p>但现在回头看，这其实是一个非常错误的看法，也是当时的一种误解。正因为我相信了这种想法，所以在过去该努力的时候没有努力，该探索自我的时候没有去探索，该发展自己的时候也没有发展自己。</p><p>一切都显得很随波逐流，都是随着社会的推动、公司的发展，或者外部环境的变化而被动前行，自己并没有真正掌控自己的位置。所以，这也解释了为什么我现在会变成现在这个样子，为什么直到现在我才开始花时间去发展自己，去塑造自己的价值观，去做自己真正想做的事情。当然，做起来其实还是挺吃力的。</p><p>在塑造价值观的过程中，其实整个过程也并不稳定。这条路，是我之前没有走过、现在不得不重新走的路。虽然我不知道这条路最终会通向哪里，因为它没有一个清晰的路径，也没有明确的路标，我只能按照现在的想法一步步往前走。因为我手上没有一张很清晰的地图，现在的地图更像是在开荒的状态。</p><p>但我坚信，这条路并不是通向别人的路，而是属于我自己的路。虽然我不知道最终会看到什么样的风景，但我想要一直走下去。现在因为有了小孩，我也希望在走这条路的时候，能够带着她一起前行。希望她能看到爸爸走的这条路到底是什么样，可以看到哪些风景。虽然我也不知道会看到什么，但我想和她一起去看，这对我来说很重要。也希望借此能够启发她，等她能力稍强的时候，让她也去探索属于自己的路。这一点很重要。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-ZpGstzUU" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-ZpGstzUU"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "My-Way(Live)",              author: "邓丽君",              url: "/music/My-Way(Live).mp3",              pic: "/music-cover/my-way-cover.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>现在是 2025 年，我是 91 年出生的，也就是说我现在 34 岁。对于一个人来说，这个年龄其实是即将步入中年，但已经不再是青年了。</p><p>在我过去的想象中，34 岁应该算是社会中即将成为中流砥柱的阶段。可是反观我自己，我觉得我还没有成为心目中理想的那个人。说实话，这主要怪我过去一些错误的认知。</p><p>曾经有一段时间，我总觉得一个人到了四十多岁之后，就会自然而然成为社会的中流砥柱。我以为只要年龄到了，位置就会提升，资源也会更多，人生经验也会更丰富。我的想法是，时间是唯一的变量，只要时间过去了，人就会变得更有厚重感、更有力量，在社会上掌握更多资源。</p><p>但现在回头看，这其实是一个非常错误的看法，也是当时的一种误解。正因为我相信了这种想法，所以在过去该努力的时候没有努力，该探索自我的时候没有去探索，该发展自己的时候也没有发展自己。</p><p>一切都显得很随波逐流，都是随着社会的推动、公司的发展，或者外部环境的变化而被动前行，自己并没有真正掌控自己的位置。所以，这也解释了为什么我现在会变成现在这个样子，为什么直到现在我才开始花时间去发展自己，去塑造自己的价值观，去做自己真正想做的事情。当然，做起来其实还是挺吃力的。</p><p>在塑造价值观的过程中，其实整个过程也并不稳定。这条路，是我之前没有走过、现在不得不重新走的路。虽然我不知道这条路最终会通向哪里，因为它没有一个清晰的路径，也没有明确的路标，我只能按照现在的想法一步步往前走。因为我手上没有一张很清晰的地图，现在的地图更像是在开荒的状态。</p><p>但我坚信，这条路并不是通向别人的路，而是属于我自己的路。虽然我不知道最终会看到什么样的风景，但我想要一直走下去。现在因为有了小孩，我也希望在走这条路的时候，能够带着她一起前行。希望她能看到爸爸走的这条路到底是什么样，可以看到哪些风景。虽然我也不知道会看到什么，但我想和她一起去看，这对我来说很重要。也希望借此能够启发她，等她能力稍强的时候，让她也去探索属于自己的路。这一点很重要。</p>]]></content>
     
     
       
@@ -91,9 +335,9 @@
     <link href="https://maxweber36.github.io/2025/09/03/%E4%BB%8E%E2%80%9C%E6%A2%AF%E5%AD%90%E4%BE%9D%E8%B5%96%E2%80%9D%E5%88%B0%E2%80%9C%E5%85%A8%E7%BD%91%E5%8F%AF%E8%AE%BF%E9%97%AE%E2%80%9D%EF%BC%9A%E6%88%91%E7%9A%84%E6%B5%B7%E5%A4%96-Web-%E5%BA%94%E7%94%A8%E5%9B%BD%E5%86%85%E9%80%82%E9%85%8D%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97/"/>
     <id>https://maxweber36.github.io/2025/09/03/%E4%BB%8E%E2%80%9C%E6%A2%AF%E5%AD%90%E4%BE%9D%E8%B5%96%E2%80%9D%E5%88%B0%E2%80%9C%E5%85%A8%E7%BD%91%E5%8F%AF%E8%AE%BF%E9%97%AE%E2%80%9D%EF%BC%9A%E6%88%91%E7%9A%84%E6%B5%B7%E5%A4%96-Web-%E5%BA%94%E7%94%A8%E5%9B%BD%E5%86%85%E9%80%82%E9%85%8D%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97/</id>
     <published>2025-09-03T00:54:04.000Z</published>
-    <updated>2025-09-04T04:37:11.187Z</updated>
+    <updated>2025-09-16T04:21:05.612Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="如何做一个应用同时服务海内外的用户"><a href="#如何做一个应用同时服务海内外的用户" class="headerlink" title="如何做一个应用同时服务海内外的用户"></a>如何做一个应用同时服务海内外的用户</h2><p>大家都知道国内网络限制的原因，如果要做一个 Web 应用需要同时服务于国内用户或者海外用户，一般来说有两种方法。</p><p>方法一，在国内和海外同时部署两套应用，分别服务于国内和海外的用户。这个是最常见，也是最普遍的方式。</p><p>方法二，在海外部署一套应用，然后使用支持国内 CDN 加速的服务商（只有少部分的海外 CDN 加速服务商支持，所以大家在选择的时候，要注意挑选一下），绕开国内的防火墙，从而使得国内的用户也能够进行使用。</p><blockquote><p>需要注意一点的是：如果使用国内 的 CDN 加速服务商，是需要 ICP 备案。这个整个流程大概需要一周左右吧。我之前走过一次全流程。</p></blockquote><p>我选择的第二个方法。我使用的 赛博佛祖 的 Cloudflare，原因有两个，首先最重要的支持国内的 CDN 加速。其次对于他们提供的免费计划，对于我来说完全够用了。</p><h2 id="我的情况"><a href="#我的情况" class="headerlink" title="我的情况"></a>我的情况</h2><p>我自己做了小产品，现在是部署在 vercel 上。部署在 vercel 上，也就意味着在国内的用户如果不使用魔法 🧙♀️ 或者梯子 🪜，实际上是访问不了这个应用的。</p><h2 id="如何配置-Cloudflare-的-CDN-服务"><a href="#如何配置-Cloudflare-的-CDN-服务" class="headerlink" title="如何配置 Cloudflare 的 CDN 服务"></a>如何配置 Cloudflare 的 CDN 服务</h2><p>如果想要使用 Cloudflare 的 CDN 服务。大概要经历以下四步。</p><h3 id="第一步：购买域名"><a href="#第一步：购买域名" class="headerlink" title="第一步：购买域名"></a>第一步：购买域名</h3><p>注册一个域名。Vercel 提供的域名，是不能通过 Cloudflare 进行 CDN 配置。因为 Cloudflare 要求添加到其平台的域名必须是你自己拥有并能管理 DNS 解析的域名。我是在 <a href="https://www.namesilo.com/">namesilo</a> 上购买的域名，这个网站是以廉价域名而著称的网站。所以想要购买便宜的域名的话，建议在这个网站上进行购买，对了，这个网站支持支付宝购买。我本来需要的域名大概只需要 2 美元，结果买域名的时候，不小心买错了，结果又花了 2 美元 重新买了一个。所以域名一共花了 4 美元$。</p><h3 id="第二步：Cloudflare-进行-DNS-配置"><a href="#第二步：Cloudflare-进行-DNS-配置" class="headerlink" title="第二步：Cloudflare 进行 DNS 配置"></a>第二步：Cloudflare 进行 DNS 配置</h3><ol><li>在 Cloudflare 进行账号注册，并登录 Cloudflare 后台，然后添加自己刚刚买的域名。</li></ol><p><img src="/images/web-app-adaptation/image-1.png" alt="img"></p><ol start="2"><li>这里可以直接选择它的默认选项，点击继续。</li></ol><p><img src="/images/web-app-adaptation/image-2.png" alt="img"></p><ol start="3"><li>直接选择 Free Plan，对于我们这种刚刚起步的 web 应用，基本上够用了。</li></ol><p><img src="/images/web-app-adaptation/image-3.png" alt="img"></p><ol start="4"><li>开始添加 DNS 记录。</li></ol><p><img src="/images/web-app-adaptation/image-4.png" alt="img"></p><blockquote><p>关于 DNS 添加的小知识点：选择 DNS 记录的类型，不同的类型承载不同的解析逻辑。</p><p>以下是 DNS 各记录类型的核心信息汇总表：</p></blockquote><table><thead><tr><th align="left">类型名称</th><th align="left">核心作用</th><th align="left">典型场景</th><th align="left">是否依赖 DNSSEC</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">将域名解析到 IPv4 地址</td><td align="left">网站、服务器等域名 →IPv4 的基础解析</td><td align="left">否</td></tr><tr><td align="left">AAAA</td><td align="left">将域名解析到 IPv6 地址</td><td align="left">支持 IPv6 网络的域名解析（如 IPv6-only 服务器）</td><td align="left">否</td></tr><tr><td align="left">CAA</td><td align="left">指定允许为域名颁发 SSL 证书的机构</td><td align="left">增强 SSL 证书安全性，防止非法机构颁发证书</td><td align="left">否</td></tr><tr><td align="left">CERT</td><td align="left">存储公钥基础设施（PKI）相关的证书 &#x2F; 公钥信息</td><td align="left">证书验证、公钥分发等 PKI 场景</td><td align="left">否</td></tr><tr><td align="left">CNAME</td><td align="left">为域名设置 <strong>“别名”</strong>（将一个域名指向另一个域名）</td><td align="left">子域名别名（如<a href="http://www.example.com指向example.com)/">www.example.com指向example.com）</a></td><td align="left">否</td></tr><tr><td align="left">DNSKEY</td><td align="left">存储 DNSSEC 的公钥，用于验证 DNS 记录的完整性与真实性</td><td align="left">DNSSEC 体系中 “验证 DNS 记录未被篡改”</td><td align="left">是</td></tr><tr><td align="left">DS</td><td align="left">在父域名中存储子域名的 DNSSEC 公钥信息，实现子域 DNSSEC 验证委托</td><td align="left">DNSSEC 体系中子域与父域的安全层级验证</td><td align="left">是</td></tr><tr><td align="left">HTTPS</td><td align="left">专门用于 HTTPS 服务的配置绑定，关联域名与 TLS 参数（加密公钥、协议版本等）</td><td align="left">加速 HTTPS 连接、加密 SNI（服务器名称指示）、支持 HTTP&#x2F;3</td><td align="left">否（部分高级功能依赖公钥）</td></tr><tr><td align="left">LOC</td><td align="left">存储域名对应的物理地理位置信息（纬度、经度、海拔等）</td><td align="left">紧急救援、物流追踪等需地理定位的特殊场景</td><td align="left">否</td></tr><tr><td align="left">MX</td><td align="left">指定接收域名电子邮件的邮件服务器地址（支持优先级，实现容灾）</td><td align="left">企业 &#x2F; 个人邮箱的邮件路由（如@example.com 的邮件服务器）</td><td align="left">否</td></tr><tr><td align="left">NAPTR</td><td align="left">用于服务发现与协议转换（如 SIP、XMPP 等协议）</td><td align="left">VOIP 电话、即时通讯的自动服务器发现</td><td align="left">否</td></tr><tr><td align="left">NS</td><td align="left">标识域名的权威 DNS 服务器（负责解析该域名的服务器）</td><td align="left">DNS 层级解析的核心（定位域名的解析服务器）</td><td align="left">否</td></tr><tr><td align="left">PTR</td><td align="left">实现反向 DNS 解析（将 IP 地址映射为域名）</td><td align="left">邮件服务器 IP 信誉验证、网络设备身份识别</td><td align="left">否</td></tr><tr><td align="left">SMIMEA</td><td align="left">关联电子邮件地址与 S&#x2F;MIME 证书（或公钥），验证邮件发件人身份</td><td align="left">企业级安全邮件通信（如政府、金融行业）</td><td align="left">是</td></tr><tr><td align="left">SRV</td><td align="left">定位提供特定服务的服务器，包含服务类型、端口、权重、优先级</td><td align="left">微软 Active Directory、即时通讯的服务发现</td><td align="left">否</td></tr><tr><td align="left">SSHFP</td><td align="left">存储 SSH 服务器公钥的指纹（SHA-1&#x2F;SHA-256），验证服务器身份</td><td align="left">企业内部 SSH 服务器集群的身份验证（防中间人攻击）</td><td align="left">是</td></tr><tr><td align="left">SVCB</td><td align="left">通用的服务绑定记录，关联域名与服务参数（IP、TLS 配置、协议版本等）</td><td align="left">替代 CNAME、优化 HTTPS 连接、多协议服务发现</td><td align="left">否</td></tr><tr><td align="left">TLSA</td><td align="left">属于 DANE 体系，存储 TLS 证书的哈希值，验证服务器 TLS 证书</td><td align="left">自签名证书安全验证、减少对传统 CA 的依赖</td><td align="left">是</td></tr><tr><td align="left">TXT</td><td align="left">存储任意文本信息，用途广泛</td><td align="left">域名所有权验证、邮件防垃圾（SPF&#x2F;DKIM）、DNSSEC 辅助记录</td><td align="left">部分场景（如 DNSSEC 相关）</td></tr><tr><td align="left">URI</td><td align="left">将域名解析为 URI（如<a href="https://example.com/path%EF%BC%89%EF%BC%8C%E6%94%AF%E6%8C%81%E4%BC%98%E5%85%88%E7%BA%A7%E4%B8%8E%E6%9D%83%E9%87%8D">https://example.com/path），支持优先级与权重</a></td><td align="left">简化客户端对复杂资源的访问（如 API Endpoint 发现）</td><td align="left">否</td></tr></tbody></table><p>因为我是使用的 vercel 进行部署的，因而我们知道 vercel 的访问域名。因为我希望用户能够通过比如 xxx.com 或者 <a href="http://www.xxx.com/">www.xxx.com</a> 访问我的网站。因此，在这里我只需要配置两个 DNS 即可。</p><ol><li>类型选择 CNAME， 名称填写 @ ，IPv4 地址就填写 vercel 的访问域名即可：myname.vercel.app。</li><li>类型选择 CNAME，名称填写 www， IP4 填写和上面同样的内容即可。</li></ol><p><img src="/images/web-app-adaptation/image-5.png" alt="img"></p><ol start="5"><li>点击继续前往激活。然后按照它描述的步骤，更新我的名称服务器，并且复制 Cloudflare 名称服务器。</li></ol><p><img src="/images/web-app-adaptation/image-6.png" alt="img"></p><h3 id="第三步：更新-NameServers"><a href="#第三步：更新-NameServers" class="headerlink" title="第三步：更新 NameServers"></a>第三步：更新 NameServers</h3><ol><li>再次回到 <a href="https://www.namesilo.com/">namesilo</a> 的后台，点击 Domain Manager</li></ol><p><img src="/images/web-app-adaptation/image-7.png" alt="img"></p><ol start="2"><li>点击需要更新的域名。</li></ol><p><img src="/images/web-app-adaptation/image-8.png" alt="img"></p><ol start="3"><li>点击 Quick Settings，将 Cloudflare 名称的 NameServers</li></ol><p><img src="/images/web-app-adaptation/image-9.png" alt="img"></p><ol start="4"><li>切换到 DNS 的 tab 页面，然后往下滑，确保 DNSSEC 关掉。如果没有关掉，则点击关掉。</li></ol><p><img src="/images/web-app-adaptation/image-10.png" alt="img"></p><p><img src="/images/web-app-adaptation/image-11.png" alt="img"></p><p>截止到目前这一步，已经完成对 NameServers 的更新。且已经完成大部分的工作。</p><h3 id="最后一步：在-Vercel-上添加我的域名"><a href="#最后一步：在-Vercel-上添加我的域名" class="headerlink" title="最后一步：在 Vercel 上添加我的域名"></a>最后一步：在 Vercel 上添加我的域名</h3><ol><li>登录 Vercel 后台，点击需要更新的项目，进入到项目的设置页面。</li></ol><p><img src="/images/web-app-adaptation/image-12.png" alt="img"></p><ol start="2"><li>从 overview 标签页，点击 Domains，添加新买的域名。</li></ol><p><img src="/images/web-app-adaptation/image-13.png" alt="img"></p><p><img src="/images/web-app-adaptation/image-14.png" alt="img"></p><ol start="3"><li>如果域名下面有 Proxy Detected 的标签显示，基本上到此就算是配置成功了。</li></ol><p><img src="/images/web-app-adaptation/image-15.png" alt="img"></p><p><strong>然后你现在应该可以在国内，不使用魔法 🧙♀️ 或者梯子 🪜 通过这个新域名进行访问了 🎉。</strong></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="如何做一个应用同时服务海内外的用户"><a href="#如何做一个应用同时服务海内外的用户" class="headerlink" title="如何做一个应用同时服务海内外的用户"></a>如何做一个应用同时服务海内外的用户</h2><p>大家都知道国内网络限制的原因，如果要做一个 Web 应用需要同时服务于国内用户或者海外用户，一般来说有两种方法。</p><p>方法一，在国内和海外同时部署两套应用，分别服务于国内和海外的用户。这个是最常见，也是最普遍的方式。</p><p>方法二，在海外部署一套应用，然后使用支持国内 CDN 加速的服务商（只有少部分的海外 CDN 加速服务商支持，所以大家在选择的时候，要注意挑选一下），绕开国内的防火墙，从而使得国内的用户也能够进行使用。</p><blockquote><p>需要注意一点的是：如果使用国内 的 CDN 加速服务商，是需要 ICP 备案。这个整个流程大概需要一周左右吧。我之前走过一次全流程。</p></blockquote><p>我选择的第二个方法。我使用的 赛博佛祖 的 Cloudflare，原因有两个，首先最重要的支持国内的 CDN 加速。其次对于他们提供的免费计划，对于我来说完全够用了。</p><h2 id="我的情况"><a href="#我的情况" class="headerlink" title="我的情况"></a>我的情况</h2><p>我自己做了小产品，现在是部署在 vercel 上。部署在 vercel 上，也就意味着在国内的用户如果不使用魔法 🧙♀️ 或者梯子 🪜，实际上是访问不了这个应用的。</p><h2 id="如何配置-Cloudflare-的-CDN-服务"><a href="#如何配置-Cloudflare-的-CDN-服务" class="headerlink" title="如何配置 Cloudflare 的 CDN 服务"></a>如何配置 Cloudflare 的 CDN 服务</h2><p>如果想要使用 Cloudflare 的 CDN 服务。大概要经历以下四步。</p><h3 id="第一步：购买域名"><a href="#第一步：购买域名" class="headerlink" title="第一步：购买域名"></a>第一步：购买域名</h3><p>注册一个域名。Vercel 提供的域名，是不能通过 Cloudflare 进行 CDN 配置。因为 Cloudflare 要求添加到其平台的域名必须是你自己拥有并能管理 DNS 解析的域名。我是在 <a href="https://www.namesilo.com/">namesilo</a> 上购买的域名，这个网站是以廉价域名而著称的网站。所以想要购买便宜的域名的话，建议在这个网站上进行购买，对了，这个网站支持支付宝购买。我本来需要的域名大概只需要 2 美元，结果买域名的时候，不小心买错了，结果又花了 2 美元 重新买了一个。所以域名一共花了 4 美元$。</p><h3 id="第二步：Cloudflare-进行-DNS-配置"><a href="#第二步：Cloudflare-进行-DNS-配置" class="headerlink" title="第二步：Cloudflare 进行 DNS 配置"></a>第二步：Cloudflare 进行 DNS 配置</h3><ol><li>在 Cloudflare 进行账号注册，并登录 Cloudflare 后台，然后添加自己刚刚买的域名。</li></ol><p><img src="/images/web-app-adaptation/cc-image-2.1.png" alt="img"></p><ol start="2"><li>这里可以直接选择它的默认选项，点击继续。</li></ol><p><img src="/images/web-app-adaptation/cc-image-2.2.png" alt="img"></p><ol start="3"><li>直接选择 Free Plan，对于我们这种刚刚起步的 web 应用，基本上够用了。</li></ol><p><img src="/images/web-app-adaptation/cc-image-2.3.png" alt="img"></p><ol start="4"><li>开始添加 DNS 记录。</li></ol><p><img src="/images/web-app-adaptation/cc-image-2.4.png" alt="img"></p><blockquote><p>关于 DNS 添加的小知识点：选择 DNS 记录的类型，不同的类型承载不同的解析逻辑。</p><p>以下是 DNS 各记录类型的核心信息汇总表：</p></blockquote><table><thead><tr><th align="left">类型名称</th><th align="left">核心作用</th><th align="left">典型场景</th><th align="left">是否依赖 DNSSEC</th></tr></thead><tbody><tr><td align="left">A</td><td align="left">将域名解析到 IPv4 地址</td><td align="left">网站、服务器等域名 →IPv4 的基础解析</td><td align="left">否</td></tr><tr><td align="left">AAAA</td><td align="left">将域名解析到 IPv6 地址</td><td align="left">支持 IPv6 网络的域名解析（如 IPv6-only 服务器）</td><td align="left">否</td></tr><tr><td align="left">CAA</td><td align="left">指定允许为域名颁发 SSL 证书的机构</td><td align="left">增强 SSL 证书安全性，防止非法机构颁发证书</td><td align="left">否</td></tr><tr><td align="left">CERT</td><td align="left">存储公钥基础设施（PKI）相关的证书 &#x2F; 公钥信息</td><td align="left">证书验证、公钥分发等 PKI 场景</td><td align="left">否</td></tr><tr><td align="left">CNAME</td><td align="left">为域名设置 <strong>“别名”</strong>（将一个域名指向另一个域名）</td><td align="left">子域名别名（如<a href="http://www.example.com指向example.com)/">www.example.com指向example.com）</a></td><td align="left">否</td></tr><tr><td align="left">DNSKEY</td><td align="left">存储 DNSSEC 的公钥，用于验证 DNS 记录的完整性与真实性</td><td align="left">DNSSEC 体系中 “验证 DNS 记录未被篡改”</td><td align="left">是</td></tr><tr><td align="left">DS</td><td align="left">在父域名中存储子域名的 DNSSEC 公钥信息，实现子域 DNSSEC 验证委托</td><td align="left">DNSSEC 体系中子域与父域的安全层级验证</td><td align="left">是</td></tr><tr><td align="left">HTTPS</td><td align="left">专门用于 HTTPS 服务的配置绑定，关联域名与 TLS 参数（加密公钥、协议版本等）</td><td align="left">加速 HTTPS 连接、加密 SNI（服务器名称指示）、支持 HTTP&#x2F;3</td><td align="left">否（部分高级功能依赖公钥）</td></tr><tr><td align="left">LOC</td><td align="left">存储域名对应的物理地理位置信息（纬度、经度、海拔等）</td><td align="left">紧急救援、物流追踪等需地理定位的特殊场景</td><td align="left">否</td></tr><tr><td align="left">MX</td><td align="left">指定接收域名电子邮件的邮件服务器地址（支持优先级，实现容灾）</td><td align="left">企业 &#x2F; 个人邮箱的邮件路由（如@example.com 的邮件服务器）</td><td align="left">否</td></tr><tr><td align="left">NAPTR</td><td align="left">用于服务发现与协议转换（如 SIP、XMPP 等协议）</td><td align="left">VOIP 电话、即时通讯的自动服务器发现</td><td align="left">否</td></tr><tr><td align="left">NS</td><td align="left">标识域名的权威 DNS 服务器（负责解析该域名的服务器）</td><td align="left">DNS 层级解析的核心（定位域名的解析服务器）</td><td align="left">否</td></tr><tr><td align="left">PTR</td><td align="left">实现反向 DNS 解析（将 IP 地址映射为域名）</td><td align="left">邮件服务器 IP 信誉验证、网络设备身份识别</td><td align="left">否</td></tr><tr><td align="left">SMIMEA</td><td align="left">关联电子邮件地址与 S&#x2F;MIME 证书（或公钥），验证邮件发件人身份</td><td align="left">企业级安全邮件通信（如政府、金融行业）</td><td align="left">是</td></tr><tr><td align="left">SRV</td><td align="left">定位提供特定服务的服务器，包含服务类型、端口、权重、优先级</td><td align="left">微软 Active Directory、即时通讯的服务发现</td><td align="left">否</td></tr><tr><td align="left">SSHFP</td><td align="left">存储 SSH 服务器公钥的指纹（SHA-1&#x2F;SHA-256），验证服务器身份</td><td align="left">企业内部 SSH 服务器集群的身份验证（防中间人攻击）</td><td align="left">是</td></tr><tr><td align="left">SVCB</td><td align="left">通用的服务绑定记录，关联域名与服务参数（IP、TLS 配置、协议版本等）</td><td align="left">替代 CNAME、优化 HTTPS 连接、多协议服务发现</td><td align="left">否</td></tr><tr><td align="left">TLSA</td><td align="left">属于 DANE 体系，存储 TLS 证书的哈希值，验证服务器 TLS 证书</td><td align="left">自签名证书安全验证、减少对传统 CA 的依赖</td><td align="left">是</td></tr><tr><td align="left">TXT</td><td align="left">存储任意文本信息，用途广泛</td><td align="left">域名所有权验证、邮件防垃圾（SPF&#x2F;DKIM）、DNSSEC 辅助记录</td><td align="left">部分场景（如 DNSSEC 相关）</td></tr><tr><td align="left">URI</td><td align="left">将域名解析为 URI（如<a href="https://example.com/path%EF%BC%89%EF%BC%8C%E6%94%AF%E6%8C%81%E4%BC%98%E5%85%88%E7%BA%A7%E4%B8%8E%E6%9D%83%E9%87%8D">https://example.com/path），支持优先级与权重</a></td><td align="left">简化客户端对复杂资源的访问（如 API Endpoint 发现）</td><td align="left">否</td></tr></tbody></table><p>因为我是使用的 vercel 进行部署的，因而我们知道 vercel 的访问域名。因为我希望用户能够通过比如 xxx.com 或者 <a href="http://www.xxx.com/">www.xxx.com</a> 访问我的网站。因此，在这里我只需要配置两个 DNS 即可。</p><ul><li>类型选择 CNAME， 名称填写 @ ，IPv4 地址就填写 vercel 的访问域名即可：myname.vercel.app。</li><li>类型选择 CNAME，名称填写 www， IP4 填写和上面同样的内容即可。</li></ul><p><img src="/images/web-app-adaptation/cc-image-2.4-cn.png" alt="img"></p><ol start="5"><li>点击继续前往激活。然后按照它描述的步骤，更新我的名称服务器，并且复制 Cloudflare 名称服务器。</li></ol><p><img src="/images/web-app-adaptation/cc-image-2.5.png" alt="img"></p><h3 id="第三步：更新-NameServers"><a href="#第三步：更新-NameServers" class="headerlink" title="第三步：更新 NameServers"></a>第三步：更新 NameServers</h3><ol><li>再次回到 <a href="https://www.namesilo.com/">namesilo</a> 的后台，点击 Domain Manager</li></ol><p><img src="/images/web-app-adaptation/ns-image-3.1.png" alt="img"></p><ol start="2"><li>点击需要更新的域名。</li></ol><p><img src="/images/web-app-adaptation/ns-image-3.2.png" alt="img"></p><ol start="3"><li>点击 Quick Settings，将 Cloudflare 名称的 NameServers</li></ol><p><img src="/images/web-app-adaptation/ns-image-3.3.png" alt="img"></p><ol start="4"><li>切换到 DNS 的 tab 页面，然后往下滑，确保 DNSSEC 关掉。如果没有关掉，则点击关掉。</li></ol><p><img src="/images/web-app-adaptation/ns-image-3.4.1.png" alt="img"></p><p><img src="/images/web-app-adaptation/ns-image-3.4.2.png" alt="img"></p><p>截止到目前这一步，已经完成对 NameServers 的更新。且已经完成大部分的工作。</p><h3 id="最后一步：在-Vercel-上添加我的域名"><a href="#最后一步：在-Vercel-上添加我的域名" class="headerlink" title="最后一步：在 Vercel 上添加我的域名"></a>最后一步：在 Vercel 上添加我的域名</h3><ol><li>登录 Vercel 后台，点击需要更新的项目，进入到项目的设置页面。</li></ol><p><img src="/images/web-app-adaptation/vc-image-4.1.png" alt="img"></p><ol start="2"><li>从 overview 标签页，点击 Domains，添加新买的域名。</li></ol><p><img src="/images/web-app-adaptation/vc-image-4.2.1.png" alt="img"></p><p><img src="/images/web-app-adaptation/vc-image-4.2.2.png" alt="img"></p><ol start="3"><li>如果域名下面有 Proxy Detected 的标签显示，基本上到此就算是配置成功了。</li></ol><p><img src="/images/web-app-adaptation/vc-image-4.3.png" alt="img"></p><p><strong>然后你现在应该可以在国内，不使用魔法 🧙♀️ 或者梯子 🪜 通过这个新域名进行访问了 🎉。</strong></p>]]></content>
     
     
       
@@ -174,9 +418,9 @@
     
     
     
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
-    
     <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    
+    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
@@ -247,242 +491,6 @@
     <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🃏重要的是不下牌桌</title>
-    <link href="https://maxweber36.github.io/2025/08/01/%E9%87%8D%E8%A6%81%E7%9A%84%E6%98%AF%E6%97%A0%E9%99%90%E6%B8%B8%E6%88%8F/"/>
-    <id>https://maxweber36.github.io/2025/08/01/%E9%87%8D%E8%A6%81%E7%9A%84%E6%98%AF%E6%97%A0%E9%99%90%E6%B8%B8%E6%88%8F/</id>
-    <published>2025-08-01T01:58:51.000Z</published>
-    <updated>2025-09-04T04:44:09.373Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我之前一个多月前，买了一些美国纳斯达克的 ETF 的基金。</p><p>最近我看到一则文章，大概的意思是说美国现在很多公司的市值都非常高，甚至已经远远超过了历史最高点，事实确实如此。看看现在美国的股市，真的有点高的可怕。其言外之意是，美国目前的股票市场泡沫很大，很有可能后面会出现一次比较大的回调。</p><p>因此我会保险起见，我打算把手里的这个 ETF 基金回撤一些。但是在申请赎回的时候，中间有大约一周左右的冷冻期，这一周内我什么都做不了。而且在这期间，我的纳斯达克 ETF 还是会继续跟着美国股市的波动而波动。也就是说，这一周里，不管 ETF 是涨还是跌，我都无法做出任何操作。因此，其实在这种情况下，比较理智的做法就是不去关注这段时间的收益。因为这些收益对我来说没有实际意义，我最终关心的只是最后到手的钱。比如说，今天涨了 500，但等到 7 天后，这 500 可能又跌回去了。关注这些中间的波动，其实只会徒增烦恼。</p><p>想到这里，我突然有了新的感悟。我们的人生其实也是如此。只要我还在继续参与这个“游戏”，那么任何的收益和亏损都只是暂时的，只要我不主动或者被动的退出这个“游戏”。</p><p>这个道理其实可以延伸到很多方面。很多事情都是这样：一时的收益并不能代表你一生的收获，一时的亏损也不意味着你最终会失败。</p><p>最重要的，还是要留在牌桌上，继续参与下去。这或许才是最关键的事情。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🌟成为自己放在首位</title>
-    <link href="https://maxweber36.github.io/2025/07/24/%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%94%BE%E5%9C%A8%E9%A6%96%E4%BD%8D/"/>
-    <id>https://maxweber36.github.io/2025/07/24/%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%94%BE%E5%9C%A8%E9%A6%96%E4%BD%8D/</id>
-    <published>2025-07-24T08:40:37.000Z</published>
-    <updated>2025-09-04T04:32:32.276Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天，我重新翻开了<a href="https://book.douban.com/subject/36838903/">《比山更高》</a>这本书，正读着第二个故事。书中内容让我感触很深：无论处于什么时代，总会有一些极具理想主义色彩的人。</p><p>我想先谈谈，在我心中，理想主义者是怎样的人？就是那种将内心真正想做之事置于首位的人。他们不像大多数人，只追求稳妥的选择，而是始终坚持做自己想做的，想尽办法实现目标。无论目标是否被大部分人认可，只要是他们想实现的，就会全力以赴。</p><p>这样的人在人群中显得格外与众不同。你会发现，理想主义者往往一眼就能从人群中被辨认出来，他们与普通人有着明显区别。</p><p>我觉得自己目前只是个普通人，可内心却十分渴望成为理想主义者。继续阅读这本书时，我留意到，有些比我年轻的人，思想犀利、深刻，对生活的态度也格外坚定，这让我深受触动。</p><p>我深知自己远未达到他们的程度。虽说我年纪比他们大，但却自己像个尚未启蒙的小朋友，显得有些怯懦。让我感触深刻的是，他们很早就开始探寻内心真正想要的，且从不轻易妥协或放弃。</p><p>相比之下，自从大学毕业之后，我放弃了很多。那时，我对自我的探索几乎停滞。每当面对想做的事，总是反复权衡，最终大多选择放弃。</p><p>如今，虽然年纪也不小了，但是我觉得自己还是应该重新拾起二十多岁时未完成的自我探索使命，更努力地去发现、追寻内心真正想要的，探索自身价值。</p><p>勇敢追求自我，在多数人眼中必然显得另类。因为本身就与大部分人不同，所以若要追求内心价值，就不应害怕与众不同，毕竟这是必然结果。</p><p>想要成为真正的自己，必然要付出代价。当然，这里面也有运气因素，有人可能付出巨大代价，有人则不会。但无论如何，如果是一个坚定想成为自己的人，他一定会把成为自己放在首位。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="读书体验" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E4%B9%A6%E4%BD%93%E9%AA%8C/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🧠 不要妄图掌握所有</title>
-    <link href="https://maxweber36.github.io/2025/07/24/%E4%B8%8D%E8%A6%81%E5%A6%84%E5%9B%BE%E6%8E%8C%E6%8F%A1%E6%89%80%E6%9C%89/"/>
-    <id>https://maxweber36.github.io/2025/07/24/%E4%B8%8D%E8%A6%81%E5%A6%84%E5%9B%BE%E6%8E%8C%E6%8F%A1%E6%89%80%E6%9C%89/</id>
-    <published>2025-07-24T08:36:03.000Z</published>
-    <updated>2025-09-04T04:31:59.059Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h2><p>最近随着产品的不断开发和迭代，我发现自己对于自己构建的产品，也开始无法记得住这个产品的每一行代码和逻辑，无法对于产品的所有细节都全权掌握。之前曾试图把我写下的每一行代码，但是最近，发现这个根本都做不到。</p><h2 id="软件产品的特性"><a href="#软件产品的特性" class="headerlink" title="软件产品的特性"></a>软件产品的特性</h2><ul><li>复杂度会随迭代累积。而且这种累积是指数型的增长。</li></ul><blockquote><p>哪怕最初只有几百行代码，当你不断添加功能、修复漏洞、适配场景时，代码量、模块关联、逻辑分支会指数级增长。比如一个简单的登录功能，最初可能只是 “验证账号密码”，但后来可能加入验证码、第三方登录、风控校验…… 每个新增环节都可能牵扯底层逻辑，你不可能永远记住 “某一行代码为什么要加一个判断”—— 这不是我的问题，是软件本身的复杂性决定的。</p></blockquote><h2 id="什么是最重要的事情？"><a href="#什么是最重要的事情？" class="headerlink" title="什么是最重要的事情？"></a>什么是最重要的事情？</h2><p>掌握框架和工具。</p><ol><li>比如知道产品的核心模块是什么？（用户系统？支付系统？），模块之间是怎么交互的。</li><li>学会用文档（注释、设计文档）记录关键逻辑。</li><li>遇到忘记的细节时，能通过调试、查日志、看注释快速找回逻辑，而不是依赖记忆。</li></ol><h2 id="重要的事情"><a href="#重要的事情" class="headerlink" title="重要的事情"></a>重要的事情</h2><p>我不需要 “对抗遗忘”，而是应该 “学习如何管理复杂度”。就像建房子，我不需要记住每一块砖的位置，但必须知道承重墙在哪里、水管怎么走。后续开发中，我会慢慢发现：比起 “记住所有细节”，“知道去哪里找答案”“能清晰拆解问题” 才是更重要的能力。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🎮一场以弱胜强的游戏</title>
-    <link href="https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/"/>
-    <id>https://maxweber36.github.io/2025/07/19/%E4%B8%80%E5%9C%BA%E4%BB%A5%E5%BC%B1%E8%83%9C%E5%BC%BA%E7%9A%84%E6%B8%B8%E6%88%8F%F0%9F%8E%AE/</id>
-    <published>2025-07-19T09:38:23.000Z</published>
-    <updated>2025-09-04T04:12:45.336Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我觉得创业其实就是一个以弱胜强、以小博大的游戏。对于独立产品来说，往往起步时处于非常弱势的位置，如何在这样的环境下生存下来，非常重要。</p><p>这不仅仅像我以前在公司那样，只是单纯做一个产品，也不仅仅是做技术方面的事情，而不考虑其他的事情。创业更像是一个综合性、生产性的问题。你要思考，如何在资源有限、处境艰难的情况下，与更强的对手竞争，并且持续生存下去。</p><p>我也意识到，自己有时候太过专注于产品本身，比如产品的交付和设计等细节。但现在，我更应该围绕“生存”这个核心，尽可能延长产品的生命周期。我认为，无论在任何阶段，这都是最重要的事情。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📝 个人最佳笔记应用推荐及理想笔记工具构想</title>
-    <link href="https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/"/>
-    <id>https://maxweber36.github.io/2025/07/17/%E4%B8%AA%E4%BA%BA%E6%9C%80%E4%BD%B3%E7%AC%94%E8%AE%B0%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90%E5%8F%8A%E7%90%86%E6%83%B3%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7%E6%9E%84%E6%83%B3/</id>
-    <published>2025-07-17T14:40:56.000Z</published>
-    <updated>2025-09-04T04:13:38.887Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>如果让我选出今年个人认为最有价值的 App，虽然还有大半年的时间。我可能会选择 Get 笔记。这个应用确实给了我记录想法的动力。每当我心里有一些想法，哪怕只是稍微有点价值的念头，我都会愿意用这个笔记来记录下来。</p><p>之所以喜欢 Get 笔记，主要有几个原因。首先，它支持语音输入。很多时候我的灵感都是一闪而过，如果让我坐在那里敲字，其实我不太愿意，因为打字太慢了，很多想法转瞬即逝。而且有些想法是在我说出来的过程中逐渐形成的。语音输入这个功能，成为我持续记录的一个重要动力。</p><p>第二个吸引我的点是，它引入了 AI 能力。它会把我的语音内容转录成文字，而且不仅仅是基础的转录，还会进行润色。这样我后期再看这些文字内容时，阅读体验会更加顺畅。不像我现在这样口头表达时会有些零碎、不够有结构，有时还显得啰嗦。AI 会帮我去除一些不必要的词句，让最终的文字内容更加结构化、紧凑。</p><p>第三点就是 DeepSeek 的那个机器人。这个机器人主要是让我可以基于我录下来的文本，和它进行交流和沟通。有时候，它会帮我分析我最近的一些思考，并整理我的想法。我觉得这些功能都挺好的。</p><p>当然，目前它的整理还比较浅显，主要还是我主动让它整理什么内容，它才会去做。除了日报之外，其他很多内容它还不会主动帮我整理。我觉得这方面其实还有很大的提升空间。</p><p>另外，还有一个产品叫“心光”。听我刚才的描述，其实它很符合我前面提到的这三点功能。不过，它的功能有点复杂，对我来说有些过于繁琐。比如，它还会整合你的豆瓣数据、看电影的数据、看书的数据等等。除了你的平时个人日记的数据之外，其他内容也都能同步进来，但整体显得有些复杂。</p><p>有时候，我只是想让它帮我理清自己的思路，梳理一下我最近在思考些什么。因为我脑子里总是有很多想法，这些想法又比较零碎、跳跃，没办法形成一个结构化的内容。而在这方面，心光的表现就稍微弱了一些。</p><p>其实，我理想中的工具是能够帮助我将零散的想法整理成结构化的输出。打个比方，就像进行田野调查一样：我平时会观察自己的感受、想法和思绪，但不会立即做出判断，而是先收集这些原始素材，并将它们记录下来。之后，我会定期整理最近的想法，将它们转化为更加结构化的内容。通过这种方式，我可以从这些零碎的观察和只言片语中，发现一些更深层次的问题，或者找到我更关注的焦点。这就是我希望实现的目标。</p><p>至于“心光”的功能，它在这方面有所欠缺。它更像是一个陪伴型的助手，当你有一些想法时，它会跳出来询问你最近的情况，但不会将这些流动的想法整理成结构化的、有价值的输出。我感觉这个产品的定位并不在此，因此后期可能也不会在这方面进行改进。</p><p>是的，我后续可以考虑自己开发这样一个工具。不过就目前而言，这个项目对我来说还是有一定难度的。</p><p>首先，它需要做成手机端应用，因为我经常需要随时记录想法，所以移动端是最理想的选择。但在此之前，我还没有开发过手机应用，这确实是一个挑战。</p><p>前期我需要学习很多新知识，或者说熟悉相关技术。虽然这个过程需要投入不少精力，但我认为可以将这个项目作为一个长期目标，在时间允许的情况下逐步推进。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📅 20250711</title>
-    <link href="https://maxweber36.github.io/2025/07/11/20250711/"/>
-    <id>https://maxweber36.github.io/2025/07/11/20250711/</id>
-    <published>2025-07-10T22:46:17.000Z</published>
-    <updated>2025-09-04T04:30:48.048Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>还有一个小时就要到火车东站了，现在是 06:42。我查了地铁，地图上显示大约需要 40 多分钟能到，但总觉得时间非常紧张。刚刚还错过了一趟地铁，现在还要再等 4 分钟，不知道来不来得及，心里特别着急。</p><p>其实，这种赶时间的状态让我很不安，也让我反思自己。为什么总是把事情安排得这么紧？有时候明明知道这样不好，但还是会这样做。性格上确实还有很多需要改正的地方，比如要学会更从容一些。</p><p>现在还有 3 分钟地铁就来了，时间还是很赶。整个过程中，内心一直很慌张，完全不从容。其实，这种状态就像我做其他事情一样，如果把时间安排得太紧，整个人就会一直处于紧绷的状态。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>💎 真正有价值的东西</title>
-    <link href="https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
-    <id>https://maxweber36.github.io/2025/07/06/%E7%9C%9F%E6%AD%A3%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
-    <published>2025-07-06T00:51:32.000Z</published>
-    <updated>2025-09-04T03:13:25.602Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>前几天，听朋友分享了一期<a href="https://www.xiaoyuzhoufm.com/episode/684b8f83574f065721e6a775?s=eyJ1IjogIjYyMWQ2MWY1ZWRjZTY3MTA0YTE0ZDcxMSJ9">王汉洋在知行小酒馆一期播客</a>。</p><p>我在听汉阳的分享，他在播客上谈到的一些内容让我很有共鸣。现在AI的能力确实非常强大，我也越来越觉得，人在做事情、接触物理世界，以及内在感受这些方面，变得越来越重要。</p><p>所谓的客观真理，其实我并不认为真的存在绝对的客观真理，而且这也不是最重要的东西。因为AI太强了，比如你要查文献、提问，或者关注世界上已经存在的信息，让AI来解答，它往往比你做得更好。</p><p>但你的个人感受、想法、体验，以及你对所接触到的物理事件的理解，这些是AI无法替代的。而这些东西对你来说其实非常重要。我现在越来越同意他的观点：我们应该更加关注物理世界，更加关注自己独特的体验，自己对于这个世界独特的创造，一定是要带有自己的生命体验和喜恶，因为这些才是真正独一无二、有价值的东西。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📅 20250706</title>
-    <link href="https://maxweber36.github.io/2025/07/06/20250706/"/>
-    <id>https://maxweber36.github.io/2025/07/06/20250706/</id>
-    <published>2025-07-06T00:36:48.000Z</published>
-    <updated>2025-09-04T06:53:47.338Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天听了项飙的讲座，突然觉得我还是应该找时间把《把自我作为方法》这本书重新读一遍。</p><p>最近在观察自己的时候，我发现自己与他人建立关系的机会确实有点少。怎么说呢，现在我更多地在构建自我，但其实这还远远不够。我时不时会有一种孤独感，或者说有一种无法深入下去的感觉。虽然我也说不太清楚，但我觉得还是有一些方法可以帮助我“沉下去”，比如去做一些更沉浸式的事情。比如说，去远山徒步，这可能会让我更加安静和沉静。还有做家务，其实也能让我很投入。</p><p>我觉得有一个原因让我有时感到悬浮，就是互联网世界确实让我觉得不太真实。比如我加了很多群，但这些群里太多转瞬即逝的消息，而且内容非常零碎。有时候我会觉得这些群没有什么意义。</p><p>社交网络有时候会让人觉得自己像一粒灰尘，可以随处飘荡。你永远只是浮在某个表面上，没办法真正和某个东西紧密地连接在一起。不管是在社区还是社群里，大家虽然彼此认识，但感觉就像灰尘一样，只是飘在表面上。随时一阵风吹过，就会被带走。</p><p>好像你们就断联了。是的。后来过了一段时间，我把一些社群退了，真的觉得没什么意义。在网络上的这种交流，还是太浅了。人与人之间，还是要在线下见面，才能开始一些更深刻的连接。</p><p>还有，项飙在讲座里提到的“附近”这个概念，我觉得很重要。人与人之间的关系，其实需要一些摩擦和“交易成本”。比如说，你和邻居生活在同一个空间里，即使你不喜欢他，也没办法马上搬走。你被迫和对方共同生活在一个物理世界里，这种联系有时候反而比网络上的关系更深。因为在网络上，如果你讨厌一个人，可以很快就不联系了；如果喜欢，也可以随时聊天，但很难真正深入。</p><p>物理空间的限制，让人与人之间的关系不得不更深一些。对于自我来说更是如此。你无法逃避自己，所以和自己的关系其实是最重要的。</p><p>我觉得我应该更多去建立那些能够深入挖掘、真正触及内心的关系，而不是停留在表面。</p><p>我不再把自己当作一个四处漂泊的浮萍。虽然这种状态有时能带来新鲜体验，但这些体验往往不会在脑海中留下深刻印记。它们就像一些转瞬即逝的想法，如果不及时记录和深入思考，很快就会消失。这些想法不会对我的未来产生任何影响，或者关联非常有限。</p><p>这对我来说是一个很大的启发。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-    <category term="哲学思考" scheme="https://maxweber36.github.io/tags/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>📅 20250703</title>
-    <link href="https://maxweber36.github.io/2025/07/03/20250703/"/>
-    <id>https://maxweber36.github.io/2025/07/03/20250703/</id>
-    <published>2025-07-03T06:04:30.000Z</published>
-    <updated>2025-09-04T04:30:16.368Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>多语言学习中的发音标注体系探索与国际音标的应用思考</p><p>最近我在学习语言。之前一直在学英语，现在又开始学粤语和日语，还想学法语。当我同时学习多种语言时，突然发现这些语言之间有很多不同之处，尤其是在发音方面。于是，我开始了解国际音标，也顺便了解了中文的注音和发音体系。</p><p>其实，之前学英语的时候接触过音标，但那时候并不知道什么是国际音标。只知道音标是用来标注英语单词发音的，而拼音则是用来标注汉字发音的。日语方面，它有平假名和片假名，这两套假名既可以标注日语单词的发音，也能表达意思，有点类似于中文的拼音。</p><p>后来我发现，每种语言都有自己独特的标注发音的体系。进一步了解后才知道，国际音标其实就是为了解决不同语言发音标注的问题，它用一套统一的体系来标注各种语言的发音。比如，中文可以用国际音标来标注发音，日语也同样适用。</p><p>所以，学会了国际音标之后，其实可以用它来标注不同语言的发音，这样无论学习哪种语言，都能更准确地掌握发音。</p><p>对，然后我最开始是在学习国际音标。学习的过程中，我突然又去看了一下拼音，结果发现国内很多给小朋友用的拼音教材都挺复杂的。我觉得这些教材并没有把拼音的本质讲清楚，反而加了很多不必要的内容。其实，拼音主要就是让孩子认识这些符号，以及学会这些符号怎么发音就可以了。</p><p>只要掌握了这两点——一是这些符号怎么读，二是这些符号拼在一起怎么拼读，然后多加练习，让孩子记住这些内容，其实就足够了，没必要搞得特别复杂。我发现有时候国内的拼音教学无谓地增加了很多记忆负担，而且有些记忆其实是没有用的。</p><p>现在回想起来，我觉得挺有意思的。以前学习的时候，很多内容其实并不太明白它们到底是什么，只是跟着学，也不去思考为什么要学这些。如果能明白学习的本质和目的，再去学的话，效率会高很多。</p><p>现在我特别想学好国际音标，但我有个疑问：如果我掌握了国际音标，是不是以后学其他语言时，就不用再去记平假名或片假名的发音了？是不是可以直接用国际音标来标注和学习发音呢？</p><p>我可以利用国际音标这套发音体系来记忆发音。这样学习起来会轻松很多，因为像我在用 guolingo 学习法语时，它法语本身没有音标。仅凭耳朵去听，有时难以分辨准确的发音。我常常会联想到英语的发音，但实际上法语的发音与英语并不相同，导致我在学习法语时经常听错发音。</p><p>因此，我在思考：在学习法语时，是否能够找到每个单词对应的国际音标标注？这个问题可能需要我认真解决。我打算把它记入待办清单，后续再想办法处理。</p><p>哦，对了，我突然想到，有时候我们学中文时，可能只学过拼音这种发音标注体系。如果没学过英语音标，直接用中文拼音的标注体系去标注英文单词，会导致很多发音不准确。因为英文有它自己独特的发音，我们这样发音时对方可能听不懂，用拼音去标注英文，根本无法准确标注，导致发音错误。所以，我们需要学习他们那边的标注体系，也就是学习英语音标，或者学习国际音标，它有足够多的标注方式，可以让我们的发音更加准确。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>✍️ 从宋明蔚谈他的写作视角到我价值观的倾向</title>
-    <link href="https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/"/>
-    <id>https://maxweber36.github.io/2025/07/01/%E4%BB%8E%E5%AE%8B%E6%98%8E%E8%94%9A%E8%B0%88%E4%BB%96%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%86%E8%A7%92%E5%88%B0%E6%88%91%E4%BB%B7%E5%80%BC%E8%A7%82%E7%9A%84%E5%80%BE%E5%90%91/</id>
-    <published>2025-07-01T14:08:34.000Z</published>
-    <updated>2025-09-04T04:14:16.941Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-AFSJRDxq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-AFSJRDxq"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "口播",              author: "weber",              url: "/music/关于写作视角与个人价值实现的思考.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我最近在听《比山更高》这本书。作者宋明蔚在他的博客里提到，关于写作时使用第三者视角的一些想法。他讲了自己为什么特别想用第三者视角来描述事情，以及为什么在写书的时候，绝对不会用“我”这个词。</p><p>他谈到的理由，我个人非常认可，也给了我很大的启发。其实，这也是我更喜欢的表达方式，只是我在这方面做得还不够好。以前我对自己特别执着，不管是在朋友圈，还是在其他地方，总是想不清楚“我”到底重不重要，或者说，在公开事件中、在公众眼中的“我”到底有没有那么重要。</p><p>有一段时间我在写日记，也常常纠结要不要把这些日记发出去。因为从某种角度来说，我确实希望自己能成为一个有影响力的人。但我发现，自己能谈的内容其实不多，很多时候写的还是关于自己，因为我确实觉得自己很重要。</p><p>可是在写自己的时候，我又会犹豫：这些东西到底有没有必要分享给别人？是不是把自己强行摆在别人面前，像是在说“你看我这样，你看我那样”？这种感觉对我来说，其实也挺矛盾的。</p><p>其实我挺厌恶那种过度强调自我的表达，或者说，我自己也不太喜欢那样。相比之下，我更倾向于去建立一些超越“自我”的东西。虽然有时候我觉得自己很重要，但有时候又觉得其实也没那么重要。可能这些想法都需要经历一些事情之后，才能慢慢明白吧。</p><p>如果说我的终极目标，其实是希望自己写出来的东西，或者自己所构建的事物，能够超越个人本身。我更希望自己对世界的影响，是通过那些已经大于我自身的作品或成果去实现的，而不是不断地强调“我怎么怎么样”，或者反复标榜自己是一个需要影响他人的人。</p><p>说实话，我挺讨厌现在的马斯克。虽然作为一个普通人，讨厌他其实也没什么意义，但从我的角度来看，我确实不喜欢他那种总是想把所有聚光灯和关注都吸引到自己身上的做法。当然，我也非常讨厌特朗普，他在各种场合下总是想成为焦点。</p><p>我不想成为那样的人。当然，这个世界上有各种各样的人。其实，说讨厌也没太大意义，因为如果真的要去讨厌那些和自己价值观不合的人，那这个世界上该讨厌的人实在太多了。</p><p>话说回来，我的人生使命可能是想要创造一个比自己更大的东西，然后通过那个东西去改变世界。回顾过去的职业道路，我进入产品行业其实有些阴差阳错。现在想来，也是因为当时接触到的信息促使我步入这个行业。</p><p>当然，我必须努力发展自己，才能构建一个比自己更大的东西。所以，关注自己是前提，然后通过构建更大的东西去影响世界，这才是目的。我下了决心，会持续关注自己，每天写日记，专注自己的感受。不过，这些只对我个人有意义，对别人来说帮助不大。</p><p>目前，我觉得自己还处在一个建设自我的阶段。今天这个想法让我很有启发，我想先把它记录下来。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-    <category term="关于写作" scheme="https://maxweber36.github.io/tags/%E5%85%B3%E4%BA%8E%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>🧠 如何让大模型变得诚实 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/">
+                            哲学思考
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E8%AF%BB%E8%AE%BA%E6%96%87/">
+                            读论文
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                🧠 如何让大模型变得诚实
+            
+            
+        </div>
+        <span class="post-date">
+            Sep 6, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>今天在看机器之心的公众号上看到一篇文章<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/f6pTUhzn9NjA_xWSvTmG4A">《OpenAI 罕见发论文:我们找到了 AI 幻觉的罪魁祸首》</a>。</p>
+<p>在这篇文章中介绍 OpenAI 最近发的一篇论文，名字叫做<a target="_blank" rel="noopener" href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">《Why Language Models Hallucinate》(为什么语言模型有幻觉)</a>。</p>
+<p>我很好奇，就点进去看了一下。很有意思。原因说起来，很简单。就是 <strong>「标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励」</strong>。</p>
+<p>在 OpenAI 的<a target="_blank" rel="noopener" href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">这篇论文</a>中，主要想要克服的“幻觉”是「模型不诚实地生成自己都不相信的答案的情况」。</p>
+<p>这句话是我自己看完论文后，自己总结的。</p>
+<p>在 OpenAI 的这篇论文中，主要说了两点。</p>
+<ol>
+<li><p>大模型的预训练逻辑决定——大模型对于问题的回答， 并非 “记忆数据”，而是通过统计规律 “学习语言生成模式”。<br>语言模型的预训练本质是 “自回归预测任务”：给定一段文本的前 N 个词（如 “地球的半径约为”），模型需要从训练数据中学到的 “统计规律” 里，预测第 N+1 个词最可能是什么（如 “6371 千米”）。</p>
+</li>
+<li><p>在大模型微调阶段，当前主流评估的 “二元评分体系”（正确得 1 分、空白 &#x2F;“不知道” 得 0 分）则在微调阶段强化了幻觉，使模型陷入 “为刷分而盲目猜测” 的循环。导致<strong>对 “猜测” 的奖励远胜于 “承认不确定性”</strong>。</p>
+</li>
+</ol>
+<p>简单来说：“标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励。”</p>
+<p>在大模型的微调（如 RLHF、DPO）阶段，本应减少幻觉，但主流评估体系的 “二元评分” 反而强化了猜测行为，形成 “惩罚不确定性的流行病”。</p>
+<blockquote>
+<p>二元评分：对模型输出的结果，进行对或者错的二元评判。采用 “正确得 1 分、空白 &#x2F; 不知道 得 0 分”，模型 “盲目猜测” 的期望得分高于 “承认不知道”。</p>
+</blockquote>
+<p><strong>那么如何改进呢？</strong></p>
+<p>简单来说：<u>让模型 “合理表达不确定” 获得奖励，而非惩罚。</u></p>
+<p>对模型的输出结果评估，简单来说就是引进置信度目标（置信度，也就是结果的可信度）。这里的可信度并非外部的可信度，而是来自于模型自己对于输出的结果的可信程度。可以简单理解，只有当大模型自己对于输出结果的置信度 大于 某个置信度目标值，才对正确结果做回答，否则可以说 I Don’t Know。当然这种有很多的技术性的细节。但是最终目标是让大模型变得更加诚实。</p>
+<p>当然关于幻觉体现是多方面的，而这篇论文关于幻觉的讨论和解决方案也只是其中一个侧面（侧重于 I Don’t Kown）。但是即使是这样，我自己在使用的体验上，依然觉得 GPT5 的可靠性要高于其他模型很多。</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/09/04/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%95%A3%E6%AD%A5%E6%97%B6%E7%9A%84%E8%AE%B0%E5%BD%95/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

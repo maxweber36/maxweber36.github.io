@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>📍 LocateIt - AI 图片地理定位工具 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/AI%E5%BA%94%E7%94%A8/">
+                            AI应用
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/">
+                            地理定位
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/">
+                            图像识别
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Web%E5%BA%94%E7%94%A8/">
+                            Web应用
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                📍 LocateIt - AI 图片地理定位工具
+            
+            
+        </div>
+        <span class="post-date">
+            Oct 4, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="/images/project/locateit.png" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h2 id="📋-产品概述"><a href="#📋-产品概述" class="headerlink" title="📋 产品概述"></a>📋 产品概述</h2><p><strong>乐可寻 Locate-It</strong> 是一款基于人工智能的地点识别服务，通过分析图片内容来推测可能的地理位置。我们采用多模态 AI 模型结合网络检索技术，对图片中的视觉信息进行智能分析和推理，为用户提供地点参考信息。</p>
+<h2 id="🎯-核心功能"><a href="#🎯-核心功能" class="headerlink" title="🎯 核心功能"></a>🎯 核心功能</h2><h3 id="🌍-AI-视觉分析与推理"><a href="#🌍-AI-视觉分析与推理" class="headerlink" title="🌍 AI 视觉分析与推理"></a>🌍 AI 视觉分析与推理</h3><ul>
+<li><strong>多模态 AI 识别</strong>：采用 BigModel GLM-4.5V 模型，分析图片中的视觉特征</li>
+<li><strong>智能推理机制</strong>：基于图像内容、建筑风格、自然景观等线索进行地点推测</li>
+<li><strong>GPS 数据优先</strong>：当图片包含 EXIF GPS 数据时，优先使用精确坐标信息</li>
+<li><strong>概率性结果</strong>：提供基于 AI 分析的地点建议，而非绝对准确的位置信息</li>
+</ul>
+<h3 id="🎨-虚拟场景分析与原型探索"><a href="#🎨-虚拟场景分析与原型探索" class="headerlink" title="🎨 虚拟场景分析与原型探索"></a>🎨 虚拟场景分析与原型探索</h3><ul>
+<li><strong>作品场景识别</strong>：识别动漫、游戏、影视剧中的虚拟场景</li>
+<li><strong>现实原型推测</strong>：基于视觉特征推测可能的现实取景地或灵感来源</li>
+<li><strong>创意推理</strong>：通过 AI 推理分析虚拟场景与现实地点的关联性</li>
+<li><strong>外部验证</strong>：利用网络搜索验证和补充识别结果</li>
+</ul>
+<h3 id="🗺️-地点信息展示与地图可视化"><a href="#🗺️-地点信息展示与地图可视化" class="headerlink" title="🗺️ 地点信息展示与地图可视化"></a>🗺️ 地点信息展示与地图可视化</h3><ul>
+<li><strong>交互式地图</strong>：在百度地图上展示推测的地点位置</li>
+<li><strong>坐标参考</strong>：提供地理坐标作为位置参考信息</li>
+<li><strong>地址解析</strong>：将坐标转换为可读的地址描述</li>
+<li><strong>可视化展示</strong>：直观的地图界面帮助用户理解位置信息</li>
+</ul>
+<h3 id="🔍-智能搜索与信息补充"><a href="#🔍-智能搜索与信息补充" class="headerlink" title="🔍 智能搜索与信息补充"></a>🔍 智能搜索与信息补充</h3><ul>
+<li><strong>网络检索</strong>：集成 Tavily API 搜索相关地点信息</li>
+<li><strong>信息提取</strong>：从搜索结果中提取有用的位置描述和背景资料</li>
+<li><strong>交叉验证</strong>：通过多源信息提升识别结果的可信度</li>
+<li><strong>背景补充</strong>：提供地点的相关背景信息和文化介绍</li>
+</ul>
+<h2 id="🎨-产品特色"><a href="#🎨-产品特色" class="headerlink" title="🎨 产品特色"></a>🎨 产品特色</h2><h3 id="🤖-双模式分析能力"><a href="#🤖-双模式分析能力" class="headerlink" title="🤖 双模式分析能力"></a>🤖 双模式分析能力</h3><ul>
+<li><strong>现实场景分析</strong>：分析真实照片中的地点线索，推测可能位置</li>
+<li><strong>虚拟场景探索</strong>：处理二次元和影视内容，探索现实原型可能性</li>
+</ul>
+<h3 id="📱-友好的用户体验"><a href="#📱-友好的用户体验" class="headerlink" title="📱 友好的用户体验"></a>📱 友好的用户体验</h3><ul>
+<li><strong>简洁操作</strong>：拖拽或点击上传图片，即可开始分析</li>
+<li><strong>多格式支持</strong>：支持 JPG、PNG、WebP、HEIC 等常见格式</li>
+<li><strong>实时进度</strong>：展示分析进度，让用户了解处理状态</li>
+<li><strong>结果展示</strong>：清晰的分析结果展示，包括推理过程说明</li>
+</ul>
+<h3 id="🎯-智能化推理流程"><a href="#🎯-智能化推理流程" class="headerlink" title="🎯 智能化推理流程"></a>🎯 智能化推理流程</h3><ul>
+<li><strong>多层次分析</strong>：从整体景观到具体细节的逐步分析</li>
+<li><strong>线索整合</strong>：综合视觉线索、GPS 数据、网络信息进行推理</li>
+<li><strong>概率评估</strong>：为识别结果提供置信度参考</li>
+<li><strong>透明化过程</strong>：展示 AI 的推理逻辑和判断依据</li>
+</ul>
+<h2 id="🎯-主要使用场景"><a href="#🎯-主要使用场景" class="headerlink" title="🎯 主要使用场景"></a>🎯 主要使用场景</h2><h3 id="🎮-动漫游戏文化探索"><a href="#🎮-动漫游戏文化探索" class="headerlink" title="🎮 动漫游戏文化探索"></a>🎮 动漫游戏文化探索</h3><p><strong>场景</strong>：看到动漫游戏中的美丽场景，想了解现实中的可能取景地<br><strong>价值</strong>：发现虚拟作品与现实世界的连接，为「圣地巡礼」提供参考</p>
+<h3 id="🎬-影视拍摄地探寻"><a href="#🎬-影视拍摄地探寻" class="headerlink" title="🎬 影视拍摄地探寻"></a>🎬 影视拍摄地探寻</h3><p><strong>场景</strong>：观看影视剧时对某个场景产生兴趣，想了解拍摄地信息<br><strong>价值</strong>：探索影视作品背后的真实地点，满足观众的好奇心</p>
+<h3 id="🏞️-摄影创作参考"><a href="#🏞️-摄影创作参考" class="headerlink" title="🏞️ 摄影创作参考"></a>🏞️ 摄影创作参考</h3><p><strong>场景</strong>：摄影师寻找拍摄地点参考，分析优秀作品的地理位置<br><strong>价值</strong>：为摄影创作提供地点灵感，帮助发现新的拍摄角度</p>
+<h2 id="🔬-技术原理说明"><a href="#🔬-技术原理说明" class="headerlink" title="🔬 技术原理说明"></a>🔬 技术原理说明</h2><h3 id="🧠-AI-分析机制"><a href="#🧠-AI-分析机制" class="headerlink" title="🧠 AI 分析机制"></a>🧠 AI 分析机制</h3><p>我们的系统采用多模态 AI 模型，通过以下步骤进行分析：</p>
+<ol>
+<li><strong>视觉特征提取</strong>：识别图片中的建筑、自然景观、人文特征</li>
+<li><strong>风格判断</strong>：分析建筑风格、植被特征、地形地貌等线索</li>
+<li><strong>地理位置推理</strong>：基于视觉线索和知识库推测可能的地区</li>
+<li><strong>网络验证</strong>：通过搜索相关信息验证和补充推测结果</li>
+</ol>
+<h3 id="📊-结果可信度"><a href="#📊-结果可信度" class="headerlink" title="📊 结果可信度"></a>📊 结果可信度</h3><ul>
+<li><strong>GPS 数据</strong>：当图片包含精确 GPS 信息时，准确性最高</li>
+<li><strong>AI 推测</strong>：基于视觉分析的地点推测，提供参考性建议</li>
+<li><strong>网络验证</strong>：通过多源信息交叉验证提升结果可信度</li>
+</ul>
+<h2 id="📈-产品特点"><a href="#📈-产品特点" class="headerlink" title="📈 产品特点"></a>📈 产品特点</h2><ol>
+<li><strong>AI 驱动</strong>：基于最新多模态 AI 技术的智能分析</li>
+<li><strong>推理导向</strong>：通过逻辑推理提供地点建议，而非简单匹配</li>
+<li><strong>虚实结合</strong>：同时支持现实场景和虚拟场景分析</li>
+<li><strong>用户体验</strong>：简洁直观的操作流程</li>
+<li><strong>信息丰富</strong>：提供地点背景信息和文化介绍</li>
+<li><strong>持续学习</strong>：AI 模型不断优化，提升分析能力</li>
+</ol>
+<h2 id="🚀-使用建议"><a href="#🚀-使用建议" class="headerlink" title="🚀 使用建议"></a>🚀 使用建议</h2><ul>
+<li><strong>提供线索</strong>：在分析时提供地区范围或作品名称等线索可提升效果</li>
+<li><strong>理解概率性</strong>：AI 分析结果仅供参考，实际地点可能存在差异</li>
+<li><strong>多角度验证</strong>：重要用途建议结合其他方式确认地点信息</li>
+<li><strong>探索发现</strong>：将产品视为探索工具，发现图片背后的有趣故事</li>
+</ul>
+<hr>
+<p><strong>乐可寻 Locate-It</strong> — 让 AI 帮您探索图片背后的地理故事 🌍🔍</p>
+<h2 id="项目链接"><a href="#项目链接" class="headerlink" title="项目链接"></a>项目链接</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.locateit.pics/">官方网站</a></li>
+<li><a target="_blank" rel="noopener" href="https://app.locateit.pics/">在线体验</a></li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2025/10/11/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-AI-%E5%B8%AE%E5%8A%A9%E8%BF%9B%E8%A1%8C%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%80%BB%E7%BB%93/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
