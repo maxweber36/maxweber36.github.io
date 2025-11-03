@@ -16,7 +16,7 @@
 
 
 
-<title>📝 Timer-Whisper 产品开发日志 2025-10-23 | 阿犇的自留地</title>
+<title>关于Flutter 应用发布 | 阿犇的自留地</title>
 
 
 
@@ -127,88 +127,43 @@ var _hmt = _hmt || [];
   
     <div class="post-head">
     <div class="post-info">
-        <div class="tag-list">
-            
-                
-                    <span class="post-tag">
-                        <a href="/tags/%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/">
-                            产品日志
-                        </a>
-                    </span>    
-                           
-            
-        </div>
         <div class="post-title">
             
             
-                📝 Timer-Whisper 产品开发日志 2025-10-23
+                关于Flutter 应用发布
             
             
         </div>
-        <span class="post-date">
-            Oct 23, 2025
-        </span>
     </div>
-    <div class="post-img">
-        
-            <div class="h-line-primary"></div>
-              
-    </div>
+    <div class="h-line-primary"></div>
 </div>
     <div class="post-content">
-    <p>昨天，针对 Timer Whisper 在三个平台（macOS、iOS、Android）进行运行测试，已调试成功。<br><img src="/images/Timer-Whisper-%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-2025-10-23/screenshot-20251022-223212.png" alt="三端运行测试"></p>
-<p>今天计划尝试构建 Android 和 macOS 的安装包，在我的华为手机和 macOS 上安装，并进行使用测试。预计这个过程可能需要约 90 分钟。</p>
-<p>我的华为手机目前是非纯血版本的鸿蒙系统，不知道是否支持。🫤</p>
-<p>下一步迭代计划是开发用户账号功能，目前考虑采用邮箱登录的方式，暂时不开放注册。将邀请周围的朋友，通过添加白名单的方式进行邮箱登录。</p>
-<p>邮箱登录功能完成后，下一步是将数据库存储在云端，实现云端同步。这样可以保证在 macOS 和安卓手机端数据的一致性。</p>
-<p>后续计划包括：</p>
-<ul>
-<li>搭建官网</li>
-<li>研究推广方案（目前还没有具体思路）</li>
-</ul>
-<p>有些事情虽然暂时不知道怎么做，但还是必须要去做。无论是产品运营、开发还是设计。</p>
-<blockquote>
-<p><strong>我自己观察总结</strong>：在早期的很多事情上，我会因为不会而抗拒，心理上会有抵触。但我可以强迫自己去做，做了一段时间之后，其实会慢慢适应，然后开始擅长做这件事情，最后会喜欢做这件事情。</p>
-</blockquote>
+    <h2 id="如何将-flutter-应用导出-iOS-的安装包"><a href="#如何将-flutter-应用导出-iOS-的安装包" class="headerlink" title="如何将 flutter 应用导出 iOS 的安装包"></a>如何将 flutter 应用导出 iOS 的安装包</h2><ol>
+<li>打开终端，进入 flutter 项目目录。</li>
+<li>运行以下命令，导出 iOS 安装包：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build ios --release</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>导出的安装包位于 <code>build/ios/Release</code> 目录下。</li>
+</ol>
+<h2 id="如何将-flutter-应用导出-Android-的安装包"><a href="#如何将-flutter-应用导出-Android-的安装包" class="headerlink" title="如何将 flutter 应用导出 Android 的安装包"></a>如何将 flutter 应用导出 Android 的安装包</h2><ol>
+<li>打开终端，进入 flutter 项目目录。</li>
+<li>运行以下命令，导出 Android 安装包：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build apk --release</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>导出的安装包位于 <code>build/app/outputs/flutter-apk</code> 目录下。</li>
+</ol>
+<h2 id="如果不是通过安装包在-iOS-上安装，如何在-iOS-上运行应用？"><a href="#如果不是通过安装包在-iOS-上安装，如何在-iOS-上运行应用？" class="headerlink" title="如果不是通过安装包在 iOS 上安装，如何在 iOS 上运行应用？"></a>如果不是通过安装包在 iOS 上安装，如何在 iOS 上运行应用？</h2><p>使用命令行运行应用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter run --release -d &lt;device-id&gt;</span><br></pre></td></tr></table></figure>
 
 </div> 
 
 <script>
     window.onload = detectors();
 </script>
-    <div class="post-footer">
-    <div class="h-line-primary"></div>
-    <nav class="post-nav">
-        <div class="prev-item">
-           
-                <div class="icon arrow-left"></div>
-                <div class="post-link">
-                    <a href="/2025/11/03/flutter/">Prev</a>
-                </div>
-            
-        </div>
-        <div class="next-item">
-            
-                <div class="icon arrow-right"></div>
-                <div class="post-link">
-                  <a href="/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/">Next</a>  
-                </div>  
-            
-        </div>
-    </nav>
-</div>
-
-    
-      <div class="post-comment">
-
-     
-
-     
-    
-    
-
-</div>
-     
   
 </article>
         </div>
