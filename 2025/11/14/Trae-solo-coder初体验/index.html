@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>TRAE Solo Coder 初体验 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Coding/">
+                            Coding
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E4%BA%A7%E5%93%81%E5%AD%A6%E4%B9%A0/">
+                            产品学习
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/">
+                            产品打磨
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                TRAE Solo Coder 初体验
+            
+            
+        </div>
+        <span class="post-date">
+            Nov 14, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>前几天 TRAE 的 SOLO 正式版推出了。相比之前的 Beta 版本，这次更新新增了一个他们精细调校、专为复杂编码场景设计的 Code Agent——Solo Coder。</p>
+<img src="/images/learn-agents/trae-solo-coder/image-20251114154444856.png" alt="image-20251114154444856" style="width: 60%; height: auto;" />
+
+<p>这两天我正好拿手头正在做的新产品来测试一些功能。</p>
+<p>我这段时间做了一个移动端应用，叫做 Timer Whisper。这是一款语音驱动的计时器应用，主要通过自然语音的方式帮助人管理时间、提升做事效率。最大的特色就是语音控制。</p>
+<p>这个应用涉及的模块还算不少，包括前端、后端、API 调用、数据库以及用户登录等。</p>
+<p>我用 Solo Coder 主要完成了两件事情。</p>
+<p>第一件事：统一语音识别中的静默终止时间与会话上限的配置。</p>
+<p>目前这个应用的语音识别主要有两种方案：网络良好时优先调用远端的语音识别服务；网络较差时则调用本地语音识别。在开发早期，语音终止的时间阈值与语音识别会话上限由两个模块分别管理。因此我希望将这两个参数统一管理。此外，这两个参数此前都是以硬编码的方式写在各自模块里。</p>
+<p>这件事比较简单，几乎一两次 prompt 交互就解决了。这次他们在 Solo Coder 中增加了一个 Plan 功能，类似于 Claude Code 的 Plan 模式。也就是在写代码实现之前，它会先写一个方案，大致包括目标、方案概述、修改点、验证方式以及其他备注。如果你觉得方案不合适，可以继续与它讨论，让它修改到满意为止，然后再开始编码。</p>
+<hr>
+<p>这次更新还新增了一个很实用的上下文压缩（compress）功能。在 Solo 模式下模型使用最大上下文，你可以随时查看当前上下文窗口的占比，避免上下文过长影响模型效果。</p>
+<img src="/images/learn-agents/trae-solo-coder/image-20251114184304291.png" alt="image-20251114184304291" style="width: 60%; height: auto;" />
+
+<p>第二件事，我用它对产品进行 UI 改造。之前产品的 UI 是较为简洁的现代风格，我想把它改造成像素风格。</p>
+<p><img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.07.png" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.07" style="width: 45%; height: auto; margin-right: 8px;" /><img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.31.png" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.31" style="width: 45%; height: auto;" /></p>
+<img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.27.png" alt="Simulator Screenshot - iPhone 16 Pro - 2025-11-14 at 11.11.27" style="width: 60%; height: auto;" />
+
+<p>这个需求相比上面的要复杂一些。我重新开启了对话窗口，直接提出要求：</p>
+<p>「我想把这个应用的界面改成像素风，页面样式可以参考这些图片的风格。」因为 <strong>TRAE SOLO 支持多模态</strong>，我上传了一些样式图片（这些图片是我把应用的 UI 交给豆包，让它将 UI 样式转换成像素风后生成的）。<br><img src="/images/learn-agents/trae-solo-coder/UI 图风格转换 (2).png" alt="UI 图风格转换 (2)" style="width: 45%; height: auto; margin-right: 8px;" /><img src="/images/learn-agents/trae-solo-coder/UI 图风格转换 (1).png" alt="UI 图风格转换 (1)" style="width: 45%; height: auto;" /></p>
+<img src="/images/learn-agents/trae-solo-coder/UI 图风格转换.png" alt="UI 图风格转换" style="width: 60%; height: auto;" />
+
+<p>豆包出的图还是挺美观的。当然我不指望 SOLO Coder 能完全还原这些图片，只要能把握精髓就可以了。</p>
+<p>随后 SOLO Coder 开始写方案文档。</p>
+<p>SOLO Coder 先启动了一个 Search Agent，调研 UI 的代码。它在调研过程中也表现出边思考边操作的特性，这就是常被讨论的 Interleaved Thinking（简单说，就是在“边想边做”的过程中，把每一步的思考带入后续操作，提高长程任务的规划与自我修正能力。可参考这篇介绍：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/az9OvwEKJ_vYifqlfw6rWA">Interleaved Thinking 解读</a>）。</p>
+<p><img src="/images/learn-agents/trae-solo-coder/image-20251114191018753.png" alt="image-20251114191018753" style="width: 45%; height: auto; margin-right: 8px;" /><img src="/images/learn-agents/trae-solo-coder/image-20251114191844224.png" alt="image-20251114191844224" style="width: 45%; height: auto;" /></p>
+<p>在查询时，它发现我的项目中同时存在 Web 页面的代码（之前尝试构建的官网页面）、Flutter 应用的代码，以及 iOS Widget（SwiftUI）的代码。因此它决定分批修改我的代码。考虑到我的 Web 页面只是测试用的官网，我重新提交了一个 prompt：</p>
+<p>「第一批修改 Flutter 应用，第二批修改 iOS Widget，暂时不改 Web」。</p>
+<p>随后 Solo Coder 根据最新要求，重新调整了界面改造计划。</p>
+<img src="/images/learn-agents/trae-solo-coder/image-20251114193427365.png" alt="image-20251114193427365" style="width: 60%; height: auto;" />
+
+<img src="/images/learn-agents/trae-solo-coder/image-20251114193452523.png" alt="image-20251114193452523" style="width: 60%; height: auto;" />
+
+<p>确认修改方案没有问题后，我让它开始编码。</p>
+<p>完成一轮代码修改后，它总结了本次改动，并给出了验证方法与后续建议。整体效率不错。另外，TRAE IDE 相比 Claude Code 或 Codex 这类 CLI 形态的 AI 编码编辑器更友好：你可以直观看到本次 AI 修改的代码，而无需自己使用 <code>git diff</code> 指令去对比。</p>
+<p>在检查时我发现，页面上的主要图标和数字已经改为像素风。但也有几个问题：（1）底部导航栏的图标没有变化；（2）文字使用的是 GoogleFonts 库的像素字体，但不支持中文，因此中文部分没有变化，这部分需要后续寻找中文像素风的第三方字体库。</p>
+<p>我提交了关于底部导航栏的修改需求，随后很快就完成了，一次性通过。</p>
+<img src="/images/learn-agents/trae-solo-coder/image-20251114204510197.png" alt="image-20251114204510197" style="width: 60%; height: auto;" />
+
+<p>来看一下最终效果。Icon 图标是它通过 SVG 设计的，细节还不错，整体来说比较满意。</p>
+<p><img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.04.52.png" alt="Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.04.52" style="width: 31%; height: auto; margin-right: 8px;" /><img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.05.01.png" alt="Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.05.01" style="width: 31%; height: auto; margin-right: 8px;" /><img src="/images/learn-agents/trae-solo-coder/Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.04.58.png" alt="Simulator Screenshot - iPhone 17 - 2025-11-14 at 21.04.58" style="width: 31%; height: auto;" /></p>
+<p>最近 TRAE 的 SOLO 正式版正在限时免费，大家可以抓紧时间去体验一下。</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/11/03/flutter/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
