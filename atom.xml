@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-11-14T14:08:14.152Z</updated>
+  <updated>2025-11-17T01:45:27.807Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vibe Coding不是一条通向产品构建的捷径</title>
+    <link href="https://maxweber36.github.io/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/"/>
+    <id>https://maxweber36.github.io/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/</id>
+    <published>2025-11-17T01:13:59.000Z</published>
+    <updated>2025-11-17T01:45:27.807Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近我在微信公众号上读到了一篇文章<a href="https://mp.weixin.qq.com/s/7fjniJaRpHtoLpk6Q_6uag">《深度｜谷歌工程负责人警示：Vibe Coding 是资本炒热的危险幻觉，AI 只能完成 70% 的代码，未来开发将走向”三人编程”时代》</a>，文中表述的观点，与我最近的真实感受几乎一致。</p><p>我自己没有编程背景，最近用了很多 AI Coding 工具，从 Claude Code、Codex 到 TRAE，这些几乎是我每天都在用的工具。</p><p>我最近用这些工具自己开发了不少好玩的东西,从 Web 端到微信小程序,从 macOS 端到最近的 iOS 移动端。几乎所有的平台应用开发，我都用这些工具尝试了一遍。</p><p>从我自身的使用体验来看，我越来越认为现在所谓的”使用 AI 工具进行 Vibe Coding”这个概念听起来很酷，但具有强烈的误导性。</p><p><strong>特别是对于没有多少开发经验的人来说，以为使用这些工具就能快速磨平与真正开发者之间的差距。越是复杂的工程，Vibe Coding 埋下的坑就越大。</strong></p><p>我认为 Vibe Coding 最适合用来构建原型，但要真正做到可交付的产品，其实差距还是比较大的。</p><p>可交付的产品意味着：</p><ol><li><p>稳定的功能。当然接入 AI 可能会发生一些意外，但有工程方法可以让这种意外限制在一个可接受的范围内。</p></li><li><p>处理并发能力。可以处理适当的并发。</p></li><li><p>预期性能。产品可预期的表现和性能。</p></li><li><p>安全保障。产品具有基本的安全性保障（各种安全漏洞、API 密钥泄露、XSS 攻击层等等）。</p></li><li><p>问题定位。当产品出现 bug 的时候，能够快速定位到问题。</p></li></ol><p>真正的产品和产品原型，其实是两个完全不同类型的东西，中间的工作量可以说差了几乎一个数量级。</p><p><strong>如果说产品原型是 1 的话，那么要把它升级成产品，产品就是 10。</strong></p><p>构建产品不是创作艺术品的问题，它本质上还是一个工程问题。它需要考虑的地方还有很多，用代码实现产品功能，只是这冰山一角。</p><hr><p>另外，我想给所有非程序员同学推荐以上我正在使用的工具。</p><p>从我自己的使用体验来看：</p><p>被高估的：这些工具被强烈吹捧的是它们写代码的能力。<br>被低估的：真正被低估的是它们在非代码场景的运用，包括，写文章，管理文档，批量修改文件，批量修改数据，做数据分析，等等。</p><p>当然排除一些多媒体文件（视频，图片和音频）的剪辑，目前它们还做不到。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="产品打磨" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>TRAE Solo Coder 初体验</title>
@@ -473,28 +499,6 @@
     <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
     <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>🧘‍♀️ 保持耐心,专注目标,不断精进</title>
-    <link href="https://maxweber36.github.io/2025/08/12/%E4%BF%9D%E6%8C%81%E8%80%90%E5%BF%83-%E4%B8%93%E6%B3%A8%E7%9B%AE%E6%A0%87-%E4%B8%8D%E6%96%AD%E7%B2%BE%E8%BF%9B/"/>
-    <id>https://maxweber36.github.io/2025/08/12/%E4%BF%9D%E6%8C%81%E8%80%90%E5%BF%83-%E4%B8%93%E6%B3%A8%E7%9B%AE%E6%A0%87-%E4%B8%8D%E6%96%AD%E7%B2%BE%E8%BF%9B/</id>
-    <published>2025-08-12T10:51:32.000Z</published>
-    <updated>2025-09-04T03:25:40.017Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我最近在听成庆老师在“看理想”平台上讲的佛学入门课程。这是第二集，主要讲的是佛陀释迦牟尼（悉达多）的故事。课程里提到，悉达多 19 岁时离开王宫，29 岁开始修行，到了 35 岁才在菩提树下悟道成佛。整个过程其实经历了很多年，五六年听起来很长，但其实也不算太久。能在五年内修成佛，已经是非常了不起的成就了。</p><p>听到这里，我不禁想到自己学习独立开发的经历。从今年开始到现在，其实也就七八个月，真正下定决心去做这件事。我觉得自己还有很长的路要走。<br>有时候我会对自己太着急，总想着一蹴而就、一下子就能做出成绩。但其实，是需要不断沉淀和积累。即使是在自己充满热情、非常想投身的领域，也不能违背客观规律，还是需要投入足够的时间和精力。不是说有了热情就一定能成为天才，还是要脚踏实地，一步一步来。</p><p>有时候我会幻想，别人需要两三年的时间去完成的事情，我能不能在五个月内就做好？但其实，这几乎是不可能的。作为独立开发者，或者说作为程序员、独立产品人，我在这方面真正投入的时间其实还很有限。以前工作的时候，根本没有机会去专注做这些事情。现在虽然已经开始尝试了，但实际投入的时间依然不多。</p><p>所以，我觉得自己一方面要对自己保持耐心，对目标保持足够的专注，同时也要不断激励自己在这条路上持续前进。当然，如何养活自己确实是个现实问题，这需要我好好想办法解决。</p><p>总之，做独立开发者这件事，可能一直都需要我不断去争取时间和精力，去寻找机会，保持耐心和专注，持续投入。只要坚持下去，迟早有一天，我会走到自己想要看到的风景，抵达理想的彼岸。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
   </entry>
   
