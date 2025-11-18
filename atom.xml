@@ -6,7 +6,7 @@
   <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
   <link href="https://maxweber36.github.io/"/>
-  <updated>2025-11-17T01:45:27.807Z</updated>
+  <updated>2025-11-18T04:04:57.218Z</updated>
   <id>https://maxweber36.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>✨ AI 作图指南：轻松搞定公众号文章封面</title>
+    <link href="https://maxweber36.github.io/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/"/>
+    <id>https://maxweber36.github.io/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/</id>
+    <published>2025-11-18T03:20:32.000Z</published>
+    <updated>2025-11-18T04:04:57.218Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>我一直有更新公众号的习惯。众所周知，一篇公众号文章不仅需要扎实的文字内容，一张吸引人的封面图也同样至关重要，甚至可以说是发布的硬性要求。</p><p>在过去很长一段时间里，我常常为封面图的选择而头疼。我曾尝试过两种方式：一是在日常浏览时有意识地收集好看的图片，作为素材库；二是直接用自己拍摄的生活照。但这两种方法都有一个共同的弊端——封面与文章内容往往毫不相关，无法有效传达文章的核心信息，导致吸引力大打折扣。</p><p>直到最近，我开始尝试使用 AI 工具来生成文章配图，结果发现效果出人意料地好。如今的文生图模型非常强大，不仅能生成各种风格的精美图片，在处理中文文字和排版方面也表现得相当出色。</p><h3 id="我的-AI-生图流程"><a href="#我的-AI-生图流程" class="headerlink" title="我的 AI 生图流程"></a>我的 AI 生图流程</h3><p>下面，我将总结并分享我利用 AI 工具为文章快速制作高质量封面的具体流程：</p><ol><li><p><strong>选择合适的文生图工具</strong><br>选择一个对中文优化较好的 AI 文生图网站。例如字节的「即梦」或夸克的「造点」，都是非常出色的工具，它们能够生成相当精准的中文文字。</p><blockquote><p><strong>补充说明：</strong></p><ul><li><strong>字节「即梦」</strong>：文生图需要消耗积分，但每天可以免费领取 60 积分，基本满足日常使用。</li><li><strong>夸克「造点」</strong>：使用阿里通义千问模型基本免费；使用 Midjourney 模型则需要消耗积分。需要注意的是，Midjourney 对中文文字的生成效果不佳，容易出现乱码。</li></ul></blockquote></li><li><p><strong>寻找灵感并获取 Prompt</strong><br>在文生图网站的“灵感库”或“创意广场”中，浏览并寻找符合你审美风格的图片。找到心仪的图片后，复制它所使用的 Prompt（提示词）。</p></li><li><p><strong>利用大语言模型优化 Prompt</strong><br>将复制的原始 Prompt 和你的文章核心内容一同发送给一个大语言模型（如 GPT、Kimi Chat、文心一言等）。</p></li><li><p><strong>下达修改指令</strong><br>要求 AI 深入理解你的文章主题，并基于此分析、修改原始 Prompt，使其生成的内容能更精准地贴合你的文章。</p></li><li><p><strong>生成并微调图片</strong><br>将 AI 修改并优化后的 Prompt 粘贴到文生图网站中，开始生成图片。如果对初次生成的结果不满意，可以返回上一步，让 AI 继续微调 Prompt，或在当前基础上多次生成，直至获得最理想的封面图。</p></li></ol><h3 id="关于水印的处理"><a href="#关于水印的处理" class="headerlink" title="关于水印的处理"></a>关于水印的处理</h3><p>到这里，一张为你量身定制的文章封面图就基本完成了。</p><p>不过，目前大多数免费的 AI 生图平台都会在图片上附加平台的水印。如果你希望得到一张干净的封面，最简单直接的方法就是对生成的图片进行适当的截图和裁剪。当然，你也可以在网上搜索并使用一些在线去水印工具来处理。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    
+    <category term="工作流" scheme="https://maxweber36.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    
+  </entry>
   
   <entry>
     <title>Vibe Coding不是一条通向产品构建的捷径</title>
@@ -475,30 +499,6 @@
     <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     <category term="哲学思考" scheme="https://maxweber36.github.io/tags/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>💡 从雷军的采访中,记录下的一些启发</title>
-    <link href="https://maxweber36.github.io/2025/08/22/%E4%BB%8E%E9%9B%B7%E5%86%9B%E7%9A%84%E9%87%87%E8%AE%BF%E4%B8%AD-%E8%AE%B0%E5%BD%95%E4%B8%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/"/>
-    <id>https://maxweber36.github.io/2025/08/22/%E4%BB%8E%E9%9B%B7%E5%86%9B%E7%9A%84%E9%87%87%E8%AE%BF%E4%B8%AD-%E8%AE%B0%E5%BD%95%E4%B8%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/</id>
-    <published>2025-08-22T13:42:33.000Z</published>
-    <updated>2025-09-04T04:14:27.428Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="从最难的地方突破，站在更高的维度去看待问题"><a href="#从最难的地方突破，站在更高的维度去看待问题" class="headerlink" title="从最难的地方突破，站在更高的维度去看待问题"></a>从最难的地方突破，站在更高的维度去看待问题</h2><p>【【雷军】 关于造车，雷军近年唯一深度专访，206 分钟完整无删节版-哔哩哔哩】 <a href="https://b23.tv/jyVz6UI">https://b23.tv/jyVz6UI</a><br>今天断断续续听了雷军的访谈，确实很震惊。没想到小米造车，我的感觉是几乎使出了 150% 的力气在做这件事情。下了很大决心，把资源投入到最重要，也是最难的地方。比如电机、铸造机，还有自动驾驶这些电车最核心的领域。让我觉得，做事情真的要从最难的地方突破，要站在更高的维度去看待问题，而不是一天到晚只想着怎样快速走捷径，怎么守着自己那点一亩三分。应该把眼睛放到更大的世界，这对我启发很大。</p><p>雷军是非常优秀的创始人。有时候想想我自己，确实感觉有点鼠目寸光、小肚鸡肠，常常为了那点蝇头小利而斤斤计较。把一些实在没啥价值的事情看的很重要。守正出奇，这四个字真的挺好。</p><h2 id="耐心，不追求眼前的一城一池得失"><a href="#耐心，不追求眼前的一城一池得失" class="headerlink" title="耐心，不追求眼前的一城一池得失"></a>耐心，不追求眼前的一城一池得失</h2><p>还有一点，就是在面对一些事情或者和别人竞争的时候，不要总是盯着眼前的一城一池得失。更重要的是要看到未来，要赢的不是现在，而是五年后、十年后、十五年后。要赢就要赢未来，不要只想着当前的胜负，这样才能舍弃很多不必要的执念。我觉得无论做什么事情，这都适用。</p><p>这让我想起了我之前在比特币投资理财上的经历。我当时太关注眼前那一点点收益的波动，结果把很多东西都卖掉了。现在回头看，其实损失了很多钱。这也让我意识到，真的应该吸取教训。还是要追求基业长青，把眼光放长远一些，要有耐心去做那些真正重要的事情，而不是只盯着眼前的得失。</p><h2 id="营销和产品其实是一件事情的一体两面"><a href="#营销和产品其实是一件事情的一体两面" class="headerlink" title="营销和产品其实是一件事情的一体两面"></a>营销和产品其实是一件事情的一体两面</h2><p>我在继续听了这个播客的过程中，还有一个点让我很有启发，也让我产生了共鸣。那就是营销和产品其实是一体两面的，最核心的本质在于能洞察用户的需求和痛点。</p><p>再反思我自己，之前一直觉得自己做产品还可以，但其实我之前做的大部分产品都偏向后台，主要是为内部部门服务。很多时候，内部同事使用这些产品，并不是因为产品本身有多好，而是公司有一套制度和规范，大家没有其他选择，只能用你做的产品。即使产品做得差，他们也必须要用。</p><p>我做了很多年的产品，但我的产品能力并没有得到充分的锻炼。我认为真正能锻炼人的是做面向市场的产品，无论是 B 端还是 C 端。只有面向真实买家的产品，才能真正锻炼人的产品能力。</p><p>回顾起来，从上海回到成都后，我感觉自己才算是真正在产品方面开始得到了一些训练。过去，我并没有太多机会去做营销。自己在营销方面的能力也确实比较差，过去对营销本身存在很多误解，因而在做营销方面产生了一些抵触情绪，这其实做一个优秀的产品，如果一直对营销持抵触态度，是非常不应该的事情。我的产品能力就会一直停留在较低的水平。</p><p>我觉得我应该在这方面好好锻炼，给自己设定一个明确的目标。比如，我要运营一个账号，如何在短时间内涨粉，涨到多少？我必须仔细分析现在人们关心什么话题，他们的痛点是什么，他们喜欢看什么内容。然后，我要根据这些分析发布相关内容。这个过程和做产品的很多东西都是相通的。</p><h2 id="优秀的产品，都是怪咖"><a href="#优秀的产品，都是怪咖" class="headerlink" title="优秀的产品，都是怪咖"></a>优秀的产品，都是怪咖</h2><p>我观察一些非常优秀的产品经理，其实他们同时也是很厉害的营销人。比如雷军，李想，虽然他们自己不承认，但他们的营销能力确实很强。还有乔布斯，他在策划产品方案时，宣传总能击中人们的内心。罗永浩也是一个很好的例子。他们对产品的理解很独特，其实给人的感觉有点怪。</p><p>其实雷军给人的感觉也是如此，虽然他不是传统意义上的营销高手，但他确实有一种极致的追求。我觉得，一个好的产品经理身上总有一种独特的味道，这种独特感是非常重要的。</p><p>今天我把这些记录下来，以后可以再回过头来看看这些观点。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
-    
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
