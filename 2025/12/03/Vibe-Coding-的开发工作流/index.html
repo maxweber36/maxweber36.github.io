@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>🔄 Vibe Coding 的开发工作流 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                🔄 Vibe Coding 的开发工作流
+            
+            
+        </div>
+        <span class="post-date">
+            Dec 3, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p>这篇文章内容来自于 Y Combinator 的视频《How To Get The Most Out Of Vibe Coding》的启发。</p>
+</blockquote>
+<h2 id="📚-系列文章导航"><a href="#📚-系列文章导航" class="headerlink" title="📚 系列文章导航"></a>📚 系列文章导航</h2><p>本系列文章基于 Y Combinator 的《How To Get The Most Out Of Vibe Coding》视频，深入探讨与 AI 协同编程的最佳实践：</p>
+<ol>
+<li><p><strong><a href="/2025/12/03/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E7%9A%84-Vibe-Coding-%E6%9D%A5%E8%87%AA-YC-Startup-Founders-%E7%9A%84%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE/">✨ 如何更好的 Vibe Coding？—来自 YC Startup Founders 的实践建议</a></strong> - 深入分析 Vibe Coding 的核心原则和进阶技巧</p>
+</li>
+<li><p><strong><a href="/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/">🤝 在 Coding 的时候，我们应该和 AI如何进行有效的协同</a></strong> - 分析与 AI 协同的核心思维模型和工作原则</p>
+</li>
+<li><p><strong><a href="/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/">🔄 Vibe Coding 的开发工作流</a></strong> - 详细介绍标准化的 Vibe Coding 开发流程和调试方法（本文）</p>
+</li>
+</ol>
+<hr>
+<h2 id="视频信息"><a href="#视频信息" class="headerlink" title="视频信息"></a>视频信息</h2><p><img src="/images/what-is-right-posture-of-vibe-coding/vibe-coding.png" alt="Vibe Coding"></p>
+<ul>
+<li>Title: How To Get The Most Out Of Vibe Coding | Startup School (如何通过“Vibe Coding”获得最大收益)</li>
+<li>Author: Y Combinator (主讲人: Tom Blomfield, YC Partner)</li>
+<li>URL: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=BJjsfNO5JTo">https://www.youtube.com/watch?v=BJjsfNO5JTo</a></li>
+</ul>
+<h2 id="Vibe-Coding-标准开发工作流-The-Golden-Workflow"><a href="#Vibe-Coding-标准开发工作流-The-Golden-Workflow" class="headerlink" title="Vibe Coding 标准开发工作流 (The Golden Workflow)"></a>Vibe Coding 标准开发工作流 (The Golden Workflow)</h2><p>此流程旨在最大限度减少 AI 产生的错误，并保持代码库的健康。</p>
+<ul>
+<li><p>Step 1: 制定“主计划” (The Master Plan)</p>
+<ul>
+<li><p>操作：在项目根目录创建一个 PLAN.md。</p>
+</li>
+<li><p>内容：与 LLM 对话，生成项目功能的完整列表和实施步骤。</p>
+</li>
+<li><p>细化：人工审查，标记 [Won’t Do] 或 [Out of Scope] 的条目。</p>
+</li>
+<li><p><em>注释：这个文件是整个开发的导航图，避免 AI 迷失方向。</em></p>
+</li>
+</ul>
+</li>
+<li><p>Step 2: 准备 Git 环境 (Clean Slate)</p>
+<ul>
+<li><p>操作：确保 git status 是干净的。</p>
+</li>
+<li><p>原则：永远不要在未提交的代码之上开始新功能开发。</p>
+</li>
+</ul>
+</li>
+<li><p>Step 3: 逐节实施 (Section-by-Section Implementation)</p>
+<ul>
+<li><p>操作：引用 PLAN.md，指示 AI “Implement Section 2 only”（只实现第二节）。</p>
+</li>
+<li><p>关键：克制一次性完成所有的冲动。</p>
+</li>
+</ul>
+</li>
+<li><p>Step 4: 验证与测试 (Verify &amp; Test)</p>
+<ul>
+<li><p>操作：运行高层次集成测试，或手动点击验证功能。</p>
+</li>
+<li><p>检查：确认没有破坏现有的功能（No Regressions）。</p>
+</li>
+</ul>
+</li>
+<li><p>Step 5: 提交或重置 (Commit or Reset)</p>
+<ul>
+<li><p>分支 A (成功)：如果工作正常 -&gt; git commit -m “Implement Section 2” -&gt; 更新 PLAN.md 标记为完成。</p>
+</li>
+<li><p>分支 B (失败)：如果 AI 陷入循环或破坏了逻辑 -&gt; 执行 git reset –hard。</p>
+</li>
+<li><p><em>注释：不要试图修复 AI 写烂的代码，直接重置，调整 Prompt 后重新生成。</em></p>
+</li>
+</ul>
+</li>
+<li><p>Step 6: 重复循环</p>
+<ul>
+<li>回到 Step 3，继续下一节。</li>
+</ul>
+</li>
+</ul>
+<h2 id="AI-Debuging-流程"><a href="#AI-Debuging-流程" class="headerlink" title="AI Debuging 流程"></a>AI Debuging 流程</h2><ul>
+<li><p>Step 1: 收集证据</p>
+<ul>
+<li><p>直接复制错误日志（Server logs &#x2F; Console errors）。</p>
+</li>
+<li><p>或者截图 UI 错误。</p>
+</li>
+</ul>
+</li>
+<li><p>Step 2: 初步诊断</p>
+<ul>
+<li><p>将证据粘贴给 LLM。</p>
+</li>
+<li><p>指令：”What could be causing this? List 3 possible reasons before coding.”（先列出 3 个原因，不要直接写代码）。</p>
+</li>
+</ul>
+</li>
+<li><p>Step 3: 尝试修复 (Single Shot)</p>
+<ul>
+<li>让 AI 根据最可能的原因生成修复代码。</li>
+</ul>
+</li>
+<li><p>Step 4: 评估结果</p>
+<ul>
+<li><p>成功：运行测试 -&gt; 提交。</p>
+</li>
+<li><p>失败：立即 Reset。不要在修复补丁上再打补丁。</p>
+</li>
+<li><p>策略调整：如果多次失败，考虑切换模型（如从 Claude 切到 Gemini），或在干净代码库上提供更详细的上下文。</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
