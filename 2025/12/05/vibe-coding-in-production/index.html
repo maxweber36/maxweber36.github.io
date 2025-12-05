@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>告别 Demo，拥抱 Production：Snapbar团队的Vibe Coding在生产环境的实践 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Vibe-Coding/">
+                            Vibe Coding
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                告别 Demo，拥抱 Production：Snapbar团队的Vibe Coding在生产环境的实践
+            
+            
+        </div>
+        <span class="post-date">
+            Dec 5, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p>这篇文章内容来自于 Snapbar 的 CTO Patrick Ellis 关于他们团队如何使用 AI 进行 Coding 的实践分享《Vibe Coding in Production: A Founder&#x2F;CTO’s 2025 AI Engineering Playbook (Cursor, Windsurf, Lovable)》。</p>
+</blockquote>
+<hr>
+<p>Snapbar 是一个只有 8-13 人规模的团队，他们的 CTO Patrick Ellis 分享了团队如何在真实环境下使用 AI Coding 进行产品构建和迭代的实践。<br>AI 是一个强大的杠杆，用得好，可以带来很多收益。因此，对于 AI 能力的探索和应用，我觉得除了独立开发者或者一人公司之外，探索最多的应该就是像 Snapbar 这种小型初创团队，他们会在公司的各个层面利用 GenAI 杠杆，以提高团队效率。<br>使用 AI 进行 Coding 越多，我越感觉到现在真正重要的不是 Coding 本身，而是我和 AI 协同的工作流。所以，针对自己的场景和需求，摸索出自己和 AI 协同的工作流就成了重中之重。很多时候，与其说是在迭代产品的代码，不如说更重要的是迭代我的工作流，而产品的代码仅仅是我迭代工作流的一个自然产物而已。</p>
+<hr>
+<h2 id="视频信息"><a href="#视频信息" class="headerlink" title="视频信息"></a>视频信息</h2><ul>
+<li><strong>Title</strong>: Vibe Coding in Production: A Founder&#x2F;CTO’s 2025 AI Engineering Playbook (Cursor, Windsurf, Lovable)</li>
+</ul>
+<ul>
+<li><p><strong>Author</strong>: Patrick Ellis (CTO at Snapbar)</p>
+</li>
+<li><p><strong>Share Time</strong>: 2025&#x2F;3</p>
+</li>
+<li><p><strong>URL</strong>: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=wW_nseHqalg">https://www.youtube.com/watch?v=wW_nseHqalg</a></p>
+</li>
+<li><p><strong>Overview</strong>: 本视频由 Snapbar 的 CTO Patrick Ellis 分享，展示了一个 8-13 人规模的早期团队如何通过全面采用生成式 AI（GenAI）重塑软件开发流程。核心论题在于重新定义“Vibe Coding”（氛围编码&#x2F;直觉编码）：它不仅是个人开发者的玩具，更是一种分层的生产级工作流。结论指出，通过将 <strong>Bolt&#x2F;Lovable</strong> 等快速原型工具赋予非技术人员，并结合 <strong>Cursor&#x2F;Windsurf</strong> 等 IDE 给工程师，可以大幅提升交付速度（例如用 AI 全自动完成 Slideshow 功能）。此外，视频还提出了利用 AI 实现低成本“产品化服务”（Productized Service）的商业模式，并强调了 <strong>Context（上下文）管理</strong> 是让 AI 模型从“玩具”变为“生产力工具”的关键。</p>
+</li>
+</ul>
+<h2 id="内容主题"><a href="#内容主题" class="headerlink" title="内容主题"></a>内容主题</h2><h3 id="第一节：Vibe-Coding-的双层工作流：赋能非技术人员与重塑原型设计"><a href="#第一节：Vibe-Coding-的双层工作流：赋能非技术人员与重塑原型设计" class="headerlink" title="第一节：Vibe Coding 的双层工作流：赋能非技术人员与重塑原型设计"></a>第一节：Vibe Coding 的双层工作流：赋能非技术人员与重塑原型设计</h3><p>在这个开篇部分，Patrick Ellis 首先界定了 Snapbar 团队的背景——一个试图在公司各个层面利用 GenAI 杠杆的小型初创团队。他提出了一个核心观点：<strong>Vibe Coding 在生产环境中的应用并非单一模式，而是分层的。</strong></p>
+<p><strong>第一层是针对非技术人员的赋能。</strong> Ellis 提到，他们广泛使用 <strong>Bolt.new</strong> 和 <strong>Lovable.dev</strong> 这类工具。这不仅仅是为了写代码，更是为了改变需求沟通的方式。在传统的软件开发中，产品经理（PM）或 CEO 可能需要使用 Figma 画图，写长篇的 PRD（产品需求文档），然后工程师再进行解读和翻译，这个过程中往往存在巨大的信息损耗。 在 Snapbar 的新流程中，CEO 或销售人员可以直接使用 Lovable 或 Bolt 通过自然语言描述构建出一个“看起来能工作”的原型。这个原型不仅是视觉上的，往往还包含基本交互。这种做法实际上替代了 Figma 的部分功能。非技术人员通过与 AI 的多轮对话，明确了他们想要什么，甚至通过 AI 生成一份基于该代码库的技术需求文档（Markdown 格式）。</p>
+<p><strong>第二层是工程师的接管与生产化。</strong> 当非技术人员完成了 0 到 1 的探索后，工程师介入。对于一些生命周期较短、不需要长期维护的功能（例如视频中提到的“Slideshow&#x2F;Gallery”功能），工程师甚至可以直接将 Bolt 生成的代码迁移到 <strong>Cursor</strong> 或 <strong>Windsurf</strong> 中稍作修改就上线。Ellis 透露，他们本周即将上线的一个 Slideshow 功能，几乎完全是通过 Vibe Coding 构建的，他作为 CTO 只需要 Review PR（Pull Request）确保没有明显的安全漏洞即可。 但对于更复杂的系统（如核心 Dashboard），流程则不同。非技术人员的原型更多充当了“高保真需求说明书”的角色。工程师会查看 AI 生成的原型，理解意图，然后在一个更受控、更符合工程规范的环境中（使用 <strong>Claude Code</strong> 或 Cursor）从头构建或重构，以确保代码的可维护性和扩展性。</p>
+<p><strong>核心洞察</strong>：这种分层结构解决了“AI 代码质量差”的顾虑。对于一次性或简单功能，容忍低质量代码以换取速度；对于核心业务，利用 AI 生成的原型作为沟通介质，消除歧义，再用传统的工程纪律去实现。</p>
+<h3 id="第二节：增强型工程：AI-作为“主动式橡皮鸭”与结对程序员"><a href="#第二节：增强型工程：AI-作为“主动式橡皮鸭”与结对程序员" class="headerlink" title="第二节：增强型工程：AI 作为“主动式橡皮鸭”与结对程序员"></a>第二节：增强型工程：AI 作为“主动式橡皮鸭”与结对程序员</h3><p>当话题转回到专业工程师的日常开发时，Ellis 强调了 <strong>Augmented Traditional Development</strong>（增强型传统开发）的概念。这与随意的 Vibe Coding 不同，它要求保持软件工程的严谨性（Discipline）。</p>
+<p>在这里，AI 模型（特别是 Claude 3.7, o3-mini 等）不再仅仅是代码生成器，而被视为一个 <strong>Thinking Partner</strong>（思考伙伴）。Ellis 引用了经典编程书籍《程序员修炼之道》（The Pragmatic Programmer）中的“橡皮鸭调试法”（Rubber Ducking）——即程序员通过向桌子上的一只橡皮鸭解释代码来发现 Bug。 Ellis 指出，现在的 AI 就是那个“会说话、有见解的橡皮鸭”。这种交互不仅是单向的输出，而是双向的迭代。你将复杂的架构问题抛给 AI，它能提供反馈、指出盲点甚至提供替代方案。他特别推崇 <strong>Claude Code</strong> 的官方文档中描述的迭代流程，认为这是目前将 AI 融入严肃工程的最佳实践。</p>
+<p>在这个阶段，<strong>Deep Research</strong>（深度研究）也扮演了重要角色。Ellis 提到使用 <strong>OpenAI o3-mini</strong> 或 <strong>Deep Research</strong> 功能来快速学习新领域。例如，当团队需要引入一个新的库或技术栈时，不再需要花费数天阅读文档，而是让 AI 阅读所有相关资料，总结出最佳实践、陷阱和架构建议。 这种模式下，工程师的生产力得到了倍增，但前提是工程师必须具备 Code Review 的能力和架构设计的判断力。你不能盲目信任 AI 的输出，必须像审查初级工程师的代码一样审查 AI 的代码。这种“带有人类监督的 AI 结对编程”是构建可扩展、生产级代码库的关键。它保留了人类的决策权，但剥离了繁琐的样板代码编写和基础资料查阅工作。</p>
+<h3 id="第三节：商业模式创新：AI-驱动的“产品化服务”与自动化解决方案"><a href="#第三节：商业模式创新：AI-驱动的“产品化服务”与自动化解决方案" class="headerlink" title="第三节：商业模式创新：AI 驱动的“产品化服务”与自动化解决方案"></a>第三节：商业模式创新：AI 驱动的“产品化服务”与自动化解决方案</h3><p>这部分是非常独特且具有战略意义的观点。Ellis 探讨了 AI 如何不仅仅改变写代码的方式，还能改变商业模式，具体来说是 <strong>Solutions Engineering</strong>（解决方案工程）的变革。</p>
+<p>Snapbar 作为一个活动营销平台，服务的大型企业客户往往有定制化需求（例如定制品牌的微型网站 Micro-sites）。在过去，这通常需要昂贵的人力成本，即所谓的“Agency 模式”或咨询模式，这很难规模化（Scale）。SaaS 公司通常通过限制定制化来保持高利润率，但这会牺牲客户满意度或错失大单。</p>
+<p>引入 GenAI 后，Snapbar 发现了一种 <strong>“Productized Service at Scale”</strong>（规模化的产品化服务）的新路径。 具体的做法是：利用 AI 工具（Cursor, Windsurf）极大降低“最后一公里”定制开发的成本。运营人员或解决方案工程师（甚至是非纯代码背景的人员）可以利用 AI 快速修改前端代码，满足客户的定制需求，而无需占用核心研发资源。 Ellis 在问答环节详细解释了技术实现：他们使用基于 Git 的工作流（Git-based workflow）。每个客户的定制需求会生成一个新的 Git Branch（分支），逻辑与主分支保持一致，但前端 UI&#x2F;UX 进行定制。利用 Netlify 等平台，可以为每个分支自动部署独立的子域名。 这种模式让公司既能享受 SaaS 的经常性收入（Recurring Revenue），又能通过高价值的定制服务（通过 AI 自动化降低成本）获取额外收益。AI 在这里不仅是效率工具，更是解锁新收入流（Revenue Stream）的杠杆。</p>
+<h3 id="第四节：工具链精讲：MCP、FireCrawl-与-Context-管理"><a href="#第四节：工具链精讲：MCP、FireCrawl-与-Context-管理" class="headerlink" title="第四节：工具链精讲：MCP、FireCrawl 与 Context 管理"></a>第四节：工具链精讲：MCP、FireCrawl 与 Context 管理</h3><p>Ellis 花了大量篇幅详细拆解了他们的一线工具链，这是实操性最强的一部分。他认为 <strong>MCP (Model Context Protocol)</strong> 是目前的杀手级应用。</p>
+<ol>
+<li><strong>Browser Tools &amp; MCP</strong>：他提到通过 MCP 连接浏览器工具，让 AI（如 Claude Desktop 或 Cursor）能够直接获取浏览器的 Console Logs（控制台日志）、Network Logs（网络请求）甚至截屏。这意味着当你调试前端问题时，不需要手动复制粘贴错误信息，AI 可以“看到”你的浏览器发生了什么。</li>
+<li><strong>FireCrawl</strong>：这是一个将任意网页转换为 Markdown 格式的工具。Ellis 强调，现在的 AI 模型虽然上下文窗口很大，但仍然有限且昂贵。直接喂 HTML 或 XML 包含太多噪音（标签、样式等）。FireCrawl 能提取网页的核心内容为 Markdown，极大地提高了 <strong>Signal-to-Noise Ratio</strong>（信噪比）。</li>
+<li><strong>Context Hygiene（上下文卫生）</strong>：Ellis 提出了一个非常具体的工程实践——在代码库中建立一个 <code>docs/</code> 文件夹。<ul>
+<li>当他要使用某个第三方库时，他会先用 FireCrawl 抓取该库的官方文档，存为 Markdown 文件放在 <code>docs/</code> 里。</li>
+<li>如果有一份 80 页的 Google Doc API 文档，他也会导出为 Markdown 放入该文件夹。</li>
+<li>在 Cursor 或 Windsurf 中，利用 <code>@docs</code> 或类似的引用功能，明确地将这些清洗过的知识喂给模型。</li>
+</ul>
+</li>
+<li><strong>Super Whisper</strong>：为了实现极致的“Vibe Coding”，他使用 Super Whisper 进行语音输入。这个工具具备上下文感知能力，知道你是在终端（Terminal）里说话还是在写邮件，从而自动调整转写的格式（是输出 Shell 命令还是自然语言）。</li>
+</ol>
+<p>这一节的核心逻辑是：<strong>Trash in, Trash out</strong>。如果你希望 AI 输出高质量代码，你必须负责维护高质量的 Context。通过工具自动化地收集、清洗和组织 Context，是高级 AI 工程师的必备技能。</p>
+<hr>
+<h2 id="核心方法和流程"><a href="#核心方法和流程" class="headerlink" title="核心方法和流程"></a>核心方法和流程</h2><h4 id="Snapbar-的-AI-开发流水线-The-AI-Native-Pipeline"><a href="#Snapbar-的-AI-开发流水线-The-AI-Native-Pipeline" class="headerlink" title="Snapbar 的 AI 开发流水线 (The AI-Native Pipeline)"></a>Snapbar 的 AI 开发流水线 (The AI-Native Pipeline)</h4><p><strong>Step 1: 创意生成与初步研究 (Idea &amp; Research)</strong></p>
+<ul>
+<li><strong>输入</strong>：会议录音、头脑风暴笔记。</li>
+<li><strong>工具</strong>：NotebookLM, Claude.</li>
+<li><strong>操作</strong>：<ol>
+<li>将会议录音转录文本喂给 NotebookLM，生成摘要或类似 Podcast 的音频回顾，帮助理清思路。</li>
+<li>利用 Deep Research (o3-mini) 进行市场和技术栈调研。</li>
+<li>将整理好的想法喂给 Claude，要求生成一份 <strong>Markdown 格式的 PRD (Product Requirements Document)</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 2: 原型设计 (Prototyping - Layer 1)</strong></p>
+<ul>
+<li><strong>执行者</strong>：非技术人员 (CEO, Sales, PM)。</li>
+<li><strong>工具</strong>：Bolt.new, Lovable.dev.</li>
+<li><strong>操作</strong>：<ol>
+<li>使用自然语言描述 Step 1 中的需求。</li>
+<li>迭代生成可交互的 Web 应用原型。</li>
+<li><strong>关键点</strong>：不仅是看图，要实际操作原型，验证逻辑。</li>
+<li>输出：一个基于 React&#x2F;Vite 的临时代码库，或明确的功能演示。</li>
+</ol>
+</li>
+</ul>
+<p>这里是为您整理的 YouTube 视频 <strong>“Vibe Coding in Production: A Founder&#x2F;CTO’s 2025 AI Engineering Playbook”</strong> 的详细阅读版本。</p>
+<hr>
+<h3 id="1-Metadata"><a href="#1-Metadata" class="headerlink" title="1. Metadata"></a>1. Metadata</h3><ul>
+<li><strong>Title</strong>: Vibe Coding in Production: A Founder&#x2F;CTO’s 2025 AI Engineering Playbook (Cursor, Windsurf, Lovable)</li>
+<li><strong>Author</strong>: Patrick Ellis (CTO at Snapbar)</li>
+<li><strong>URL</strong>: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=wW_nseHqalg">https://www.youtube.com/watch?v=wW_nseHqalg</a></li>
+<li><strong>Overview</strong>: 本视频由 Snapbar 的 CTO Patrick Ellis 分享，展示了一个 8-13 人规模的早期团队如何通过全面采用生成式 AI（GenAI）重塑软件开发流程。核心论题在于重新定义“Vibe Coding”（氛围编码&#x2F;直觉编码）：它不仅是个人开发者的玩具，更是一种分层的生产级工作流。结论指出，通过将 <strong>Bolt&#x2F;Lovable</strong> 等快速原型工具赋予非技术人员，并结合 <strong>Cursor&#x2F;Windsurf</strong> 等 IDE 给工程师，可以大幅提升交付速度（例如用 AI 全自动完成 Slideshow 功能）。此外，视频还提出了利用 AI 实现低成本“产品化服务”（Productized Service）的商业模式，并强调了 <strong>Context（上下文）管理</strong> 是让 AI 模型从“玩具”变为“生产力工具”的关键。</li>
+</ul>
+<hr>
+<h3 id="2-按主题梳理"><a href="#2-按主题梳理" class="headerlink" title="2. 按主题梳理"></a>2. 按主题梳理</h3><h4 id="00-00-Vibe-Coding-的双层工作流：赋能非技术人员与重塑原型设计"><a href="#00-00-Vibe-Coding-的双层工作流：赋能非技术人员与重塑原型设计" class="headerlink" title="[00:00] Vibe Coding 的双层工作流：赋能非技术人员与重塑原型设计"></a>[<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=wW_nseHqalg&t=0">00:00</a>] Vibe Coding 的双层工作流：赋能非技术人员与重塑原型设计</h4><p>在这个开篇部分，Patrick Ellis 首先界定了 Snapbar 团队的背景——一个试图在公司各个层面利用 GenAI 杠杆的小型初创团队。他提出了一个核心观点：<strong>Vibe Coding 在生产环境中的应用并非单一模式，而是分层的。</strong></p>
+<p><strong>第一层是针对非技术人员的赋能。</strong> Ellis 提到，他们广泛使用 <strong>Bolt.new</strong> 和 <strong>Lovable.dev</strong> 这类工具。这不仅仅是为了写代码，更是为了改变需求沟通的方式。在传统的软件开发中，产品经理（PM）或 CEO 可能需要使用 Figma 画图，写长篇的 PRD（产品需求文档），然后工程师再进行解读和翻译，这个过程中往往存在巨大的信息损耗。 在 Snapbar 的新流程中，CEO 或销售人员可以直接使用 Lovable 或 Bolt 通过自然语言描述构建出一个“看起来能工作”的原型。这个原型不仅是视觉上的，往往还包含基本交互。这种做法实际上替代了 Figma 的部分功能。非技术人员通过与 AI 的多轮对话，明确了他们想要什么，甚至通过 AI 生成一份基于该代码库的技术需求文档（Markdown 格式）。</p>
+<p><strong>第二层是工程师的接管与生产化。</strong> 当非技术人员完成了 0 到 1 的探索后，工程师介入。对于一些生命周期较短、不需要长期维护的功能（例如视频中提到的“Slideshow&#x2F;Gallery”功能），工程师甚至可以直接将 Bolt 生成的代码迁移到 <strong>Cursor</strong> 或 <strong>Windsurf</strong> 中稍作修改就上线。Ellis 透露，他们本周即将上线的一个 Slideshow 功能，几乎完全是通过 Vibe Coding 构建的，他作为 CTO 只需要 Review PR（Pull Request）确保没有明显的安全漏洞即可。 但对于更复杂的系统（如核心 Dashboard），流程则不同。非技术人员的原型更多充当了“高保真需求说明书”的角色。工程师会查看 AI 生成的原型，理解意图，然后在一个更受控、更符合工程规范的环境中（使用 <strong>Claude Code</strong> 或 Cursor）从头构建或重构，以确保代码的可维护性和扩展性。</p>
+<p><strong>核心洞察</strong>：这种分层结构解决了“AI 代码质量差”的顾虑。对于一次性或简单功能，容忍低质量代码以换取速度；对于核心业务，利用 AI 生成的原型作为沟通介质，消除歧义，再用传统的工程纪律去实现。</p>
+<h4 id="04-55-增强型工程：AI-作为“主动式橡皮鸭”与结对程序员"><a href="#04-55-增强型工程：AI-作为“主动式橡皮鸭”与结对程序员" class="headerlink" title="[04:55] 增强型工程：AI 作为“主动式橡皮鸭”与结对程序员"></a>[<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=wW_nseHqalg&t=295">04:55</a>] 增强型工程：AI 作为“主动式橡皮鸭”与结对程序员</h4><p>当话题转回到专业工程师的日常开发时，Ellis 强调了 <strong>Augmented Traditional Development</strong>（增强型传统开发）的概念。这与随意的 Vibe Coding 不同，它要求保持软件工程的严谨性（Discipline）。</p>
+<p>在这里，AI 模型（特别是 Claude 3.7, o3-mini 等）不再仅仅是代码生成器，而被视为一个 <strong>Thinking Partner</strong>（思考伙伴）。Ellis 引用了经典编程书籍《程序员修炼之道》（The Pragmatic Programmer）中的“橡皮鸭调试法”（Rubber Ducking）——即程序员通过向桌子上的一只橡皮鸭解释代码来发现 Bug。 Ellis 指出，现在的 AI 就是那个“会说话、有见解的橡皮鸭”。这种交互不仅是单向的输出，而是双向的迭代。你将复杂的架构问题抛给 AI，它能提供反馈、指出盲点甚至提供替代方案。他特别推崇 <strong>Claude Code</strong> 的官方文档中描述的迭代流程，认为这是目前将 AI 融入严肃工程的最佳实践。</p>
+<p>在这个阶段，<strong>Deep Research</strong>（深度研究）也扮演了重要角色。Ellis 提到使用 <strong>OpenAI o3-mini</strong> 或 <strong>Deep Research</strong> 功能来快速学习新领域。例如，当团队需要引入一个新的库或技术栈时，不再需要花费数天阅读文档，而是让 AI 阅读所有相关资料，总结出最佳实践、陷阱和架构建议。 这种模式下，工程师的生产力得到了倍增，但前提是工程师必须具备 Code Review 的能力和架构设计的判断力。你不能盲目信任 AI 的输出，必须像审查初级工程师的代码一样审查 AI 的代码。这种“带有人类监督的 AI 结对编程”是构建可扩展、生产级代码库的关键。它保留了人类的决策权，但剥离了繁琐的样板代码编写和基础资料查阅工作。</p>
+<h4 id="06-29-商业模式创新：AI-驱动的“产品化服务”与自动化解决方案"><a href="#06-29-商业模式创新：AI-驱动的“产品化服务”与自动化解决方案" class="headerlink" title="[06:29] 商业模式创新：AI 驱动的“产品化服务”与自动化解决方案"></a>[<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=wW_nseHqalg&t=389">06:29</a>] 商业模式创新：AI 驱动的“产品化服务”与自动化解决方案</h4><p>这部分是非常独特且具有战略意义的观点。Ellis 探讨了 AI 如何不仅仅改变写代码的方式，还能改变商业模式，具体来说是 <strong>Solutions Engineering</strong>（解决方案工程）的变革。</p>
+<p>Snapbar 作为一个活动营销平台，服务的大型企业客户往往有定制化需求（例如定制品牌的微型网站 Micro-sites）。在过去，这通常需要昂贵的人力成本，即所谓的“Agency 模式”或咨询模式，这很难规模化（Scale）。SaaS 公司通常通过限制定制化来保持高利润率，但这会牺牲客户满意度或错失大单。</p>
+<p>引入 GenAI 后，Snapbar 发现了一种 <strong>“Productized Service at Scale”</strong>（规模化的产品化服务）的新路径。 具体的做法是：利用 AI 工具（Cursor, Windsurf）极大降低“最后一公里”定制开发的成本。运营人员或解决方案工程师（甚至是非纯代码背景的人员）可以利用 AI 快速修改前端代码，满足客户的定制需求，而无需占用核心研发资源。 Ellis 在问答环节详细解释了技术实现：他们使用基于 Git 的工作流（Git-based workflow）。每个客户的定制需求会生成一个新的 Git Branch（分支），逻辑与主分支保持一致，但前端 UI&#x2F;UX 进行定制。利用 Netlify 等平台，可以为每个分支自动部署独立的子域名。 这种模式让公司既能享受 SaaS 的经常性收入（Recurring Revenue），又能通过高价值的定制服务（通过 AI 自动化降低成本）获取额外收益。AI 在这里不仅是效率工具，更是解锁新收入流（Revenue Stream）的杠杆。</p>
+<h4 id="09-55-工具链精讲：MCP、FireCrawl-与-Context-管理"><a href="#09-55-工具链精讲：MCP、FireCrawl-与-Context-管理" class="headerlink" title="[09:55] 工具链精讲：MCP、FireCrawl 与 Context 管理"></a>[<a target="_blank" rel="noopener" href="http://www.youtube.com/watch?v=wW_nseHqalg&t=595">09:55</a>] 工具链精讲：MCP、FireCrawl 与 Context 管理</h4><p>Ellis 花了大量篇幅详细拆解了他们的一线工具链，这是实操性最强的一部分。他认为 <strong>MCP (Model Context Protocol)</strong> 是目前的杀手级应用。</p>
+<ol>
+<li><strong>Browser Tools &amp; MCP</strong>：他提到通过 MCP 连接浏览器工具，让 AI（如 Claude Desktop 或 Cursor）能够直接获取浏览器的 Console Logs（控制台日志）、Network Logs（网络请求）甚至截屏。这意味着当你调试前端问题时，不需要手动复制粘贴错误信息，AI 可以“看到”你的浏览器发生了什么。</li>
+<li><strong>FireCrawl</strong>：这是一个将任意网页转换为 Markdown 格式的工具。Ellis 强调，现在的 AI 模型虽然上下文窗口很大，但仍然有限且昂贵。直接喂 HTML 或 XML 包含太多噪音（标签、样式等）。FireCrawl 能提取网页的核心内容为 Markdown，极大地提高了 <strong>Signal-to-Noise Ratio</strong>（信噪比）。</li>
+<li><strong>Context Hygiene（上下文卫生）</strong>：Ellis 提出了一个非常具体的工程实践——在代码库中建立一个 <code>docs/</code> 文件夹。<ul>
+<li>当他要使用某个第三方库时，他会先用 FireCrawl 抓取该库的官方文档，存为 Markdown 文件放在 <code>docs/</code> 里。</li>
+<li>如果有一份 80 页的 Google Doc API 文档，他也会导出为 Markdown 放入该文件夹。</li>
+<li>在 Cursor 或 Windsurf 中，利用 <code>@docs</code> 或类似的引用功能，明确地将这些清洗过的知识喂给模型。</li>
+</ul>
+</li>
+<li><strong>Super Whisper</strong>：为了实现极致的“Vibe Coding”，他使用 Super Whisper 进行语音输入。这个工具具备上下文感知能力，知道你是在终端（Terminal）里说话还是在写邮件，从而自动调整转写的格式（是输出 Shell 命令还是自然语言）。</li>
+</ol>
+<p>这一节的核心逻辑是：<strong>Trash in, Trash out</strong>。如果你希望 AI 输出高质量代码，你必须负责维护高质量的 Context。通过工具自动化地收集、清洗和组织 Context，是高级 AI 工程师的必备技能。</p>
+<hr>
+<h3 id="核心方法和流程-1"><a href="#核心方法和流程-1" class="headerlink" title="核心方法和流程"></a>核心方法和流程</h3><h4 id="Snapbar-的-AI-开发流水线-The-AI-Native-Pipeline-1"><a href="#Snapbar-的-AI-开发流水线-The-AI-Native-Pipeline-1" class="headerlink" title="Snapbar 的 AI 开发流水线 (The AI-Native Pipeline)"></a>Snapbar 的 AI 开发流水线 (The AI-Native Pipeline)</h4><p><strong>Step 1: 创意生成与初步研究 (Idea &amp; Research)</strong></p>
+<ul>
+<li><strong>输入</strong>：会议录音、头脑风暴笔记。</li>
+<li><strong>工具</strong>：NotebookLM, Claude.</li>
+<li><strong>操作</strong>：<ol>
+<li>将会议录音转录文本喂给 NotebookLM，生成摘要或类似 Podcast 的音频回顾，帮助理清思路。</li>
+<li>利用 Deep Research (o3-mini) 进行市场和技术栈调研。</li>
+<li>将整理好的想法喂给 Claude，要求生成一份 <strong>Markdown 格式的 PRD (Product Requirements Document)</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 2: 原型设计 (Prototyping - Layer 1)</strong></p>
+<ul>
+<li><strong>执行者</strong>：非技术人员 (CEO, Sales, PM)。</li>
+<li><strong>工具</strong>：Bolt.new, Lovable.dev.</li>
+<li><strong>操作</strong>：<ol>
+<li>使用自然语言描述 Step 1 中的需求。</li>
+<li>迭代生成可交互的 Web 应用原型。</li>
+<li><strong>关键点</strong>：不仅是看图，要实际操作原型，验证逻辑。</li>
+<li>输出：一个基于 React&#x2F;Vite 的临时代码库，或明确的功能演示。</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 3: 工程接手与生产化 (Engineering Handover - Layer 2)</strong></p>
+<ul>
+<li><strong>执行者</strong>：软件工程师。</li>
+<li><strong>工具</strong>：Cursor, Windsurf, Claude Code, FireCrawl.</li>
+<li><strong>路径 A (简单功能&#x2F;一次性)</strong>：<ol>
+<li>直接导出 Bolt&#x2F;Lovable 的代码。</li>
+<li>在 Cursor 中进行 Code Review，修复明显 Bug。</li>
+<li>部署上线 (Production)。</li>
+</ol>
+</li>
+<li><strong>路径 B (核心复杂功能)</strong>：<ol>
+<li>工程师阅读原型代码，理解意图，将其视为“动态的 Figma”。</li>
+<li>在主代码库中，利用 Claude Code 辅助，按照严格的架构模式重新编写。</li>
+<li><strong>Context 注入</strong>：使用 FireCrawl 抓取最新的库文档放入 <code>docs/</code> 目录，供 AI 参考。</li>
+</ol>
+</li>
+</ul>
+<p><strong>Step 4: 企业级定制 (Enterprise Customization)</strong></p>
+<ul>
+<li><strong>场景</strong>：大客户需要修改 UI&#x2F;Theme。</li>
+<li><strong>操作</strong>：<ol>
+<li>基于主分支 (Core Branch) 创建客户专用分支 (Customer Branch)。</li>
+<li>运营&#x2F;解决方案工程师使用 AI 工具（Cursor）修改前端代码（如 CSS, Layout）。</li>
+<li>Netlify 自动部署该分支到特定子域名 (e.g., <code>clientA.snapbar.com</code>)。</li>
+<li><strong>注释</strong>：后端逻辑保持统一，仅前端隔离，便于维护。</li>
+</ol>
+</li>
+</ul>
+<h2 id="一些其他重要的-Tips"><a href="#一些其他重要的-Tips" class="headerlink" title="一些其他重要的 Tips"></a>一些其他重要的 Tips</h2><h4 id="The-Context-Empathy-Model-上下文同理心模型"><a href="#The-Context-Empathy-Model-上下文同理心模型" class="headerlink" title="The Context Empathy Model (上下文同理心模型)"></a>The Context Empathy Model (上下文同理心模型)</h4><ul>
+<li><strong>定义</strong>：这就好比与一个完全失忆但在某个房间里有无限知识库的天才合作。这个天才（AI）不知道你的项目历史，不知道你的昨天，只知道你现在喂给他的东西。</li>
+<li><strong>核心逻辑</strong>：<ul>
+<li><strong>Limited Horizon</strong>：模型虽然有训练数据的“长期记忆”，但在你的具体任务上，它只有“短期记忆”（Context Window）。</li>
+<li><strong>Explicit Anchoring</strong>：你必须显式地（Explicitly）告诉它参考什么。Ellis 强调，当你指望模型写出好代码时，必须问自己：“我给它的 Context（文档、代码片段、对话历史）足以支撑它得出正确结论吗？”</li>
+<li><strong>Action</strong>：如果结果不好，不要怪模型笨，先怪 Context 没给够。建立 <code>docs/</code> 目录，使用 MCP 抓取实时数据，都是为了增强这种“同理心”</li>
+</ul>
+</li>
+</ul>
+<h4 id="Tech-Stack-Selection-for-AI-面向-AI-的选型策略"><a href="#Tech-Stack-Selection-for-AI-面向-AI-的选型策略" class="headerlink" title="Tech Stack Selection for AI (面向 AI 的选型策略)"></a>Tech Stack Selection for AI (面向 AI 的选型策略)</h4><ul>
+<li><strong>定义</strong>：在选择技术栈时，不再只考虑性能或个人喜好，而是优先考虑 <strong>“LLM Friendliness”</strong>（大模型友好度）。</li>
+<li><strong>核心逻辑</strong>：<ul>
+<li>Ellis 明确指出，使用 TypeScript, React, Next.js, Node.js 等主流技术栈，AI 的表现会显著优于冷门语言。</li>
+<li><strong>Training Data Density（训练数据密度）</strong>：主流框架在训练数据中占比极大，模型见过无数种写法，因此能输出高质量（80% Baseline）的代码。</li>
+<li><strong>Style Paradigm</strong>：模型不仅是写代码，还能模仿最佳设计模式（Patterns）。使用主流栈，模型会自然倾向于使用社区公认的最佳实践。</li>
+<li><strong>结论</strong>：在 2025 年，选择一个 AI 擅长的技术栈，等于一开始就拥有了一个高级架构师队友。</li>
+</ul>
+</li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
