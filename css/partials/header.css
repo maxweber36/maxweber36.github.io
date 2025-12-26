@@ -1,5 +1,11 @@
 .header {
   border: $line-secondary solid $color-text-primary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-background;
+  z-index: 100;
 }
 .header-inner {
   display: flex;

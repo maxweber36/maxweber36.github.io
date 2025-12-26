@@ -63,9 +63,9 @@ var _hmt = _hmt || [];
 
 
 
-  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
-<link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+  <meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
 <script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+<link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
 </head>
   <body>
     <div class="mask-border">
@@ -196,7 +196,29 @@ var _hmt = _hmt || [];
 </div> 
 
 <script>
-    window.onload = detectors();
+function detectTaskList() {
+  var taskListObjects = document.getElementsByTagName("input");
+  for (var i = 0; i < taskListObjects.length; i++) {
+    var par = taskListObjects[i].parentNode;
+    par.classList.add("task-list-item");
+    par.parentNode.classList.add("task-list");
+  }
+}
+
+function detectBlockTable() {
+  var tableListObjects = document.getElementsByTagName("thead");
+  for (var i = 0; i < tableListObjects.length; i++) {
+    var par = tableListObjects[i].parentNode;
+    par.classList.add("block-table");
+  }
+}
+
+function detectors(){
+  detectTaskList();
+  detectBlockTable();
+}
+
+window.onload = detectors;
 </script>
     <div class="post-footer">
     <div class="h-line-primary"></div>

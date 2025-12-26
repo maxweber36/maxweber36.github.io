@@ -11,13 +11,16 @@ hr {
   height: $line-third;
   border: 0;
 }
+.tag-cloud {
+  margin-bottom: $margin-l-0;
+}
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: $margin-m-0;
 }
 .tag-title {
-  margin: $margin-m-1 0;
+  margin: $margin-l-1 0;
   color: $color-text-secondary;
   font-size: $font-size-header;
 }

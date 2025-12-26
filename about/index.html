@@ -144,17 +144,40 @@ var _hmt = _hmt || [];
 </blockquote>
 <h2 id="最近都在干嘛"><a href="#最近都在干嘛" class="headerlink" title="最近都在干嘛?"></a>最近都在干嘛?</h2><ol>
 <li>编程。</li>
-<li>学英语，粤语和日语。</li>
 <li>写作。</li>
 </ol>
-<h2 id="最近有啥目标"><a href="#最近有啥目标" class="headerlink" title="最近有啥目标?"></a>最近有啥目标?</h2><ul>
-<li>做独立开发者。<strong><u>争取 2025 年，能够通过产品获得第一笔收入。</u></strong></li>
-</ul>
+<h2 id="2026-年的核心重点"><a href="#2026-年的核心重点" class="headerlink" title="2026 年的核心重点"></a>2026 年的核心重点</h2><ol>
+<li>继续开发独立产品。</li>
+<li>专注产品运营。</li>
+<li>工作赚钱。</li>
+</ol>
 
 </div> 
 
 <script>
-    window.onload = detectors();
+function detectTaskList() {
+  var taskListObjects = document.getElementsByTagName("input");
+  for (var i = 0; i < taskListObjects.length; i++) {
+    var par = taskListObjects[i].parentNode;
+    par.classList.add("task-list-item");
+    par.parentNode.classList.add("task-list");
+  }
+}
+
+function detectBlockTable() {
+  var tableListObjects = document.getElementsByTagName("thead");
+  for (var i = 0; i < tableListObjects.length; i++) {
+    var par = tableListObjects[i].parentNode;
+    par.classList.add("block-table");
+  }
+}
+
+function detectors(){
+  detectTaskList();
+  detectBlockTable();
+}
+
+window.onload = detectors;
 </script>
   
 </article>
