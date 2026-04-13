@@ -34,9 +34,9 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
-    
     <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -80,9 +80,9 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
-    
     <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -104,9 +104,9 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
-    
     <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    
+    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -413,7 +413,7 @@
     <published>2025-09-24T17:03:15.000Z</published>
     <updated>2025-12-13T03:55:52.772Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-AXJyDpfg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-AXJyDpfg"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Catching The Dawn",              author: "weber",              url: "/music/Catching-The-Dawn.m4a",              pic: "/music-cover/with-music.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我越听重轻的播客，越听越觉得他的阐述能力非常牛逼的。其实，他的很多观点或者说视角并不是我觉得是最牛的，虽然他的观点确实帮我开拓了很多视角，让我有种豁然开朗的感觉。但在听他论述的时候，他在表达的很多观点，其实我在其他书里也见过类似的表达，可是看那些书的时候，并没有像听他给我讲的时候，那种让我眼前一亮、仿佛被点醒的感觉。</p><p>我觉得重轻最厉害的地方，就是他的阐释能力或者叫做叙事的能力。当他把同样的事情重新讲一遍的时候，你会从中感受到那个故事就明显带上了他自己独特的烙印。虽然内容本质上还是原来的事，但经过他的讲述，就完全变成了另一回事，让人感觉很不一样。这就是一种讲故事的能力。</p><p>我在想，怎么才能培养自己这种讲故事的能力，把一个平平无奇的故事讲得特别生动、特别有趣。我觉得重轻有这种能力，还有之前我看过一个台湾综艺节目，是大 S 和小 S 一起主持的。我觉得大 S 也有这种能力，有时候听她讲一些事情，或者大 S、小 S 一起聊日常，本来是很无聊的事，但被她们一说就变得非常有趣。</p><p>我觉得，尤其是在现在这个社会，叙事能力真的非常重要。它能够改变一个人对一件事情的看法。就好像在你和这个世界之间加了一个透镜，这个透镜会折射、会改变光线进入你眼睛的路径。虽然我们现在看世界时，已经透过了很多了透镜，但大多数人用的都是标准化的透镜，也就是最最主流的叙事。</p><p>而当我在听重轻讲一个故事、或者阐述一件事的时候，我会发现他的透镜是他手工定制的，带有他自己独特的曲面和材质。光线经过他的透镜时，所穿过的路径和我日常用的、工厂里生产的标准透镜完全不一样。这种差异会给我带来另外一种看世界的样子。</p><p><strong>推荐最近重轻的一期播客，很震撼。</strong><br><a href="https://www.gcores.com/radios/183775"><img src="/images/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/fcsm.JPG" alt="蜂巢生命封面"> 原型 vol.3 ｜ 蜂巢生命</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-uDSKtBSx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-uDSKtBSx"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Catching The Dawn",              author: "weber",              url: "/music/Catching-The-Dawn.m4a",              pic: "/music-cover/with-music.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我越听重轻的播客，越听越觉得他的阐述能力非常牛逼的。其实，他的很多观点或者说视角并不是我觉得是最牛的，虽然他的观点确实帮我开拓了很多视角，让我有种豁然开朗的感觉。但在听他论述的时候，他在表达的很多观点，其实我在其他书里也见过类似的表达，可是看那些书的时候，并没有像听他给我讲的时候，那种让我眼前一亮、仿佛被点醒的感觉。</p><p>我觉得重轻最厉害的地方，就是他的阐释能力或者叫做叙事的能力。当他把同样的事情重新讲一遍的时候，你会从中感受到那个故事就明显带上了他自己独特的烙印。虽然内容本质上还是原来的事，但经过他的讲述，就完全变成了另一回事，让人感觉很不一样。这就是一种讲故事的能力。</p><p>我在想，怎么才能培养自己这种讲故事的能力，把一个平平无奇的故事讲得特别生动、特别有趣。我觉得重轻有这种能力，还有之前我看过一个台湾综艺节目，是大 S 和小 S 一起主持的。我觉得大 S 也有这种能力，有时候听她讲一些事情，或者大 S、小 S 一起聊日常，本来是很无聊的事，但被她们一说就变得非常有趣。</p><p>我觉得，尤其是在现在这个社会，叙事能力真的非常重要。它能够改变一个人对一件事情的看法。就好像在你和这个世界之间加了一个透镜，这个透镜会折射、会改变光线进入你眼睛的路径。虽然我们现在看世界时，已经透过了很多了透镜，但大多数人用的都是标准化的透镜，也就是最最主流的叙事。</p><p>而当我在听重轻讲一个故事、或者阐述一件事的时候，我会发现他的透镜是他手工定制的，带有他自己独特的曲面和材质。光线经过他的透镜时，所穿过的路径和我日常用的、工厂里生产的标准透镜完全不一样。这种差异会给我带来另外一种看世界的样子。</p><p><strong>推荐最近重轻的一期播客，很震撼。</strong><br><a href="https://www.gcores.com/radios/183775"><img src="/images/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/fcsm.JPG" alt="蜂巢生命封面"> 原型 vol.3 ｜ 蜂巢生命</a></p>]]></content>
     
     
       
