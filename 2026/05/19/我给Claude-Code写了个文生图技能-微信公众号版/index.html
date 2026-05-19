@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>我给Claude Code写了个文生图技能 | 阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Coding/">
+                            Coding
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/AI%E5%BA%94%E7%94%A8/">
+                            AI应用
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                我给Claude Code写了个文生图技能
+            
+            
+        </div>
+        <span class="post-date">
+            May 19, 2026
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>每次写完文章，我都卡在同一个环节——封面图。</p>
+<p>文章写得再好，没有一张像样的封面图，总觉得差了那么点意思。但你要说配图这件事有多难，其实技术上并不复杂，真正折磨人的，是那个繁琐的工作流。</p>
+<h2 id="老办法：三步走，步步累"><a href="#老办法：三步走，步步累" class="headerlink" title="老办法：三步走，步步累"></a>老办法：三步走，步步累</h2><p>之前的流程是这样的：</p>
+<p><strong>第一步</strong>，文章写好后，我把内容丢给 AI，让它基于文章主题生成一个封面图的 prompt（提示词）。</p>
+<p>**第二步，**AI 把 prompt 给到我，我再把它复制到图片生成平台。</p>
+<p><strong>第三步</strong>，打开即梦，或者豆包，粘贴 prompt，调参数，出图。</p>
+<p>听起来不复杂对吧？但实际操作起来，每一步都在消耗耐心。</p>
+<p>比如参数设置——不同平台的模型，输入参数的格式各不相同。即梦有即梦的写法，豆包有豆包的规则。有时候 AI 生成的 prompt 放到某个平台上，效果完全不对，又得来回调整。更要命的是，有些平台生成的图片还带水印，你又得想办法去掉。</p>
+<p>一来二去，光一个封面图，小半小时就没了。</p>
+<h2 id="为什么不能让-Claude-Code-直接干这件事？"><a href="#为什么不能让-Claude-Code-直接干这件事？" class="headerlink" title="为什么不能让 Claude Code 直接干这件事？"></a>为什么不能让 Claude Code 直接干这件事？</h2><p>我平时写文章、做博客，基本都在 Claude Code 里完成。它几乎是我所有工作流的中枢。</p>
+<p>但唯独「生成图片」这件事，它一直做不了。</p>
+<p>说实话，一开始我还挺惊讶的——Claude Code 有那么丰富的扩展能力，竟然没有一个现成的文生图 Skill？但转念一想，也合理。Anthropic（Claude 的母公司）目前确实没有自己的文生图模型。Claude 擅长的是理解和生成文字，图片生成这块，它本身就是个空白。</p>
+<p>既然官方没做，那怎么办？</p>
+<p>没有轮子，就自己造一个。</p>
+<h2 id="一小时，造了个「图片生成技能」"><a href="#一小时，造了个「图片生成技能」" class="headerlink" title="一小时，造了个「图片生成技能」"></a>一小时，造了个「图片生成技能」</h2><p>我花了今天大概一个小时的时间，给 Claude Code 写了一个 Skill——<code>image-generate</code>。</p>
+<p>Skill 是 Claude Code 的扩展机制，你可以把它理解为一个「技能包」。写好之后，Claude Code 就拥有了调用外部图片生成 API 的能力。</p>
+<p>目前我暂时只接入了<strong>火山引擎</strong>这一个平台。之所以选它，一是 API 文档比较清晰，二是生成的图片质量不错。</p>
+<h2 id="它是怎么工作的？"><a href="#它是怎么工作的？" class="headerlink" title="它是怎么工作的？"></a>它是怎么工作的？</h2><p>虽然只花了一个小时，但这个 Skill 的设计其实挺讲究的。</p>
+<p>整个 Skill 一共就三个文件：一个主文件 <code>SKILL.md</code>，负责定义”做什么”和”怎么做”；一个 <code>references</code> 目录，里面每个文件对应一个 AI 平台的 API 文档。结构非常简洁。</p>
+<p>当你让我生成一张图的时候，背后其实跑了五步：</p>
+<ol>
+<li><strong>理解需求</strong>：从你的描述中提取关键信息——想要什么图、用在哪、尺寸多大</li>
+<li><strong>选择平台</strong>：根据用途自动推荐最合适的 AI 平台和模型</li>
+<li><strong>调用 API</strong>：读取对应平台的文档，构造请求，发送给云端的 AI 模型</li>
+<li><strong>下载保存</strong>：把生成的图片下载到本地</li>
+<li><strong>返回结果</strong>：告诉你图片保存在哪、尺寸是多少、用的什么模型</li>
+</ol>
+<p>整个过程全自动，你只管说需求，剩下的 Claude Code 全包了。</p>
+<p>还有一个细节我很在意——<strong>按需加载</strong>。Claude Code 不会一开始就把所有平台的 API 文档全塞进上下文里，而是只有在你选择某个平台时，才去读取对应的文档。这样既节省资源，又不会互相干扰。</p>
+<h2 id="现在的体验：一句话搞定"><a href="#现在的体验：一句话搞定" class="headerlink" title="现在的体验：一句话搞定"></a>现在的体验：一句话搞定</h2><p>现在我要给文章配封面图，操作变成了这样：</p>
+<p>在 Claude Code 里，把文章的文件路径丢给它，然后说一句：</p>
+<blockquote>
+<p>「给我生成一个这篇文章的封面图。」</p>
+</blockquote>
+<p>就这样。</p>
+<p>它会自己读取文章内容，理解主题，生成合适的 prompt，调用 API，把图片下载到本地。整个过程，我只需要等几秒钟。</p>
+<p>而且因为是通过 API 直接调用的，生成的图片<strong>没有水印</strong>，连去水印这一步都省了。</p>
+<h2 id="还有一个关键点：Prompt-的「最佳实践」"><a href="#还有一个关键点：Prompt-的「最佳实践」" class="headerlink" title="还有一个关键点：Prompt 的「最佳实践」"></a>还有一个关键点：Prompt 的「最佳实践」</h2><p>经常用文生图的人都知道，同一套 Prompt 放到不同的模型上，生成出来的效果可能天差地别。因为每个模型的训练数据、训练方式不同，它们对文字描述的「理解偏好」也不一样。你在模型 A 上用得很好的 Prompt，原封不动搬到模型 B，出来的图可能完全不是你想要的。</p>
+<p>这个问题大家都知道，但之前的解决办法很笨——每次换一个平台，就得重新摸索它的 Prompt 写法，或者去问 AI。但 AI 自己也未必记得住每个模型的最佳参数。</p>
+<p>现在，我在这个 Skill 里维护了一份 <code>reference.md</code> 文档，里面记录了<strong>每个文生图模型的最佳实践参数和 Prompt 模板</strong>。Claude Code 在调用图片生成的时候，会自动参考这份文档，根据当前使用的模型选择最合适的 Prompt 策略。</p>
+<p>这意味着什么？意味着生成出来的图片质量，比我自己手动调参要高得多——因为这些”最佳实践”已经内置在里面了。</p>
+<p>一个困扰我很久的问题，就这样被一句话解决了。</p>
+<h2 id="想自己装一个？其实很简单"><a href="#想自己装一个？其实很简单" class="headerlink" title="想自己装一个？其实很简单"></a>想自己装一个？其实很简单</h2><p>整个 Skill 放在你电脑的 <code>~/.claude/skills/image-generate/</code> 目录下，结构长这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">image-generate/</span><br><span class="line">├── SKILL.md                # 主文件：定义&quot;做什么&quot;和&quot;怎么做&quot;</span><br><span class="line">└── references/             # 参考文档：各平台的 API 细节</span><br><span class="line">    └── volcano-engine.md   # 火山引擎的 API 文档</span><br></pre></td></tr></table></figure>
+
+<p>就三个文件，非常简洁。</p>
+<h3 id="主文件-SKILL-md-是什么？"><a href="#主文件-SKILL-md-是什么？" class="headerlink" title="主文件 SKILL.md 是什么？"></a>主文件 SKILL.md 是什么？</h3><p>它是整个 Skill 的入口，相当于”总指挥”。文件头声明了 Skill 的名称和触发条件——当你在对话中提到”生成图片””文生图””帮我画””文章封面”这些关键词时，Claude Code 就会自动激活它。</p>
+<p>正文部分定义了五步工作流、平台选择逻辑（一段伪代码，教 Claude 根据场景自动选平台）、以及两个核心函数的代码骨架——<code>call_platform_api()</code> 负责调用接口，<code>download_and_save()</code> 负责把图片存到本地。</p>
+<p>另外还有一个我很在意的细节：<strong>没有硬编码密钥</strong>。所有 API Key 都通过环境变量传递，不会明文写在代码里。</p>
+<h3 id="references-目录是干嘛的？"><a href="#references-目录是干嘛的？" class="headerlink" title="references 目录是干嘛的？"></a>references 目录是干嘛的？</h3><p>每个文件对应一个 AI 平台的完整 API 参考文档，包括认证方式、接口地址、请求参数说明、推荐尺寸对照表，以及可以直接用的 Python 调用代码。</p>
+<p>Claude Code 只有在真正需要调用某个平台的时候，才会去读对应的 reference 文件。平时不会把所有文档全塞进上下文里，既省资源又不会互相干扰。</p>
+<h3 id="想接入新平台怎么办？"><a href="#想接入新平台怎么办？" class="headerlink" title="想接入新平台怎么办？"></a>想接入新平台怎么办？</h3><p>只需要三步：</p>
+<ol>
+<li>在 <code>references/</code> 目录下新建一个该平台的 API 文档文件</li>
+<li>在主文件的”支持平台”表格里加一行</li>
+<li>在”认证配置”表格里加上环境变量名</li>
+</ol>
+<p>核心逻辑完全不用动。</p>
+<p>如果你也在用 Claude Code，也想让它在图片生成这件事上帮到你，可以在微信公众号后台私信我，我把这个 Skill 打包发给你。</p>
+<hr>
+<p><em>摘要：每次写完文章，配封面图都是最折磨人的环节。我花了一个小时，给 Claude Code 写了个「文生图」Skill，从此一句话搞定封面图。需要的朋友可以在公众号私信我获取。</em></p>
+<p><em>互动话题：你平时给文章配图，用的什么工具？有没有被参数设置折磨过？欢迎评论区聊聊。</em></p>
+
+</div> 
+
+<script>
+function detectTaskList() {
+  var taskListObjects = document.getElementsByTagName("input");
+  for (var i = 0; i < taskListObjects.length; i++) {
+    var par = taskListObjects[i].parentNode;
+    par.classList.add("task-list-item");
+    par.parentNode.classList.add("task-list");
+  }
+}
+
+function detectBlockTable() {
+  var tableListObjects = document.getElementsByTagName("thead");
+  for (var i = 0; i < tableListObjects.length; i++) {
+    var par = tableListObjects[i].parentNode;
+    par.classList.add("block-table");
+  }
+}
+
+function detectors(){
+  detectTaskList();
+  detectBlockTable();
+}
+
+window.onload = detectors;
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2025/12/25/AI-MAP/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

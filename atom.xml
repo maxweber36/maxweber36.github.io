@@ -3,11 +3,11 @@
   <title>阿犇的自留地</title>
   
   <subtitle>YOLO：You Only Live Once</subtitle>
-  <link href="https://maxweber36.github.io/atom.xml" rel="self"/>
+  <link href="https://weber36.me/atom.xml" rel="self"/>
   <link href="https://push.superfeedr.com/" rel="hub"/>
-  <link href="https://maxweber36.github.io/"/>
-  <updated>2025-12-25T12:33:41.444Z</updated>
-  <id>https://maxweber36.github.io/</id>
+  <link href="https://weber36.me/"/>
+  <updated>2026-05-19T09:38:44.425Z</updated>
+  <id>https://weber36.me/</id>
   
   <author>
     <name>阿犇</name>
@@ -17,9 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我给Claude Code写了个文生图技能</title>
+    <link href="https://weber36.me/2026/05/19/%E6%88%91%E7%BB%99Claude-Code%E5%86%99%E4%BA%86%E4%B8%AA%E6%96%87%E7%94%9F%E5%9B%BE%E6%8A%80%E8%83%BD-%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E7%89%88/"/>
+    <id>https://weber36.me/2026/05/19/%E6%88%91%E7%BB%99Claude-Code%E5%86%99%E4%BA%86%E4%B8%AA%E6%96%87%E7%94%9F%E5%9B%BE%E6%8A%80%E8%83%BD-%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E7%89%88/</id>
+    <published>2026-05-19T09:34:51.000Z</published>
+    <updated>2026-05-19T09:38:44.425Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>每次写完文章，我都卡在同一个环节——封面图。</p><p>文章写得再好，没有一张像样的封面图，总觉得差了那么点意思。但你要说配图这件事有多难，其实技术上并不复杂，真正折磨人的，是那个繁琐的工作流。</p><h2 id="老办法：三步走，步步累"><a href="#老办法：三步走，步步累" class="headerlink" title="老办法：三步走，步步累"></a>老办法：三步走，步步累</h2><p>之前的流程是这样的：</p><p><strong>第一步</strong>，文章写好后，我把内容丢给 AI，让它基于文章主题生成一个封面图的 prompt（提示词）。</p><p>**第二步，**AI 把 prompt 给到我，我再把它复制到图片生成平台。</p><p><strong>第三步</strong>，打开即梦，或者豆包，粘贴 prompt，调参数，出图。</p><p>听起来不复杂对吧？但实际操作起来，每一步都在消耗耐心。</p><p>比如参数设置——不同平台的模型，输入参数的格式各不相同。即梦有即梦的写法，豆包有豆包的规则。有时候 AI 生成的 prompt 放到某个平台上，效果完全不对，又得来回调整。更要命的是，有些平台生成的图片还带水印，你又得想办法去掉。</p><p>一来二去，光一个封面图，小半小时就没了。</p><h2 id="为什么不能让-Claude-Code-直接干这件事？"><a href="#为什么不能让-Claude-Code-直接干这件事？" class="headerlink" title="为什么不能让 Claude Code 直接干这件事？"></a>为什么不能让 Claude Code 直接干这件事？</h2><p>我平时写文章、做博客，基本都在 Claude Code 里完成。它几乎是我所有工作流的中枢。</p><p>但唯独「生成图片」这件事，它一直做不了。</p><p>说实话，一开始我还挺惊讶的——Claude Code 有那么丰富的扩展能力，竟然没有一个现成的文生图 Skill？但转念一想，也合理。Anthropic（Claude 的母公司）目前确实没有自己的文生图模型。Claude 擅长的是理解和生成文字，图片生成这块，它本身就是个空白。</p><p>既然官方没做，那怎么办？</p><p>没有轮子，就自己造一个。</p><h2 id="一小时，造了个「图片生成技能」"><a href="#一小时，造了个「图片生成技能」" class="headerlink" title="一小时，造了个「图片生成技能」"></a>一小时，造了个「图片生成技能」</h2><p>我花了今天大概一个小时的时间，给 Claude Code 写了一个 Skill——<code>image-generate</code>。</p><p>Skill 是 Claude Code 的扩展机制，你可以把它理解为一个「技能包」。写好之后，Claude Code 就拥有了调用外部图片生成 API 的能力。</p><p>目前我暂时只接入了<strong>火山引擎</strong>这一个平台。之所以选它，一是 API 文档比较清晰，二是生成的图片质量不错。</p><h2 id="它是怎么工作的？"><a href="#它是怎么工作的？" class="headerlink" title="它是怎么工作的？"></a>它是怎么工作的？</h2><p>虽然只花了一个小时，但这个 Skill 的设计其实挺讲究的。</p><p>整个 Skill 一共就三个文件：一个主文件 <code>SKILL.md</code>，负责定义”做什么”和”怎么做”；一个 <code>references</code> 目录，里面每个文件对应一个 AI 平台的 API 文档。结构非常简洁。</p><p>当你让我生成一张图的时候，背后其实跑了五步：</p><ol><li><strong>理解需求</strong>：从你的描述中提取关键信息——想要什么图、用在哪、尺寸多大</li><li><strong>选择平台</strong>：根据用途自动推荐最合适的 AI 平台和模型</li><li><strong>调用 API</strong>：读取对应平台的文档，构造请求，发送给云端的 AI 模型</li><li><strong>下载保存</strong>：把生成的图片下载到本地</li><li><strong>返回结果</strong>：告诉你图片保存在哪、尺寸是多少、用的什么模型</li></ol><p>整个过程全自动，你只管说需求，剩下的 Claude Code 全包了。</p><p>还有一个细节我很在意——<strong>按需加载</strong>。Claude Code 不会一开始就把所有平台的 API 文档全塞进上下文里，而是只有在你选择某个平台时，才去读取对应的文档。这样既节省资源，又不会互相干扰。</p><h2 id="现在的体验：一句话搞定"><a href="#现在的体验：一句话搞定" class="headerlink" title="现在的体验：一句话搞定"></a>现在的体验：一句话搞定</h2><p>现在我要给文章配封面图，操作变成了这样：</p><p>在 Claude Code 里，把文章的文件路径丢给它，然后说一句：</p><blockquote><p>「给我生成一个这篇文章的封面图。」</p></blockquote><p>就这样。</p><p>它会自己读取文章内容，理解主题，生成合适的 prompt，调用 API，把图片下载到本地。整个过程，我只需要等几秒钟。</p><p>而且因为是通过 API 直接调用的，生成的图片<strong>没有水印</strong>，连去水印这一步都省了。</p><h2 id="还有一个关键点：Prompt-的「最佳实践」"><a href="#还有一个关键点：Prompt-的「最佳实践」" class="headerlink" title="还有一个关键点：Prompt 的「最佳实践」"></a>还有一个关键点：Prompt 的「最佳实践」</h2><p>经常用文生图的人都知道，同一套 Prompt 放到不同的模型上，生成出来的效果可能天差地别。因为每个模型的训练数据、训练方式不同，它们对文字描述的「理解偏好」也不一样。你在模型 A 上用得很好的 Prompt，原封不动搬到模型 B，出来的图可能完全不是你想要的。</p><p>这个问题大家都知道，但之前的解决办法很笨——每次换一个平台，就得重新摸索它的 Prompt 写法，或者去问 AI。但 AI 自己也未必记得住每个模型的最佳参数。</p><p>现在，我在这个 Skill 里维护了一份 <code>reference.md</code> 文档，里面记录了<strong>每个文生图模型的最佳实践参数和 Prompt 模板</strong>。Claude Code 在调用图片生成的时候，会自动参考这份文档，根据当前使用的模型选择最合适的 Prompt 策略。</p><p>这意味着什么？意味着生成出来的图片质量，比我自己手动调参要高得多——因为这些”最佳实践”已经内置在里面了。</p><p>一个困扰我很久的问题，就这样被一句话解决了。</p><h2 id="想自己装一个？其实很简单"><a href="#想自己装一个？其实很简单" class="headerlink" title="想自己装一个？其实很简单"></a>想自己装一个？其实很简单</h2><p>整个 Skill 放在你电脑的 <code>~/.claude/skills/image-generate/</code> 目录下，结构长这样：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">image-generate/</span><br><span class="line">├── SKILL.md                # 主文件：定义&quot;做什么&quot;和&quot;怎么做&quot;</span><br><span class="line">└── references/             # 参考文档：各平台的 API 细节</span><br><span class="line">    └── volcano-engine.md   # 火山引擎的 API 文档</span><br></pre></td></tr></table></figure><p>就三个文件，非常简洁。</p><h3 id="主文件-SKILL-md-是什么？"><a href="#主文件-SKILL-md-是什么？" class="headerlink" title="主文件 SKILL.md 是什么？"></a>主文件 SKILL.md 是什么？</h3><p>它是整个 Skill 的入口，相当于”总指挥”。文件头声明了 Skill 的名称和触发条件——当你在对话中提到”生成图片””文生图””帮我画””文章封面”这些关键词时，Claude Code 就会自动激活它。</p><p>正文部分定义了五步工作流、平台选择逻辑（一段伪代码，教 Claude 根据场景自动选平台）、以及两个核心函数的代码骨架——<code>call_platform_api()</code> 负责调用接口，<code>download_and_save()</code> 负责把图片存到本地。</p><p>另外还有一个我很在意的细节：<strong>没有硬编码密钥</strong>。所有 API Key 都通过环境变量传递，不会明文写在代码里。</p><h3 id="references-目录是干嘛的？"><a href="#references-目录是干嘛的？" class="headerlink" title="references 目录是干嘛的？"></a>references 目录是干嘛的？</h3><p>每个文件对应一个 AI 平台的完整 API 参考文档，包括认证方式、接口地址、请求参数说明、推荐尺寸对照表，以及可以直接用的 Python 调用代码。</p><p>Claude Code 只有在真正需要调用某个平台的时候，才会去读对应的 reference 文件。平时不会把所有文档全塞进上下文里，既省资源又不会互相干扰。</p><h3 id="想接入新平台怎么办？"><a href="#想接入新平台怎么办？" class="headerlink" title="想接入新平台怎么办？"></a>想接入新平台怎么办？</h3><p>只需要三步：</p><ol><li>在 <code>references/</code> 目录下新建一个该平台的 API 文档文件</li><li>在主文件的”支持平台”表格里加一行</li><li>在”认证配置”表格里加上环境变量名</li></ol><p>核心逻辑完全不用动。</p><p>如果你也在用 Claude Code，也想让它在图片生成这件事上帮到你，可以在微信公众号后台私信我，我把这个 Skill 打包发给你。</p><hr><p><em>摘要：每次写完文章，配封面图都是最折磨人的环节。我花了一个小时，给 Claude Code 写了个「文生图」Skill，从此一句话搞定封面图。需要的朋友可以在公众号私信我获取。</em></p><p><em>互动话题：你平时给文章配图，用的什么工具？有没有被参数设置折磨过？欢迎评论区聊聊。</em></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="project" scheme="https://weber36.me/categories/project/"/>
+    
+    
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
+    
+    <category term="AI应用" scheme="https://weber36.me/tags/AI%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>为 AI 构建一个项目代码的实时地图</title>
-    <link href="https://maxweber36.github.io/2025/12/25/AI-MAP/"/>
-    <id>https://maxweber36.github.io/2025/12/25/AI-MAP/</id>
+    <link href="https://weber36.me/2025/12/25/AI-MAP/"/>
+    <id>https://weber36.me/2025/12/25/AI-MAP/</id>
     <published>2025-12-25T07:12:25.000Z</published>
     <updated>2025-12-25T12:33:41.444Z</updated>
     
@@ -34,16 +60,16 @@
     
     
     
-    <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://weber36.me/tags/Vibe-Coding/"/>
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>告别 Demo，拥抱 Production</title>
-    <link href="https://maxweber36.github.io/2025/12/05/vibe-coding-in-production/"/>
-    <id>https://maxweber36.github.io/2025/12/05/vibe-coding-in-production/</id>
+    <link href="https://weber36.me/2025/12/05/vibe-coding-in-production/"/>
+    <id>https://weber36.me/2025/12/05/vibe-coding-in-production/</id>
     <published>2025-12-05T08:16:05.000Z</published>
     <updated>2025-12-13T03:55:52.762Z</updated>
     
@@ -58,14 +84,14 @@
     
     
     
-    <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://weber36.me/tags/Vibe-Coding/"/>
     
   </entry>
   
   <entry>
     <title>Vibe Coding 的开发工作流</title>
-    <link href="https://maxweber36.github.io/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
-    <id>https://maxweber36.github.io/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/</id>
+    <link href="https://weber36.me/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <id>https://weber36.me/2025/12/03/Vibe-Coding-%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81/</id>
     <published>2025-12-03T08:24:29.000Z</published>
     <updated>2025-12-13T03:55:52.760Z</updated>
     
@@ -80,16 +106,16 @@
     
     
     
-    <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://weber36.me/tags/Vibe-Coding/"/>
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>在 Coding 的时候，我们应该和 AI如何进行有效的协同</title>
-    <link href="https://maxweber36.github.io/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/"/>
-    <id>https://maxweber36.github.io/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/</id>
+    <link href="https://weber36.me/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/"/>
+    <id>https://weber36.me/2025/12/03/%E5%92%8C-AI-%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E7%9A%84%E5%8D%8F%E5%90%8C/</id>
     <published>2025-12-03T08:09:13.000Z</published>
     <updated>2025-12-13T03:55:52.769Z</updated>
     
@@ -104,16 +130,16 @@
     
     
     
-    <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://weber36.me/tags/Vibe-Coding/"/>
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>什么才是 Vibe Coding 的正确姿势？</title>
-    <link href="https://maxweber36.github.io/2025/12/03/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E7%9A%84-Vibe-Coding-%E6%9D%A5%E8%87%AA-YC-Startup-Founders-%E7%9A%84%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE/"/>
-    <id>https://maxweber36.github.io/2025/12/03/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E7%9A%84-Vibe-Coding-%E6%9D%A5%E8%87%AA-YC-Startup-Founders-%E7%9A%84%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE/</id>
+    <link href="https://weber36.me/2025/12/03/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E7%9A%84-Vibe-Coding-%E6%9D%A5%E8%87%AA-YC-Startup-Founders-%E7%9A%84%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE/"/>
+    <id>https://weber36.me/2025/12/03/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%A5%BD%E7%9A%84-Vibe-Coding-%E6%9D%A5%E8%87%AA-YC-Startup-Founders-%E7%9A%84%E5%AE%9E%E8%B7%B5%E5%BB%BA%E8%AE%AE/</id>
     <published>2025-12-03T07:55:10.000Z</published>
     <updated>2025-12-13T03:55:52.771Z</updated>
     
@@ -128,14 +154,14 @@
     
     
     
-    <category term="Vibe Coding" scheme="https://maxweber36.github.io/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://weber36.me/tags/Vibe-Coding/"/>
     
   </entry>
   
   <entry>
     <title>Google Gemini 3 多模态模型深度研究报告</title>
-    <link href="https://maxweber36.github.io/2025/11/20/Google-Gemini-3-%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-ChatGPT-DeepResearch-%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/"/>
-    <id>https://maxweber36.github.io/2025/11/20/Google-Gemini-3-%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-ChatGPT-DeepResearch-%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</id>
+    <link href="https://weber36.me/2025/11/20/Google-Gemini-3-%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-ChatGPT-DeepResearch-%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/"/>
+    <id>https://weber36.me/2025/11/20/Google-Gemini-3-%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-ChatGPT-DeepResearch-%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</id>
     <published>2025-11-20T12:40:23.000Z</published>
     <updated>2025-12-13T03:55:52.758Z</updated>
     
@@ -150,14 +176,14 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>AI 作图指南：轻松搞定公众号文章封面</title>
-    <link href="https://maxweber36.github.io/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/"/>
-    <id>https://maxweber36.github.io/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/</id>
+    <link href="https://weber36.me/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/"/>
+    <id>https://weber36.me/2025/11/18/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E4%BC%98%E8%B4%A8%E7%9A%84%E6%B5%B7%E6%8A%A5%E6%88%96%E8%80%85%E5%B0%81%E9%9D%A2%E5%9B%BE_revised/</id>
     <published>2025-11-18T03:20:32.000Z</published>
     <updated>2025-12-13T03:55:52.771Z</updated>
     
@@ -172,16 +198,16 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
-    <category term="工作流" scheme="https://maxweber36.github.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <category term="工作流" scheme="https://weber36.me/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
   </entry>
   
   <entry>
     <title>Vibe Coding不是一条通向产品构建的捷径</title>
-    <link href="https://maxweber36.github.io/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/"/>
-    <id>https://maxweber36.github.io/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/</id>
+    <link href="https://weber36.me/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/"/>
+    <id>https://weber36.me/2025/11/17/Vibe-Coding%E4%B8%8D%E6%98%AF%E4%B8%80%E6%9D%A1%E9%80%9A%E5%90%91%E4%BA%A7%E5%93%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%8D%B7%E5%BE%84/</id>
     <published>2025-11-17T01:13:59.000Z</published>
     <updated>2025-12-13T03:55:52.760Z</updated>
     
@@ -196,18 +222,18 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
-    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
     
-    <category term="产品打磨" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/"/>
+    <category term="产品打磨" scheme="https://weber36.me/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/"/>
     
   </entry>
   
   <entry>
     <title>TRAE Solo Coder 初体验</title>
-    <link href="https://maxweber36.github.io/2025/11/14/Trae-solo-coder%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-    <id>https://maxweber36.github.io/2025/11/14/Trae-solo-coder%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
+    <link href="https://weber36.me/2025/11/14/Trae-solo-coder%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>https://weber36.me/2025/11/14/Trae-solo-coder%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
     <published>2025-11-14T13:26:45.000Z</published>
     <updated>2025-12-13T03:55:52.759Z</updated>
     
@@ -221,21 +247,21 @@
     
     
     
-    <category term="产品体验" scheme="https://maxweber36.github.io/categories/%E4%BA%A7%E5%93%81%E4%BD%93%E9%AA%8C/"/>
+    <category term="产品体验" scheme="https://weber36.me/categories/%E4%BA%A7%E5%93%81%E4%BD%93%E9%AA%8C/"/>
     
     
-    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
     
-    <category term="产品学习" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E5%AD%A6%E4%B9%A0/"/>
+    <category term="产品学习" scheme="https://weber36.me/tags/%E4%BA%A7%E5%93%81%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="产品打磨" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/"/>
+    <category term="产品打磨" scheme="https://weber36.me/tags/%E4%BA%A7%E5%93%81%E6%89%93%E7%A3%A8/"/>
     
   </entry>
   
   <entry>
     <title>从一次 Flutter macOS Release 构建目录，看懂「产物」都在干什么</title>
-    <link href="https://maxweber36.github.io/2025/11/03/flutter/"/>
-    <id>https://maxweber36.github.io/2025/11/03/flutter/</id>
+    <link href="https://weber36.me/2025/11/03/flutter/"/>
+    <id>https://weber36.me/2025/11/03/flutter/</id>
     <published>2025-11-03T03:39:03.000Z</published>
     <updated>2025-12-13T03:55:52.761Z</updated>
     
@@ -250,14 +276,14 @@
     
     
     
-    <category term="Flutter" scheme="https://maxweber36.github.io/tags/Flutter/"/>
+    <category term="Flutter" scheme="https://weber36.me/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>Timer-Whisper 产品开发日志 2025-10-23</title>
-    <link href="https://maxweber36.github.io/2025/10/23/Timer-Whisper-%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
-    <id>https://maxweber36.github.io/2025/10/23/Timer-Whisper-%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/</id>
+    <link href="https://weber36.me/2025/10/23/Timer-Whisper-%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
+    <id>https://weber36.me/2025/10/23/Timer-Whisper-%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/</id>
     <published>2025-10-23T01:03:10.000Z</published>
     <updated>2025-12-13T03:55:52.759Z</updated>
     
@@ -272,14 +298,14 @@
     
     
     
-    <category term="产品日志" scheme="https://maxweber36.github.io/tags/%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
+    <category term="产品日志" scheme="https://weber36.me/tags/%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
   <entry>
     <title>Timer-Whisper 的产品构想</title>
-    <link href="https://maxweber36.github.io/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/"/>
-    <id>https://maxweber36.github.io/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/</id>
+    <link href="https://weber36.me/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/"/>
+    <id>https://weber36.me/2025/10/17/Time-Master-%E7%9A%84%E4%BA%A7%E5%93%81%E6%9E%84%E6%83%B3/</id>
     <published>2025-10-17T07:51:28.000Z</published>
     <updated>2025-12-13T03:55:52.759Z</updated>
     
@@ -294,18 +320,18 @@
     
     
     
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    <category term="个人成长" scheme="https://weber36.me/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
-    <category term="打磨产品" scheme="https://maxweber36.github.io/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
+    <category term="打磨产品" scheme="https://weber36.me/tags/%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81/"/>
     
-    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
     
   </entry>
   
   <entry>
     <title>Dart &amp; Flutter MCP 安装经验分享</title>
-    <link href="https://maxweber36.github.io/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
-    <id>https://maxweber36.github.io/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</id>
+    <link href="https://weber36.me/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <id>https://weber36.me/2025/10/15/Dart-Flutter-MCP-%E5%AE%89%E8%A3%85%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</id>
     <published>2025-10-15T03:10:11.000Z</published>
     <updated>2025-12-13T03:55:52.757Z</updated>
     
@@ -320,16 +346,16 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
-    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
     
   </entry>
   
   <entry>
     <title>工具太多反而成负担：我的效率优化反思</title>
-    <link href="https://maxweber36.github.io/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
-    <id>https://maxweber36.github.io/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/</id>
+    <link href="https://weber36.me/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+    <id>https://weber36.me/2025/10/14/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BC%98%E5%8C%96/</id>
     <published>2025-10-14T05:23:12.000Z</published>
     <updated>2025-12-13T03:55:52.773Z</updated>
     
@@ -344,18 +370,18 @@
     
     
     
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="https://weber36.me/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="效率优化" scheme="https://maxweber36.github.io/tags/%E6%95%88%E7%8E%87%E4%BC%98%E5%8C%96/"/>
+    <category term="效率优化" scheme="https://weber36.me/tags/%E6%95%88%E7%8E%87%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>从时间富余到分秒必争：新手父母的时间管理心得</title>
-    <link href="https://maxweber36.github.io/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
-    <id>https://maxweber36.github.io/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/</id>
+    <link href="https://weber36.me/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/"/>
+    <id>https://weber36.me/2025/10/12/2025-10-12-%E4%BB%8E%E6%97%B6%E9%97%B4%E5%AF%8C%E4%BD%99%E5%88%B0%E5%88%86%E7%A7%92%E5%BF%85%E4%BA%89-%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D%E7%9A%84%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/</id>
     <published>2025-10-12T05:43:48.000Z</published>
-    <updated>2025-12-13T03:55:52.751Z</updated>
+    <updated>2026-05-19T07:45:33.446Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><img src="/images/%E6%96%B0%E6%89%8B%E7%88%B6%E6%AF%8D/album_temp_1760509609.PNG" alt="来自于《名画都是猫》"></p><center><i>图片来源：《名画都是猫》</i></center><p>现在做事情确实需要更有计划。因为有了小朋友之后，做事不仅仅是处理自己的事情，还要照顾孩子，这中间要花很多时间。而这些时间是比较刚性的，没办法减少。</p><p>在这样的情况下，如何还能做自己想做的事情，就需要有很好的规划。我觉得，现在面临的一个最大挑战就是：<strong>时间管理的困难</strong>。如何在照顾好小朋友的同时，还能做好自己的事情。</p><p>所以在时间利用上，我需要更有意识：</p><ul><li>现在正在做什么</li><li>这段时间花在哪里</li></ul><p>这样才能把握住时间，不让它无意义地流失掉。</p><p>我以前在这方面可能太放纵、太舒服了，因为自己时间太多了。时间多的时候，对时间的开销和利用没有那么强的意识，可能时间就糊里糊涂地用掉了，就像花钱一样，糊里糊涂地就把钱花掉了。</p><p>只有当开始记录时间的时候，我才知道我的时间到底花在了哪里，我才知道我到底在做什么。</p><blockquote><p>有意识地去使用自己的时间，要把时间投入到有意义、有价值的事情上，这一切从记录时间开支开始。</p></blockquote>]]></content>
     
@@ -368,18 +394,18 @@
     
     
     
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="https://weber36.me/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    <category term="个人成长" scheme="https://weber36.me/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
-    <category term="育儿" scheme="https://maxweber36.github.io/tags/%E8%82%B2%E5%84%BF/"/>
+    <category term="育儿" scheme="https://weber36.me/tags/%E8%82%B2%E5%84%BF/"/>
     
   </entry>
   
   <entry>
     <title>LocateIt - AI 图片地理定位工具</title>
-    <link href="https://maxweber36.github.io/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/"/>
-    <id>https://maxweber36.github.io/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://weber36.me/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/"/>
+    <id>https://weber36.me/2025/10/04/LocateIt-AI-%E5%9B%BE%E7%89%87%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D%E5%B7%A5%E5%85%B7/</id>
     <published>2025-10-04T04:00:00.000Z</published>
     <updated>2025-12-13T03:55:52.758Z</updated>
     
@@ -393,27 +419,27 @@
     
     
     
-    <category term="project" scheme="https://maxweber36.github.io/categories/project/"/>
+    <category term="project" scheme="https://weber36.me/categories/project/"/>
     
     
-    <category term="AI应用" scheme="https://maxweber36.github.io/tags/AI%E5%BA%94%E7%94%A8/"/>
+    <category term="AI应用" scheme="https://weber36.me/tags/AI%E5%BA%94%E7%94%A8/"/>
     
-    <category term="地理定位" scheme="https://maxweber36.github.io/tags/%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/"/>
+    <category term="地理定位" scheme="https://weber36.me/tags/%E5%9C%B0%E7%90%86%E5%AE%9A%E4%BD%8D/"/>
     
-    <category term="图像识别" scheme="https://maxweber36.github.io/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/"/>
+    <category term="图像识别" scheme="https://weber36.me/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/"/>
     
-    <category term="Web应用" scheme="https://maxweber36.github.io/tags/Web%E5%BA%94%E7%94%A8/"/>
+    <category term="Web应用" scheme="https://weber36.me/tags/Web%E5%BA%94%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>定制自己的透镜</title>
-    <link href="https://maxweber36.github.io/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/"/>
-    <id>https://maxweber36.github.io/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/</id>
+    <link href="https://weber36.me/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/"/>
+    <id>https://weber36.me/2025/09/25/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/</id>
     <published>2025-09-24T17:03:15.000Z</published>
     <updated>2025-12-13T03:55:52.772Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-eczwJxSB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-eczwJxSB"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Catching The Dawn",              author: "weber",              url: "/music/Catching-The-Dawn.m4a",              pic: "/music-cover/with-music.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我越听重轻的播客，越听越觉得他的阐述能力非常牛逼的。其实，他的很多观点或者说视角并不是我觉得是最牛的，虽然他的观点确实帮我开拓了很多视角，让我有种豁然开朗的感觉。但在听他论述的时候，他在表达的很多观点，其实我在其他书里也见过类似的表达，可是看那些书的时候，并没有像听他给我讲的时候，那种让我眼前一亮、仿佛被点醒的感觉。</p><p>我觉得重轻最厉害的地方，就是他的阐释能力或者叫做叙事的能力。当他把同样的事情重新讲一遍的时候，你会从中感受到那个故事就明显带上了他自己独特的烙印。虽然内容本质上还是原来的事，但经过他的讲述，就完全变成了另一回事，让人感觉很不一样。这就是一种讲故事的能力。</p><p>我在想，怎么才能培养自己这种讲故事的能力，把一个平平无奇的故事讲得特别生动、特别有趣。我觉得重轻有这种能力，还有之前我看过一个台湾综艺节目，是大 S 和小 S 一起主持的。我觉得大 S 也有这种能力，有时候听她讲一些事情，或者大 S、小 S 一起聊日常，本来是很无聊的事，但被她们一说就变得非常有趣。</p><p>我觉得，尤其是在现在这个社会，叙事能力真的非常重要。它能够改变一个人对一件事情的看法。就好像在你和这个世界之间加了一个透镜，这个透镜会折射、会改变光线进入你眼睛的路径。虽然我们现在看世界时，已经透过了很多了透镜，但大多数人用的都是标准化的透镜，也就是最最主流的叙事。</p><p>而当我在听重轻讲一个故事、或者阐述一件事的时候，我会发现他的透镜是他手工定制的，带有他自己独特的曲面和材质。光线经过他的透镜时，所穿过的路径和我日常用的、工厂里生产的标准透镜完全不一样。这种差异会给我带来另外一种看世界的样子。</p><p><strong>推荐最近重轻的一期播客，很震撼。</strong><br><a href="https://www.gcores.com/radios/183775"><img src="/images/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/fcsm.JPG" alt="蜂巢生命封面"> 原型 vol.3 ｜ 蜂巢生命</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>        <div id="aplayer-AUqCdKkJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-AUqCdKkJ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Catching The Dawn",              author: "weber",              url: "/music/Catching-The-Dawn.m4a",              pic: "/music-cover/with-music.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><p>我越听重轻的播客，越听越觉得他的阐述能力非常牛逼的。其实，他的很多观点或者说视角并不是我觉得是最牛的，虽然他的观点确实帮我开拓了很多视角，让我有种豁然开朗的感觉。但在听他论述的时候，他在表达的很多观点，其实我在其他书里也见过类似的表达，可是看那些书的时候，并没有像听他给我讲的时候，那种让我眼前一亮、仿佛被点醒的感觉。</p><p>我觉得重轻最厉害的地方，就是他的阐释能力或者叫做叙事的能力。当他把同样的事情重新讲一遍的时候，你会从中感受到那个故事就明显带上了他自己独特的烙印。虽然内容本质上还是原来的事，但经过他的讲述，就完全变成了另一回事，让人感觉很不一样。这就是一种讲故事的能力。</p><p>我在想，怎么才能培养自己这种讲故事的能力，把一个平平无奇的故事讲得特别生动、特别有趣。我觉得重轻有这种能力，还有之前我看过一个台湾综艺节目，是大 S 和小 S 一起主持的。我觉得大 S 也有这种能力，有时候听她讲一些事情，或者大 S、小 S 一起聊日常，本来是很无聊的事，但被她们一说就变得非常有趣。</p><p>我觉得，尤其是在现在这个社会，叙事能力真的非常重要。它能够改变一个人对一件事情的看法。就好像在你和这个世界之间加了一个透镜，这个透镜会折射、会改变光线进入你眼睛的路径。虽然我们现在看世界时，已经透过了很多了透镜，但大多数人用的都是标准化的透镜，也就是最最主流的叙事。</p><p>而当我在听重轻讲一个故事、或者阐述一件事的时候，我会发现他的透镜是他手工定制的，带有他自己独特的曲面和材质。光线经过他的透镜时，所穿过的路径和我日常用的、工厂里生产的标准透镜完全不一样。这种差异会给我带来另外一种看世界的样子。</p><p><strong>推荐最近重轻的一期播客，很震撼。</strong><br><a href="https://www.gcores.com/radios/183775"><img src="/images/%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%8F%E9%95%9C/fcsm.JPG" alt="蜂巢生命封面"> 原型 vol.3 ｜ 蜂巢生命</a></p>]]></content>
     
     
       
@@ -424,16 +450,16 @@
     
     
     
-    <category term="个人成长" scheme="https://maxweber36.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
+    <category term="个人成长" scheme="https://weber36.me/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
-    <category term="关于写作" scheme="https://maxweber36.github.io/tags/%E5%85%B3%E4%BA%8E%E5%86%99%E4%BD%9C/"/>
+    <category term="关于写作" scheme="https://weber36.me/tags/%E5%85%B3%E4%BA%8E%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>新手避免“代码混乱”的核心策略</title>
-    <link href="https://maxweber36.github.io/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/"/>
-    <id>https://maxweber36.github.io/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/</id>
+    <link href="https://weber36.me/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/"/>
+    <id>https://weber36.me/2025/09/20/%E6%96%B0%E6%89%8B%E9%81%BF%E5%85%8D-%E2%80%9C%E4%BB%A3%E7%A0%81%E6%B7%B7%E4%B9%B1%E2%80%9D-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AD%96%E7%95%A5%EF%BC%9A%E9%87%8D%E8%A7%86%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%A7%84%E5%88%92%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B/</id>
     <published>2025-09-20T09:31:56.000Z</published>
     <updated>2025-12-13T03:55:52.777Z</updated>
     
@@ -448,16 +474,16 @@
     
     
     
-    <category term="技术总结" scheme="https://maxweber36.github.io/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
+    <category term="技术总结" scheme="https://weber36.me/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"/>
     
-    <category term="Coding" scheme="https://maxweber36.github.io/tags/Coding/"/>
+    <category term="Coding" scheme="https://weber36.me/tags/Coding/"/>
     
   </entry>
   
   <entry>
     <title>一场辩论想到:不要害怕暴露短板,持续去创造才是真正重要的事情</title>
-    <link href="https://maxweber36.github.io/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/"/>
-    <id>https://maxweber36.github.io/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/</id>
+    <link href="https://weber36.me/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/"/>
+    <id>https://weber36.me/2025/09/11/%E4%B8%80%E5%9C%BA%E8%BE%A9%E8%AE%BA%E6%83%B3%E5%88%B0-%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E6%9A%B4%E9%9C%B2%E7%9F%AD%E6%9D%BF-%E6%8C%81%E7%BB%AD%E5%8E%BB%E5%88%9B%E9%80%A0%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/</id>
     <published>2025-09-11T14:48:54.000Z</published>
     <updated>2025-12-13T03:55:52.764Z</updated>
     
@@ -472,31 +498,7 @@
     
     
     
-    <category term="生活记录" scheme="https://maxweber36.github.io/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何让大模型变得诚实</title>
-    <link href="https://maxweber36.github.io/2025/09/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%BB%E8%A7%89/"/>
-    <id>https://maxweber36.github.io/2025/09/06/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B9%BB%E8%A7%89/</id>
-    <published>2025-09-06T05:10:30.000Z</published>
-    <updated>2025-12-13T03:55:52.770Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>今天在看机器之心的公众号上看到一篇文章<a href="https://mp.weixin.qq.com/s/f6pTUhzn9NjA_xWSvTmG4A">《OpenAI 罕见发论文:我们找到了 AI 幻觉的罪魁祸首》</a>。</p><p>在这篇文章中介绍 OpenAI 最近发的一篇论文，名字叫做<a href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">《Why Language Models Hallucinate》(为什么语言模型有幻觉)</a>。</p><p>我很好奇，就点进去看了一下。很有意思。原因说起来，很简单。就是 <strong>「标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励」</strong>。</p><p>在 OpenAI 的<a href="https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf">这篇论文</a>中，主要想要克服的“幻觉”是「模型不诚实地生成自己都不相信的答案的情况」。</p><p>这句话是我自己看完论文后，自己总结的。</p><p>在 OpenAI 的这篇论文中，主要说了两点。</p><ol><li><p>大模型的预训练逻辑决定——大模型对于问题的回答， 并非 “记忆数据”，而是通过统计规律 “学习语言生成模式”。<br>语言模型的预训练本质是 “自回归预测任务”：给定一段文本的前 N 个词（如 “地球的半径约为”），模型需要从训练数据中学到的 “统计规律” 里，预测第 N+1 个词最可能是什么（如 “6371 千米”）。</p></li><li><p>在大模型微调阶段，当前主流评估的 “二元评分体系”（正确得 1 分、空白 &#x2F;“不知道” 得 0 分）则在微调阶段强化了幻觉，使模型陷入 “为刷分而盲目猜测” 的循环。导致<strong>对 “猜测” 的奖励远胜于 “承认不确定性”</strong>。</p></li></ol><p>简单来说：“标准的训练和评估程序更倾向于对猜测进行奖励，而不是在模型勇于承认不确定时给予奖励。”</p><p>在大模型的微调（如 RLHF、DPO）阶段，本应减少幻觉，但主流评估体系的 “二元评分” 反而强化了猜测行为，形成 “惩罚不确定性的流行病”。</p><blockquote><p>二元评分：对模型输出的结果，进行对或者错的二元评判。采用 “正确得 1 分、空白 &#x2F; 不知道 得 0 分”，模型 “盲目猜测” 的期望得分高于 “承认不知道”。</p></blockquote><p><strong>那么如何改进呢？</strong></p><p>简单来说：<u>让模型 “合理表达不确定” 获得奖励，而非惩罚。</u></p><p>对模型的输出结果评估，简单来说就是引进置信度目标（置信度，也就是结果的可信度）。这里的可信度并非外部的可信度，而是来自于模型自己对于输出的结果的可信程度。可以简单理解，只有当大模型自己对于输出结果的置信度 大于 某个置信度目标值，才对正确结果做回答，否则可以说 I Don’t Know。当然这种有很多的技术性的细节。但是最终目标是让大模型变得更加诚实。</p><p>当然关于幻觉体现是多方面的，而这篇论文关于幻觉的讨论和解决方案也只是其中一个侧面（侧重于 I Don’t Kown）。但是即使是这样，我自己在使用的体验上，依然觉得 GPT5 的可靠性要高于其他模型很多。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-    <category term="哲学思考" scheme="https://maxweber36.github.io/tags/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/"/>
-    
-    <category term="读论文" scheme="https://maxweber36.github.io/tags/%E8%AF%BB%E8%AE%BA%E6%96%87/"/>
+    <category term="生活记录" scheme="https://weber36.me/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   

@@ -16,7 +16,7 @@
 
 
 
-<title>天边的乌云 | 阿犇的自留地</title>
+<title>为 ClaudeCode 集成了 Image Generate Skill | 阿犇的自留地</title>
 
 
 
@@ -63,10 +63,7 @@ var _hmt = _hmt || [];
 
 
 
-  <meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
-<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="/assets/js/Meting.min.js" class="meting-script-marker"></script>
-<link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
 </head>
   <body>
     <div class="mask-border">
@@ -130,54 +127,36 @@ var _hmt = _hmt || [];
   
     <div class="post-head">
     <div class="post-info">
-        <div class="tag-list">
-            
-                
-                    <span class="post-tag">
-                        <a href="/tags/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/">
-                            生活记录
-                        </a>
-                    </span>    
-                
-                    <span class="post-tag">
-                        <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/">
-                            个人成长
-                        </a>
-                    </span>    
-                           
-            
-        </div>
         <div class="post-title">
             
             
-                天边的乌云
+                为 ClaudeCode 集成了 Image Generate Skill
             
             
         </div>
-        <span class="post-date">
-            Apr 30, 2025
-        </span>
     </div>
-    <div class="post-img">
-        
-            <div class="h-line-primary"></div>
-              
-    </div>
+    <div class="h-line-primary"></div>
 </div>
     <div class="post-content">
-    
-    <div id="aplayer-AynumxyB" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="000zTxeh0cVFt6" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
-    ></div>
-
-<p>对我来说，最近总有一片焦虑的乌云萦绕在自己的上空。</p>
-<p>这种焦虑的乌云与我过去在公司作为工具人时的焦虑截然不同。它小得多。如果用一个比喻来说明之前的区别，最近的焦虑就像是头顶是一片蓝天，但在不远处，有一朵乌云，正在慢慢靠近。而我想要找到方法，可以赶走这朵即将飘来的乌云。</p>
-<p>作为工具人的焦虑则像是自己已身处乌云之下，且正下着瓢泼大雨，而自己却无处躲藏。如果不马上做出改变，自己可能会被这场大雨淹没。</p>
-<p>分析下来的原因，并不是因为我做的事情不喜欢，而是因为我现在做的事情是否能够真正养活自己。如果养活不了自己，那么那种隐隐的焦虑就会一直盘旋在自己的上空。</p>
-<blockquote>
-<p>[!IMPORTANT]</p>
-<p>因此，当前我最重要的任务是：<strong>如何通过自己喜欢的事情赚钱。</strong></p>
-</blockquote>
+    <p>为 ClaudeCode 集成了 Image Generate Skill</p>
+<p>我今天花了下午的时间，终于给我的ClaudeCode 做了一个 Image Generate Skill 工具</p>
+<p>在写公众号文章或者博客文章的时候，有一个环节让我非常沮丧，也比较恼火，就是给文章配封面图。之前的工作流程是：</p>
+<ol>
+<li>文章写好后，我会把文章内容丢给 AI，让它帮我基于文章内容帮我写出一个封面图的 prompt。</li>
+<li>AI 会把 prompt 给到我，然后我再把这个 prompt 用于生成封面图。</li>
+<li>生成封面图时，通常会打开即梦，或者有时候会用豆包平台，让它们帮我生成封面图。</li>
+</ol>
+<p>在这个过程中，需要设置很多参数，有时候我也记不住。而且 AI 其实也不太能记住，比如豆包平台的模型 prompt 输入参数是怎样的。反正来来回回要做很多调整，这里面其实要花不少时间。</p>
+<p>我今天终于做了一个工具，给 ClaudeCode 做了一个技能（Skill）——图片生成技能（Image Generator Skill）。</p>
+<p>因为我之前在使用 Claude 的时候，我发现 Claude 它就有这个文生图的模型技能，但是我发现 ClaudeCode 它竟然没有。主要原因还是因为 ClaudeCode 它没有这个文生图模型，对，Claude（或者说 Anthropic）它没有文生图模型。那没有的话，我就自己造了一个。</p>
+<p>现在这个技能可以去集成各种平台。我目前暂时只集成了一个平台：</p>
+<ul>
+<li>一个是火山引擎这个平台。</li>
+</ul>
+<p>后期的话，如果说我要让它去集成一些第三方平台，都是非常容易的，因为它整个框架就是一个非常容易去接入一个平台的框架。</p>
+<p>现在，如果我要给某篇文章生成一个封面图的话，很多时候就是一句话。我直接在 ClaudeCode 里把这个文件路径给它，然后我就说“给我生成一个文章的封面图”。它很快就能理解这个东西怎么去做，然后去调用相应的技能，并且把这个图片还帮我自动下载到本地。对，然后很快就解决了。</p>
+<p>而且，因为我是通过API调用的，生成的图片没有水印，也省去了我去除水印的过程，所以说非常方便，又帮我解决了一个问题。</p>
+<p>后续，我可以把这个Skill分享出来。它的集成方式其实非常简单。我会在之后更新一篇文章来说明，这个Skill的文件结构是怎样的，以及它的实现逻辑。Skill</p>
 
 </div> 
 
@@ -206,39 +185,6 @@ function detectors(){
 
 window.onload = detectors;
 </script>
-    <div class="post-footer">
-    <div class="h-line-primary"></div>
-    <nav class="post-nav">
-        <div class="prev-item">
-           
-                <div class="icon arrow-left"></div>
-                <div class="post-link">
-                    <a href="/2025/05/13/%E6%96%87%E5%AD%A6%E5%88%B0%E5%BA%95%E6%9C%89%E7%94%A8%E4%B8%8D/">Prev</a>
-                </div>
-            
-        </div>
-        <div class="next-item">
-            
-                <div class="icon arrow-right"></div>
-                <div class="post-link">
-                  <a href="/2025/04/28/%E6%88%91%E6%9C%80%E5%A5%BD%E7%9A%84%E6%9C%8B%E5%8F%8B%E7%BB%93%E5%A9%9A%E4%BA%86/">Next</a>  
-                </div>  
-            
-        </div>
-    </nav>
-</div>
-
-    
-      <div class="post-comment">
-
-     
-
-     
-    
-    
-
-</div>
-     
   
 </article>
         </div>

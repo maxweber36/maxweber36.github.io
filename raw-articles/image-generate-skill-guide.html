@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="lang">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="阿犇">
+
+
+    <meta name="subtitle" content="YOLO：You Only Live Once">
+
+
+
+
+
+
+<title>阿犇的自留地</title>
+
+
+
+    <link rel="icon" href="/images/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69a92b8e30c4319fa76518832c395291";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="阿犇的自留地" type="application/atom+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            <img class="logo-img" src="/images/avatar.png" alt="logo_image">
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">主页</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">我的博客</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/project/">我都做了啥</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/about/">关于我</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="/js/menu.js"></script>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="post-title">
+            
+            
+                *Untitled
+            
+            
+        </div>
+    </div>
+    <div class="h-line-primary"></div>
+</div>
+    <div class="post-content">
+    <h1 id="image-generate-Skill-讲解指南"><a href="#image-generate-Skill-讲解指南" class="headerlink" title="image-generate Skill 讲解指南"></a>image-generate Skill 讲解指南</h1><h2 id="一句话概括"><a href="#一句话概括" class="headerlink" title="一句话概括"></a>一句话概括</h2><p>这个 Skill 让 Claude 拥有了”画画”能力——你用文字描述想要什么图，它调用云端 AI 模型生成图片并保存到你本地。</p>
+<hr>
+<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~/.claude/skills/image-generate/</span><br><span class="line">├── SKILL.md                    # 主文件：定义&quot;做什么&quot;和&quot;怎么做&quot;</span><br><span class="line">└── references/                 # 参考文档：各平台的 API 细节</span><br><span class="line">    ├── &#123;platform-a&#125;.md         # 平台 A 的 API 文档</span><br><span class="line">    └── &#123;platform-b&#125;.md         # 平台 B 的 API 文档（待集成）</span><br></pre></td></tr></table></figure>
+
+<p>整个 Skill 只有 3 个文件，结构非常简洁。</p>
+<hr>
+<h2 id="各文件的作用"><a href="#各文件的作用" class="headerlink" title="各文件的作用"></a>各文件的作用</h2><h3 id="1-SKILL-md-—-总指挥"><a href="#1-SKILL-md-—-总指挥" class="headerlink" title="1. SKILL.md — 总指挥"></a>1. <code>SKILL.md</code> — 总指挥</h3><p>这是 Skill 的入口文件，分为两部分：</p>
+<p><strong>Frontmatter（文件头）</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">name:</span> <span class="string">image-generate</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">调用多平台文生图模型生成图片并保存到本地...</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>name</code>: Skill 的标识名，在 Claude 中用 <code>/image-generate</code> 触发</li>
+<li><code>description</code>: 告诉 Claude <strong>什么时候该用这个 Skill</strong>。你提到”生成图片””文生图””帮我画””文章封面”等关键词时，Claude 就会自动激活它</li>
+</ul>
+<p><strong>正文 — 五步工作流</strong></p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>做什么</th>
+<th>关键点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Step 1</td>
+<td>确认需求</td>
+<td>从你的输入中提取 prompt、用途、尺寸偏好</td>
+</tr>
+<tr>
+<td>Step 2</td>
+<td>选择平台</td>
+<td>根据你的需求自动选最合适的 AI 平台</td>
+</tr>
+<tr>
+<td>Step 3</td>
+<td>调用 API</td>
+<td>读取平台文档，构造请求，获取图片</td>
+</tr>
+<tr>
+<td>Step 4</td>
+<td>下载保存</td>
+<td>把 URL 或 base64 图片存到本地文件</td>
+</tr>
+<tr>
+<td>Step 5</td>
+<td>返回结果</td>
+<td>告诉你保存路径、尺寸、用的什么模型</td>
+</tr>
+</tbody></table>
+<p>正文还包含：</p>
+<ul>
+<li><strong>平台选择逻辑</strong>：一段伪代码，教 Claude 如何根据场景选平台</li>
+<li><strong>代码模板</strong>：<code>call_platform_api()</code> 和 <code>download_and_save()</code> 两个 Python 函数骨架</li>
+<li><strong>Prompt 优化建议</strong>：自动为你的描述补充质量关键词（如 “illustration style, clean background”）</li>
+<li><strong>集成新平台指南</strong>：只需加一个 reference 文件 + 改两行表格</li>
+</ul>
+<h3 id="2-references-platform-md-—-各平台-API-手册"><a href="#2-references-platform-md-—-各平台-API-手册" class="headerlink" title="2. references/{platform}.md — 各平台 API 手册"></a>2. <code>references/&#123;platform&#125;.md</code> — 各平台 API 手册</h3><p>每个 reference 文件是一个平台的完整 API 参考文档，包含：</p>
+<ul>
+<li>认证方式（通常为 Bearer Token，通过环境变量获取）</li>
+<li>API 端点和请求方法</li>
+<li>所有请求参数的详细说明（model、prompt、size、watermark 等）</li>
+<li>推荐尺寸对照表（16:9 封面、1:1 配图等）</li>
+<li>可直接使用的 Python 调用代码</li>
+</ul>
+<p>部分平台文件可能是<strong>模板状态</strong>（骨架已搭好，待补充具体 API 信息后即可启用）。</p>
+<hr>
+<h2 id="运行流程（用大白话说）"><a href="#运行流程（用大白话说）" class="headerlink" title="运行流程（用大白话说）"></a>运行流程（用大白话说）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">你说：&quot;帮我生成一张文章封面，主题是日落下的灯塔&quot;</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Claude 识别关键词 → 激活 image-generate Skill</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Step 1: 提取需求</span><br><span class="line">  - prompt: &quot;日落下的灯塔&quot;</span><br><span class="line">  - 用途: 文章封面</span><br><span class="line">  - 尺寸: 16:9（封面的默认比例）</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Step 2: 选择平台</span><br><span class="line">  - 文章封面 → 高质量需求 → 推荐合适的平台和模型</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Step 3: 读取对应平台 reference 文件 → 构造 API 请求 → 发送</span><br><span class="line">  - 自动从环境变量获取 API Key</span><br><span class="line">  - 优化 prompt: &quot;日落下的灯塔, wide shot, dramatic lighting...&quot;</span><br><span class="line">  - size: &quot;2560x1440&quot;</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Step 4: 收到图片 URL → 下载保存到本地</span><br><span class="line">  - 默认保存在当前工作目录</span><br><span class="line">        │</span><br><span class="line">        ▼</span><br><span class="line">Step 5: 告诉你结果</span><br><span class="line">  - &quot;图片已保存到 ./sunset-lighthouse.png，尺寸 2560x1440&quot;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="设计亮点"><a href="#设计亮点" class="headerlink" title="设计亮点"></a>设计亮点</h2><ol>
+<li><strong>平台解耦</strong>：每个 AI 平台独立一个 reference 文件，互不干扰。新增平台只需加文件 + 改两行表格</li>
+<li><strong>按需加载</strong>：Claude 只在你选择某平台时才读取对应的 reference 文件，不会把所有 API 文档塞满上下文</li>
+<li><strong>无硬编码密钥</strong>：API Key 全部通过环境变量传递，安全且灵活</li>
+<li><strong>智能推荐</strong>：内置平台选择逻辑，根据用途自动推荐最合适的模型和尺寸</li>
+</ol>
+<hr>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><ol>
+<li>确保已设置对应平台的环境变量（如 <code>export YOUR_PLATFORM_API_KEY=你的key</code>）</li>
+<li>在 Claude Code 中直接说”帮我生成一张…”</li>
+<li>或使用 <code>/image-generate</code> 命令显式触发</li>
+</ol>
+<h2 id="如何扩展新平台"><a href="#如何扩展新平台" class="headerlink" title="如何扩展新平台"></a>如何扩展新平台</h2><ol>
+<li>在 <code>references/</code> 下新建 <code>&#123;平台名&#125;.md</code>，照着已有 reference 文件的格式写 API 文档</li>
+<li>在 <code>SKILL.md</code> 的”支持平台”表格中加一行</li>
+<li>在”认证配置”表格中加环境变量名</li>
+<li>完成</li>
+</ol>
+
+</div> 
+
+<script>
+function detectTaskList() {
+  var taskListObjects = document.getElementsByTagName("input");
+  for (var i = 0; i < taskListObjects.length; i++) {
+    var par = taskListObjects[i].parentNode;
+    par.classList.add("task-list-item");
+    par.parentNode.classList.add("task-list");
+  }
+}
+
+function detectBlockTable() {
+  var tableListObjects = document.getElementsByTagName("thead");
+  for (var i = 0; i < tableListObjects.length; i++) {
+    var par = tableListObjects[i].parentNode;
+    par.classList.add("block-table");
+  }
+}
+
+function detectors(){
+  detectTaskList();
+  detectBlockTable();
+}
+
+window.onload = detectors;
+</script>
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                阿犇 | 
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
